@@ -1400,6 +1400,42 @@
         {
           "type": "STRING",
           "value": "#"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "["
+          },
+          "named": true,
+          "value": "lbracket"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "]"
+          },
+          "named": true,
+          "value": "rbracket"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "("
+          },
+          "named": true,
+          "value": "lparen"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": ")"
+          },
+          "named": true,
+          "value": "rparen"
         }
       ]
     }

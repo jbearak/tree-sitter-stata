@@ -361,12 +361,16 @@ module.exports = grammar({
 
         identifier: _ => /[A-Za-z_][A-Za-z0-9_]*/,
 
-        operator: _ => choice(
+        operator: $ => choice(
             '+', '-', '*', '/', '^',
             '==', '!=', '~=', '<', '>', '<=', '>=',
             '&', '|', '!', '~',
             '=',
             '#',  // Interaction operator
+            alias('[', $.lbracket),
+            alias(']', $.rbracket),
+            alias('(', $.lparen),
+            alias(')', $.rparen),
         ),
     },
 });

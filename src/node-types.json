@@ -499,7 +499,29 @@
   {
     "type": "operator",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "lbracket",
+          "named": true
+        },
+        {
+          "type": "lparen",
+          "named": true
+        },
+        {
+          "type": "rbracket",
+          "named": true
+        },
+        {
+          "type": "rparen",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "prefix",
@@ -848,6 +870,10 @@
     "named": false
   },
   {
+    "type": "lbracket",
+    "named": true
+  },
+  {
     "type": "loc",
     "named": false
   },
@@ -858,6 +884,10 @@
   {
     "type": "long",
     "named": false
+  },
+  {
+    "type": "lparen",
+    "named": true
   },
   {
     "type": "mata",
@@ -890,6 +920,14 @@
   {
     "type": "quietly",
     "named": false
+  },
+  {
+    "type": "rbracket",
+    "named": true
+  },
+  {
+    "type": "rparen",
+    "named": true
   },
   {
     "type": "sortpreserve",

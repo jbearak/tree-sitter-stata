@@ -133,6 +133,21 @@ describe('Queries - brackets.scm coverage', () => {
         expect(brackets_content).toContain('\"{\" @open');
         expect(brackets_content).toContain('\"}\" @close');
     });
+
+    it('should have square bracket matching', () => {
+        expect(brackets_content).toContain('(lbracket) @open');
+        expect(brackets_content).toContain('(rbracket) @close');
+    });
+
+    it('should have parenthesis matching', () => {
+        expect(brackets_content).toContain('(lparen) @open');
+        expect(brackets_content).toContain('(rparen) @close');
+    });
+
+    it('should have quote matching', () => {
+        expect(brackets_content).toContain('("\\"" @open "\\"" @close)');
+        expect(brackets_content).toContain('("`" @open "\'" @close)');
+    });
 });
 
 describe('Queries - indents.scm coverage', () => {
