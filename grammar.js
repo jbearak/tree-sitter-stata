@@ -277,8 +277,8 @@ module.exports = grammar({
         // =========================================================================
 
         macro_definition: $ => choice(
-            seq(choice('local', 'loc'), field('name', $.identifier), optional($._rest_of_line)),
-            seq(choice('global', 'gl'), field('name', $.identifier), optional($._rest_of_line)),
+            seq(choice('local', 'loc'), field('name', $.identifier), repeat($._argument)),
+            seq(choice('global', 'gl'), field('name', $.identifier), repeat($._argument)),
             seq(choice('tempvar', 'tempname', 'tempfile'), repeat1(field('name', $.identifier))),
         ),
 
@@ -289,7 +289,7 @@ module.exports = grammar({
         command: $ => seq(
             optional($.prefix),
             field('name', $.identifier),
-            optional($._rest_of_line),
+            repeat($._argument),
         ),
 
         prefix: _ => choice(
@@ -300,7 +300,19 @@ module.exports = grammar({
             'sortpreserve',
         ),
 
-        _rest_of_line: _ => token(prec(-1, /[^\r\n]+/)),
+        _argument: $ => choice(
+            $.string,
+            $.local_macro_depth_1,
+            $.global_macro,
+            $.number,
+            $.missing_value,
+            $.builtin_variable,
+            $.control_keyword,
+            $.type_keyword,
+            $.identifier,
+            $.operator,
+            token(prec(-1, /[^\s\r\n]+/))
+        ),
 
         // =========================================================================
         // ATOMS
