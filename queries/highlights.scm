@@ -52,6 +52,9 @@
   "tempfile"
 ] @keyword
 
+; Language keywords parsed as identifiers
+((identifier) @keyword
+  (#match? @keyword "^(in|using|do|run|include)$"))
 
 ; Types
 (type_keyword) @type
