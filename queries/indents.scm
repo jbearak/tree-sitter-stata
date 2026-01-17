@@ -7,4 +7,3 @@
 ; Outdent on block closers
 "}" @outdent
 "end" @outdent
-"else" @outdent.always

@@ -52,14 +52,6 @@
   "tempfile"
 ] @keyword
 
-; Additional keywords for common constructs
-[
-  "in"
-  "using"
-  "do"
-  "run"
-  "include"
-] @keyword
 
 ; Types
 (type_keyword) @type
