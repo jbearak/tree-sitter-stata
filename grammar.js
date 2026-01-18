@@ -166,7 +166,7 @@ module.exports = grammar({
             $._compound_text,
         ),
 
-        _compound_text: _ => token(prec(-1, /([^`"$\r\n]|"[^'])+/)),
+        _compound_text: _ => token(prec(-1, /([^`"$\r\n]|"[^']|`')+/)),
 
         string: $ => choice(
             $.double_string,
