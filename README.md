@@ -1,8 +1,7 @@
 # tree-sitter-stata
 
-A [tree-sitter](https://tree-sitter.github.io/tree-sitter/) grammar for the [Stata](https://www.stata.com/) programming language.
+A [tree-sitter](https://tree-sitter.github.io/tree-sitter/) grammar for the [Stata](https://www.stata.com/) statistical programming language.
 
-This grammar is part of the [Sight](https://github.com/jbearak/sight) project, which provides language server support for Stata in modern code editors.
 
 ## Overview
 
@@ -10,7 +9,12 @@ This repository contains a tree-sitter grammar implementation for Stata, enablin
 
 - **Syntax highlighting** - Accurate highlighting for Stata code including commands, macros, strings, and comments
 - **Code parsing** - Incremental parsing for real-time editor features
-- **Editor integration** - Used by the Sight Zed extension and other tree-sitter compatible editors
+- **Editor integration** - Can be used with any editor that supports tree-sitter grammars
+
+### Related Repositories:
+
+- [Zed-Stata](https://github.com/jbearak/zed-stata) - A Zed editor extension for Stata that uses this grammar
+- [Sight](https://github.com/jbearak/sight) - A language server and VS Code extension for Stata
 
 ### Supported File Types
 
@@ -168,8 +172,8 @@ tree-sitter-stata/
 
 ## Related Projects
 
-- **[Sight](https://github.com/jbearak/sight)** - Stata Language Server providing IDE features for Stata, with a corresponding VS Code extension
-- **[Zed Extension](https://github.com/jbearak/sight/tree/main/zed-extension)** - Zed editor extension using this grammar
+- **[Sight](https://github.com/jbearak/sight)** - Language server, VS Code extension, and TextMate grammar for Stata
+- **[zed-stata](https://github.com/jbearak/zed-stata)** - Zed extension for Stata (requires this tree-sitter grammar and the Sight language server)
 
 ## Contributing
 
@@ -213,4 +217,6 @@ If you find a parsing issue or incorrect syntax highlighting:
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
+Copyright © 2026 Jonathan Marc Bearak.
+[GPLv3](LICENSE) - This project is open source software. You can use, modify, and distribute it with attribution, but any derivative works must also be open source under GPLv3.
+
