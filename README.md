@@ -217,6 +217,7 @@ If you find a parsing issue or incorrect syntax highlighting:
 
 ## License
 
-Copyright © 2026 Jonathan Marc Bearak.
+Copyright © 2026 Jonathan Marc Bearak
+
 [GPLv3](LICENSE) - This project is open source software. You can use, modify, and distribute it with attribution, but any derivative works must also be open source under GPLv3.
 
