@@ -1,6 +1,6 @@
 # tree-sitter-stata
 
-A [tree-sitter](https://tree-sitter.github.io/tree-sitter/) grammar for the [Stata](https://www.stata.com/) statistical programming language.
+A [tree-sitter](https://tree-sitter.github.io/tree-sitter/) grammar for the Stata statistical programming language.
 
 
 ## Overview
