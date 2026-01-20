@@ -11,6 +11,8 @@ This repository contains a tree-sitter grammar implementation for Stata, enablin
 - **Code parsing** - Incremental parsing for real-time editor features
 - **Editor integration** - Can be used with any editor that supports tree-sitter grammars
 
+> **⚠️ Development Status:** This is an early-stage implementation. While functional, it requires substantial testing and code review. Contributions and feedback are welcome!
+
 ### Related Repositories:
 
 - [Zed-Stata](https://github.com/jbearak/zed-stata) - A Zed editor extension for Stata that uses this grammar
@@ -220,4 +222,3 @@ If you find a parsing issue or incorrect syntax highlighting:
 Copyright © 2026 Jonathan Marc Bearak
 
 [GPLv3](LICENSE) - This project is open source software. You can use, modify, and distribute it with attribution, but any derivative works must also be open source under GPLv3.
-
