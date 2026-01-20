@@ -172,11 +172,6 @@ tree-sitter-stata/
 └── test/               # Test Stata files
 ```
 
-## Related Projects
-
-- **[Sight](https://github.com/jbearak/sight)** - Language server, VS Code extension, and TextMate grammar for Stata
-- **[zed-stata](https://github.com/jbearak/zed-stata)** - Zed extension for Stata (requires this tree-sitter grammar and the Sight language server)
-
 ## Contributing
 
 Contributions are welcome! Here's how to contribute:
