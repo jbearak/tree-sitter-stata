@@ -54,8 +54,7 @@
         "ado",
         "mata"
       ],
-      "highlights": "queries/highlights.scm",
-      "injections": "queries/injections.scm"
+      "highlights": "queries/highlights.scm"
     }
   ]
 }

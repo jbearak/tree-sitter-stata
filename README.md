@@ -23,7 +23,6 @@ This repository contains a tree-sitter grammar implementation for Stata, enablin
 - `.do` - Stata do-files
 - `.ado` - Stata ado-files (user-written commands)
 - `.mata` - Mata source files
-- `.doh` - Stata do-file headers
 
 ## Installation
 
@@ -35,11 +34,11 @@ npm install tree-sitter-stata
 
 ### Cargo
 
-Add to your `Cargo.toml`:
+Add to your `Cargo.toml` (preferred: use a caret range to avoid pinning a single patch release):
 
 ```toml
 [dependencies]
-tree-sitter-stata = "0.1.8"
+tree-sitter-stata = "^0.1"
 ```
 
 ## Usage
@@ -72,7 +71,7 @@ use tree_sitter::Parser;
 fn main() {
     let mut parser = Parser::new();
     parser
-        .set_language(&tree_sitter_stata::LANGUAGE.into())
+        .set_language(&tree_sitter_stata::language())
         .expect("Error loading Stata grammar");
 
     let source_code = r#"
