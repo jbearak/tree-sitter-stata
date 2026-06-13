@@ -12,6 +12,9 @@
   ],
   "author": "Jonathan Marc Bearak",
   "license": "GPL-3.0",
+  "engines": {
+    "node": ">=24"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jbearak/tree-sitter-stata.git"
