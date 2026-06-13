@@ -65,6 +65,9 @@
 ; Missing values
 (missing_value) @constant
 
+; Factor variable operators (i., c., o., b#., ibn., etc.)
+(factor_operator) @operator
+
 ; Numbers
 (number) @number
 
