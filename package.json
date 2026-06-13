@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "type": "commonjs",
   "description": "Tree-sitter grammar for Stata",
-  "main": "bindings/node",
-  "types": "bindings/node",
   "keywords": [
     "tree-sitter",
     "stata",
@@ -21,32 +19,17 @@
   },
   "files": [
     "grammar.js",
-    "binding.gyp",
-    "prebuilds/**",
-    "bindings/node/*",
     "queries/*",
     "src/**"
   ],
-  "dependencies": {
-    "node-addon-api": "^7.1.0",
-    "node-gyp-build": "^4.8.0"
-  },
-  "peerDependencies": {
-    "tree-sitter": "^0.25.0"
-  },
-  "peerDependenciesMeta": {
-    "tree-sitter": {
-      "optional": true
-    }
-  },
   "devDependencies": {
     "tree-sitter-cli": "^0.26.9",
     "fast-check": "^3.23.1"
   },
   "scripts": {
-    "build": "tree-sitter generate && node-gyp rebuild",
     "generate": "tree-sitter generate",
     "test": "tree-sitter test",
+    "test:unit": "bun test",
     "parse": "tree-sitter parse"
   },
   "tree-sitter": [
