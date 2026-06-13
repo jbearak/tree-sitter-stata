@@ -2,9 +2,10 @@
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14 or later)
+- [Node.js](https://nodejs.org/) (v24 LTS or later)
 - [tree-sitter CLI](https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md)
 - [Rust](https://www.rust-lang.org/) (for Rust bindings)
+- [Bun](https://bun.sh/) (for the unit and property tests)
 
 Install the tree-sitter CLI:
 
@@ -30,12 +31,6 @@ tree-sitter generate
 
 ## Build
 
-Build the Node.js bindings:
-
-```bash
-npm run build
-```
-
 Build the Rust bindings:
 
 ```bash
@@ -56,6 +51,14 @@ Run Rust tests:
 
 ```bash
 cargo test
+```
+
+Run the unit and property tests ([Bun](https://bun.sh/)):
+
+```bash
+bun test
+# or
+npm run test:unit
 ```
 
 ## Parse Example Files
