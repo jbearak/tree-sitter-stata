@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
       - uses: tree-sitter/setup-action/cli@v2
       - uses: tree-sitter/parser-test-action@v2
         with:
