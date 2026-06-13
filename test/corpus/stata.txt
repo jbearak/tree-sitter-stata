@@ -129,3 +129,39 @@ generate str10 s = "hi"
     (operator)
     (string
       (double_string))))
+
+
+========================================
+Factor variables
+========================================
+regress y i.rep78 c.weight
+xtreg mhcrowd_growth popgrowth c.popgrowth#i.shrink i.year, fe robust
+
+---
+
+(source_file
+  (command
+    name: (identifier)
+    (identifier)
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))
+    (factor_variable
+      (factor_operator)
+      variable: (identifier)))
+  (command
+    name: (identifier)
+    (identifier)
+    (identifier)
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))
+    (operator)
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))
+    (identifier)
+    (identifier)))

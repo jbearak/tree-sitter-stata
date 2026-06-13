@@ -303,10 +303,31 @@ module.exports = grammar({
             $.builtin_variable,
             $.control_keyword,
             $.type_keyword,
+            $.factor_variable,
             $.identifier,
             $.operator,
             token(prec(-1, /[^\s\r\n]+/))
         ),
+
+        // Factor variables: i.var, c.var, o.var, b#.var, ibn.var, i(1/3).var, etc.
+        // The operator (including its trailing '.') is a single token so the
+        // lexer does not let `missing_value` (/\.[a-z]?/) swallow the first
+        // character of the variable name.
+        factor_variable: $ => seq(
+            $.factor_operator,
+            field('variable', $.identifier),
+        ),
+
+        factor_operator: _ => token(seq(
+            choice(
+                'i', 'c', 'o',
+                // base operators: b, bn, b#, ib, ibn, ib#
+                seq(optional('i'), 'b', optional(choice(/[0-9]+/, 'n'))),
+            ),
+            // optional numlist specification, e.g. i(1/3). or b(1 2 3).
+            optional(seq('(', /[^)\r\n]+/, ')')),
+            '.',
+        )),
 
         // =========================================================================
         // ATOMS

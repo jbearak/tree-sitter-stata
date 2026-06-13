@@ -32,6 +32,10 @@
           "named": true
         },
         {
+          "type": "factor_variable",
+          "named": true
+        },
+        {
           "type": "global_macro",
           "named": true
         },
@@ -248,6 +252,32 @@
     }
   },
   {
+    "type": "factor_variable",
+    "named": true,
+    "fields": {
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "factor_operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "global_macro",
     "named": true,
     "fields": {},
@@ -430,6 +460,10 @@
         },
         {
           "type": "control_keyword",
+          "named": true
+        },
+        {
+          "type": "factor_variable",
           "named": true
         },
         {
@@ -809,6 +843,10 @@
   {
     "type": "end",
     "named": false
+  },
+  {
+    "type": "factor_operator",
+    "named": true
   },
   {
     "type": "float",
