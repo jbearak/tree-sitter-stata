@@ -171,6 +171,9 @@ Inline and nested block comments
 ========================================
 reg y x // this is an inline line comment
 reg y x /* this is an inline block comment */
+/***/
+/** text **/
+reg y /***/ x
 /*
 reg y x /* nested comment */
 sum x
@@ -191,6 +194,16 @@ sum x
     (identifier)
     (comment
       (block_comment)))
+  (comment
+    (block_comment))
+  (comment
+    (block_comment))
+  (command
+    name: (identifier)
+    (identifier)
+    (comment
+      (block_comment))
+    (identifier))
   (comment
     (block_comment
       (block_comment))))

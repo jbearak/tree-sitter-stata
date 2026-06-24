@@ -71,8 +71,8 @@ module.exports = grammar({
             repeat(choice(
                 $.block_comment,
                 token(prec(-1, /[^*/]+/)),
-                token(prec(-1, /\*+[^/]/)),
-                token(prec(-1, /\/+[^*]/)),
+                '*',
+                '/',
             )),
             '*/',
         ),
