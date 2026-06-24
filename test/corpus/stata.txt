@@ -165,3 +165,73 @@ xtreg mhcrowd_growth popgrowth c.popgrowth#i.shrink i.year, fe robust
       variable: (identifier))
     (identifier)
     (identifier)))
+
+========================================
+Inline and nested block comments
+========================================
+reg y x // this is an inline line comment
+reg y x /* this is an inline block comment */
+/***/
+/** text **/
+reg y /***/ x
+/*
+reg y x /* nested comment */
+sum x
+*/
+
+---
+
+(source_file
+  (command
+    name: (identifier)
+    (identifier)
+    (identifier)
+    (comment
+      (line_comment)))
+  (command
+    name: (identifier)
+    (identifier)
+    (identifier)
+    (comment
+      (block_comment)))
+  (comment
+    (block_comment))
+  (comment
+    (block_comment))
+  (command
+    name: (identifier)
+    (identifier)
+    (comment
+      (block_comment))
+    (identifier))
+  (comment
+    (block_comment
+      (block_comment))))
+
+========================================
+Mid-command star is multiplication, not a comment
+========================================
+disp 2*3
+gen z = x*y
+summarize inc*, detail
+
+---
+
+(source_file
+  (command
+    name: (identifier)
+    (number)
+    (operator)
+    (number))
+  (command
+    name: (identifier)
+    (identifier)
+    (operator)
+    (identifier)
+    (operator)
+    (identifier))
+  (command
+    name: (identifier)
+    (identifier)
+    (operator)
+    (identifier)))

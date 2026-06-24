@@ -63,12 +63,19 @@ module.exports = grammar({
             seq($._line_start, '*', /[^\r\n]*/),
         ),
 
-        // Block comments
-        block_comment: _ => token(seq(
+        // Block comments. Stata allows block comments to appear after code and
+        // inside other block comments, so parse them recursively instead of as
+        // a single flat token that stops at the first `*/`.
+        block_comment: $ => seq(
             '/*',
-            /[^*]*\*+([^/*][^*]*\*+)*/,
-            '/',
-        )),
+            repeat(choice(
+                $.block_comment,
+                token(prec(-1, /[^*/]+/)),
+                '*',
+                '/',
+            )),
+            '*/',
+        ),
 
         // =========================================================================
         // STRINGS
@@ -306,6 +313,7 @@ module.exports = grammar({
             $.factor_variable,
             $.identifier,
             $.operator,
+            $.comment,
             token(prec(-1, /[^\s\r\n]+/))
         ),
 
