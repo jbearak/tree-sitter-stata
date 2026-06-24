@@ -129,24 +129,62 @@
       ]
     },
     "block_comment": {
-      "type": "TOKEN",
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "/*"
-          },
-          {
-            "type": "PATTERN",
-            "value": "[^*]*\\*+([^/*][^*]*\\*+)*"
-          },
-          {
-            "type": "STRING",
-            "value": "/"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "/*"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "block_comment"
+              },
+              {
+                "type": "TOKEN",
+                "content": {
+                  "type": "PREC",
+                  "value": -1,
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "[^*/]+"
+                  }
+                }
+              },
+              {
+                "type": "TOKEN",
+                "content": {
+                  "type": "PREC",
+                  "value": -1,
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "\\*+[^/]"
+                  }
+                }
+              },
+              {
+                "type": "TOKEN",
+                "content": {
+                  "type": "PREC",
+                  "value": -1,
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "\\/+[^*]"
+                  }
+                }
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "type": "STRING",
+          "value": "*/"
+        }
+      ]
     },
     "double_string": {
       "type": "SEQ",
@@ -1102,6 +1140,10 @@
         {
           "type": "SYMBOL",
           "name": "operator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "comment"
         },
         {
           "type": "TOKEN",
