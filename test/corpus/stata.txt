@@ -235,3 +235,154 @@ summarize inc*, detail
     (identifier)
     (operator)
     (identifier)))
+
+========================================
+File commands preserve filename extensions
+========================================
+use merp.do
+use merp.dta
+save x.dta
+do analysis.do
+
+---
+
+(source_file
+  (file_command
+    name: (identifier)
+    (file_path))
+  (file_command
+    name: (identifier)
+    (file_path))
+  (file_command
+    name: (identifier)
+    (file_path))
+  (file_command
+    name: (identifier)
+    (file_path)))
+
+========================================
+File command options, paths, and varlist using-form
+========================================
+use mydata.dta, clear
+use mpg weight using auto.dta
+import delimited records.csv
+
+---
+
+(source_file
+  (file_command
+    name: (identifier)
+    (file_path)
+    (identifier))
+  (file_command
+    name: (identifier)
+    (identifier)
+    (identifier)
+    (using_clause
+      (file_path)))
+  (file_command
+    name: (identifier)
+    (identifier)
+    (file_path)))
+
+========================================
+using clause in non-file commands
+========================================
+merge 1:1 id using other.dta
+append using a.dta b.dta
+merge 1:1 id using "my file.dta"
+
+---
+
+(source_file
+  (command
+    name: (identifier)
+    (number)
+    (identifier)
+    (using_clause
+      (file_path)))
+  (command
+    name: (identifier)
+    (using_clause
+      (file_path)
+      (file_path)))
+  (command
+    name: (identifier)
+    (number)
+    (identifier)
+    (using_clause
+      (string
+        (double_string)))))
+
+========================================
+Comments after file paths
+========================================
+use x.dta // load the data
+save out.dta /* inline */
+merge 1:1 id using other.dta // merge it
+
+---
+
+(source_file
+  (file_command
+    name: (identifier)
+    (file_path)
+    (comment
+      (line_comment)))
+  (file_command
+    name: (identifier)
+    (file_path)
+    (comment
+      (block_comment)))
+  (command
+    name: (identifier)
+    (number)
+    (identifier)
+    (using_clause
+      (file_path))
+    (comment
+      (line_comment))))
+
+========================================
+Filesystem commands take path arguments
+========================================
+cd data/sub
+erase old.dta
+copy a.txt b.txt
+
+---
+
+(source_file
+  (file_command
+    name: (identifier)
+    (file_path))
+  (file_command
+    name: (identifier)
+    (file_path))
+  (file_command
+    name: (identifier)
+    (file_path)
+    (file_path)))
+
+========================================
+File paths and factor variables coexist (issue #51 guard)
+========================================
+use auto.dta, clear
+regress mpg i.rep78 c.weight
+
+---
+
+(source_file
+  (file_command
+    name: (identifier)
+    (file_path)
+    (identifier))
+  (command
+    name: (identifier)
+    (identifier)
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))
+    (factor_variable
+      (factor_operator)
+      variable: (identifier))))

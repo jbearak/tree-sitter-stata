@@ -41,6 +41,7 @@ module.exports = grammar({
             $.program_definition,
             $.mata_block,
             $.macro_definition,
+            $.file_command,
             $.command,
         ),
 
@@ -55,10 +56,13 @@ module.exports = grammar({
 
         // Line comments
         line_comment: $ => choice(
-            // Standard line comments - tokenized to prevent // from being split
-            token(seq('//', /[^\r\n]*/)),
+            // Standard line comments - tokenized to prevent // from being split.
+            // prec(2) keeps `//` a comment even where a `file_path` (prec 1) is
+            // valid, e.g. `use x.dta // note` — otherwise `//` matches the path
+            // token and the comment is swallowed.
+            token(prec(2, seq('//', /[^\r\n]*/))),
             // Continuation line comments
-            token(seq('///', /[^\r\n]*/)),
+            token(prec(2, seq('///', /[^\r\n]*/))),
             // Star comments - only valid at line start (external scanner provides _line_start)
             seq($._line_start, '*', /[^\r\n]*/),
         ),
@@ -67,7 +71,9 @@ module.exports = grammar({
         // inside other block comments, so parse them recursively instead of as
         // a single flat token that stops at the first `*/`.
         block_comment: $ => seq(
-            '/*',
+            // prec(2) on the opener keeps `/*` a block comment even where a
+            // `file_path` (prec 1) is valid, e.g. `save out.dta /* note */`.
+            token(prec(2, '/*')),
             repeat(choice(
                 $.block_comment,
                 token(prec(-1, /[^*/]+/)),
@@ -293,6 +299,38 @@ module.exports = grammar({
             repeat($._argument),
         ),
 
+        // File commands take a filename as a direct argument (e.g. `use x.dta`,
+        // `do script.do`, `save out.dta`). These are split out from the generic
+        // `command` rule so that the `file_path` token is only ever lexable in a
+        // filename context. This keeps it out of regression-command argument
+        // positions, where `i.year`/`c.weight` (textually identical to
+        // stem.extension) must remain factor variables (issue #51).
+        //
+        // The command name uses contextual keyword extraction: the literals are
+        // only treated as keywords at statement start, so a variable named e.g.
+        // `use` in an argument position still tokenizes as a plain identifier.
+        file_command: $ => seq(
+            repeat($.prefix),
+            field('name', alias($._file_command_name, $.identifier)),
+            repeat($._file_argument),
+        ),
+
+        _file_command_name: _ => choice(
+            // Dataset / script I/O
+            'use', 'sysuse', 'webuse',
+            'save', 'saveold',
+            'do', 'run', 'include',
+            'import', 'export',
+            // Filesystem commands that take path arguments directly
+            'cd', 'erase', 'rm', 'copy', 'mkdir', 'rmdir',
+            'type', 'dir', 'ls', 'shell',
+        ),
+
+        _file_argument: $ => choice(
+            $.file_path,
+            $._argument,
+        ),
+
         prefix: _ => choice(
             'by', 'bysort', 'bys',
             'quietly', 'qui',
@@ -311,11 +349,35 @@ module.exports = grammar({
             $.control_keyword,
             $.type_keyword,
             $.factor_variable,
+            $.using_clause,
             $.identifier,
             $.operator,
             $.comment,
             token(prec(-1, /[^\s\r\n]+/))
         ),
+
+        // A `using` clause introduces a filename in many commands that are not
+        // dedicated file commands (e.g. `merge 1:1 id using other.dta`,
+        // `append using a.dta b.dta`). `using` is a reserved word in Stata, so
+        // treating it as a keyword here is safe. The trailing repeat is
+        // `file_path`-only: since `file_path` is never a valid generic argument,
+        // it cannot conflict with the parent command's argument list, which lets
+        // multi-file forms parse without a GLR ambiguity.
+        using_clause: $ => prec.right(seq(
+            'using',
+            choice($.file_path, $.string, $.identifier),
+            repeat($.file_path),
+        )),
+
+        // A filename or path. Requires at least one path character (`.`, `/`, or
+        // `\`) so it captures `merp.dta`, `data/x.dta`, and `C:\data\x.dta` while
+        // never swallowing a bare varlist token. Higher precedence than
+        // `missing_value` (/\.[a-z]?/) and `identifier` so the whole filename is
+        // a single token. Stops at whitespace, commas, quotes, backticks, and
+        // `$` so `, options`, quoted strings, and global macros in unquoted
+        // paths (`use $dir/x.dta`) are handled separately. Comments win via
+        // their higher precedence (prec 2).
+        file_path: _ => token(prec(1, /[^\s,"'`$]*[./\\][^\s,"'`$]*/)),
 
         // Factor variables: i.var, c.var, o.var, b#.var, ibn.var, i(1/3).var, etc.
         // The operator (including its trailing '.') is a single token so the

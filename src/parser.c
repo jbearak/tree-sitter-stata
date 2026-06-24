@@ -7,11 +7,11 @@
 #endif
 
 #define LANGUAGE_VERSION 15
-#define STATE_COUNT 165
-#define LARGE_STATE_COUNT 27
-#define SYMBOL_COUNT 165
+#define STATE_COUNT 209
+#define LARGE_STATE_COUNT 54
+#define SYMBOL_COUNT 194
 #define ALIAS_COUNT 0
-#define TOKEN_COUNT 110
+#define TOKEN_COUNT 132
 #define EXTERNAL_TOKEN_COUNT 1
 #define FIELD_COUNT 2
 #define MAX_ALIAS_SEQUENCE_LENGTH 5
@@ -59,131 +59,160 @@ enum ts_symbol_identifiers {
   anon_sym_tempvar = 37,
   anon_sym_tempname = 38,
   anon_sym_tempfile = 39,
-  anon_sym_by = 40,
-  anon_sym_bysort = 41,
-  anon_sym_bys = 42,
-  anon_sym_quietly = 43,
-  anon_sym_qui = 44,
-  anon_sym_noisily = 45,
-  anon_sym_noi = 46,
-  anon_sym_capture = 47,
-  anon_sym_cap = 48,
-  anon_sym_sortpreserve = 49,
-  aux_sym__argument_token1 = 50,
-  sym_factor_operator = 51,
-  anon_sym_if = 52,
-  anon_sym_else = 53,
-  anon_sym_foreach = 54,
-  anon_sym_forvalues = 55,
-  anon_sym_forv = 56,
-  anon_sym_while = 57,
-  anon_sym_continue = 58,
-  anon_sym_break = 59,
-  anon_sym_byte = 60,
-  anon_sym_int = 61,
-  anon_sym_long = 62,
-  anon_sym_float = 63,
-  anon_sym_double = 64,
-  aux_sym_type_keyword_token1 = 65,
-  aux_sym_type_keyword_token2 = 66,
-  aux_sym_type_keyword_token3 = 67,
-  aux_sym_type_keyword_token4 = 68,
-  aux_sym_type_keyword_token5 = 69,
-  aux_sym_type_keyword_token6 = 70,
-  anon_sym_strL = 71,
-  sym_number = 72,
-  sym_missing_value = 73,
-  anon_sym__n = 74,
-  anon_sym__N = 75,
-  anon_sym__b = 76,
-  anon_sym__coef = 77,
-  anon_sym__cons = 78,
-  anon_sym__rc = 79,
-  anon_sym__se = 80,
-  anon_sym__pi = 81,
-  anon_sym__skip = 82,
-  anon_sym__dup = 83,
-  anon_sym__newline = 84,
-  anon_sym__column = 85,
-  anon_sym__continue = 86,
-  anon_sym__request = 87,
-  anon_sym__char = 88,
-  anon_sym_PLUS = 89,
-  anon_sym_DASH = 90,
-  anon_sym_CARET = 91,
-  anon_sym_EQ_EQ = 92,
-  anon_sym_BANG_EQ = 93,
-  anon_sym_TILDE_EQ = 94,
-  anon_sym_LT = 95,
-  anon_sym_GT = 96,
-  anon_sym_LT_EQ = 97,
-  anon_sym_GT_EQ = 98,
-  anon_sym_AMP = 99,
-  anon_sym_PIPE = 100,
-  anon_sym_BANG = 101,
-  anon_sym_TILDE = 102,
-  anon_sym_EQ = 103,
-  anon_sym_POUND = 104,
-  anon_sym_LBRACK = 105,
-  anon_sym_RBRACK = 106,
-  anon_sym_LPAREN = 107,
-  anon_sym_RPAREN = 108,
-  sym__line_start = 109,
-  sym_source_file = 110,
-  sym__line = 111,
-  sym__statement = 112,
-  sym_comment = 113,
-  sym_line_comment = 114,
-  sym_block_comment = 115,
-  sym_double_string = 116,
-  sym_compound_string_depth_1 = 117,
-  sym__compound_content_1 = 118,
-  sym_compound_string_depth_2 = 119,
-  sym__compound_content_2 = 120,
-  sym_compound_string_depth_3 = 121,
-  sym__compound_content_3 = 122,
-  sym_compound_string_depth_4 = 123,
-  sym__compound_content_4 = 124,
-  sym_compound_string_depth_5 = 125,
-  sym__compound_content_5 = 126,
-  sym_compound_string_depth_6 = 127,
-  sym__compound_content_6 = 128,
-  sym_string = 129,
-  sym_local_macro_depth_1 = 130,
-  sym_local_macro_depth_2 = 131,
-  sym_local_macro_depth_3 = 132,
-  sym_local_macro_depth_4 = 133,
-  sym_local_macro_depth_5 = 134,
-  sym_local_macro_depth_6 = 135,
-  sym__macro_name = 136,
-  sym_global_macro = 137,
-  sym_program_definition = 138,
-  sym__program_line = 139,
-  sym_mata_block = 140,
-  sym__mata_line = 141,
-  sym_macro_definition = 142,
-  sym_command = 143,
-  sym_prefix = 144,
-  sym__argument = 145,
-  sym_factor_variable = 146,
-  sym_control_keyword = 147,
-  sym_type_keyword = 148,
-  sym_builtin_variable = 149,
-  sym_operator = 150,
-  aux_sym_source_file_repeat1 = 151,
-  aux_sym_block_comment_repeat1 = 152,
-  aux_sym_double_string_repeat1 = 153,
-  aux_sym_compound_string_depth_1_repeat1 = 154,
-  aux_sym_compound_string_depth_2_repeat1 = 155,
-  aux_sym_compound_string_depth_3_repeat1 = 156,
-  aux_sym_compound_string_depth_4_repeat1 = 157,
-  aux_sym_compound_string_depth_5_repeat1 = 158,
-  aux_sym_compound_string_depth_6_repeat1 = 159,
-  aux_sym_program_definition_repeat1 = 160,
-  aux_sym_mata_block_repeat1 = 161,
-  aux_sym_mata_block_repeat2 = 162,
-  aux_sym_macro_definition_repeat1 = 163,
-  aux_sym_macro_definition_repeat2 = 164,
+  anon_sym_use = 40,
+  anon_sym_sysuse = 41,
+  anon_sym_webuse = 42,
+  anon_sym_save = 43,
+  anon_sym_saveold = 44,
+  anon_sym_do = 45,
+  anon_sym_run = 46,
+  anon_sym_include = 47,
+  anon_sym_import = 48,
+  anon_sym_export = 49,
+  anon_sym_cd = 50,
+  anon_sym_erase = 51,
+  anon_sym_rm = 52,
+  anon_sym_copy = 53,
+  anon_sym_mkdir = 54,
+  anon_sym_rmdir = 55,
+  anon_sym_type = 56,
+  anon_sym_dir = 57,
+  anon_sym_ls = 58,
+  anon_sym_shell = 59,
+  anon_sym_by = 60,
+  anon_sym_bysort = 61,
+  anon_sym_bys = 62,
+  anon_sym_quietly = 63,
+  anon_sym_qui = 64,
+  anon_sym_noisily = 65,
+  anon_sym_noi = 66,
+  anon_sym_capture = 67,
+  anon_sym_cap = 68,
+  anon_sym_sortpreserve = 69,
+  aux_sym__argument_token1 = 70,
+  anon_sym_using = 71,
+  sym_file_path = 72,
+  sym_factor_operator = 73,
+  anon_sym_if = 74,
+  anon_sym_else = 75,
+  anon_sym_foreach = 76,
+  anon_sym_forvalues = 77,
+  anon_sym_forv = 78,
+  anon_sym_while = 79,
+  anon_sym_continue = 80,
+  anon_sym_break = 81,
+  anon_sym_byte = 82,
+  anon_sym_int = 83,
+  anon_sym_long = 84,
+  anon_sym_float = 85,
+  anon_sym_double = 86,
+  aux_sym_type_keyword_token1 = 87,
+  aux_sym_type_keyword_token2 = 88,
+  aux_sym_type_keyword_token3 = 89,
+  aux_sym_type_keyword_token4 = 90,
+  aux_sym_type_keyword_token5 = 91,
+  aux_sym_type_keyword_token6 = 92,
+  anon_sym_strL = 93,
+  sym_number = 94,
+  sym_missing_value = 95,
+  anon_sym__n = 96,
+  anon_sym__N = 97,
+  anon_sym__b = 98,
+  anon_sym__coef = 99,
+  anon_sym__cons = 100,
+  anon_sym__rc = 101,
+  anon_sym__se = 102,
+  anon_sym__pi = 103,
+  anon_sym__skip = 104,
+  anon_sym__dup = 105,
+  anon_sym__newline = 106,
+  anon_sym__column = 107,
+  anon_sym__continue = 108,
+  anon_sym__request = 109,
+  anon_sym__char = 110,
+  anon_sym_PLUS = 111,
+  anon_sym_DASH = 112,
+  anon_sym_CARET = 113,
+  anon_sym_EQ_EQ = 114,
+  anon_sym_BANG_EQ = 115,
+  anon_sym_TILDE_EQ = 116,
+  anon_sym_LT = 117,
+  anon_sym_GT = 118,
+  anon_sym_LT_EQ = 119,
+  anon_sym_GT_EQ = 120,
+  anon_sym_AMP = 121,
+  anon_sym_PIPE = 122,
+  anon_sym_BANG = 123,
+  anon_sym_TILDE = 124,
+  anon_sym_EQ = 125,
+  anon_sym_POUND = 126,
+  anon_sym_LBRACK = 127,
+  anon_sym_RBRACK = 128,
+  anon_sym_LPAREN = 129,
+  anon_sym_RPAREN = 130,
+  sym__line_start = 131,
+  sym_source_file = 132,
+  sym__line = 133,
+  sym__statement = 134,
+  sym_comment = 135,
+  sym_line_comment = 136,
+  sym_block_comment = 137,
+  sym_double_string = 138,
+  sym_compound_string_depth_1 = 139,
+  sym__compound_content_1 = 140,
+  sym_compound_string_depth_2 = 141,
+  sym__compound_content_2 = 142,
+  sym_compound_string_depth_3 = 143,
+  sym__compound_content_3 = 144,
+  sym_compound_string_depth_4 = 145,
+  sym__compound_content_4 = 146,
+  sym_compound_string_depth_5 = 147,
+  sym__compound_content_5 = 148,
+  sym_compound_string_depth_6 = 149,
+  sym__compound_content_6 = 150,
+  sym_string = 151,
+  sym_local_macro_depth_1 = 152,
+  sym_local_macro_depth_2 = 153,
+  sym_local_macro_depth_3 = 154,
+  sym_local_macro_depth_4 = 155,
+  sym_local_macro_depth_5 = 156,
+  sym_local_macro_depth_6 = 157,
+  sym__macro_name = 158,
+  sym_global_macro = 159,
+  sym_program_definition = 160,
+  sym__program_line = 161,
+  sym_mata_block = 162,
+  sym__mata_line = 163,
+  sym_macro_definition = 164,
+  sym_command = 165,
+  sym_file_command = 166,
+  sym__file_command_name = 167,
+  sym__file_argument = 168,
+  sym_prefix = 169,
+  sym__argument = 170,
+  sym_using_clause = 171,
+  sym_factor_variable = 172,
+  sym_control_keyword = 173,
+  sym_type_keyword = 174,
+  sym_builtin_variable = 175,
+  sym_operator = 176,
+  aux_sym_source_file_repeat1 = 177,
+  aux_sym_block_comment_repeat1 = 178,
+  aux_sym_double_string_repeat1 = 179,
+  aux_sym_compound_string_depth_1_repeat1 = 180,
+  aux_sym_compound_string_depth_2_repeat1 = 181,
+  aux_sym_compound_string_depth_3_repeat1 = 182,
+  aux_sym_compound_string_depth_4_repeat1 = 183,
+  aux_sym_compound_string_depth_5_repeat1 = 184,
+  aux_sym_compound_string_depth_6_repeat1 = 185,
+  aux_sym_program_definition_repeat1 = 186,
+  aux_sym_mata_block_repeat1 = 187,
+  aux_sym_mata_block_repeat2 = 188,
+  aux_sym_macro_definition_repeat1 = 189,
+  aux_sym_macro_definition_repeat2 = 190,
+  aux_sym_file_command_repeat1 = 191,
+  aux_sym_file_command_repeat2 = 192,
+  aux_sym_using_clause_repeat1 = 193,
 };
 
 static const char * const ts_symbol_names[] = {
@@ -227,6 +256,26 @@ static const char * const ts_symbol_names[] = {
   [anon_sym_tempvar] = "tempvar",
   [anon_sym_tempname] = "tempname",
   [anon_sym_tempfile] = "tempfile",
+  [anon_sym_use] = "use",
+  [anon_sym_sysuse] = "sysuse",
+  [anon_sym_webuse] = "webuse",
+  [anon_sym_save] = "save",
+  [anon_sym_saveold] = "saveold",
+  [anon_sym_do] = "do",
+  [anon_sym_run] = "run",
+  [anon_sym_include] = "include",
+  [anon_sym_import] = "import",
+  [anon_sym_export] = "export",
+  [anon_sym_cd] = "cd",
+  [anon_sym_erase] = "erase",
+  [anon_sym_rm] = "rm",
+  [anon_sym_copy] = "copy",
+  [anon_sym_mkdir] = "mkdir",
+  [anon_sym_rmdir] = "rmdir",
+  [anon_sym_type] = "type",
+  [anon_sym_dir] = "dir",
+  [anon_sym_ls] = "ls",
+  [anon_sym_shell] = "shell",
   [anon_sym_by] = "by",
   [anon_sym_bysort] = "bysort",
   [anon_sym_bys] = "bys",
@@ -238,6 +287,8 @@ static const char * const ts_symbol_names[] = {
   [anon_sym_cap] = "cap",
   [anon_sym_sortpreserve] = "sortpreserve",
   [aux_sym__argument_token1] = "_argument_token1",
+  [anon_sym_using] = "using",
+  [sym_file_path] = "file_path",
   [sym_factor_operator] = "factor_operator",
   [anon_sym_if] = "if",
   [anon_sym_else] = "else",
@@ -331,8 +382,12 @@ static const char * const ts_symbol_names[] = {
   [sym__mata_line] = "_mata_line",
   [sym_macro_definition] = "macro_definition",
   [sym_command] = "command",
+  [sym_file_command] = "file_command",
+  [sym__file_command_name] = "identifier",
+  [sym__file_argument] = "_file_argument",
   [sym_prefix] = "prefix",
   [sym__argument] = "_argument",
+  [sym_using_clause] = "using_clause",
   [sym_factor_variable] = "factor_variable",
   [sym_control_keyword] = "control_keyword",
   [sym_type_keyword] = "type_keyword",
@@ -352,6 +407,9 @@ static const char * const ts_symbol_names[] = {
   [aux_sym_mata_block_repeat2] = "mata_block_repeat2",
   [aux_sym_macro_definition_repeat1] = "macro_definition_repeat1",
   [aux_sym_macro_definition_repeat2] = "macro_definition_repeat2",
+  [aux_sym_file_command_repeat1] = "file_command_repeat1",
+  [aux_sym_file_command_repeat2] = "file_command_repeat2",
+  [aux_sym_using_clause_repeat1] = "using_clause_repeat1",
 };
 
 static const TSSymbol ts_symbol_map[] = {
@@ -395,6 +453,26 @@ static const TSSymbol ts_symbol_map[] = {
   [anon_sym_tempvar] = anon_sym_tempvar,
   [anon_sym_tempname] = anon_sym_tempname,
   [anon_sym_tempfile] = anon_sym_tempfile,
+  [anon_sym_use] = anon_sym_use,
+  [anon_sym_sysuse] = anon_sym_sysuse,
+  [anon_sym_webuse] = anon_sym_webuse,
+  [anon_sym_save] = anon_sym_save,
+  [anon_sym_saveold] = anon_sym_saveold,
+  [anon_sym_do] = anon_sym_do,
+  [anon_sym_run] = anon_sym_run,
+  [anon_sym_include] = anon_sym_include,
+  [anon_sym_import] = anon_sym_import,
+  [anon_sym_export] = anon_sym_export,
+  [anon_sym_cd] = anon_sym_cd,
+  [anon_sym_erase] = anon_sym_erase,
+  [anon_sym_rm] = anon_sym_rm,
+  [anon_sym_copy] = anon_sym_copy,
+  [anon_sym_mkdir] = anon_sym_mkdir,
+  [anon_sym_rmdir] = anon_sym_rmdir,
+  [anon_sym_type] = anon_sym_type,
+  [anon_sym_dir] = anon_sym_dir,
+  [anon_sym_ls] = anon_sym_ls,
+  [anon_sym_shell] = anon_sym_shell,
   [anon_sym_by] = anon_sym_by,
   [anon_sym_bysort] = anon_sym_bysort,
   [anon_sym_bys] = anon_sym_bys,
@@ -406,6 +484,8 @@ static const TSSymbol ts_symbol_map[] = {
   [anon_sym_cap] = anon_sym_cap,
   [anon_sym_sortpreserve] = anon_sym_sortpreserve,
   [aux_sym__argument_token1] = aux_sym__argument_token1,
+  [anon_sym_using] = anon_sym_using,
+  [sym_file_path] = sym_file_path,
   [sym_factor_operator] = sym_factor_operator,
   [anon_sym_if] = anon_sym_if,
   [anon_sym_else] = anon_sym_else,
@@ -499,8 +579,12 @@ static const TSSymbol ts_symbol_map[] = {
   [sym__mata_line] = sym__mata_line,
   [sym_macro_definition] = sym_macro_definition,
   [sym_command] = sym_command,
+  [sym_file_command] = sym_file_command,
+  [sym__file_command_name] = sym_identifier,
+  [sym__file_argument] = sym__file_argument,
   [sym_prefix] = sym_prefix,
   [sym__argument] = sym__argument,
+  [sym_using_clause] = sym_using_clause,
   [sym_factor_variable] = sym_factor_variable,
   [sym_control_keyword] = sym_control_keyword,
   [sym_type_keyword] = sym_type_keyword,
@@ -520,6 +604,9 @@ static const TSSymbol ts_symbol_map[] = {
   [aux_sym_mata_block_repeat2] = aux_sym_mata_block_repeat2,
   [aux_sym_macro_definition_repeat1] = aux_sym_macro_definition_repeat1,
   [aux_sym_macro_definition_repeat2] = aux_sym_macro_definition_repeat2,
+  [aux_sym_file_command_repeat1] = aux_sym_file_command_repeat1,
+  [aux_sym_file_command_repeat2] = aux_sym_file_command_repeat2,
+  [aux_sym_using_clause_repeat1] = aux_sym_using_clause_repeat1,
 };
 
 static const TSSymbolMetadata ts_symbol_metadata[] = {
@@ -683,6 +770,86 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = true,
     .named = false,
   },
+  [anon_sym_use] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_sysuse] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_webuse] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_save] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_saveold] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_do] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_run] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_include] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_import] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_export] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_cd] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_erase] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_rm] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_copy] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_mkdir] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_rmdir] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_type] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_dir] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_ls] = {
+    .visible = true,
+    .named = false,
+  },
+  [anon_sym_shell] = {
+    .visible = true,
+    .named = false,
+  },
   [anon_sym_by] = {
     .visible = true,
     .named = false,
@@ -726,6 +893,14 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
   [aux_sym__argument_token1] = {
     .visible = false,
     .named = false,
+  },
+  [anon_sym_using] = {
+    .visible = true,
+    .named = false,
+  },
+  [sym_file_path] = {
+    .visible = true,
+    .named = true,
   },
   [sym_factor_operator] = {
     .visible = true,
@@ -1099,12 +1274,28 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = true,
     .named = true,
   },
+  [sym_file_command] = {
+    .visible = true,
+    .named = true,
+  },
+  [sym__file_command_name] = {
+    .visible = true,
+    .named = true,
+  },
+  [sym__file_argument] = {
+    .visible = false,
+    .named = true,
+  },
   [sym_prefix] = {
     .visible = true,
     .named = true,
   },
   [sym__argument] = {
     .visible = false,
+    .named = true,
+  },
+  [sym_using_clause] = {
+    .visible = true,
     .named = true,
   },
   [sym_factor_variable] = {
@@ -1180,6 +1371,18 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .named = false,
   },
   [aux_sym_macro_definition_repeat2] = {
+    .visible = false,
+    .named = false,
+  },
+  [aux_sym_file_command_repeat1] = {
+    .visible = false,
+    .named = false,
+  },
+  [aux_sym_file_command_repeat2] = {
+    .visible = false,
+    .named = false,
+  },
+  [aux_sym_using_clause_repeat1] = {
     .visible = false,
     .named = false,
   },
@@ -1266,26 +1469,26 @@ static const TSStateId ts_primary_state_ids[STATE_COUNT] = {
   [33] = 33,
   [34] = 34,
   [35] = 35,
-  [36] = 36,
-  [37] = 37,
-  [38] = 38,
-  [39] = 39,
-  [40] = 40,
-  [41] = 41,
-  [42] = 42,
-  [43] = 43,
-  [44] = 44,
-  [45] = 45,
-  [46] = 46,
-  [47] = 47,
-  [48] = 48,
-  [49] = 49,
-  [50] = 45,
-  [51] = 51,
-  [52] = 52,
-  [53] = 53,
+  [36] = 31,
+  [37] = 25,
+  [38] = 22,
+  [39] = 33,
+  [40] = 23,
+  [41] = 32,
+  [42] = 34,
+  [43] = 26,
+  [44] = 27,
+  [45] = 20,
+  [46] = 28,
+  [47] = 24,
+  [48] = 21,
+  [49] = 18,
+  [50] = 35,
+  [51] = 29,
+  [52] = 17,
+  [53] = 30,
   [54] = 54,
-  [55] = 37,
+  [55] = 55,
   [56] = 56,
   [57] = 57,
   [58] = 58,
@@ -1295,73 +1498,73 @@ static const TSStateId ts_primary_state_ids[STATE_COUNT] = {
   [62] = 62,
   [63] = 63,
   [64] = 64,
-  [65] = 58,
-  [66] = 58,
+  [65] = 65,
+  [66] = 66,
   [67] = 67,
   [68] = 68,
-  [69] = 67,
-  [70] = 68,
+  [69] = 69,
+  [70] = 70,
   [71] = 71,
-  [72] = 67,
-  [73] = 68,
+  [72] = 72,
+  [73] = 73,
   [74] = 74,
   [75] = 75,
   [76] = 76,
   [77] = 77,
   [78] = 78,
-  [79] = 16,
-  [80] = 17,
-  [81] = 9,
-  [82] = 23,
-  [83] = 20,
-  [84] = 84,
-  [85] = 85,
-  [86] = 17,
-  [87] = 20,
+  [79] = 79,
+  [80] = 80,
+  [81] = 81,
+  [82] = 82,
+  [83] = 83,
+  [84] = 75,
+  [85] = 70,
+  [86] = 75,
+  [87] = 70,
   [88] = 88,
   [89] = 89,
   [90] = 90,
-  [91] = 21,
-  [92] = 25,
+  [91] = 91,
+  [92] = 92,
   [93] = 93,
-  [94] = 94,
+  [94] = 89,
   [95] = 95,
-  [96] = 96,
+  [96] = 95,
   [97] = 97,
   [98] = 98,
   [99] = 99,
-  [100] = 100,
-  [101] = 101,
-  [102] = 102,
+  [100] = 91,
+  [101] = 91,
+  [102] = 91,
   [103] = 103,
-  [104] = 104,
+  [104] = 103,
   [105] = 105,
   [106] = 106,
-  [107] = 107,
+  [107] = 103,
   [108] = 108,
-  [109] = 109,
-  [110] = 110,
-  [111] = 111,
-  [112] = 112,
+  [109] = 106,
+  [110] = 103,
+  [111] = 106,
+  [112] = 106,
   [113] = 113,
   [114] = 114,
   [115] = 115,
   [116] = 116,
   [117] = 117,
-  [118] = 24,
+  [118] = 118,
   [119] = 119,
-  [120] = 21,
-  [121] = 121,
-  [122] = 122,
-  [123] = 123,
-  [124] = 124,
-  [125] = 125,
-  [126] = 126,
+  [120] = 120,
+  [121] = 17,
+  [122] = 26,
+  [123] = 27,
+  [124] = 31,
+  [125] = 30,
+  [126] = 31,
   [127] = 127,
-  [128] = 128,
+  [128] = 27,
   [129] = 129,
-  [130] = 130,
-  [131] = 131,
+  [130] = 35,
+  [131] = 18,
   [132] = 132,
   [133] = 133,
   [134] = 134,
@@ -1369,32 +1572,76 @@ static const TSStateId ts_primary_state_ids[STATE_COUNT] = {
   [136] = 136,
   [137] = 137,
   [138] = 138,
-  [139] = 23,
+  [139] = 139,
   [140] = 140,
-  [141] = 17,
-  [142] = 20,
+  [141] = 141,
+  [142] = 142,
   [143] = 143,
-  [144] = 119,
+  [144] = 144,
   [145] = 145,
-  [146] = 26,
-  [147] = 123,
-  [148] = 25,
-  [149] = 136,
-  [150] = 138,
+  [146] = 146,
+  [147] = 147,
+  [148] = 148,
+  [149] = 149,
+  [150] = 150,
   [151] = 151,
   [152] = 152,
-  [153] = 123,
-  [154] = 136,
-  [155] = 138,
-  [156] = 123,
-  [157] = 138,
-  [158] = 130,
-  [159] = 19,
-  [160] = 124,
+  [153] = 153,
+  [154] = 154,
+  [155] = 155,
+  [156] = 156,
+  [157] = 157,
+  [158] = 158,
+  [159] = 32,
+  [160] = 160,
   [161] = 161,
-  [162] = 124,
-  [163] = 124,
+  [162] = 162,
+  [163] = 163,
   [164] = 164,
+  [165] = 165,
+  [166] = 166,
+  [167] = 150,
+  [168] = 168,
+  [169] = 30,
+  [170] = 170,
+  [171] = 27,
+  [172] = 31,
+  [173] = 173,
+  [174] = 174,
+  [175] = 175,
+  [176] = 176,
+  [177] = 34,
+  [178] = 178,
+  [179] = 175,
+  [180] = 18,
+  [181] = 181,
+  [182] = 164,
+  [183] = 150,
+  [184] = 174,
+  [185] = 174,
+  [186] = 33,
+  [187] = 187,
+  [188] = 160,
+  [189] = 189,
+  [190] = 164,
+  [191] = 150,
+  [192] = 192,
+  [193] = 35,
+  [194] = 160,
+  [195] = 164,
+  [196] = 150,
+  [197] = 160,
+  [198] = 198,
+  [199] = 178,
+  [200] = 200,
+  [201] = 166,
+  [202] = 178,
+  [203] = 203,
+  [204] = 166,
+  [205] = 205,
+  [206] = 166,
+  [207] = 166,
+  [208] = 160,
 };
 
 static bool ts_lex(TSLexer *lexer, TSStateId state) {
@@ -1402,673 +1649,1515 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
   eof = lexer->eof(lexer);
   switch (state) {
     case 0:
-      if (eof) ADVANCE(18);
+      if (eof) ADVANCE(22);
       ADVANCE_MAP(
-        '\n', 19,
+        '\n', 23,
         '\r', 1,
-        '!', 97,
-        '"', 35,
-        '#', 100,
-        '$', 49,
-        '&', 95,
-        '\'', 46,
-        '(', 103,
-        ')', 104,
-        '*', 25,
-        '+', 85,
-        '-', 86,
-        '.', 77,
-        '/', 32,
-        ':', 54,
-        '<', 91,
-        '=', 99,
-        '>', 92,
-        '[', 101,
-        ']', 102,
-        '^', 87,
-        '`', 45,
-        'b', 79,
-        'e', 83,
-        'i', 78,
-        '{', 55,
-        '|', 96,
-        '}', 51,
-        '~', 98,
+        '!', 141,
+        '"', 42,
+        '#', 147,
+        '$', 56,
+        '&', 137,
+        '\'', 53,
+        '(', 153,
+        ')', 155,
+        '*', 31,
+        '+', 117,
+        '-', 119,
+        '.', 101,
+        '/', 39,
+        ':', 62,
+        '<', 129,
+        '=', 145,
+        '>', 131,
+        '[', 149,
+        ']', 151,
+        '^', 121,
+        '`', 52,
+        'b', 103,
+        'e', 112,
+        'i', 102,
+        '{', 63,
+        '|', 139,
+        '}', 58,
+        '~', 143,
       );
       if (lookahead == '\t' ||
           lookahead == ' ') SKIP(0);
       if (lookahead == 'c' ||
-          lookahead == 'o') ADVANCE(81);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(47);
+          lookahead == 'o') ADVANCE(105);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(54);
       if (('A' <= lookahead && lookahead <= 'Z') ||
-          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(116);
       if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(71);
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(85);
       END_STATE();
     case 1:
-      if (lookahead == '\n') ADVANCE(19);
+      if (lookahead == '\n') ADVANCE(23);
       END_STATE();
     case 2:
       ADVANCE_MAP(
-        '\n', 19,
+        '\n', 23,
         '\r', 1,
-        '!', 97,
-        '"', 34,
-        '#', 100,
-        '$', 49,
-        '&', 95,
-        '(', 103,
-        ')', 104,
-        '*', 24,
-        '+', 85,
-        '-', 86,
-        '.', 77,
-        '/', 32,
-        '<', 91,
-        '=', 99,
-        '>', 92,
-        '[', 101,
-        ']', 102,
-        '^', 87,
-        '`', 45,
-        'b', 79,
-        'e', 83,
-        'i', 78,
-        '|', 96,
-        '~', 98,
+        '!', 141,
+        '"', 41,
+        '#', 147,
+        '$', 56,
+        '&', 137,
+        '(', 153,
+        ')', 155,
+        '*', 30,
+        '+', 117,
+        '-', 119,
+        '.', 101,
+        '/', 39,
+        '<', 129,
+        '=', 145,
+        '>', 131,
+        '[', 149,
+        ']', 151,
+        '^', 121,
+        '`', 52,
+        'b', 103,
+        'e', 112,
+        'i', 102,
+        '|', 139,
+        '~', 143,
       );
       if (lookahead == '\t' ||
           lookahead == ' ') SKIP(2);
       if (lookahead == 'c' ||
-          lookahead == 'o') ADVANCE(81);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(73);
+          lookahead == 'o') ADVANCE(105);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(95);
       if (('A' <= lookahead && lookahead <= 'Z') ||
-          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(116);
       if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(71);
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(85);
       END_STATE();
     case 3:
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead == '\r') ADVANCE(1);
-      if (lookahead == '/') ADVANCE(12);
-      if (lookahead == 'e') ADVANCE(83);
-      if (lookahead == '\t' ||
-          lookahead == ' ') SKIP(3);
-      if (('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
-      END_STATE();
-    case 4:
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead == '\r') ADVANCE(62);
-      if (lookahead == ':') ADVANCE(54);
-      if (lookahead == '{') ADVANCE(55);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(60);
-      if (lookahead != 0) ADVANCE(63);
-      END_STATE();
-    case 5:
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead == '\r') ADVANCE(62);
-      if (lookahead == '{') ADVANCE(55);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(61);
-      if (lookahead != 0) ADVANCE(63);
-      END_STATE();
-    case 6:
-      if (lookahead == '"') ADVANCE(35);
-      if (lookahead == '$') ADVANCE(49);
-      if (lookahead == '\\') ADVANCE(15);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(36);
-      if (lookahead != 0 &&
-          lookahead != '\t' &&
-          lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(37);
-      END_STATE();
-    case 7:
-      if (lookahead == '"') ADVANCE(9);
-      if (lookahead == '$') ADVANCE(49);
-      if (lookahead == '`') ADVANCE(45);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(42);
-      if (lookahead != 0 &&
-          lookahead != '\t' &&
-          lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(43);
-      END_STATE();
-    case 8:
-      if (lookahead == '\'') ADVANCE(43);
-      END_STATE();
-    case 9:
-      if (lookahead == '\'') ADVANCE(41);
-      if (lookahead != 0) ADVANCE(43);
-      END_STATE();
-    case 10:
-      if (lookahead == ')') ADVANCE(13);
-      if (lookahead != 0 &&
-          lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(10);
-      END_STATE();
-    case 11:
-      if (lookahead == '*') ADVANCE(25);
-      if (lookahead == '/') ADVANCE(31);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(29);
-      if (lookahead != 0) ADVANCE(30);
-      END_STATE();
-    case 12:
-      if (lookahead == '*') ADVANCE(28);
-      if (lookahead == '/') ADVANCE(21);
-      END_STATE();
-    case 13:
-      if (lookahead == '.') ADVANCE(72);
-      END_STATE();
-    case 14:
-      if (lookahead == '}') ADVANCE(51);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(64);
-      if (lookahead != 0 &&
-          lookahead != '{') ADVANCE(65);
-      END_STATE();
-    case 15:
-      if (lookahead != 0 &&
-          lookahead != '\n') ADVANCE(38);
-      END_STATE();
-    case 16:
-      if (lookahead != 0 &&
-          lookahead != '\'') ADVANCE(43);
-      END_STATE();
-    case 17:
-      if (eof) ADVANCE(18);
       ADVANCE_MAP(
-        '\n', 19,
+        '\n', 23,
         '\r', 1,
-        '$', 49,
-        '\'', 46,
-        '*', 24,
-        '/', 12,
-        '`', 44,
-        '}', 51,
+        '!', 142,
+        '"', 41,
+        '#', 148,
+        '$', 56,
+        '&', 138,
+        '(', 154,
+        ')', 156,
+        '*', 32,
+        '+', 118,
+        '-', 120,
+        '.', 91,
+        '/', 87,
+        '<', 130,
+        '=', 146,
+        '>', 132,
+        '[', 150,
+        '\\', 93,
+        ']', 152,
+        '^', 122,
+        '`', 52,
+        'b', 107,
+        'e', 113,
+        'i', 106,
+        '|', 140,
+        '~', 144,
       );
       if (lookahead == '\t' ||
-          lookahead == ' ') SKIP(17);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(48);
+          lookahead == ' ') SKIP(3);
+      if (('\'' <= lookahead && lookahead <= ',')) ADVANCE(85);
+      if (lookahead == 'c' ||
+          lookahead == 'o') ADVANCE(109);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(96);
+      if (('A' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 4:
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead == '\r') ADVANCE(1);
+      if (lookahead == '/') ADVANCE(15);
+      if (lookahead == 'e') ADVANCE(112);
+      if (lookahead == '\t' ||
+          lookahead == ' ') SKIP(4);
       if (('A' <= lookahead && lookahead <= 'Z') ||
-          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
       END_STATE();
-    case 18:
-      ACCEPT_TOKEN(ts_builtin_sym_end);
-      END_STATE();
-    case 19:
-      ACCEPT_TOKEN(sym__newline);
-      END_STATE();
-    case 20:
-      ACCEPT_TOKEN(aux_sym_line_comment_token1);
-      if (lookahead == '/') ADVANCE(22);
+    case 5:
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead == '\r') ADVANCE(70);
+      if (lookahead == ':') ADVANCE(62);
+      if (lookahead == '{') ADVANCE(63);
       if (lookahead == '\t' ||
-          lookahead == 0x0b ||
-          lookahead == '\f' ||
-          lookahead == ' ') ADVANCE(23);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(22);
+          lookahead == ' ') ADVANCE(68);
+      if (lookahead != 0) ADVANCE(71);
       END_STATE();
-    case 21:
-      ACCEPT_TOKEN(aux_sym_line_comment_token1);
-      if (lookahead == '/') ADVANCE(23);
-      if (lookahead != 0 &&
-          lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(23);
-      END_STATE();
-    case 22:
-      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+    case 6:
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead == '\r') ADVANCE(70);
+      if (lookahead == '{') ADVANCE(63);
       if (lookahead == '\t' ||
-          lookahead == 0x0b ||
-          lookahead == '\f' ||
-          lookahead == ' ') ADVANCE(23);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(22);
+          lookahead == ' ') ADVANCE(69);
+      if (lookahead != 0) ADVANCE(71);
       END_STATE();
-    case 23:
-      ACCEPT_TOKEN(aux_sym_line_comment_token1);
-      if (lookahead != 0 &&
-          lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(23);
-      END_STATE();
-    case 24:
-      ACCEPT_TOKEN(anon_sym_STAR);
-      END_STATE();
-    case 25:
-      ACCEPT_TOKEN(anon_sym_STAR);
-      if (lookahead == '/') ADVANCE(33);
-      END_STATE();
-    case 26:
-      ACCEPT_TOKEN(aux_sym_line_comment_token3);
+    case 7:
+      if (lookahead == '"') ADVANCE(42);
+      if (lookahead == '$') ADVANCE(56);
+      if (lookahead == '\\') ADVANCE(19);
       if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(26);
+          lookahead == ' ') ADVANCE(43);
       if (lookahead != 0 &&
           lookahead != '\t' &&
           lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(27);
+          lookahead != '\r') ADVANCE(44);
+      END_STATE();
+    case 8:
+      if (lookahead == '"') ADVANCE(47);
+      END_STATE();
+    case 9:
+      if (lookahead == '"') ADVANCE(41);
+      if (lookahead == '`') ADVANCE(8);
+      if (lookahead == '\t' ||
+          lookahead == ' ') SKIP(9);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(115);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',') ADVANCE(18);
+      END_STATE();
+    case 10:
+      if (lookahead == '"') ADVANCE(12);
+      if (lookahead == '$') ADVANCE(56);
+      if (lookahead == '`') ADVANCE(52);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(49);
+      if (lookahead != 0 &&
+          lookahead != '\t' &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(50);
+      END_STATE();
+    case 11:
+      if (lookahead == '\'') ADVANCE(50);
+      END_STATE();
+    case 12:
+      if (lookahead == '\'') ADVANCE(48);
+      if (lookahead != 0) ADVANCE(50);
+      END_STATE();
+    case 13:
+      if (lookahead == ')') ADVANCE(16);
+      if (lookahead != 0 &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(13);
+      END_STATE();
+    case 14:
+      if (lookahead == '*') ADVANCE(31);
+      if (lookahead == '/') ADVANCE(38);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(36);
+      if (lookahead != 0) ADVANCE(37);
+      END_STATE();
+    case 15:
+      if (lookahead == '*') ADVANCE(35);
+      if (lookahead == '/') ADVANCE(25);
+      END_STATE();
+    case 16:
+      if (lookahead == '.') ADVANCE(94);
+      END_STATE();
+    case 17:
+      if (lookahead == '}') ADVANCE(58);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(72);
+      if (lookahead != 0 &&
+          lookahead != '{') ADVANCE(73);
+      END_STATE();
+    case 18:
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(18);
+      END_STATE();
+    case 19:
+      if (lookahead != 0 &&
+          lookahead != '\n') ADVANCE(45);
+      END_STATE();
+    case 20:
+      if (lookahead != 0 &&
+          lookahead != '\'') ADVANCE(50);
+      END_STATE();
+    case 21:
+      if (eof) ADVANCE(22);
+      ADVANCE_MAP(
+        '\n', 23,
+        '\r', 1,
+        '$', 56,
+        '\'', 53,
+        '*', 30,
+        '/', 15,
+        '`', 51,
+        '}', 58,
+      );
+      if (lookahead == '\t' ||
+          lookahead == ' ') SKIP(21);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(55);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          ('_' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 22:
+      ACCEPT_TOKEN(ts_builtin_sym_end);
+      END_STATE();
+    case 23:
+      ACCEPT_TOKEN(sym__newline);
+      END_STATE();
+    case 24:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      if (lookahead == '/') ADVANCE(28);
+      if (lookahead == '\t' ||
+          lookahead == 0x0b ||
+          lookahead == '\f' ||
+          lookahead == ' ') ADVANCE(29);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(28);
+      END_STATE();
+    case 25:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      if (lookahead == '/') ADVANCE(29);
+      if (lookahead != 0 &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(29);
+      END_STATE();
+    case 26:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      ADVANCE_MAP(
+        '/', 27,
+        '.', 27,
+        '\\', 27,
+        '\t', 29,
+        0x0b, 29,
+        '\f', 29,
+        ' ', 29,
+        '"', 28,
+        '$', 28,
+        '\'', 28,
+        ',', 28,
+        '`', 28,
+      );
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(27);
       END_STATE();
     case 27:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      ADVANCE_MAP(
+        '.', 27,
+        '/', 27,
+        '\\', 27,
+        '\t', 29,
+        0x0b, 29,
+        '\f', 29,
+        ' ', 29,
+        '"', 28,
+        '$', 28,
+        '\'', 28,
+        ',', 28,
+        '`', 28,
+      );
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(27);
+      END_STATE();
+    case 28:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      if (lookahead == '\t' ||
+          lookahead == 0x0b ||
+          lookahead == '\f' ||
+          lookahead == ' ') ADVANCE(29);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(28);
+      END_STATE();
+    case 29:
+      ACCEPT_TOKEN(aux_sym_line_comment_token1);
+      if (lookahead != 0 &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(29);
+      END_STATE();
+    case 30:
+      ACCEPT_TOKEN(anon_sym_STAR);
+      END_STATE();
+    case 31:
+      ACCEPT_TOKEN(anon_sym_STAR);
+      if (lookahead == '/') ADVANCE(40);
+      END_STATE();
+    case 32:
+      ACCEPT_TOKEN(anon_sym_STAR);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 33:
+      ACCEPT_TOKEN(aux_sym_line_comment_token3);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(33);
+      if (lookahead != 0 &&
+          lookahead != '\t' &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(34);
+      END_STATE();
+    case 34:
       ACCEPT_TOKEN(aux_sym_line_comment_token3);
       if (lookahead != 0 &&
           lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(27);
+          lookahead != '\r') ADVANCE(34);
       END_STATE();
-    case 28:
+    case 35:
       ACCEPT_TOKEN(anon_sym_SLASH_STAR);
       END_STATE();
-    case 29:
+    case 36:
       ACCEPT_TOKEN(aux_sym_block_comment_token1);
-      if (lookahead == '*') ADVANCE(25);
-      if (lookahead == '/') ADVANCE(31);
+      if (lookahead == '*') ADVANCE(31);
+      if (lookahead == '/') ADVANCE(38);
       if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(29);
-      if (lookahead != 0) ADVANCE(30);
+          lookahead == ' ') ADVANCE(36);
+      if (lookahead != 0) ADVANCE(37);
       END_STATE();
-    case 30:
+    case 37:
       ACCEPT_TOKEN(aux_sym_block_comment_token1);
       if (lookahead != 0 &&
           lookahead != '*' &&
-          lookahead != '/') ADVANCE(30);
-      END_STATE();
-    case 31:
-      ACCEPT_TOKEN(anon_sym_SLASH);
-      if (lookahead == '*') ADVANCE(28);
-      END_STATE();
-    case 32:
-      ACCEPT_TOKEN(anon_sym_SLASH);
-      if (lookahead == '*') ADVANCE(28);
-      if (lookahead == '/') ADVANCE(20);
-      END_STATE();
-    case 33:
-      ACCEPT_TOKEN(anon_sym_STAR_SLASH);
-      END_STATE();
-    case 34:
-      ACCEPT_TOKEN(anon_sym_DQUOTE);
-      END_STATE();
-    case 35:
-      ACCEPT_TOKEN(anon_sym_DQUOTE);
-      if (lookahead == '"') ADVANCE(39);
-      END_STATE();
-    case 36:
-      ACCEPT_TOKEN(aux_sym_double_string_token1);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(36);
-      if (lookahead != 0 &&
-          lookahead != '\t' &&
-          lookahead != '\n' &&
-          lookahead != '\r' &&
-          lookahead != '"' &&
-          lookahead != '$' &&
-          lookahead != '\\') ADVANCE(37);
-      END_STATE();
-    case 37:
-      ACCEPT_TOKEN(aux_sym_double_string_token1);
-      if (lookahead != 0 &&
-          lookahead != '\n' &&
-          lookahead != '\r' &&
-          lookahead != '"' &&
-          lookahead != '$' &&
-          lookahead != '\\') ADVANCE(37);
+          lookahead != '/') ADVANCE(37);
       END_STATE();
     case 38:
-      ACCEPT_TOKEN(aux_sym_double_string_token2);
+      ACCEPT_TOKEN(anon_sym_SLASH);
+      if (lookahead == '*') ADVANCE(35);
       END_STATE();
     case 39:
-      ACCEPT_TOKEN(anon_sym_DQUOTE_DQUOTE);
+      ACCEPT_TOKEN(anon_sym_SLASH);
+      if (lookahead == '*') ADVANCE(35);
+      if (lookahead == '/') ADVANCE(24);
       END_STATE();
     case 40:
-      ACCEPT_TOKEN(anon_sym_BQUOTE_DQUOTE);
+      ACCEPT_TOKEN(anon_sym_STAR_SLASH);
       END_STATE();
     case 41:
-      ACCEPT_TOKEN(anon_sym_DQUOTE_SQUOTE);
+      ACCEPT_TOKEN(anon_sym_DQUOTE);
       END_STATE();
     case 42:
-      ACCEPT_TOKEN(sym__compound_text);
-      if (lookahead == '"') ADVANCE(9);
-      if (lookahead == '$') ADVANCE(49);
-      if (lookahead == '`') ADVANCE(45);
+      ACCEPT_TOKEN(anon_sym_DQUOTE);
+      if (lookahead == '"') ADVANCE(46);
+      END_STATE();
+    case 43:
+      ACCEPT_TOKEN(aux_sym_double_string_token1);
       if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(42);
+          lookahead == ' ') ADVANCE(43);
       if (lookahead != 0 &&
           lookahead != '\t' &&
           lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(43);
+          lookahead != '\r' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\\') ADVANCE(44);
       END_STATE();
-    case 43:
-      ACCEPT_TOKEN(sym__compound_text);
-      if (lookahead == '"') ADVANCE(16);
-      if (lookahead == '`') ADVANCE(8);
+    case 44:
+      ACCEPT_TOKEN(aux_sym_double_string_token1);
       if (lookahead != 0 &&
           lookahead != '\n' &&
           lookahead != '\r' &&
-          lookahead != '$') ADVANCE(43);
-      END_STATE();
-    case 44:
-      ACCEPT_TOKEN(anon_sym_BQUOTE);
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\\') ADVANCE(44);
       END_STATE();
     case 45:
-      ACCEPT_TOKEN(anon_sym_BQUOTE);
-      if (lookahead == '"') ADVANCE(40);
+      ACCEPT_TOKEN(aux_sym_double_string_token2);
       END_STATE();
     case 46:
-      ACCEPT_TOKEN(anon_sym_SQUOTE);
+      ACCEPT_TOKEN(anon_sym_DQUOTE_DQUOTE);
       END_STATE();
     case 47:
-      ACCEPT_TOKEN(aux_sym__macro_name_token1);
-      if (lookahead == '.') ADVANCE(74);
-      if (lookahead == 'E' ||
-          lookahead == 'e') ADVANCE(69);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(47);
+      ACCEPT_TOKEN(anon_sym_BQUOTE_DQUOTE);
       END_STATE();
     case 48:
-      ACCEPT_TOKEN(aux_sym__macro_name_token1);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(48);
+      ACCEPT_TOKEN(anon_sym_DQUOTE_SQUOTE);
       END_STATE();
     case 49:
-      ACCEPT_TOKEN(anon_sym_DOLLAR);
-      if (lookahead == '{') ADVANCE(50);
+      ACCEPT_TOKEN(sym__compound_text);
+      if (lookahead == '"') ADVANCE(12);
+      if (lookahead == '$') ADVANCE(56);
+      if (lookahead == '`') ADVANCE(52);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(49);
+      if (lookahead != 0 &&
+          lookahead != '\t' &&
+          lookahead != '\n' &&
+          lookahead != '\r') ADVANCE(50);
       END_STATE();
     case 50:
-      ACCEPT_TOKEN(anon_sym_DOLLAR_LBRACE);
+      ACCEPT_TOKEN(sym__compound_text);
+      if (lookahead == '"') ADVANCE(20);
+      if (lookahead == '`') ADVANCE(11);
+      if (lookahead != 0 &&
+          lookahead != '\n' &&
+          lookahead != '\r' &&
+          lookahead != '$') ADVANCE(50);
       END_STATE();
     case 51:
-      ACCEPT_TOKEN(anon_sym_RBRACE);
+      ACCEPT_TOKEN(anon_sym_BQUOTE);
       END_STATE();
     case 52:
+      ACCEPT_TOKEN(anon_sym_BQUOTE);
+      if (lookahead == '"') ADVANCE(47);
+      END_STATE();
+    case 53:
+      ACCEPT_TOKEN(anon_sym_SQUOTE);
+      END_STATE();
+    case 54:
+      ACCEPT_TOKEN(aux_sym__macro_name_token1);
+      if (lookahead == '.') ADVANCE(97);
+      if (lookahead == 'E' ||
+          lookahead == 'e') ADVANCE(80);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(54);
+      END_STATE();
+    case 55:
+      ACCEPT_TOKEN(aux_sym__macro_name_token1);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(55);
+      END_STATE();
+    case 56:
+      ACCEPT_TOKEN(anon_sym_DOLLAR);
+      if (lookahead == '{') ADVANCE(57);
+      END_STATE();
+    case 57:
+      ACCEPT_TOKEN(anon_sym_DOLLAR_LBRACE);
+      END_STATE();
+    case 58:
+      ACCEPT_TOKEN(anon_sym_RBRACE);
+      END_STATE();
+    case 59:
+      ACCEPT_TOKEN(anon_sym_end);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 60:
       ACCEPT_TOKEN(anon_sym_end);
       if (('0' <= lookahead && lookahead <= '9') ||
           ('A' <= lookahead && lookahead <= 'Z') ||
           lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
-      END_STATE();
-    case 53:
-      ACCEPT_TOKEN(anon_sym_end);
-      if (lookahead != 0 &&
-          lookahead != '\n') ADVANCE(59);
-      END_STATE();
-    case 54:
-      ACCEPT_TOKEN(anon_sym_COLON);
-      END_STATE();
-    case 55:
-      ACCEPT_TOKEN(anon_sym_LBRACE);
-      END_STATE();
-    case 56:
-      ACCEPT_TOKEN(aux_sym__mata_line_token1);
-      if (lookahead == 'd') ADVANCE(53);
-      if (lookahead != 0 &&
-          lookahead != '\n') ADVANCE(59);
-      END_STATE();
-    case 57:
-      ACCEPT_TOKEN(aux_sym__mata_line_token1);
-      if (lookahead == 'e') ADVANCE(58);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(57);
-      if (lookahead != 0 &&
-          lookahead != '\t' &&
-          lookahead != '\n') ADVANCE(59);
-      END_STATE();
-    case 58:
-      ACCEPT_TOKEN(aux_sym__mata_line_token1);
-      if (lookahead == 'n') ADVANCE(56);
-      if (lookahead != 0 &&
-          lookahead != '\n') ADVANCE(59);
-      END_STATE();
-    case 59:
-      ACCEPT_TOKEN(aux_sym__mata_line_token1);
-      if (lookahead != 0 &&
-          lookahead != '\n') ADVANCE(59);
-      END_STATE();
-    case 60:
-      ACCEPT_TOKEN(sym__mata_inline_content);
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead == '\r') ADVANCE(62);
-      if (lookahead == ':') ADVANCE(54);
-      if (lookahead == '{') ADVANCE(55);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(60);
-      if (lookahead != 0) ADVANCE(63);
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
       END_STATE();
     case 61:
-      ACCEPT_TOKEN(sym__mata_inline_content);
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead == '\r') ADVANCE(62);
-      if (lookahead == '{') ADVANCE(55);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(61);
-      if (lookahead != 0) ADVANCE(63);
+      ACCEPT_TOKEN(anon_sym_end);
+      if (lookahead != 0 &&
+          lookahead != '\n') ADVANCE(67);
       END_STATE();
     case 62:
-      ACCEPT_TOKEN(sym__mata_inline_content);
-      if (lookahead == '\n') ADVANCE(19);
-      if (lookahead != 0 &&
-          lookahead != '{') ADVANCE(63);
+      ACCEPT_TOKEN(anon_sym_COLON);
       END_STATE();
     case 63:
+      ACCEPT_TOKEN(anon_sym_LBRACE);
+      END_STATE();
+    case 64:
+      ACCEPT_TOKEN(aux_sym__mata_line_token1);
+      if (lookahead == 'd') ADVANCE(61);
+      if (lookahead != 0 &&
+          lookahead != '\n') ADVANCE(67);
+      END_STATE();
+    case 65:
+      ACCEPT_TOKEN(aux_sym__mata_line_token1);
+      if (lookahead == 'e') ADVANCE(66);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(65);
+      if (lookahead != 0 &&
+          lookahead != '\t' &&
+          lookahead != '\n') ADVANCE(67);
+      END_STATE();
+    case 66:
+      ACCEPT_TOKEN(aux_sym__mata_line_token1);
+      if (lookahead == 'n') ADVANCE(64);
+      if (lookahead != 0 &&
+          lookahead != '\n') ADVANCE(67);
+      END_STATE();
+    case 67:
+      ACCEPT_TOKEN(aux_sym__mata_line_token1);
+      if (lookahead != 0 &&
+          lookahead != '\n') ADVANCE(67);
+      END_STATE();
+    case 68:
+      ACCEPT_TOKEN(sym__mata_inline_content);
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead == '\r') ADVANCE(70);
+      if (lookahead == ':') ADVANCE(62);
+      if (lookahead == '{') ADVANCE(63);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(68);
+      if (lookahead != 0) ADVANCE(71);
+      END_STATE();
+    case 69:
+      ACCEPT_TOKEN(sym__mata_inline_content);
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead == '\r') ADVANCE(70);
+      if (lookahead == '{') ADVANCE(63);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(69);
+      if (lookahead != 0) ADVANCE(71);
+      END_STATE();
+    case 70:
+      ACCEPT_TOKEN(sym__mata_inline_content);
+      if (lookahead == '\n') ADVANCE(23);
+      if (lookahead != 0 &&
+          lookahead != '{') ADVANCE(71);
+      END_STATE();
+    case 71:
       ACCEPT_TOKEN(sym__mata_inline_content);
       if (lookahead != 0 &&
           lookahead != '\n' &&
-          lookahead != '{') ADVANCE(63);
-      END_STATE();
-    case 64:
-      ACCEPT_TOKEN(sym__mata_brace_content);
-      if (lookahead == '\t' ||
-          lookahead == ' ') ADVANCE(64);
-      if (lookahead != 0 &&
-          lookahead != '{' &&
-          lookahead != '}') ADVANCE(65);
-      END_STATE();
-    case 65:
-      ACCEPT_TOKEN(sym__mata_brace_content);
-      if (lookahead != 0 &&
-          lookahead != '{' &&
-          lookahead != '}') ADVANCE(65);
-      END_STATE();
-    case 66:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (lookahead == ')') ADVANCE(71);
-      if (lookahead == '\t' ||
-          lookahead == 0x0b ||
-          lookahead == '\f' ||
-          lookahead == ' ') ADVANCE(10);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(67);
-      END_STATE();
-    case 67:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (lookahead == ')') ADVANCE(68);
-      if (lookahead == '\t' ||
-          lookahead == 0x0b ||
-          lookahead == '\f' ||
-          lookahead == ' ') ADVANCE(10);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(67);
-      END_STATE();
-    case 68:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (lookahead == '.') ADVANCE(72);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead) &&
-          lookahead != ' ') ADVANCE(71);
-      END_STATE();
-    case 69:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (lookahead == '+' ||
-          lookahead == '-') ADVANCE(70);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(75);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead) &&
-          lookahead != ' ') ADVANCE(71);
-      END_STATE();
-    case 70:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(75);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead) &&
-          lookahead != ' ') ADVANCE(71);
-      END_STATE();
-    case 71:
-      ACCEPT_TOKEN(aux_sym__argument_token1);
-      if (lookahead != 0 &&
-          (lookahead < '\t' || '\r' < lookahead) &&
-          lookahead != ' ') ADVANCE(71);
+          lookahead != '{') ADVANCE(71);
       END_STATE();
     case 72:
-      ACCEPT_TOKEN(sym_factor_operator);
+      ACCEPT_TOKEN(sym__mata_brace_content);
+      if (lookahead == '\t' ||
+          lookahead == ' ') ADVANCE(72);
+      if (lookahead != 0 &&
+          lookahead != '{' &&
+          lookahead != '}') ADVANCE(73);
       END_STATE();
     case 73:
-      ACCEPT_TOKEN(sym_number);
-      if (lookahead == '.') ADVANCE(74);
-      if (lookahead == 'E' ||
-          lookahead == 'e') ADVANCE(69);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(73);
+      ACCEPT_TOKEN(sym__mata_brace_content);
+      if (lookahead != 0 &&
+          lookahead != '{' &&
+          lookahead != '}') ADVANCE(73);
       END_STATE();
     case 74:
-      ACCEPT_TOKEN(sym_number);
-      if (lookahead == 'E' ||
-          lookahead == 'e') ADVANCE(69);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(74);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == ')') ADVANCE(85);
+      if (lookahead == '\t' ||
+          lookahead == 0x0b ||
+          lookahead == '\f' ||
+          lookahead == ' ') ADVANCE(13);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(75);
       END_STATE();
     case 75:
-      ACCEPT_TOKEN(sym_number);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(75);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == ')') ADVANCE(78);
+      if (lookahead == '\t' ||
+          lookahead == 0x0b ||
+          lookahead == '\f' ||
+          lookahead == ' ') ADVANCE(13);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(75);
       END_STATE();
     case 76:
-      ACCEPT_TOKEN(sym_missing_value);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      ADVANCE_MAP(
+        ')', 83,
+        '.', 86,
+        '/', 86,
+        '\\', 86,
+        '\t', 13,
+        0x0b, 13,
+        '\f', 13,
+        ' ', 13,
+        '"', 75,
+        '$', 75,
+        '\'', 75,
+        ',', 75,
+        '`', 75,
+      );
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(77);
       END_STATE();
     case 77:
-      ACCEPT_TOKEN(sym_missing_value);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(75);
-      if (('a' <= lookahead && lookahead <= 'z')) ADVANCE(76);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      ADVANCE_MAP(
+        ')', 79,
+        '.', 86,
+        '/', 86,
+        '\\', 86,
+        '\t', 13,
+        0x0b, 13,
+        '\f', 13,
+        ' ', 13,
+        '"', 75,
+        '$', 75,
+        '\'', 75,
+        ',', 75,
+        '`', 75,
+      );
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead)) ADVANCE(77);
       END_STATE();
     case 78:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == '(') ADVANCE(66);
-      if (lookahead == '.') ADVANCE(72);
-      if (lookahead == 'b') ADVANCE(79);
-      if (('0' <= lookahead && lookahead <= '9') ||
-          ('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == '.') ADVANCE(94);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(85);
       END_STATE();
     case 79:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == '(') ADVANCE(66);
-      if (lookahead == '.') ADVANCE(72);
-      if (lookahead == 'n') ADVANCE(81);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(80);
-      if (('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      ADVANCE_MAP(
+        '.', 93,
+        '/', 93,
+        '\\', 93,
+        '"', 85,
+        '$', 85,
+        '\'', 85,
+        ',', 85,
+        '`', 85,
+      );
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(83);
       END_STATE();
     case 80:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == '(') ADVANCE(66);
-      if (lookahead == '.') ADVANCE(72);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(80);
-      if (('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == '+' ||
+          lookahead == '-') ADVANCE(84);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(99);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(85);
       END_STATE();
     case 81:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == '(') ADVANCE(66);
-      if (lookahead == '.') ADVANCE(72);
-      if (('0' <= lookahead && lookahead <= '9') ||
-          ('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      ADVANCE_MAP(
+        '+', 82,
+        '-', 82,
+        '.', 93,
+        '/', 93,
+        '\\', 93,
+        '"', 85,
+        '$', 85,
+        '\'', 85,
+        ',', 85,
+        '`', 85,
+      );
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(98);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(83);
       END_STATE();
     case 82:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == 'd') ADVANCE(52);
-      if (('0' <= lookahead && lookahead <= '9') ||
-          ('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead == '"' ||
+          lookahead == '$' ||
+          lookahead == '\'' ||
+          lookahead == ',' ||
+          lookahead == '`') ADVANCE(85);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(98);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(83);
       END_STATE();
     case 83:
-      ACCEPT_TOKEN(sym_identifier);
-      if (lookahead == 'n') ADVANCE(82);
-      if (('0' <= lookahead && lookahead <= '9') ||
-          ('A' <= lookahead && lookahead <= 'Z') ||
-          lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead == '"' ||
+          lookahead == '$' ||
+          lookahead == '\'' ||
+          lookahead == ',' ||
+          lookahead == '`') ADVANCE(85);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(83);
       END_STATE();
     case 84:
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(99);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(85);
+      END_STATE();
+    case 85:
+      ACCEPT_TOKEN(aux_sym__argument_token1);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ') ADVANCE(85);
+      END_STATE();
+    case 86:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == ')') ADVANCE(88);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(86);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(86);
+      END_STATE();
+    case 87:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '*') ADVANCE(35);
+      if (lookahead == '/') ADVANCE(26);
+      if (lookahead == '.' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 88:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '.') ADVANCE(93);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 89:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '+' ||
+          lookahead == '-') ADVANCE(92);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(92);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          (lookahead < '+' || '9' < lookahead) &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 90:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == 'E' ||
+          lookahead == 'e') ADVANCE(89);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(90);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 91:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(92);
+      if (('a' <= lookahead && lookahead <= 'z')) ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '`' || 'z' < lookahead)) ADVANCE(93);
+      END_STATE();
+    case 92:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(92);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 93:
+      ACCEPT_TOKEN(sym_file_path);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(93);
+      END_STATE();
+    case 94:
+      ACCEPT_TOKEN(sym_factor_operator);
+      END_STATE();
+    case 95:
+      ACCEPT_TOKEN(sym_number);
+      if (lookahead == '.') ADVANCE(97);
+      if (lookahead == 'E' ||
+          lookahead == 'e') ADVANCE(80);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(95);
+      END_STATE();
+    case 96:
+      ACCEPT_TOKEN(sym_number);
+      if (lookahead == '.') ADVANCE(90);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead == 'E' ||
+          lookahead == 'e') ADVANCE(81);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(96);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 97:
+      ACCEPT_TOKEN(sym_number);
+      if (lookahead == 'E' ||
+          lookahead == 'e') ADVANCE(80);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(97);
+      END_STATE();
+    case 98:
+      ACCEPT_TOKEN(sym_number);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(98);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 99:
+      ACCEPT_TOKEN(sym_number);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(99);
+      END_STATE();
+    case 100:
+      ACCEPT_TOKEN(sym_missing_value);
+      END_STATE();
+    case 101:
+      ACCEPT_TOKEN(sym_missing_value);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(99);
+      if (('a' <= lookahead && lookahead <= 'z')) ADVANCE(100);
+      END_STATE();
+    case 102:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(74);
+      if (lookahead == '.') ADVANCE(94);
+      if (lookahead == 'b') ADVANCE(103);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 103:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(74);
+      if (lookahead == '.') ADVANCE(94);
+      if (lookahead == 'n') ADVANCE(105);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(104);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 104:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(74);
+      if (lookahead == '.') ADVANCE(94);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(104);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 105:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(74);
+      if (lookahead == '.') ADVANCE(94);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 106:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(76);
+      if (lookahead == '.') ADVANCE(93);
+      if (lookahead == 'b') ADVANCE(107);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != '(' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 107:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(76);
+      if (lookahead == '.') ADVANCE(93);
+      if (lookahead == 'n') ADVANCE(109);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(108);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != '(' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 108:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(76);
+      if (lookahead == '.') ADVANCE(93);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(108);
+      if (('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != '(' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 109:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '(') ADVANCE(76);
+      if (lookahead == '.') ADVANCE(93);
+      if (lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != '(' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 110:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == 'd') ADVANCE(60);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 111:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == 'd') ADVANCE(59);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 112:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == 'n') ADVANCE(110);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
+      END_STATE();
+    case 113:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == 'n') ADVANCE(111);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 114:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(114);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(83);
+      END_STATE();
+    case 115:
+      ACCEPT_TOKEN(sym_identifier);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (('0' <= lookahead && lookahead <= '9') ||
+          ('A' <= lookahead && lookahead <= 'Z') ||
+          lookahead == '_' ||
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(115);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          (lookahead < '_' || 'z' < lookahead)) ADVANCE(18);
+      END_STATE();
+    case 116:
       ACCEPT_TOKEN(sym_identifier);
       if (('0' <= lookahead && lookahead <= '9') ||
           ('A' <= lookahead && lookahead <= 'Z') ||
           lookahead == '_' ||
-          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(84);
+          ('a' <= lookahead && lookahead <= 'z')) ADVANCE(116);
       END_STATE();
-    case 85:
+    case 117:
       ACCEPT_TOKEN(anon_sym_PLUS);
       END_STATE();
-    case 86:
+    case 118:
+      ACCEPT_TOKEN(anon_sym_PLUS);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 119:
       ACCEPT_TOKEN(anon_sym_DASH);
       END_STATE();
-    case 87:
+    case 120:
+      ACCEPT_TOKEN(anon_sym_DASH);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 121:
       ACCEPT_TOKEN(anon_sym_CARET);
       END_STATE();
-    case 88:
+    case 122:
+      ACCEPT_TOKEN(anon_sym_CARET);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 123:
       ACCEPT_TOKEN(anon_sym_EQ_EQ);
       END_STATE();
-    case 89:
+    case 124:
+      ACCEPT_TOKEN(anon_sym_EQ_EQ);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 125:
       ACCEPT_TOKEN(anon_sym_BANG_EQ);
       END_STATE();
-    case 90:
+    case 126:
+      ACCEPT_TOKEN(anon_sym_BANG_EQ);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 127:
       ACCEPT_TOKEN(anon_sym_TILDE_EQ);
       END_STATE();
-    case 91:
+    case 128:
+      ACCEPT_TOKEN(anon_sym_TILDE_EQ);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 129:
       ACCEPT_TOKEN(anon_sym_LT);
-      if (lookahead == '=') ADVANCE(93);
+      if (lookahead == '=') ADVANCE(133);
       END_STATE();
-    case 92:
+    case 130:
+      ACCEPT_TOKEN(anon_sym_LT);
+      if (lookahead == '=') ADVANCE(134);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 131:
       ACCEPT_TOKEN(anon_sym_GT);
-      if (lookahead == '=') ADVANCE(94);
+      if (lookahead == '=') ADVANCE(135);
       END_STATE();
-    case 93:
+    case 132:
+      ACCEPT_TOKEN(anon_sym_GT);
+      if (lookahead == '=') ADVANCE(136);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 133:
       ACCEPT_TOKEN(anon_sym_LT_EQ);
       END_STATE();
-    case 94:
+    case 134:
+      ACCEPT_TOKEN(anon_sym_LT_EQ);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 135:
       ACCEPT_TOKEN(anon_sym_GT_EQ);
       END_STATE();
-    case 95:
+    case 136:
+      ACCEPT_TOKEN(anon_sym_GT_EQ);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 137:
       ACCEPT_TOKEN(anon_sym_AMP);
       END_STATE();
-    case 96:
+    case 138:
+      ACCEPT_TOKEN(anon_sym_AMP);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 139:
       ACCEPT_TOKEN(anon_sym_PIPE);
       END_STATE();
-    case 97:
+    case 140:
+      ACCEPT_TOKEN(anon_sym_PIPE);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 141:
       ACCEPT_TOKEN(anon_sym_BANG);
-      if (lookahead == '=') ADVANCE(89);
+      if (lookahead == '=') ADVANCE(125);
       END_STATE();
-    case 98:
+    case 142:
+      ACCEPT_TOKEN(anon_sym_BANG);
+      if (lookahead == '=') ADVANCE(126);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 143:
       ACCEPT_TOKEN(anon_sym_TILDE);
-      if (lookahead == '=') ADVANCE(90);
+      if (lookahead == '=') ADVANCE(127);
       END_STATE();
-    case 99:
+    case 144:
+      ACCEPT_TOKEN(anon_sym_TILDE);
+      if (lookahead == '=') ADVANCE(128);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 145:
       ACCEPT_TOKEN(anon_sym_EQ);
-      if (lookahead == '=') ADVANCE(88);
+      if (lookahead == '=') ADVANCE(123);
       END_STATE();
-    case 100:
+    case 146:
+      ACCEPT_TOKEN(anon_sym_EQ);
+      if (lookahead == '=') ADVANCE(124);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 147:
       ACCEPT_TOKEN(anon_sym_POUND);
       END_STATE();
-    case 101:
+    case 148:
+      ACCEPT_TOKEN(anon_sym_POUND);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 149:
       ACCEPT_TOKEN(anon_sym_LBRACK);
       END_STATE();
-    case 102:
+    case 150:
+      ACCEPT_TOKEN(anon_sym_LBRACK);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 151:
       ACCEPT_TOKEN(anon_sym_RBRACK);
       END_STATE();
-    case 103:
+    case 152:
+      ACCEPT_TOKEN(anon_sym_RBRACK);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 153:
       ACCEPT_TOKEN(anon_sym_LPAREN);
       END_STATE();
-    case 104:
+    case 154:
+      ACCEPT_TOKEN(anon_sym_LPAREN);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
+      END_STATE();
+    case 155:
       ACCEPT_TOKEN(anon_sym_RPAREN);
+      END_STATE();
+    case 156:
+      ACCEPT_TOKEN(anon_sym_RPAREN);
+      if (lookahead == '.' ||
+          lookahead == '/' ||
+          lookahead == '\\') ADVANCE(93);
+      if (lookahead != 0 &&
+          (lookahead < '\t' || '\r' < lookahead) &&
+          lookahead != ' ' &&
+          lookahead != '"' &&
+          lookahead != '$' &&
+          lookahead != '\'' &&
+          lookahead != ',' &&
+          lookahead != '`') ADVANCE(83);
       END_STATE();
     default:
       return false;
@@ -2094,643 +3183,859 @@ static bool ts_lex_keywords(TSLexer *lexer, TSStateId state) {
         'n', 11,
         'p', 12,
         'q', 13,
-        's', 14,
-        't', 15,
-        'w', 16,
+        'r', 14,
+        's', 15,
+        't', 16,
+        'u', 17,
+        'w', 18,
       );
       if (lookahead == '\t' ||
           lookahead == ' ') SKIP(0);
       END_STATE();
     case 1:
       ADVANCE_MAP(
-        'N', 17,
-        'b', 18,
-        'c', 19,
-        'd', 20,
-        'n', 21,
-        'p', 22,
-        'r', 23,
-        's', 24,
+        'N', 19,
+        'b', 20,
+        'c', 21,
+        'd', 22,
+        'n', 23,
+        'p', 24,
+        'r', 25,
+        's', 26,
       );
       END_STATE();
     case 2:
-      if (lookahead == 'r') ADVANCE(25);
-      if (lookahead == 'y') ADVANCE(26);
+      if (lookahead == 'r') ADVANCE(27);
+      if (lookahead == 'y') ADVANCE(28);
       END_STATE();
     case 3:
-      if (lookahead == 'a') ADVANCE(27);
-      if (lookahead == 'o') ADVANCE(28);
+      if (lookahead == 'a') ADVANCE(29);
+      if (lookahead == 'd') ADVANCE(30);
+      if (lookahead == 'o') ADVANCE(31);
       END_STATE();
     case 4:
-      if (lookahead == 'e') ADVANCE(29);
-      if (lookahead == 'o') ADVANCE(30);
+      if (lookahead == 'e') ADVANCE(32);
+      if (lookahead == 'i') ADVANCE(33);
+      if (lookahead == 'o') ADVANCE(34);
       END_STATE();
     case 5:
-      if (lookahead == 'l') ADVANCE(31);
+      if (lookahead == 'l') ADVANCE(35);
+      if (lookahead == 'r') ADVANCE(36);
+      if (lookahead == 'x') ADVANCE(37);
       END_STATE();
     case 6:
-      if (lookahead == 'l') ADVANCE(32);
-      if (lookahead == 'o') ADVANCE(33);
-      END_STATE();
-    case 7:
-      if (lookahead == 'l') ADVANCE(34);
-      END_STATE();
-    case 8:
-      if (lookahead == 'f') ADVANCE(35);
-      if (lookahead == 'n') ADVANCE(36);
-      END_STATE();
-    case 9:
-      if (lookahead == 'o') ADVANCE(37);
-      END_STATE();
-    case 10:
-      if (lookahead == 'a') ADVANCE(38);
-      END_STATE();
-    case 11:
+      if (lookahead == 'l') ADVANCE(38);
       if (lookahead == 'o') ADVANCE(39);
       END_STATE();
+    case 7:
+      if (lookahead == 'l') ADVANCE(40);
+      END_STATE();
+    case 8:
+      if (lookahead == 'f') ADVANCE(41);
+      if (lookahead == 'm') ADVANCE(42);
+      if (lookahead == 'n') ADVANCE(43);
+      END_STATE();
+    case 9:
+      if (lookahead == 'o') ADVANCE(44);
+      if (lookahead == 's') ADVANCE(45);
+      END_STATE();
+    case 10:
+      if (lookahead == 'a') ADVANCE(46);
+      if (lookahead == 'k') ADVANCE(47);
+      END_STATE();
+    case 11:
+      if (lookahead == 'o') ADVANCE(48);
+      END_STATE();
     case 12:
-      if (lookahead == 'r') ADVANCE(40);
+      if (lookahead == 'r') ADVANCE(49);
       END_STATE();
     case 13:
-      if (lookahead == 'u') ADVANCE(41);
+      if (lookahead == 'u') ADVANCE(50);
       END_STATE();
     case 14:
-      if (lookahead == 'o') ADVANCE(42);
-      if (lookahead == 't') ADVANCE(43);
+      if (lookahead == 'm') ADVANCE(51);
+      if (lookahead == 'u') ADVANCE(52);
       END_STATE();
     case 15:
-      if (lookahead == 'e') ADVANCE(44);
+      if (lookahead == 'a') ADVANCE(53);
+      if (lookahead == 'h') ADVANCE(54);
+      if (lookahead == 'o') ADVANCE(55);
+      if (lookahead == 't') ADVANCE(56);
+      if (lookahead == 'y') ADVANCE(57);
       END_STATE();
     case 16:
-      if (lookahead == 'h') ADVANCE(45);
+      if (lookahead == 'e') ADVANCE(58);
+      if (lookahead == 'y') ADVANCE(59);
       END_STATE();
     case 17:
-      ACCEPT_TOKEN(anon_sym__N);
+      if (lookahead == 's') ADVANCE(60);
       END_STATE();
     case 18:
-      ACCEPT_TOKEN(anon_sym__b);
+      if (lookahead == 'e') ADVANCE(61);
+      if (lookahead == 'h') ADVANCE(62);
       END_STATE();
     case 19:
-      if (lookahead == 'h') ADVANCE(46);
-      if (lookahead == 'o') ADVANCE(47);
+      ACCEPT_TOKEN(anon_sym__N);
       END_STATE();
     case 20:
-      if (lookahead == 'u') ADVANCE(48);
+      ACCEPT_TOKEN(anon_sym__b);
       END_STATE();
     case 21:
-      ACCEPT_TOKEN(anon_sym__n);
-      if (lookahead == 'e') ADVANCE(49);
+      if (lookahead == 'h') ADVANCE(63);
+      if (lookahead == 'o') ADVANCE(64);
       END_STATE();
     case 22:
-      if (lookahead == 'i') ADVANCE(50);
+      if (lookahead == 'u') ADVANCE(65);
       END_STATE();
     case 23:
-      if (lookahead == 'c') ADVANCE(51);
-      if (lookahead == 'e') ADVANCE(52);
+      ACCEPT_TOKEN(anon_sym__n);
+      if (lookahead == 'e') ADVANCE(66);
       END_STATE();
     case 24:
-      if (lookahead == 'e') ADVANCE(53);
-      if (lookahead == 'k') ADVANCE(54);
+      if (lookahead == 'i') ADVANCE(67);
       END_STATE();
     case 25:
-      if (lookahead == 'e') ADVANCE(55);
+      if (lookahead == 'c') ADVANCE(68);
+      if (lookahead == 'e') ADVANCE(69);
       END_STATE();
     case 26:
-      ACCEPT_TOKEN(anon_sym_by);
-      if (lookahead == 's') ADVANCE(56);
-      if (lookahead == 't') ADVANCE(57);
+      if (lookahead == 'e') ADVANCE(70);
+      if (lookahead == 'k') ADVANCE(71);
       END_STATE();
     case 27:
-      if (lookahead == 'p') ADVANCE(58);
+      if (lookahead == 'e') ADVANCE(72);
       END_STATE();
     case 28:
-      if (lookahead == 'n') ADVANCE(59);
+      ACCEPT_TOKEN(anon_sym_by);
+      if (lookahead == 's') ADVANCE(73);
+      if (lookahead == 't') ADVANCE(74);
       END_STATE();
     case 29:
-      if (lookahead == 'f') ADVANCE(60);
+      if (lookahead == 'p') ADVANCE(75);
       END_STATE();
     case 30:
-      if (lookahead == 'u') ADVANCE(61);
+      ACCEPT_TOKEN(anon_sym_cd);
       END_STATE();
     case 31:
-      if (lookahead == 's') ADVANCE(62);
+      if (lookahead == 'n') ADVANCE(76);
+      if (lookahead == 'p') ADVANCE(77);
       END_STATE();
     case 32:
-      if (lookahead == 'o') ADVANCE(63);
+      if (lookahead == 'f') ADVANCE(78);
       END_STATE();
     case 33:
-      if (lookahead == 'r') ADVANCE(64);
+      if (lookahead == 'r') ADVANCE(79);
       END_STATE();
     case 34:
-      ACCEPT_TOKEN(anon_sym_gl);
-      if (lookahead == 'o') ADVANCE(65);
+      ACCEPT_TOKEN(anon_sym_do);
+      if (lookahead == 'u') ADVANCE(80);
       END_STATE();
     case 35:
-      ACCEPT_TOKEN(anon_sym_if);
+      if (lookahead == 's') ADVANCE(81);
       END_STATE();
     case 36:
-      if (lookahead == 't') ADVANCE(66);
+      if (lookahead == 'a') ADVANCE(82);
       END_STATE();
     case 37:
-      if (lookahead == 'c') ADVANCE(67);
-      if (lookahead == 'n') ADVANCE(68);
+      if (lookahead == 'p') ADVANCE(83);
       END_STATE();
     case 38:
-      if (lookahead == 't') ADVANCE(69);
+      if (lookahead == 'o') ADVANCE(84);
       END_STATE();
     case 39:
-      if (lookahead == 'i') ADVANCE(70);
+      if (lookahead == 'r') ADVANCE(85);
       END_STATE();
     case 40:
-      if (lookahead == 'o') ADVANCE(71);
-      END_STATE();
-    case 41:
-      if (lookahead == 'i') ADVANCE(72);
-      END_STATE();
-    case 42:
-      if (lookahead == 'r') ADVANCE(73);
-      END_STATE();
-    case 43:
-      if (lookahead == 'r') ADVANCE(74);
-      END_STATE();
-    case 44:
-      if (lookahead == 'm') ADVANCE(75);
-      END_STATE();
-    case 45:
-      if (lookahead == 'i') ADVANCE(76);
-      END_STATE();
-    case 46:
-      if (lookahead == 'a') ADVANCE(77);
-      END_STATE();
-    case 47:
-      if (lookahead == 'e') ADVANCE(78);
-      if (lookahead == 'l') ADVANCE(79);
-      if (lookahead == 'n') ADVANCE(80);
-      END_STATE();
-    case 48:
-      if (lookahead == 'p') ADVANCE(81);
-      END_STATE();
-    case 49:
-      if (lookahead == 'w') ADVANCE(82);
-      END_STATE();
-    case 50:
-      ACCEPT_TOKEN(anon_sym__pi);
-      END_STATE();
-    case 51:
-      ACCEPT_TOKEN(anon_sym__rc);
-      END_STATE();
-    case 52:
-      if (lookahead == 'q') ADVANCE(83);
-      END_STATE();
-    case 53:
-      ACCEPT_TOKEN(anon_sym__se);
-      END_STATE();
-    case 54:
-      if (lookahead == 'i') ADVANCE(84);
-      END_STATE();
-    case 55:
-      if (lookahead == 'a') ADVANCE(85);
-      END_STATE();
-    case 56:
-      ACCEPT_TOKEN(anon_sym_bys);
+      ACCEPT_TOKEN(anon_sym_gl);
       if (lookahead == 'o') ADVANCE(86);
       END_STATE();
-    case 57:
-      if (lookahead == 'e') ADVANCE(87);
+    case 41:
+      ACCEPT_TOKEN(anon_sym_if);
       END_STATE();
-    case 58:
-      ACCEPT_TOKEN(anon_sym_cap);
-      if (lookahead == 't') ADVANCE(88);
+    case 42:
+      if (lookahead == 'p') ADVANCE(87);
       END_STATE();
-    case 59:
+    case 43:
+      if (lookahead == 'c') ADVANCE(88);
       if (lookahead == 't') ADVANCE(89);
       END_STATE();
+    case 44:
+      if (lookahead == 'c') ADVANCE(90);
+      if (lookahead == 'n') ADVANCE(91);
+      END_STATE();
+    case 45:
+      ACCEPT_TOKEN(anon_sym_ls);
+      END_STATE();
+    case 46:
+      if (lookahead == 't') ADVANCE(92);
+      END_STATE();
+    case 47:
+      if (lookahead == 'd') ADVANCE(93);
+      END_STATE();
+    case 48:
+      if (lookahead == 'i') ADVANCE(94);
+      END_STATE();
+    case 49:
+      if (lookahead == 'o') ADVANCE(95);
+      END_STATE();
+    case 50:
+      if (lookahead == 'i') ADVANCE(96);
+      END_STATE();
+    case 51:
+      ACCEPT_TOKEN(anon_sym_rm);
+      if (lookahead == 'd') ADVANCE(97);
+      END_STATE();
+    case 52:
+      if (lookahead == 'n') ADVANCE(98);
+      END_STATE();
+    case 53:
+      if (lookahead == 'v') ADVANCE(99);
+      END_STATE();
+    case 54:
+      if (lookahead == 'e') ADVANCE(100);
+      END_STATE();
+    case 55:
+      if (lookahead == 'r') ADVANCE(101);
+      END_STATE();
+    case 56:
+      if (lookahead == 'r') ADVANCE(102);
+      END_STATE();
+    case 57:
+      if (lookahead == 's') ADVANCE(103);
+      END_STATE();
+    case 58:
+      if (lookahead == 'm') ADVANCE(104);
+      END_STATE();
+    case 59:
+      if (lookahead == 'p') ADVANCE(105);
+      END_STATE();
     case 60:
-      if (lookahead == 'i') ADVANCE(90);
+      if (lookahead == 'e') ADVANCE(106);
+      if (lookahead == 'i') ADVANCE(107);
       END_STATE();
     case 61:
-      if (lookahead == 'b') ADVANCE(91);
+      if (lookahead == 'b') ADVANCE(108);
       END_STATE();
     case 62:
-      if (lookahead == 'e') ADVANCE(92);
+      if (lookahead == 'i') ADVANCE(109);
       END_STATE();
     case 63:
-      if (lookahead == 'a') ADVANCE(93);
+      if (lookahead == 'a') ADVANCE(110);
       END_STATE();
     case 64:
-      if (lookahead == 'e') ADVANCE(94);
-      if (lookahead == 'v') ADVANCE(95);
+      if (lookahead == 'e') ADVANCE(111);
+      if (lookahead == 'l') ADVANCE(112);
+      if (lookahead == 'n') ADVANCE(113);
       END_STATE();
     case 65:
-      if (lookahead == 'b') ADVANCE(96);
+      if (lookahead == 'p') ADVANCE(114);
       END_STATE();
     case 66:
-      ACCEPT_TOKEN(anon_sym_int);
+      if (lookahead == 'w') ADVANCE(115);
       END_STATE();
     case 67:
-      ACCEPT_TOKEN(anon_sym_loc);
-      if (lookahead == 'a') ADVANCE(97);
+      ACCEPT_TOKEN(anon_sym__pi);
       END_STATE();
     case 68:
-      if (lookahead == 'g') ADVANCE(98);
+      ACCEPT_TOKEN(anon_sym__rc);
       END_STATE();
     case 69:
-      if (lookahead == 'a') ADVANCE(99);
+      if (lookahead == 'q') ADVANCE(116);
       END_STATE();
     case 70:
-      ACCEPT_TOKEN(anon_sym_noi);
-      if (lookahead == 's') ADVANCE(100);
+      ACCEPT_TOKEN(anon_sym__se);
       END_STATE();
     case 71:
-      if (lookahead == 'g') ADVANCE(101);
+      if (lookahead == 'i') ADVANCE(117);
       END_STATE();
     case 72:
-      ACCEPT_TOKEN(anon_sym_qui);
-      if (lookahead == 'e') ADVANCE(102);
+      if (lookahead == 'a') ADVANCE(118);
       END_STATE();
     case 73:
-      if (lookahead == 't') ADVANCE(103);
+      ACCEPT_TOKEN(anon_sym_bys);
+      if (lookahead == 'o') ADVANCE(119);
       END_STATE();
     case 74:
-      if (lookahead == '1') ADVANCE(104);
-      if (lookahead == '2') ADVANCE(105);
-      if (lookahead == 'L') ADVANCE(106);
-      if (('3' <= lookahead && lookahead <= '9')) ADVANCE(107);
+      if (lookahead == 'e') ADVANCE(120);
       END_STATE();
     case 75:
-      if (lookahead == 'p') ADVANCE(108);
+      ACCEPT_TOKEN(anon_sym_cap);
+      if (lookahead == 't') ADVANCE(121);
       END_STATE();
     case 76:
-      if (lookahead == 'l') ADVANCE(109);
+      if (lookahead == 't') ADVANCE(122);
       END_STATE();
     case 77:
-      if (lookahead == 'r') ADVANCE(110);
+      if (lookahead == 'y') ADVANCE(123);
       END_STATE();
     case 78:
-      if (lookahead == 'f') ADVANCE(111);
+      if (lookahead == 'i') ADVANCE(124);
       END_STATE();
     case 79:
-      if (lookahead == 'u') ADVANCE(112);
+      ACCEPT_TOKEN(anon_sym_dir);
       END_STATE();
     case 80:
-      if (lookahead == 's') ADVANCE(113);
-      if (lookahead == 't') ADVANCE(114);
+      if (lookahead == 'b') ADVANCE(125);
       END_STATE();
     case 81:
-      ACCEPT_TOKEN(anon_sym__dup);
+      if (lookahead == 'e') ADVANCE(126);
       END_STATE();
     case 82:
-      if (lookahead == 'l') ADVANCE(115);
+      if (lookahead == 's') ADVANCE(127);
       END_STATE();
     case 83:
-      if (lookahead == 'u') ADVANCE(116);
+      if (lookahead == 'o') ADVANCE(128);
       END_STATE();
     case 84:
-      if (lookahead == 'p') ADVANCE(117);
+      if (lookahead == 'a') ADVANCE(129);
       END_STATE();
     case 85:
-      if (lookahead == 'k') ADVANCE(118);
+      if (lookahead == 'e') ADVANCE(130);
+      if (lookahead == 'v') ADVANCE(131);
       END_STATE();
     case 86:
-      if (lookahead == 'r') ADVANCE(119);
+      if (lookahead == 'b') ADVANCE(132);
       END_STATE();
     case 87:
-      ACCEPT_TOKEN(anon_sym_byte);
+      if (lookahead == 'o') ADVANCE(133);
       END_STATE();
     case 88:
-      if (lookahead == 'u') ADVANCE(120);
+      if (lookahead == 'l') ADVANCE(134);
       END_STATE();
     case 89:
-      if (lookahead == 'i') ADVANCE(121);
+      ACCEPT_TOKEN(anon_sym_int);
       END_STATE();
     case 90:
-      if (lookahead == 'n') ADVANCE(122);
+      ACCEPT_TOKEN(anon_sym_loc);
+      if (lookahead == 'a') ADVANCE(135);
       END_STATE();
     case 91:
-      if (lookahead == 'l') ADVANCE(123);
+      if (lookahead == 'g') ADVANCE(136);
       END_STATE();
     case 92:
-      ACCEPT_TOKEN(anon_sym_else);
+      if (lookahead == 'a') ADVANCE(137);
       END_STATE();
     case 93:
-      if (lookahead == 't') ADVANCE(124);
+      if (lookahead == 'i') ADVANCE(138);
       END_STATE();
     case 94:
-      if (lookahead == 'a') ADVANCE(125);
+      ACCEPT_TOKEN(anon_sym_noi);
+      if (lookahead == 's') ADVANCE(139);
       END_STATE();
     case 95:
-      ACCEPT_TOKEN(anon_sym_forv);
-      if (lookahead == 'a') ADVANCE(126);
+      if (lookahead == 'g') ADVANCE(140);
       END_STATE();
     case 96:
-      if (lookahead == 'a') ADVANCE(127);
+      ACCEPT_TOKEN(anon_sym_qui);
+      if (lookahead == 'e') ADVANCE(141);
       END_STATE();
     case 97:
-      if (lookahead == 'l') ADVANCE(128);
-      END_STATE();
-    case 98:
-      ACCEPT_TOKEN(anon_sym_long);
-      END_STATE();
-    case 99:
-      ACCEPT_TOKEN(anon_sym_mata);
-      END_STATE();
-    case 100:
-      if (lookahead == 'i') ADVANCE(129);
-      END_STATE();
-    case 101:
-      if (lookahead == 'r') ADVANCE(130);
-      END_STATE();
-    case 102:
-      if (lookahead == 't') ADVANCE(131);
-      END_STATE();
-    case 103:
-      if (lookahead == 'p') ADVANCE(132);
-      END_STATE();
-    case 104:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(133);
-      END_STATE();
-    case 105:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
-      if (lookahead == '0') ADVANCE(134);
-      if (('1' <= lookahead && lookahead <= '9')) ADVANCE(135);
-      END_STATE();
-    case 106:
-      ACCEPT_TOKEN(anon_sym_strL);
-      END_STATE();
-    case 107:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(135);
-      END_STATE();
-    case 108:
-      if (lookahead == 'f') ADVANCE(136);
-      if (lookahead == 'n') ADVANCE(137);
-      if (lookahead == 'v') ADVANCE(138);
-      END_STATE();
-    case 109:
-      if (lookahead == 'e') ADVANCE(139);
-      END_STATE();
-    case 110:
-      ACCEPT_TOKEN(anon_sym__char);
-      END_STATE();
-    case 111:
-      ACCEPT_TOKEN(anon_sym__coef);
-      END_STATE();
-    case 112:
-      if (lookahead == 'm') ADVANCE(140);
-      END_STATE();
-    case 113:
-      ACCEPT_TOKEN(anon_sym__cons);
-      END_STATE();
-    case 114:
-      if (lookahead == 'i') ADVANCE(141);
-      END_STATE();
-    case 115:
       if (lookahead == 'i') ADVANCE(142);
       END_STATE();
-    case 116:
+    case 98:
+      ACCEPT_TOKEN(anon_sym_run);
+      END_STATE();
+    case 99:
       if (lookahead == 'e') ADVANCE(143);
       END_STATE();
+    case 100:
+      if (lookahead == 'l') ADVANCE(144);
+      END_STATE();
+    case 101:
+      if (lookahead == 't') ADVANCE(145);
+      END_STATE();
+    case 102:
+      if (lookahead == '1') ADVANCE(146);
+      if (lookahead == '2') ADVANCE(147);
+      if (lookahead == 'L') ADVANCE(148);
+      if (('3' <= lookahead && lookahead <= '9')) ADVANCE(149);
+      END_STATE();
+    case 103:
+      if (lookahead == 'u') ADVANCE(150);
+      END_STATE();
+    case 104:
+      if (lookahead == 'p') ADVANCE(151);
+      END_STATE();
+    case 105:
+      if (lookahead == 'e') ADVANCE(152);
+      END_STATE();
+    case 106:
+      ACCEPT_TOKEN(anon_sym_use);
+      END_STATE();
+    case 107:
+      if (lookahead == 'n') ADVANCE(153);
+      END_STATE();
+    case 108:
+      if (lookahead == 'u') ADVANCE(154);
+      END_STATE();
+    case 109:
+      if (lookahead == 'l') ADVANCE(155);
+      END_STATE();
+    case 110:
+      if (lookahead == 'r') ADVANCE(156);
+      END_STATE();
+    case 111:
+      if (lookahead == 'f') ADVANCE(157);
+      END_STATE();
+    case 112:
+      if (lookahead == 'u') ADVANCE(158);
+      END_STATE();
+    case 113:
+      if (lookahead == 's') ADVANCE(159);
+      if (lookahead == 't') ADVANCE(160);
+      END_STATE();
+    case 114:
+      ACCEPT_TOKEN(anon_sym__dup);
+      END_STATE();
+    case 115:
+      if (lookahead == 'l') ADVANCE(161);
+      END_STATE();
+    case 116:
+      if (lookahead == 'u') ADVANCE(162);
+      END_STATE();
     case 117:
-      ACCEPT_TOKEN(anon_sym__skip);
+      if (lookahead == 'p') ADVANCE(163);
       END_STATE();
     case 118:
-      ACCEPT_TOKEN(anon_sym_break);
+      if (lookahead == 'k') ADVANCE(164);
       END_STATE();
     case 119:
-      if (lookahead == 't') ADVANCE(144);
+      if (lookahead == 'r') ADVANCE(165);
       END_STATE();
     case 120:
-      if (lookahead == 'r') ADVANCE(145);
+      ACCEPT_TOKEN(anon_sym_byte);
       END_STATE();
     case 121:
-      if (lookahead == 'n') ADVANCE(146);
+      if (lookahead == 'u') ADVANCE(166);
       END_STATE();
     case 122:
-      if (lookahead == 'e') ADVANCE(147);
+      if (lookahead == 'i') ADVANCE(167);
       END_STATE();
     case 123:
-      if (lookahead == 'e') ADVANCE(148);
+      ACCEPT_TOKEN(anon_sym_copy);
       END_STATE();
     case 124:
-      ACCEPT_TOKEN(anon_sym_float);
+      if (lookahead == 'n') ADVANCE(168);
       END_STATE();
     case 125:
-      if (lookahead == 'c') ADVANCE(149);
+      if (lookahead == 'l') ADVANCE(169);
       END_STATE();
     case 126:
-      if (lookahead == 'l') ADVANCE(150);
+      ACCEPT_TOKEN(anon_sym_else);
       END_STATE();
     case 127:
-      if (lookahead == 'l') ADVANCE(151);
+      if (lookahead == 'e') ADVANCE(170);
       END_STATE();
     case 128:
-      ACCEPT_TOKEN(anon_sym_local);
+      if (lookahead == 'r') ADVANCE(171);
       END_STATE();
     case 129:
-      if (lookahead == 'l') ADVANCE(152);
+      if (lookahead == 't') ADVANCE(172);
       END_STATE();
     case 130:
-      if (lookahead == 'a') ADVANCE(153);
+      if (lookahead == 'a') ADVANCE(173);
       END_STATE();
     case 131:
-      if (lookahead == 'l') ADVANCE(154);
+      ACCEPT_TOKEN(anon_sym_forv);
+      if (lookahead == 'a') ADVANCE(174);
       END_STATE();
     case 132:
-      if (lookahead == 'r') ADVANCE(155);
+      if (lookahead == 'a') ADVANCE(175);
       END_STATE();
     case 133:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(156);
+      if (lookahead == 'r') ADVANCE(176);
       END_STATE();
     case 134:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
-      if (lookahead == '4') ADVANCE(157);
-      if (('0' <= lookahead && lookahead <= '3')) ADVANCE(158);
-      if (('5' <= lookahead && lookahead <= '9')) ADVANCE(159);
+      if (lookahead == 'u') ADVANCE(177);
       END_STATE();
     case 135:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(159);
-      END_STATE();
-    case 136:
-      if (lookahead == 'i') ADVANCE(160);
-      END_STATE();
-    case 137:
-      if (lookahead == 'a') ADVANCE(161);
-      END_STATE();
-    case 138:
-      if (lookahead == 'a') ADVANCE(162);
-      END_STATE();
-    case 139:
-      ACCEPT_TOKEN(anon_sym_while);
-      END_STATE();
-    case 140:
-      if (lookahead == 'n') ADVANCE(163);
-      END_STATE();
-    case 141:
-      if (lookahead == 'n') ADVANCE(164);
-      END_STATE();
-    case 142:
-      if (lookahead == 'n') ADVANCE(165);
-      END_STATE();
-    case 143:
-      if (lookahead == 's') ADVANCE(166);
-      END_STATE();
-    case 144:
-      ACCEPT_TOKEN(anon_sym_bysort);
-      END_STATE();
-    case 145:
-      if (lookahead == 'e') ADVANCE(167);
-      END_STATE();
-    case 146:
-      if (lookahead == 'u') ADVANCE(168);
-      END_STATE();
-    case 147:
-      ACCEPT_TOKEN(anon_sym_define);
-      END_STATE();
-    case 148:
-      ACCEPT_TOKEN(anon_sym_double);
-      END_STATE();
-    case 149:
-      if (lookahead == 'h') ADVANCE(169);
-      END_STATE();
-    case 150:
-      if (lookahead == 'u') ADVANCE(170);
-      END_STATE();
-    case 151:
-      ACCEPT_TOKEN(anon_sym_global);
-      END_STATE();
-    case 152:
-      if (lookahead == 'y') ADVANCE(171);
-      END_STATE();
-    case 153:
-      if (lookahead == 'm') ADVANCE(172);
-      END_STATE();
-    case 154:
-      if (lookahead == 'y') ADVANCE(173);
-      END_STATE();
-    case 155:
-      if (lookahead == 'e') ADVANCE(174);
-      END_STATE();
-    case 156:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(175);
-      END_STATE();
-    case 157:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
-      if (('0' <= lookahead && lookahead <= '5')) ADVANCE(176);
-      END_STATE();
-    case 158:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
-      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(177);
-      END_STATE();
-    case 159:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
-      END_STATE();
-    case 160:
       if (lookahead == 'l') ADVANCE(178);
       END_STATE();
-    case 161:
-      if (lookahead == 'm') ADVANCE(179);
+    case 136:
+      ACCEPT_TOKEN(anon_sym_long);
       END_STATE();
-    case 162:
-      if (lookahead == 'r') ADVANCE(180);
+    case 137:
+      ACCEPT_TOKEN(anon_sym_mata);
       END_STATE();
-    case 163:
-      ACCEPT_TOKEN(anon_sym__column);
+    case 138:
+      if (lookahead == 'r') ADVANCE(179);
       END_STATE();
-    case 164:
-      if (lookahead == 'u') ADVANCE(181);
+    case 139:
+      if (lookahead == 'i') ADVANCE(180);
       END_STATE();
-    case 165:
-      if (lookahead == 'e') ADVANCE(182);
+    case 140:
+      if (lookahead == 'r') ADVANCE(181);
       END_STATE();
-    case 166:
-      if (lookahead == 't') ADVANCE(183);
+    case 141:
+      if (lookahead == 't') ADVANCE(182);
       END_STATE();
-    case 167:
-      ACCEPT_TOKEN(anon_sym_capture);
+    case 142:
+      if (lookahead == 'r') ADVANCE(183);
       END_STATE();
-    case 168:
-      if (lookahead == 'e') ADVANCE(184);
+    case 143:
+      ACCEPT_TOKEN(anon_sym_save);
+      if (lookahead == 'o') ADVANCE(184);
       END_STATE();
-    case 169:
-      ACCEPT_TOKEN(anon_sym_foreach);
+    case 144:
+      if (lookahead == 'l') ADVANCE(185);
       END_STATE();
-    case 170:
-      if (lookahead == 'e') ADVANCE(185);
+    case 145:
+      if (lookahead == 'p') ADVANCE(186);
       END_STATE();
-    case 171:
-      ACCEPT_TOKEN(anon_sym_noisily);
+    case 146:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(187);
       END_STATE();
-    case 172:
-      ACCEPT_TOKEN(anon_sym_program);
+    case 147:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
+      if (lookahead == '0') ADVANCE(188);
+      if (('1' <= lookahead && lookahead <= '9')) ADVANCE(189);
       END_STATE();
-    case 173:
-      ACCEPT_TOKEN(anon_sym_quietly);
+    case 148:
+      ACCEPT_TOKEN(anon_sym_strL);
       END_STATE();
-    case 174:
-      if (lookahead == 's') ADVANCE(186);
+    case 149:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token1);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(189);
       END_STATE();
-    case 175:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token4);
-      END_STATE();
-    case 176:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token6);
-      END_STATE();
-    case 177:
-      ACCEPT_TOKEN(aux_sym_type_keyword_token5);
-      END_STATE();
-    case 178:
-      if (lookahead == 'e') ADVANCE(187);
-      END_STATE();
-    case 179:
-      if (lookahead == 'e') ADVANCE(188);
-      END_STATE();
-    case 180:
-      ACCEPT_TOKEN(anon_sym_tempvar);
-      END_STATE();
-    case 181:
-      if (lookahead == 'e') ADVANCE(189);
-      END_STATE();
-    case 182:
-      ACCEPT_TOKEN(anon_sym__newline);
-      END_STATE();
-    case 183:
-      ACCEPT_TOKEN(anon_sym__request);
-      END_STATE();
-    case 184:
-      ACCEPT_TOKEN(anon_sym_continue);
-      END_STATE();
-    case 185:
+    case 150:
       if (lookahead == 's') ADVANCE(190);
       END_STATE();
-    case 186:
-      if (lookahead == 'e') ADVANCE(191);
-      END_STATE();
-    case 187:
-      ACCEPT_TOKEN(anon_sym_tempfile);
-      END_STATE();
-    case 188:
-      ACCEPT_TOKEN(anon_sym_tempname);
-      END_STATE();
-    case 189:
-      ACCEPT_TOKEN(anon_sym__continue);
-      END_STATE();
-    case 190:
-      ACCEPT_TOKEN(anon_sym_forvalues);
-      END_STATE();
-    case 191:
-      if (lookahead == 'r') ADVANCE(192);
-      END_STATE();
-    case 192:
+    case 151:
+      if (lookahead == 'f') ADVANCE(191);
+      if (lookahead == 'n') ADVANCE(192);
       if (lookahead == 'v') ADVANCE(193);
       END_STATE();
+    case 152:
+      ACCEPT_TOKEN(anon_sym_type);
+      END_STATE();
+    case 153:
+      if (lookahead == 'g') ADVANCE(194);
+      END_STATE();
+    case 154:
+      if (lookahead == 's') ADVANCE(195);
+      END_STATE();
+    case 155:
+      if (lookahead == 'e') ADVANCE(196);
+      END_STATE();
+    case 156:
+      ACCEPT_TOKEN(anon_sym__char);
+      END_STATE();
+    case 157:
+      ACCEPT_TOKEN(anon_sym__coef);
+      END_STATE();
+    case 158:
+      if (lookahead == 'm') ADVANCE(197);
+      END_STATE();
+    case 159:
+      ACCEPT_TOKEN(anon_sym__cons);
+      END_STATE();
+    case 160:
+      if (lookahead == 'i') ADVANCE(198);
+      END_STATE();
+    case 161:
+      if (lookahead == 'i') ADVANCE(199);
+      END_STATE();
+    case 162:
+      if (lookahead == 'e') ADVANCE(200);
+      END_STATE();
+    case 163:
+      ACCEPT_TOKEN(anon_sym__skip);
+      END_STATE();
+    case 164:
+      ACCEPT_TOKEN(anon_sym_break);
+      END_STATE();
+    case 165:
+      if (lookahead == 't') ADVANCE(201);
+      END_STATE();
+    case 166:
+      if (lookahead == 'r') ADVANCE(202);
+      END_STATE();
+    case 167:
+      if (lookahead == 'n') ADVANCE(203);
+      END_STATE();
+    case 168:
+      if (lookahead == 'e') ADVANCE(204);
+      END_STATE();
+    case 169:
+      if (lookahead == 'e') ADVANCE(205);
+      END_STATE();
+    case 170:
+      ACCEPT_TOKEN(anon_sym_erase);
+      END_STATE();
+    case 171:
+      if (lookahead == 't') ADVANCE(206);
+      END_STATE();
+    case 172:
+      ACCEPT_TOKEN(anon_sym_float);
+      END_STATE();
+    case 173:
+      if (lookahead == 'c') ADVANCE(207);
+      END_STATE();
+    case 174:
+      if (lookahead == 'l') ADVANCE(208);
+      END_STATE();
+    case 175:
+      if (lookahead == 'l') ADVANCE(209);
+      END_STATE();
+    case 176:
+      if (lookahead == 't') ADVANCE(210);
+      END_STATE();
+    case 177:
+      if (lookahead == 'd') ADVANCE(211);
+      END_STATE();
+    case 178:
+      ACCEPT_TOKEN(anon_sym_local);
+      END_STATE();
+    case 179:
+      ACCEPT_TOKEN(anon_sym_mkdir);
+      END_STATE();
+    case 180:
+      if (lookahead == 'l') ADVANCE(212);
+      END_STATE();
+    case 181:
+      if (lookahead == 'a') ADVANCE(213);
+      END_STATE();
+    case 182:
+      if (lookahead == 'l') ADVANCE(214);
+      END_STATE();
+    case 183:
+      ACCEPT_TOKEN(anon_sym_rmdir);
+      END_STATE();
+    case 184:
+      if (lookahead == 'l') ADVANCE(215);
+      END_STATE();
+    case 185:
+      ACCEPT_TOKEN(anon_sym_shell);
+      END_STATE();
+    case 186:
+      if (lookahead == 'r') ADVANCE(216);
+      END_STATE();
+    case 187:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(217);
+      END_STATE();
+    case 188:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
+      if (lookahead == '4') ADVANCE(218);
+      if (('0' <= lookahead && lookahead <= '3')) ADVANCE(219);
+      if (('5' <= lookahead && lookahead <= '9')) ADVANCE(220);
+      END_STATE();
+    case 189:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token2);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(220);
+      END_STATE();
+    case 190:
+      if (lookahead == 'e') ADVANCE(221);
+      END_STATE();
+    case 191:
+      if (lookahead == 'i') ADVANCE(222);
+      END_STATE();
+    case 192:
+      if (lookahead == 'a') ADVANCE(223);
+      END_STATE();
     case 193:
-      if (lookahead == 'e') ADVANCE(194);
+      if (lookahead == 'a') ADVANCE(224);
       END_STATE();
     case 194:
+      ACCEPT_TOKEN(anon_sym_using);
+      END_STATE();
+    case 195:
+      if (lookahead == 'e') ADVANCE(225);
+      END_STATE();
+    case 196:
+      ACCEPT_TOKEN(anon_sym_while);
+      END_STATE();
+    case 197:
+      if (lookahead == 'n') ADVANCE(226);
+      END_STATE();
+    case 198:
+      if (lookahead == 'n') ADVANCE(227);
+      END_STATE();
+    case 199:
+      if (lookahead == 'n') ADVANCE(228);
+      END_STATE();
+    case 200:
+      if (lookahead == 's') ADVANCE(229);
+      END_STATE();
+    case 201:
+      ACCEPT_TOKEN(anon_sym_bysort);
+      END_STATE();
+    case 202:
+      if (lookahead == 'e') ADVANCE(230);
+      END_STATE();
+    case 203:
+      if (lookahead == 'u') ADVANCE(231);
+      END_STATE();
+    case 204:
+      ACCEPT_TOKEN(anon_sym_define);
+      END_STATE();
+    case 205:
+      ACCEPT_TOKEN(anon_sym_double);
+      END_STATE();
+    case 206:
+      ACCEPT_TOKEN(anon_sym_export);
+      END_STATE();
+    case 207:
+      if (lookahead == 'h') ADVANCE(232);
+      END_STATE();
+    case 208:
+      if (lookahead == 'u') ADVANCE(233);
+      END_STATE();
+    case 209:
+      ACCEPT_TOKEN(anon_sym_global);
+      END_STATE();
+    case 210:
+      ACCEPT_TOKEN(anon_sym_import);
+      END_STATE();
+    case 211:
+      if (lookahead == 'e') ADVANCE(234);
+      END_STATE();
+    case 212:
+      if (lookahead == 'y') ADVANCE(235);
+      END_STATE();
+    case 213:
+      if (lookahead == 'm') ADVANCE(236);
+      END_STATE();
+    case 214:
+      if (lookahead == 'y') ADVANCE(237);
+      END_STATE();
+    case 215:
+      if (lookahead == 'd') ADVANCE(238);
+      END_STATE();
+    case 216:
+      if (lookahead == 'e') ADVANCE(239);
+      END_STATE();
+    case 217:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(240);
+      END_STATE();
+    case 218:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
+      if (('0' <= lookahead && lookahead <= '5')) ADVANCE(241);
+      END_STATE();
+    case 219:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
+      if (('0' <= lookahead && lookahead <= '9')) ADVANCE(242);
+      END_STATE();
+    case 220:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token3);
+      END_STATE();
+    case 221:
+      ACCEPT_TOKEN(anon_sym_sysuse);
+      END_STATE();
+    case 222:
+      if (lookahead == 'l') ADVANCE(243);
+      END_STATE();
+    case 223:
+      if (lookahead == 'm') ADVANCE(244);
+      END_STATE();
+    case 224:
+      if (lookahead == 'r') ADVANCE(245);
+      END_STATE();
+    case 225:
+      ACCEPT_TOKEN(anon_sym_webuse);
+      END_STATE();
+    case 226:
+      ACCEPT_TOKEN(anon_sym__column);
+      END_STATE();
+    case 227:
+      if (lookahead == 'u') ADVANCE(246);
+      END_STATE();
+    case 228:
+      if (lookahead == 'e') ADVANCE(247);
+      END_STATE();
+    case 229:
+      if (lookahead == 't') ADVANCE(248);
+      END_STATE();
+    case 230:
+      ACCEPT_TOKEN(anon_sym_capture);
+      END_STATE();
+    case 231:
+      if (lookahead == 'e') ADVANCE(249);
+      END_STATE();
+    case 232:
+      ACCEPT_TOKEN(anon_sym_foreach);
+      END_STATE();
+    case 233:
+      if (lookahead == 'e') ADVANCE(250);
+      END_STATE();
+    case 234:
+      ACCEPT_TOKEN(anon_sym_include);
+      END_STATE();
+    case 235:
+      ACCEPT_TOKEN(anon_sym_noisily);
+      END_STATE();
+    case 236:
+      ACCEPT_TOKEN(anon_sym_program);
+      END_STATE();
+    case 237:
+      ACCEPT_TOKEN(anon_sym_quietly);
+      END_STATE();
+    case 238:
+      ACCEPT_TOKEN(anon_sym_saveold);
+      END_STATE();
+    case 239:
+      if (lookahead == 's') ADVANCE(251);
+      END_STATE();
+    case 240:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token4);
+      END_STATE();
+    case 241:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token6);
+      END_STATE();
+    case 242:
+      ACCEPT_TOKEN(aux_sym_type_keyword_token5);
+      END_STATE();
+    case 243:
+      if (lookahead == 'e') ADVANCE(252);
+      END_STATE();
+    case 244:
+      if (lookahead == 'e') ADVANCE(253);
+      END_STATE();
+    case 245:
+      ACCEPT_TOKEN(anon_sym_tempvar);
+      END_STATE();
+    case 246:
+      if (lookahead == 'e') ADVANCE(254);
+      END_STATE();
+    case 247:
+      ACCEPT_TOKEN(anon_sym__newline);
+      END_STATE();
+    case 248:
+      ACCEPT_TOKEN(anon_sym__request);
+      END_STATE();
+    case 249:
+      ACCEPT_TOKEN(anon_sym_continue);
+      END_STATE();
+    case 250:
+      if (lookahead == 's') ADVANCE(255);
+      END_STATE();
+    case 251:
+      if (lookahead == 'e') ADVANCE(256);
+      END_STATE();
+    case 252:
+      ACCEPT_TOKEN(anon_sym_tempfile);
+      END_STATE();
+    case 253:
+      ACCEPT_TOKEN(anon_sym_tempname);
+      END_STATE();
+    case 254:
+      ACCEPT_TOKEN(anon_sym__continue);
+      END_STATE();
+    case 255:
+      ACCEPT_TOKEN(anon_sym_forvalues);
+      END_STATE();
+    case 256:
+      if (lookahead == 'r') ADVANCE(257);
+      END_STATE();
+    case 257:
+      if (lookahead == 'v') ADVANCE(258);
+      END_STATE();
+    case 258:
+      if (lookahead == 'e') ADVANCE(259);
+      END_STATE();
+    case 259:
       ACCEPT_TOKEN(anon_sym_sortpreserve);
       END_STATE();
     default:
@@ -2740,12 +4045,12 @@ static bool ts_lex_keywords(TSLexer *lexer, TSStateId state) {
 
 static const TSLexerMode ts_lex_modes[STATE_COUNT] = {
   [0] = {.lex_state = 0, .external_lex_state = 1},
-  [1] = {.lex_state = 17, .external_lex_state = 1},
-  [2] = {.lex_state = 2, .external_lex_state = 1},
-  [3] = {.lex_state = 2, .external_lex_state = 1},
-  [4] = {.lex_state = 2, .external_lex_state = 1},
-  [5] = {.lex_state = 2, .external_lex_state = 1},
-  [6] = {.lex_state = 2, .external_lex_state = 1},
+  [1] = {.lex_state = 21, .external_lex_state = 1},
+  [2] = {.lex_state = 3, .external_lex_state = 1},
+  [3] = {.lex_state = 3, .external_lex_state = 1},
+  [4] = {.lex_state = 3, .external_lex_state = 1},
+  [5] = {.lex_state = 3, .external_lex_state = 1},
+  [6] = {.lex_state = 3, .external_lex_state = 1},
   [7] = {.lex_state = 2, .external_lex_state = 1},
   [8] = {.lex_state = 2, .external_lex_state = 1},
   [9] = {.lex_state = 2, .external_lex_state = 1},
@@ -2753,157 +4058,201 @@ static const TSLexerMode ts_lex_modes[STATE_COUNT] = {
   [11] = {.lex_state = 2, .external_lex_state = 1},
   [12] = {.lex_state = 2, .external_lex_state = 1},
   [13] = {.lex_state = 2, .external_lex_state = 1},
-  [14] = {.lex_state = 2, .external_lex_state = 1},
-  [15] = {.lex_state = 2, .external_lex_state = 1},
-  [16] = {.lex_state = 2, .external_lex_state = 1},
-  [17] = {.lex_state = 2, .external_lex_state = 1},
-  [18] = {.lex_state = 2, .external_lex_state = 1},
-  [19] = {.lex_state = 2, .external_lex_state = 1},
-  [20] = {.lex_state = 2, .external_lex_state = 1},
-  [21] = {.lex_state = 2, .external_lex_state = 1},
-  [22] = {.lex_state = 2, .external_lex_state = 1},
-  [23] = {.lex_state = 2, .external_lex_state = 1},
-  [24] = {.lex_state = 2, .external_lex_state = 1},
-  [25] = {.lex_state = 2, .external_lex_state = 1},
-  [26] = {.lex_state = 2, .external_lex_state = 1},
+  [14] = {.lex_state = 3, .external_lex_state = 1},
+  [15] = {.lex_state = 3, .external_lex_state = 1},
+  [16] = {.lex_state = 3, .external_lex_state = 1},
+  [17] = {.lex_state = 3, .external_lex_state = 1},
+  [18] = {.lex_state = 3, .external_lex_state = 1},
+  [19] = {.lex_state = 3, .external_lex_state = 1},
+  [20] = {.lex_state = 3, .external_lex_state = 1},
+  [21] = {.lex_state = 3, .external_lex_state = 1},
+  [22] = {.lex_state = 3, .external_lex_state = 1},
+  [23] = {.lex_state = 3, .external_lex_state = 1},
+  [24] = {.lex_state = 3, .external_lex_state = 1},
+  [25] = {.lex_state = 3, .external_lex_state = 1},
+  [26] = {.lex_state = 3, .external_lex_state = 1},
   [27] = {.lex_state = 3, .external_lex_state = 1},
-  [28] = {.lex_state = 17, .external_lex_state = 1},
+  [28] = {.lex_state = 3, .external_lex_state = 1},
   [29] = {.lex_state = 3, .external_lex_state = 1},
-  [30] = {.lex_state = 17, .external_lex_state = 1},
+  [30] = {.lex_state = 3, .external_lex_state = 1},
   [31] = {.lex_state = 3, .external_lex_state = 1},
   [32] = {.lex_state = 3, .external_lex_state = 1},
   [33] = {.lex_state = 3, .external_lex_state = 1},
-  [34] = {.lex_state = 17, .external_lex_state = 1},
+  [34] = {.lex_state = 3, .external_lex_state = 1},
   [35] = {.lex_state = 3, .external_lex_state = 1},
-  [36] = {.lex_state = 7},
-  [37] = {.lex_state = 7},
-  [38] = {.lex_state = 7},
-  [39] = {.lex_state = 7},
-  [40] = {.lex_state = 7},
-  [41] = {.lex_state = 7},
-  [42] = {.lex_state = 7},
-  [43] = {.lex_state = 7},
-  [44] = {.lex_state = 7},
-  [45] = {.lex_state = 7},
-  [46] = {.lex_state = 7},
-  [47] = {.lex_state = 7},
-  [48] = {.lex_state = 7},
-  [49] = {.lex_state = 7},
-  [50] = {.lex_state = 7},
-  [51] = {.lex_state = 7},
-  [52] = {.lex_state = 7},
-  [53] = {.lex_state = 7},
-  [54] = {.lex_state = 7},
-  [55] = {.lex_state = 7},
-  [56] = {.lex_state = 6},
-  [57] = {.lex_state = 17},
-  [58] = {.lex_state = 17},
-  [59] = {.lex_state = 17},
-  [60] = {.lex_state = 17},
-  [61] = {.lex_state = 17},
-  [62] = {.lex_state = 6},
-  [63] = {.lex_state = 17},
-  [64] = {.lex_state = 6},
-  [65] = {.lex_state = 17},
-  [66] = {.lex_state = 17},
-  [67] = {.lex_state = 11},
-  [68] = {.lex_state = 11},
-  [69] = {.lex_state = 11},
-  [70] = {.lex_state = 11},
-  [71] = {.lex_state = 11},
-  [72] = {.lex_state = 11},
-  [73] = {.lex_state = 11},
-  [74] = {.lex_state = 7},
-  [75] = {.lex_state = 7},
-  [76] = {.lex_state = 7},
-  [77] = {.lex_state = 7},
-  [78] = {.lex_state = 7},
-  [79] = {.lex_state = 7},
-  [80] = {.lex_state = 6},
-  [81] = {.lex_state = 7},
-  [82] = {.lex_state = 7},
-  [83] = {.lex_state = 6},
-  [84] = {.lex_state = 7},
-  [85] = {.lex_state = 7},
-  [86] = {.lex_state = 7},
-  [87] = {.lex_state = 7},
-  [88] = {.lex_state = 7},
+  [36] = {.lex_state = 2, .external_lex_state = 1},
+  [37] = {.lex_state = 2, .external_lex_state = 1},
+  [38] = {.lex_state = 2, .external_lex_state = 1},
+  [39] = {.lex_state = 2, .external_lex_state = 1},
+  [40] = {.lex_state = 2, .external_lex_state = 1},
+  [41] = {.lex_state = 2, .external_lex_state = 1},
+  [42] = {.lex_state = 2, .external_lex_state = 1},
+  [43] = {.lex_state = 2, .external_lex_state = 1},
+  [44] = {.lex_state = 2, .external_lex_state = 1},
+  [45] = {.lex_state = 2, .external_lex_state = 1},
+  [46] = {.lex_state = 2, .external_lex_state = 1},
+  [47] = {.lex_state = 2, .external_lex_state = 1},
+  [48] = {.lex_state = 2, .external_lex_state = 1},
+  [49] = {.lex_state = 2, .external_lex_state = 1},
+  [50] = {.lex_state = 2, .external_lex_state = 1},
+  [51] = {.lex_state = 2, .external_lex_state = 1},
+  [52] = {.lex_state = 2, .external_lex_state = 1},
+  [53] = {.lex_state = 2, .external_lex_state = 1},
+  [54] = {.lex_state = 21, .external_lex_state = 1},
+  [55] = {.lex_state = 21, .external_lex_state = 1},
+  [56] = {.lex_state = 4, .external_lex_state = 1},
+  [57] = {.lex_state = 4, .external_lex_state = 1},
+  [58] = {.lex_state = 4, .external_lex_state = 1},
+  [59] = {.lex_state = 4, .external_lex_state = 1},
+  [60] = {.lex_state = 4, .external_lex_state = 1},
+  [61] = {.lex_state = 21, .external_lex_state = 1},
+  [62] = {.lex_state = 4, .external_lex_state = 1},
+  [63] = {.lex_state = 21},
+  [64] = {.lex_state = 21},
+  [65] = {.lex_state = 21},
+  [66] = {.lex_state = 21},
+  [67] = {.lex_state = 10},
+  [68] = {.lex_state = 10},
+  [69] = {.lex_state = 10},
+  [70] = {.lex_state = 10},
+  [71] = {.lex_state = 10},
+  [72] = {.lex_state = 10},
+  [73] = {.lex_state = 10},
+  [74] = {.lex_state = 10},
+  [75] = {.lex_state = 10},
+  [76] = {.lex_state = 10},
+  [77] = {.lex_state = 10},
+  [78] = {.lex_state = 10},
+  [79] = {.lex_state = 10},
+  [80] = {.lex_state = 10},
+  [81] = {.lex_state = 10},
+  [82] = {.lex_state = 10},
+  [83] = {.lex_state = 10},
+  [84] = {.lex_state = 10},
+  [85] = {.lex_state = 10},
+  [86] = {.lex_state = 10},
+  [87] = {.lex_state = 10},
+  [88] = {.lex_state = 10},
   [89] = {.lex_state = 7},
-  [90] = {.lex_state = 7},
-  [91] = {.lex_state = 11},
-  [92] = {.lex_state = 11},
-  [93] = {.lex_state = 57},
-  [94] = {.lex_state = 57},
-  [95] = {.lex_state = 4},
-  [96] = {.lex_state = 57},
-  [97] = {.lex_state = 57},
-  [98] = {.lex_state = 57},
-  [99] = {.lex_state = 14},
-  [100] = {.lex_state = 14},
-  [101] = {.lex_state = 17},
-  [102] = {.lex_state = 17},
-  [103] = {.lex_state = 5},
+  [90] = {.lex_state = 21},
+  [91] = {.lex_state = 21},
+  [92] = {.lex_state = 21},
+  [93] = {.lex_state = 21},
+  [94] = {.lex_state = 7},
+  [95] = {.lex_state = 7},
+  [96] = {.lex_state = 7},
+  [97] = {.lex_state = 7},
+  [98] = {.lex_state = 21},
+  [99] = {.lex_state = 21},
+  [100] = {.lex_state = 21},
+  [101] = {.lex_state = 21},
+  [102] = {.lex_state = 21},
+  [103] = {.lex_state = 14},
   [104] = {.lex_state = 14},
-  [105] = {.lex_state = 14},
+  [105] = {.lex_state = 9},
   [106] = {.lex_state = 14},
-  [107] = {.lex_state = 17},
-  [108] = {.lex_state = 17},
-  [109] = {.lex_state = 57},
-  [110] = {.lex_state = 17},
-  [111] = {.lex_state = 0},
-  [112] = {.lex_state = 0},
-  [113] = {.lex_state = 17},
-  [114] = {.lex_state = 0},
-  [115] = {.lex_state = 17},
-  [116] = {.lex_state = 17},
-  [117] = {.lex_state = 0},
-  [118] = {.lex_state = 0},
-  [119] = {.lex_state = 26},
-  [120] = {.lex_state = 0},
-  [121] = {.lex_state = 17},
-  [122] = {.lex_state = 17},
-  [123] = {.lex_state = 17},
-  [124] = {.lex_state = 17},
-  [125] = {.lex_state = 17},
-  [126] = {.lex_state = 17},
-  [127] = {.lex_state = 17},
-  [128] = {.lex_state = 17},
-  [129] = {.lex_state = 17},
-  [130] = {.lex_state = 17},
-  [131] = {.lex_state = 17},
-  [132] = {.lex_state = 0},
-  [133] = {.lex_state = 0},
-  [134] = {.lex_state = 0},
-  [135] = {.lex_state = 17},
-  [136] = {.lex_state = 17},
-  [137] = {.lex_state = 0},
+  [107] = {.lex_state = 14},
+  [108] = {.lex_state = 14},
+  [109] = {.lex_state = 14},
+  [110] = {.lex_state = 14},
+  [111] = {.lex_state = 14},
+  [112] = {.lex_state = 14},
+  [113] = {.lex_state = 10},
+  [114] = {.lex_state = 10},
+  [115] = {.lex_state = 10},
+  [116] = {.lex_state = 10},
+  [117] = {.lex_state = 10},
+  [118] = {.lex_state = 10},
+  [119] = {.lex_state = 10},
+  [120] = {.lex_state = 10},
+  [121] = {.lex_state = 10},
+  [122] = {.lex_state = 10},
+  [123] = {.lex_state = 7},
+  [124] = {.lex_state = 10},
+  [125] = {.lex_state = 10},
+  [126] = {.lex_state = 7},
+  [127] = {.lex_state = 10},
+  [128] = {.lex_state = 10},
+  [129] = {.lex_state = 10},
+  [130] = {.lex_state = 14},
+  [131] = {.lex_state = 14},
+  [132] = {.lex_state = 5},
+  [133] = {.lex_state = 65},
+  [134] = {.lex_state = 65},
+  [135] = {.lex_state = 65},
+  [136] = {.lex_state = 65},
+  [137] = {.lex_state = 65},
   [138] = {.lex_state = 17},
-  [139] = {.lex_state = 17},
-  [140] = {.lex_state = 0},
-  [141] = {.lex_state = 17},
+  [139] = {.lex_state = 21},
+  [140] = {.lex_state = 6},
+  [141] = {.lex_state = 21},
   [142] = {.lex_state = 17},
   [143] = {.lex_state = 17},
-  [144] = {.lex_state = 26},
+  [144] = {.lex_state = 17},
   [145] = {.lex_state = 17},
-  [146] = {.lex_state = 0},
-  [147] = {.lex_state = 17},
-  [148] = {.lex_state = 0},
-  [149] = {.lex_state = 17},
-  [150] = {.lex_state = 17},
+  [146] = {.lex_state = 21},
+  [147] = {.lex_state = 65},
+  [148] = {.lex_state = 21},
+  [149] = {.lex_state = 21},
+  [150] = {.lex_state = 21},
   [151] = {.lex_state = 0},
-  [152] = {.lex_state = 0},
-  [153] = {.lex_state = 17},
-  [154] = {.lex_state = 17},
-  [155] = {.lex_state = 17},
-  [156] = {.lex_state = 17},
-  [157] = {.lex_state = 17},
-  [158] = {.lex_state = 17},
+  [152] = {.lex_state = 21},
+  [153] = {.lex_state = 21},
+  [154] = {.lex_state = 0},
+  [155] = {.lex_state = 21},
+  [156] = {.lex_state = 21},
+  [157] = {.lex_state = 21},
+  [158] = {.lex_state = 21},
   [159] = {.lex_state = 0},
-  [160] = {.lex_state = 17},
-  [161] = {.lex_state = 0},
-  [162] = {.lex_state = 17},
-  [163] = {.lex_state = 17},
-  [164] = {.lex_state = 17},
+  [160] = {.lex_state = 21},
+  [161] = {.lex_state = 21},
+  [162] = {.lex_state = 21},
+  [163] = {.lex_state = 21},
+  [164] = {.lex_state = 21},
+  [165] = {.lex_state = 21},
+  [166] = {.lex_state = 21},
+  [167] = {.lex_state = 21},
+  [168] = {.lex_state = 0},
+  [169] = {.lex_state = 21},
+  [170] = {.lex_state = 0},
+  [171] = {.lex_state = 21},
+  [172] = {.lex_state = 21},
+  [173] = {.lex_state = 0},
+  [174] = {.lex_state = 33},
+  [175] = {.lex_state = 21},
+  [176] = {.lex_state = 21},
+  [177] = {.lex_state = 0},
+  [178] = {.lex_state = 21},
+  [179] = {.lex_state = 21},
+  [180] = {.lex_state = 0},
+  [181] = {.lex_state = 0},
+  [182] = {.lex_state = 21},
+  [183] = {.lex_state = 21},
+  [184] = {.lex_state = 33},
+  [185] = {.lex_state = 33},
+  [186] = {.lex_state = 0},
+  [187] = {.lex_state = 21},
+  [188] = {.lex_state = 21},
+  [189] = {.lex_state = 0},
+  [190] = {.lex_state = 21},
+  [191] = {.lex_state = 21},
+  [192] = {.lex_state = 0},
+  [193] = {.lex_state = 0},
+  [194] = {.lex_state = 21},
+  [195] = {.lex_state = 21},
+  [196] = {.lex_state = 21},
+  [197] = {.lex_state = 21},
+  [198] = {.lex_state = 0},
+  [199] = {.lex_state = 21},
+  [200] = {.lex_state = 0},
+  [201] = {.lex_state = 21},
+  [202] = {.lex_state = 21},
+  [203] = {.lex_state = 0},
+  [204] = {.lex_state = 21},
+  [205] = {.lex_state = 0},
+  [206] = {.lex_state = 21},
+  [207] = {.lex_state = 21},
+  [208] = {.lex_state = 21},
 };
 
 static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
@@ -2939,6 +4288,26 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_tempvar] = ACTIONS(1),
     [anon_sym_tempname] = ACTIONS(1),
     [anon_sym_tempfile] = ACTIONS(1),
+    [anon_sym_use] = ACTIONS(1),
+    [anon_sym_sysuse] = ACTIONS(1),
+    [anon_sym_webuse] = ACTIONS(1),
+    [anon_sym_save] = ACTIONS(1),
+    [anon_sym_saveold] = ACTIONS(1),
+    [anon_sym_do] = ACTIONS(1),
+    [anon_sym_run] = ACTIONS(1),
+    [anon_sym_include] = ACTIONS(1),
+    [anon_sym_import] = ACTIONS(1),
+    [anon_sym_export] = ACTIONS(1),
+    [anon_sym_cd] = ACTIONS(1),
+    [anon_sym_erase] = ACTIONS(1),
+    [anon_sym_rm] = ACTIONS(1),
+    [anon_sym_copy] = ACTIONS(1),
+    [anon_sym_mkdir] = ACTIONS(1),
+    [anon_sym_rmdir] = ACTIONS(1),
+    [anon_sym_type] = ACTIONS(1),
+    [anon_sym_dir] = ACTIONS(1),
+    [anon_sym_ls] = ACTIONS(1),
+    [anon_sym_shell] = ACTIONS(1),
     [anon_sym_by] = ACTIONS(1),
     [anon_sym_bysort] = ACTIONS(1),
     [anon_sym_bys] = ACTIONS(1),
@@ -2950,6 +4319,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_cap] = ACTIONS(1),
     [anon_sym_sortpreserve] = ACTIONS(1),
     [aux_sym__argument_token1] = ACTIONS(1),
+    [anon_sym_using] = ACTIONS(1),
     [sym_factor_operator] = ACTIONS(1),
     [anon_sym_if] = ACTIONS(1),
     [anon_sym_else] = ACTIONS(1),
@@ -3011,18 +4381,21 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [sym__line_start] = ACTIONS(1),
   },
   [STATE(1)] = {
-    [sym_source_file] = STATE(111),
-    [sym__line] = STATE(30),
-    [sym__statement] = STATE(140),
-    [sym_comment] = STATE(140),
-    [sym_line_comment] = STATE(159),
-    [sym_block_comment] = STATE(159),
-    [sym_program_definition] = STATE(140),
-    [sym_mata_block] = STATE(140),
-    [sym_macro_definition] = STATE(140),
-    [sym_command] = STATE(140),
-    [sym_prefix] = STATE(113),
-    [aux_sym_source_file_repeat1] = STATE(30),
+    [sym_source_file] = STATE(170),
+    [sym__line] = STATE(55),
+    [sym__statement] = STATE(181),
+    [sym_comment] = STATE(181),
+    [sym_line_comment] = STATE(186),
+    [sym_block_comment] = STATE(186),
+    [sym_program_definition] = STATE(181),
+    [sym_mata_block] = STATE(181),
+    [sym_macro_definition] = STATE(181),
+    [sym_command] = STATE(181),
+    [sym_file_command] = STATE(181),
+    [sym__file_command_name] = STATE(3),
+    [sym_prefix] = STATE(65),
+    [aux_sym_source_file_repeat1] = STATE(55),
+    [aux_sym_file_command_repeat1] = STATE(63),
     [ts_builtin_sym_end] = ACTIONS(3),
     [sym_identifier] = ACTIONS(5),
     [sym__newline] = ACTIONS(7),
@@ -3038,49 +4411,73 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_tempvar] = ACTIONS(21),
     [anon_sym_tempname] = ACTIONS(21),
     [anon_sym_tempfile] = ACTIONS(21),
-    [anon_sym_by] = ACTIONS(23),
-    [anon_sym_bysort] = ACTIONS(23),
-    [anon_sym_bys] = ACTIONS(23),
-    [anon_sym_quietly] = ACTIONS(23),
-    [anon_sym_qui] = ACTIONS(23),
-    [anon_sym_noisily] = ACTIONS(23),
-    [anon_sym_noi] = ACTIONS(23),
-    [anon_sym_capture] = ACTIONS(23),
-    [anon_sym_cap] = ACTIONS(23),
-    [anon_sym_sortpreserve] = ACTIONS(23),
-    [sym__line_start] = ACTIONS(25),
+    [anon_sym_use] = ACTIONS(23),
+    [anon_sym_sysuse] = ACTIONS(23),
+    [anon_sym_webuse] = ACTIONS(23),
+    [anon_sym_save] = ACTIONS(23),
+    [anon_sym_saveold] = ACTIONS(23),
+    [anon_sym_do] = ACTIONS(23),
+    [anon_sym_run] = ACTIONS(23),
+    [anon_sym_include] = ACTIONS(23),
+    [anon_sym_import] = ACTIONS(23),
+    [anon_sym_export] = ACTIONS(23),
+    [anon_sym_cd] = ACTIONS(23),
+    [anon_sym_erase] = ACTIONS(23),
+    [anon_sym_rm] = ACTIONS(23),
+    [anon_sym_copy] = ACTIONS(23),
+    [anon_sym_mkdir] = ACTIONS(23),
+    [anon_sym_rmdir] = ACTIONS(23),
+    [anon_sym_type] = ACTIONS(23),
+    [anon_sym_dir] = ACTIONS(23),
+    [anon_sym_ls] = ACTIONS(23),
+    [anon_sym_shell] = ACTIONS(23),
+    [anon_sym_by] = ACTIONS(25),
+    [anon_sym_bysort] = ACTIONS(25),
+    [anon_sym_bys] = ACTIONS(25),
+    [anon_sym_quietly] = ACTIONS(25),
+    [anon_sym_qui] = ACTIONS(25),
+    [anon_sym_noisily] = ACTIONS(25),
+    [anon_sym_noi] = ACTIONS(25),
+    [anon_sym_capture] = ACTIONS(25),
+    [anon_sym_cap] = ACTIONS(25),
+    [anon_sym_sortpreserve] = ACTIONS(25),
+    [sym__line_start] = ACTIONS(27),
   },
   [STATE(2)] = {
-    [sym_comment] = STATE(4),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(4),
-    [sym_local_macro_depth_1] = STATE(4),
-    [sym_global_macro] = STATE(4),
-    [sym__argument] = STATE(4),
-    [sym_factor_variable] = STATE(4),
-    [sym_control_keyword] = STATE(4),
-    [sym_type_keyword] = STATE(4),
-    [sym_builtin_variable] = STATE(4),
-    [sym_operator] = STATE(4),
-    [aux_sym_macro_definition_repeat1] = STATE(4),
-    [sym_identifier] = ACTIONS(27),
-    [sym__newline] = ACTIONS(29),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
+    [sym_comment] = STATE(5),
+    [sym_line_comment] = STATE(33),
+    [sym_block_comment] = STATE(33),
+    [sym_double_string] = STATE(24),
+    [sym_compound_string_depth_1] = STATE(24),
+    [sym_string] = STATE(5),
+    [sym_local_macro_depth_1] = STATE(5),
+    [sym_global_macro] = STATE(5),
+    [sym__file_argument] = STATE(5),
+    [sym__argument] = STATE(5),
+    [sym_using_clause] = STATE(5),
+    [sym_factor_variable] = STATE(5),
+    [sym_control_keyword] = STATE(5),
+    [sym_type_keyword] = STATE(5),
+    [sym_builtin_variable] = STATE(5),
+    [sym_operator] = STATE(5),
+    [aux_sym_file_command_repeat2] = STATE(5),
+    [sym_identifier] = ACTIONS(29),
+    [sym__newline] = ACTIONS(31),
+    [aux_sym_line_comment_token1] = ACTIONS(33),
+    [aux_sym_line_comment_token2] = ACTIONS(35),
+    [anon_sym_STAR] = ACTIONS(37),
+    [anon_sym_SLASH_STAR] = ACTIONS(39),
+    [anon_sym_SLASH] = ACTIONS(37),
     [anon_sym_DQUOTE] = ACTIONS(41),
     [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
     [anon_sym_BQUOTE] = ACTIONS(45),
     [anon_sym_DOLLAR] = ACTIONS(47),
     [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
     [anon_sym_end] = ACTIONS(51),
-    [aux_sym__argument_token1] = ACTIONS(27),
-    [sym_factor_operator] = ACTIONS(53),
+    [aux_sym__argument_token1] = ACTIONS(29),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_file_path] = ACTIONS(29),
+    [sym_factor_operator] = ACTIONS(55),
     [anon_sym_if] = ACTIONS(51),
     [anon_sym_else] = ACTIONS(51),
     [anon_sym_foreach] = ACTIONS(51),
@@ -3089,20 +4486,20 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_while] = ACTIONS(51),
     [anon_sym_continue] = ACTIONS(51),
     [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(57),
-    [sym_missing_value] = ACTIONS(27),
+    [anon_sym_byte] = ACTIONS(57),
+    [anon_sym_int] = ACTIONS(57),
+    [anon_sym_long] = ACTIONS(57),
+    [anon_sym_float] = ACTIONS(57),
+    [anon_sym_double] = ACTIONS(57),
+    [aux_sym_type_keyword_token1] = ACTIONS(57),
+    [aux_sym_type_keyword_token2] = ACTIONS(57),
+    [aux_sym_type_keyword_token3] = ACTIONS(57),
+    [aux_sym_type_keyword_token4] = ACTIONS(57),
+    [aux_sym_type_keyword_token5] = ACTIONS(57),
+    [aux_sym_type_keyword_token6] = ACTIONS(57),
+    [anon_sym_strL] = ACTIONS(57),
+    [sym_number] = ACTIONS(29),
+    [sym_missing_value] = ACTIONS(29),
     [anon_sym__n] = ACTIONS(59),
     [anon_sym__N] = ACTIONS(59),
     [anon_sym__b] = ACTIONS(59),
@@ -3118,51 +4515,53 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym__continue] = ACTIONS(59),
     [anon_sym__request] = ACTIONS(59),
     [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
+    [anon_sym_PLUS] = ACTIONS(37),
+    [anon_sym_DASH] = ACTIONS(37),
+    [anon_sym_CARET] = ACTIONS(37),
+    [anon_sym_EQ_EQ] = ACTIONS(37),
+    [anon_sym_BANG_EQ] = ACTIONS(37),
+    [anon_sym_TILDE_EQ] = ACTIONS(37),
+    [anon_sym_LT] = ACTIONS(37),
+    [anon_sym_GT] = ACTIONS(37),
+    [anon_sym_LT_EQ] = ACTIONS(37),
+    [anon_sym_GT_EQ] = ACTIONS(37),
+    [anon_sym_AMP] = ACTIONS(37),
+    [anon_sym_PIPE] = ACTIONS(37),
+    [anon_sym_BANG] = ACTIONS(37),
+    [anon_sym_TILDE] = ACTIONS(37),
+    [anon_sym_EQ] = ACTIONS(37),
+    [anon_sym_POUND] = ACTIONS(37),
+    [anon_sym_LBRACK] = ACTIONS(37),
+    [anon_sym_RBRACK] = ACTIONS(37),
+    [anon_sym_LPAREN] = ACTIONS(37),
+    [anon_sym_RPAREN] = ACTIONS(37),
     [sym__line_start] = ACTIONS(61),
   },
   [STATE(3)] = {
-    [sym_comment] = STATE(6),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(6),
-    [sym_local_macro_depth_1] = STATE(6),
-    [sym_global_macro] = STATE(6),
-    [sym__argument] = STATE(6),
-    [sym_factor_variable] = STATE(6),
-    [sym_control_keyword] = STATE(6),
-    [sym_type_keyword] = STATE(6),
-    [sym_builtin_variable] = STATE(6),
-    [sym_operator] = STATE(6),
-    [aux_sym_macro_definition_repeat1] = STATE(6),
+    [sym_comment] = STATE(2),
+    [sym_line_comment] = STATE(33),
+    [sym_block_comment] = STATE(33),
+    [sym_double_string] = STATE(24),
+    [sym_compound_string_depth_1] = STATE(24),
+    [sym_string] = STATE(2),
+    [sym_local_macro_depth_1] = STATE(2),
+    [sym_global_macro] = STATE(2),
+    [sym__file_argument] = STATE(2),
+    [sym__argument] = STATE(2),
+    [sym_using_clause] = STATE(2),
+    [sym_factor_variable] = STATE(2),
+    [sym_control_keyword] = STATE(2),
+    [sym_type_keyword] = STATE(2),
+    [sym_builtin_variable] = STATE(2),
+    [sym_operator] = STATE(2),
+    [aux_sym_file_command_repeat2] = STATE(2),
     [sym_identifier] = ACTIONS(63),
     [sym__newline] = ACTIONS(65),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
+    [aux_sym_line_comment_token1] = ACTIONS(33),
+    [aux_sym_line_comment_token2] = ACTIONS(35),
+    [anon_sym_STAR] = ACTIONS(37),
+    [anon_sym_SLASH_STAR] = ACTIONS(39),
+    [anon_sym_SLASH] = ACTIONS(37),
     [anon_sym_DQUOTE] = ACTIONS(41),
     [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
     [anon_sym_BQUOTE] = ACTIONS(45),
@@ -3170,7 +4569,9 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
     [anon_sym_end] = ACTIONS(51),
     [aux_sym__argument_token1] = ACTIONS(63),
-    [sym_factor_operator] = ACTIONS(53),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_file_path] = ACTIONS(63),
+    [sym_factor_operator] = ACTIONS(55),
     [anon_sym_if] = ACTIONS(51),
     [anon_sym_else] = ACTIONS(51),
     [anon_sym_foreach] = ACTIONS(51),
@@ -3179,19 +4580,19 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_while] = ACTIONS(51),
     [anon_sym_continue] = ACTIONS(51),
     [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(67),
+    [anon_sym_byte] = ACTIONS(57),
+    [anon_sym_int] = ACTIONS(57),
+    [anon_sym_long] = ACTIONS(57),
+    [anon_sym_float] = ACTIONS(57),
+    [anon_sym_double] = ACTIONS(57),
+    [aux_sym_type_keyword_token1] = ACTIONS(57),
+    [aux_sym_type_keyword_token2] = ACTIONS(57),
+    [aux_sym_type_keyword_token3] = ACTIONS(57),
+    [aux_sym_type_keyword_token4] = ACTIONS(57),
+    [aux_sym_type_keyword_token5] = ACTIONS(57),
+    [aux_sym_type_keyword_token6] = ACTIONS(57),
+    [anon_sym_strL] = ACTIONS(57),
+    [sym_number] = ACTIONS(63),
     [sym_missing_value] = ACTIONS(63),
     [anon_sym__n] = ACTIONS(59),
     [anon_sym__N] = ACTIONS(59),
@@ -3208,59 +4609,63 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym__continue] = ACTIONS(59),
     [anon_sym__request] = ACTIONS(59),
     [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
+    [anon_sym_PLUS] = ACTIONS(37),
+    [anon_sym_DASH] = ACTIONS(37),
+    [anon_sym_CARET] = ACTIONS(37),
+    [anon_sym_EQ_EQ] = ACTIONS(37),
+    [anon_sym_BANG_EQ] = ACTIONS(37),
+    [anon_sym_TILDE_EQ] = ACTIONS(37),
+    [anon_sym_LT] = ACTIONS(37),
+    [anon_sym_GT] = ACTIONS(37),
+    [anon_sym_LT_EQ] = ACTIONS(37),
+    [anon_sym_GT_EQ] = ACTIONS(37),
+    [anon_sym_AMP] = ACTIONS(37),
+    [anon_sym_PIPE] = ACTIONS(37),
+    [anon_sym_BANG] = ACTIONS(37),
+    [anon_sym_TILDE] = ACTIONS(37),
+    [anon_sym_EQ] = ACTIONS(37),
+    [anon_sym_POUND] = ACTIONS(37),
+    [anon_sym_LBRACK] = ACTIONS(37),
+    [anon_sym_RBRACK] = ACTIONS(37),
+    [anon_sym_LPAREN] = ACTIONS(37),
+    [anon_sym_RPAREN] = ACTIONS(37),
     [sym__line_start] = ACTIONS(61),
   },
   [STATE(4)] = {
-    [sym_comment] = STATE(7),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(7),
-    [sym_local_macro_depth_1] = STATE(7),
-    [sym_global_macro] = STATE(7),
-    [sym__argument] = STATE(7),
-    [sym_factor_variable] = STATE(7),
-    [sym_control_keyword] = STATE(7),
-    [sym_type_keyword] = STATE(7),
-    [sym_builtin_variable] = STATE(7),
-    [sym_operator] = STATE(7),
-    [aux_sym_macro_definition_repeat1] = STATE(7),
-    [sym_identifier] = ACTIONS(69),
-    [sym__newline] = ACTIONS(71),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
+    [sym_comment] = STATE(6),
+    [sym_line_comment] = STATE(33),
+    [sym_block_comment] = STATE(33),
+    [sym_double_string] = STATE(24),
+    [sym_compound_string_depth_1] = STATE(24),
+    [sym_string] = STATE(6),
+    [sym_local_macro_depth_1] = STATE(6),
+    [sym_global_macro] = STATE(6),
+    [sym__file_argument] = STATE(6),
+    [sym__argument] = STATE(6),
+    [sym_using_clause] = STATE(6),
+    [sym_factor_variable] = STATE(6),
+    [sym_control_keyword] = STATE(6),
+    [sym_type_keyword] = STATE(6),
+    [sym_builtin_variable] = STATE(6),
+    [sym_operator] = STATE(6),
+    [aux_sym_file_command_repeat2] = STATE(6),
+    [sym_identifier] = ACTIONS(67),
+    [sym__newline] = ACTIONS(69),
+    [aux_sym_line_comment_token1] = ACTIONS(33),
+    [aux_sym_line_comment_token2] = ACTIONS(35),
+    [anon_sym_STAR] = ACTIONS(37),
+    [anon_sym_SLASH_STAR] = ACTIONS(39),
+    [anon_sym_SLASH] = ACTIONS(37),
     [anon_sym_DQUOTE] = ACTIONS(41),
     [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
     [anon_sym_BQUOTE] = ACTIONS(45),
     [anon_sym_DOLLAR] = ACTIONS(47),
     [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
     [anon_sym_end] = ACTIONS(51),
-    [aux_sym__argument_token1] = ACTIONS(69),
-    [sym_factor_operator] = ACTIONS(53),
+    [aux_sym__argument_token1] = ACTIONS(67),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_file_path] = ACTIONS(67),
+    [sym_factor_operator] = ACTIONS(55),
     [anon_sym_if] = ACTIONS(51),
     [anon_sym_else] = ACTIONS(51),
     [anon_sym_foreach] = ACTIONS(51),
@@ -3269,20 +4674,20 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym_while] = ACTIONS(51),
     [anon_sym_continue] = ACTIONS(51),
     [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(73),
-    [sym_missing_value] = ACTIONS(69),
+    [anon_sym_byte] = ACTIONS(57),
+    [anon_sym_int] = ACTIONS(57),
+    [anon_sym_long] = ACTIONS(57),
+    [anon_sym_float] = ACTIONS(57),
+    [anon_sym_double] = ACTIONS(57),
+    [aux_sym_type_keyword_token1] = ACTIONS(57),
+    [aux_sym_type_keyword_token2] = ACTIONS(57),
+    [aux_sym_type_keyword_token3] = ACTIONS(57),
+    [aux_sym_type_keyword_token4] = ACTIONS(57),
+    [aux_sym_type_keyword_token5] = ACTIONS(57),
+    [aux_sym_type_keyword_token6] = ACTIONS(57),
+    [anon_sym_strL] = ACTIONS(57),
+    [sym_number] = ACTIONS(67),
+    [sym_missing_value] = ACTIONS(67),
     [anon_sym__n] = ACTIONS(59),
     [anon_sym__N] = ACTIONS(59),
     [anon_sym__b] = ACTIONS(59),
@@ -3298,3709 +4703,6496 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [anon_sym__continue] = ACTIONS(59),
     [anon_sym__request] = ACTIONS(59),
     [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
+    [anon_sym_PLUS] = ACTIONS(37),
+    [anon_sym_DASH] = ACTIONS(37),
+    [anon_sym_CARET] = ACTIONS(37),
+    [anon_sym_EQ_EQ] = ACTIONS(37),
+    [anon_sym_BANG_EQ] = ACTIONS(37),
+    [anon_sym_TILDE_EQ] = ACTIONS(37),
+    [anon_sym_LT] = ACTIONS(37),
+    [anon_sym_GT] = ACTIONS(37),
+    [anon_sym_LT_EQ] = ACTIONS(37),
+    [anon_sym_GT_EQ] = ACTIONS(37),
+    [anon_sym_AMP] = ACTIONS(37),
+    [anon_sym_PIPE] = ACTIONS(37),
+    [anon_sym_BANG] = ACTIONS(37),
+    [anon_sym_TILDE] = ACTIONS(37),
+    [anon_sym_EQ] = ACTIONS(37),
+    [anon_sym_POUND] = ACTIONS(37),
+    [anon_sym_LBRACK] = ACTIONS(37),
+    [anon_sym_RBRACK] = ACTIONS(37),
+    [anon_sym_LPAREN] = ACTIONS(37),
+    [anon_sym_RPAREN] = ACTIONS(37),
     [sym__line_start] = ACTIONS(61),
   },
   [STATE(5)] = {
+    [sym_comment] = STATE(5),
+    [sym_line_comment] = STATE(33),
+    [sym_block_comment] = STATE(33),
+    [sym_double_string] = STATE(24),
+    [sym_compound_string_depth_1] = STATE(24),
+    [sym_string] = STATE(5),
+    [sym_local_macro_depth_1] = STATE(5),
+    [sym_global_macro] = STATE(5),
+    [sym__file_argument] = STATE(5),
+    [sym__argument] = STATE(5),
+    [sym_using_clause] = STATE(5),
+    [sym_factor_variable] = STATE(5),
+    [sym_control_keyword] = STATE(5),
+    [sym_type_keyword] = STATE(5),
+    [sym_builtin_variable] = STATE(5),
+    [sym_operator] = STATE(5),
+    [aux_sym_file_command_repeat2] = STATE(5),
+    [sym_identifier] = ACTIONS(71),
+    [sym__newline] = ACTIONS(74),
+    [aux_sym_line_comment_token1] = ACTIONS(76),
+    [aux_sym_line_comment_token2] = ACTIONS(79),
+    [anon_sym_STAR] = ACTIONS(82),
+    [anon_sym_SLASH_STAR] = ACTIONS(85),
+    [anon_sym_SLASH] = ACTIONS(82),
+    [anon_sym_DQUOTE] = ACTIONS(88),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(91),
+    [anon_sym_BQUOTE] = ACTIONS(94),
+    [anon_sym_DOLLAR] = ACTIONS(97),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(100),
+    [anon_sym_end] = ACTIONS(103),
+    [aux_sym__argument_token1] = ACTIONS(71),
+    [anon_sym_using] = ACTIONS(106),
+    [sym_file_path] = ACTIONS(71),
+    [sym_factor_operator] = ACTIONS(109),
+    [anon_sym_if] = ACTIONS(103),
+    [anon_sym_else] = ACTIONS(103),
+    [anon_sym_foreach] = ACTIONS(103),
+    [anon_sym_forvalues] = ACTIONS(103),
+    [anon_sym_forv] = ACTIONS(103),
+    [anon_sym_while] = ACTIONS(103),
+    [anon_sym_continue] = ACTIONS(103),
+    [anon_sym_break] = ACTIONS(103),
+    [anon_sym_byte] = ACTIONS(112),
+    [anon_sym_int] = ACTIONS(112),
+    [anon_sym_long] = ACTIONS(112),
+    [anon_sym_float] = ACTIONS(112),
+    [anon_sym_double] = ACTIONS(112),
+    [aux_sym_type_keyword_token1] = ACTIONS(112),
+    [aux_sym_type_keyword_token2] = ACTIONS(112),
+    [aux_sym_type_keyword_token3] = ACTIONS(112),
+    [aux_sym_type_keyword_token4] = ACTIONS(112),
+    [aux_sym_type_keyword_token5] = ACTIONS(112),
+    [aux_sym_type_keyword_token6] = ACTIONS(112),
+    [anon_sym_strL] = ACTIONS(112),
+    [sym_number] = ACTIONS(71),
+    [sym_missing_value] = ACTIONS(71),
+    [anon_sym__n] = ACTIONS(115),
+    [anon_sym__N] = ACTIONS(115),
+    [anon_sym__b] = ACTIONS(115),
+    [anon_sym__coef] = ACTIONS(115),
+    [anon_sym__cons] = ACTIONS(115),
+    [anon_sym__rc] = ACTIONS(115),
+    [anon_sym__se] = ACTIONS(115),
+    [anon_sym__pi] = ACTIONS(115),
+    [anon_sym__skip] = ACTIONS(115),
+    [anon_sym__dup] = ACTIONS(115),
+    [anon_sym__newline] = ACTIONS(115),
+    [anon_sym__column] = ACTIONS(115),
+    [anon_sym__continue] = ACTIONS(115),
+    [anon_sym__request] = ACTIONS(115),
+    [anon_sym__char] = ACTIONS(115),
+    [anon_sym_PLUS] = ACTIONS(82),
+    [anon_sym_DASH] = ACTIONS(82),
+    [anon_sym_CARET] = ACTIONS(82),
+    [anon_sym_EQ_EQ] = ACTIONS(82),
+    [anon_sym_BANG_EQ] = ACTIONS(82),
+    [anon_sym_TILDE_EQ] = ACTIONS(82),
+    [anon_sym_LT] = ACTIONS(82),
+    [anon_sym_GT] = ACTIONS(82),
+    [anon_sym_LT_EQ] = ACTIONS(82),
+    [anon_sym_GT_EQ] = ACTIONS(82),
+    [anon_sym_AMP] = ACTIONS(82),
+    [anon_sym_PIPE] = ACTIONS(82),
+    [anon_sym_BANG] = ACTIONS(82),
+    [anon_sym_TILDE] = ACTIONS(82),
+    [anon_sym_EQ] = ACTIONS(82),
+    [anon_sym_POUND] = ACTIONS(82),
+    [anon_sym_LBRACK] = ACTIONS(82),
+    [anon_sym_RBRACK] = ACTIONS(82),
+    [anon_sym_LPAREN] = ACTIONS(82),
+    [anon_sym_RPAREN] = ACTIONS(82),
+    [sym__line_start] = ACTIONS(118),
+  },
+  [STATE(6)] = {
+    [sym_comment] = STATE(5),
+    [sym_line_comment] = STATE(33),
+    [sym_block_comment] = STATE(33),
+    [sym_double_string] = STATE(24),
+    [sym_compound_string_depth_1] = STATE(24),
+    [sym_string] = STATE(5),
+    [sym_local_macro_depth_1] = STATE(5),
+    [sym_global_macro] = STATE(5),
+    [sym__file_argument] = STATE(5),
+    [sym__argument] = STATE(5),
+    [sym_using_clause] = STATE(5),
+    [sym_factor_variable] = STATE(5),
+    [sym_control_keyword] = STATE(5),
+    [sym_type_keyword] = STATE(5),
+    [sym_builtin_variable] = STATE(5),
+    [sym_operator] = STATE(5),
+    [aux_sym_file_command_repeat2] = STATE(5),
+    [sym_identifier] = ACTIONS(29),
+    [sym__newline] = ACTIONS(121),
+    [aux_sym_line_comment_token1] = ACTIONS(33),
+    [aux_sym_line_comment_token2] = ACTIONS(35),
+    [anon_sym_STAR] = ACTIONS(37),
+    [anon_sym_SLASH_STAR] = ACTIONS(39),
+    [anon_sym_SLASH] = ACTIONS(37),
+    [anon_sym_DQUOTE] = ACTIONS(41),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
+    [anon_sym_BQUOTE] = ACTIONS(45),
+    [anon_sym_DOLLAR] = ACTIONS(47),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
+    [anon_sym_end] = ACTIONS(51),
+    [aux_sym__argument_token1] = ACTIONS(29),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_file_path] = ACTIONS(29),
+    [sym_factor_operator] = ACTIONS(55),
+    [anon_sym_if] = ACTIONS(51),
+    [anon_sym_else] = ACTIONS(51),
+    [anon_sym_foreach] = ACTIONS(51),
+    [anon_sym_forvalues] = ACTIONS(51),
+    [anon_sym_forv] = ACTIONS(51),
+    [anon_sym_while] = ACTIONS(51),
+    [anon_sym_continue] = ACTIONS(51),
+    [anon_sym_break] = ACTIONS(51),
+    [anon_sym_byte] = ACTIONS(57),
+    [anon_sym_int] = ACTIONS(57),
+    [anon_sym_long] = ACTIONS(57),
+    [anon_sym_float] = ACTIONS(57),
+    [anon_sym_double] = ACTIONS(57),
+    [aux_sym_type_keyword_token1] = ACTIONS(57),
+    [aux_sym_type_keyword_token2] = ACTIONS(57),
+    [aux_sym_type_keyword_token3] = ACTIONS(57),
+    [aux_sym_type_keyword_token4] = ACTIONS(57),
+    [aux_sym_type_keyword_token5] = ACTIONS(57),
+    [aux_sym_type_keyword_token6] = ACTIONS(57),
+    [anon_sym_strL] = ACTIONS(57),
+    [sym_number] = ACTIONS(29),
+    [sym_missing_value] = ACTIONS(29),
+    [anon_sym__n] = ACTIONS(59),
+    [anon_sym__N] = ACTIONS(59),
+    [anon_sym__b] = ACTIONS(59),
+    [anon_sym__coef] = ACTIONS(59),
+    [anon_sym__cons] = ACTIONS(59),
+    [anon_sym__rc] = ACTIONS(59),
+    [anon_sym__se] = ACTIONS(59),
+    [anon_sym__pi] = ACTIONS(59),
+    [anon_sym__skip] = ACTIONS(59),
+    [anon_sym__dup] = ACTIONS(59),
+    [anon_sym__newline] = ACTIONS(59),
+    [anon_sym__column] = ACTIONS(59),
+    [anon_sym__continue] = ACTIONS(59),
+    [anon_sym__request] = ACTIONS(59),
+    [anon_sym__char] = ACTIONS(59),
+    [anon_sym_PLUS] = ACTIONS(37),
+    [anon_sym_DASH] = ACTIONS(37),
+    [anon_sym_CARET] = ACTIONS(37),
+    [anon_sym_EQ_EQ] = ACTIONS(37),
+    [anon_sym_BANG_EQ] = ACTIONS(37),
+    [anon_sym_TILDE_EQ] = ACTIONS(37),
+    [anon_sym_LT] = ACTIONS(37),
+    [anon_sym_GT] = ACTIONS(37),
+    [anon_sym_LT_EQ] = ACTIONS(37),
+    [anon_sym_GT_EQ] = ACTIONS(37),
+    [anon_sym_AMP] = ACTIONS(37),
+    [anon_sym_PIPE] = ACTIONS(37),
+    [anon_sym_BANG] = ACTIONS(37),
+    [anon_sym_TILDE] = ACTIONS(37),
+    [anon_sym_EQ] = ACTIONS(37),
+    [anon_sym_POUND] = ACTIONS(37),
+    [anon_sym_LBRACK] = ACTIONS(37),
+    [anon_sym_RBRACK] = ACTIONS(37),
+    [anon_sym_LPAREN] = ACTIONS(37),
+    [anon_sym_RPAREN] = ACTIONS(37),
+    [sym__line_start] = ACTIONS(61),
+  },
+  [STATE(7)] = {
     [sym_comment] = STATE(8),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
     [sym_string] = STATE(8),
     [sym_local_macro_depth_1] = STATE(8),
     [sym_global_macro] = STATE(8),
     [sym__argument] = STATE(8),
+    [sym_using_clause] = STATE(8),
     [sym_factor_variable] = STATE(8),
     [sym_control_keyword] = STATE(8),
     [sym_type_keyword] = STATE(8),
     [sym_builtin_variable] = STATE(8),
     [sym_operator] = STATE(8),
     [aux_sym_macro_definition_repeat1] = STATE(8),
-    [sym_identifier] = ACTIONS(75),
-    [sym__newline] = ACTIONS(77),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
-    [anon_sym_DQUOTE] = ACTIONS(41),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
-    [anon_sym_BQUOTE] = ACTIONS(45),
-    [anon_sym_DOLLAR] = ACTIONS(47),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
-    [anon_sym_end] = ACTIONS(51),
-    [aux_sym__argument_token1] = ACTIONS(75),
-    [sym_factor_operator] = ACTIONS(53),
-    [anon_sym_if] = ACTIONS(51),
-    [anon_sym_else] = ACTIONS(51),
-    [anon_sym_foreach] = ACTIONS(51),
-    [anon_sym_forvalues] = ACTIONS(51),
-    [anon_sym_forv] = ACTIONS(51),
-    [anon_sym_while] = ACTIONS(51),
-    [anon_sym_continue] = ACTIONS(51),
-    [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(79),
-    [sym_missing_value] = ACTIONS(75),
-    [anon_sym__n] = ACTIONS(59),
-    [anon_sym__N] = ACTIONS(59),
-    [anon_sym__b] = ACTIONS(59),
-    [anon_sym__coef] = ACTIONS(59),
-    [anon_sym__cons] = ACTIONS(59),
-    [anon_sym__rc] = ACTIONS(59),
-    [anon_sym__se] = ACTIONS(59),
-    [anon_sym__pi] = ACTIONS(59),
-    [anon_sym__skip] = ACTIONS(59),
-    [anon_sym__dup] = ACTIONS(59),
-    [anon_sym__newline] = ACTIONS(59),
-    [anon_sym__column] = ACTIONS(59),
-    [anon_sym__continue] = ACTIONS(59),
-    [anon_sym__request] = ACTIONS(59),
-    [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
-    [sym__line_start] = ACTIONS(61),
-  },
-  [STATE(6)] = {
-    [sym_comment] = STATE(7),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(7),
-    [sym_local_macro_depth_1] = STATE(7),
-    [sym_global_macro] = STATE(7),
-    [sym__argument] = STATE(7),
-    [sym_factor_variable] = STATE(7),
-    [sym_control_keyword] = STATE(7),
-    [sym_type_keyword] = STATE(7),
-    [sym_builtin_variable] = STATE(7),
-    [sym_operator] = STATE(7),
-    [aux_sym_macro_definition_repeat1] = STATE(7),
-    [sym_identifier] = ACTIONS(69),
-    [sym__newline] = ACTIONS(81),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
-    [anon_sym_DQUOTE] = ACTIONS(41),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
-    [anon_sym_BQUOTE] = ACTIONS(45),
-    [anon_sym_DOLLAR] = ACTIONS(47),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
-    [anon_sym_end] = ACTIONS(51),
-    [aux_sym__argument_token1] = ACTIONS(69),
-    [sym_factor_operator] = ACTIONS(53),
-    [anon_sym_if] = ACTIONS(51),
-    [anon_sym_else] = ACTIONS(51),
-    [anon_sym_foreach] = ACTIONS(51),
-    [anon_sym_forvalues] = ACTIONS(51),
-    [anon_sym_forv] = ACTIONS(51),
-    [anon_sym_while] = ACTIONS(51),
-    [anon_sym_continue] = ACTIONS(51),
-    [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(73),
-    [sym_missing_value] = ACTIONS(69),
-    [anon_sym__n] = ACTIONS(59),
-    [anon_sym__N] = ACTIONS(59),
-    [anon_sym__b] = ACTIONS(59),
-    [anon_sym__coef] = ACTIONS(59),
-    [anon_sym__cons] = ACTIONS(59),
-    [anon_sym__rc] = ACTIONS(59),
-    [anon_sym__se] = ACTIONS(59),
-    [anon_sym__pi] = ACTIONS(59),
-    [anon_sym__skip] = ACTIONS(59),
-    [anon_sym__dup] = ACTIONS(59),
-    [anon_sym__newline] = ACTIONS(59),
-    [anon_sym__column] = ACTIONS(59),
-    [anon_sym__continue] = ACTIONS(59),
-    [anon_sym__request] = ACTIONS(59),
-    [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
-    [sym__line_start] = ACTIONS(61),
-  },
-  [STATE(7)] = {
-    [sym_comment] = STATE(7),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(7),
-    [sym_local_macro_depth_1] = STATE(7),
-    [sym_global_macro] = STATE(7),
-    [sym__argument] = STATE(7),
-    [sym_factor_variable] = STATE(7),
-    [sym_control_keyword] = STATE(7),
-    [sym_type_keyword] = STATE(7),
-    [sym_builtin_variable] = STATE(7),
-    [sym_operator] = STATE(7),
-    [aux_sym_macro_definition_repeat1] = STATE(7),
-    [sym_identifier] = ACTIONS(83),
-    [sym__newline] = ACTIONS(86),
-    [aux_sym_line_comment_token1] = ACTIONS(88),
-    [aux_sym_line_comment_token2] = ACTIONS(91),
-    [anon_sym_STAR] = ACTIONS(94),
-    [anon_sym_SLASH_STAR] = ACTIONS(97),
-    [anon_sym_SLASH] = ACTIONS(100),
-    [anon_sym_DQUOTE] = ACTIONS(103),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(106),
-    [anon_sym_BQUOTE] = ACTIONS(109),
-    [anon_sym_DOLLAR] = ACTIONS(112),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(115),
-    [anon_sym_end] = ACTIONS(118),
-    [aux_sym__argument_token1] = ACTIONS(83),
-    [sym_factor_operator] = ACTIONS(121),
-    [anon_sym_if] = ACTIONS(118),
-    [anon_sym_else] = ACTIONS(118),
-    [anon_sym_foreach] = ACTIONS(118),
-    [anon_sym_forvalues] = ACTIONS(118),
-    [anon_sym_forv] = ACTIONS(118),
-    [anon_sym_while] = ACTIONS(118),
-    [anon_sym_continue] = ACTIONS(118),
-    [anon_sym_break] = ACTIONS(118),
-    [anon_sym_byte] = ACTIONS(124),
-    [anon_sym_int] = ACTIONS(124),
-    [anon_sym_long] = ACTIONS(124),
-    [anon_sym_float] = ACTIONS(124),
-    [anon_sym_double] = ACTIONS(124),
-    [aux_sym_type_keyword_token1] = ACTIONS(124),
-    [aux_sym_type_keyword_token2] = ACTIONS(124),
-    [aux_sym_type_keyword_token3] = ACTIONS(124),
-    [aux_sym_type_keyword_token4] = ACTIONS(124),
-    [aux_sym_type_keyword_token5] = ACTIONS(124),
-    [aux_sym_type_keyword_token6] = ACTIONS(124),
-    [anon_sym_strL] = ACTIONS(124),
-    [sym_number] = ACTIONS(127),
-    [sym_missing_value] = ACTIONS(83),
-    [anon_sym__n] = ACTIONS(130),
-    [anon_sym__N] = ACTIONS(130),
-    [anon_sym__b] = ACTIONS(130),
-    [anon_sym__coef] = ACTIONS(130),
-    [anon_sym__cons] = ACTIONS(130),
-    [anon_sym__rc] = ACTIONS(130),
-    [anon_sym__se] = ACTIONS(130),
-    [anon_sym__pi] = ACTIONS(130),
-    [anon_sym__skip] = ACTIONS(130),
-    [anon_sym__dup] = ACTIONS(130),
-    [anon_sym__newline] = ACTIONS(130),
-    [anon_sym__column] = ACTIONS(130),
-    [anon_sym__continue] = ACTIONS(130),
-    [anon_sym__request] = ACTIONS(130),
-    [anon_sym__char] = ACTIONS(130),
-    [anon_sym_PLUS] = ACTIONS(94),
-    [anon_sym_DASH] = ACTIONS(94),
-    [anon_sym_CARET] = ACTIONS(94),
-    [anon_sym_EQ_EQ] = ACTIONS(94),
-    [anon_sym_BANG_EQ] = ACTIONS(94),
-    [anon_sym_TILDE_EQ] = ACTIONS(94),
-    [anon_sym_LT] = ACTIONS(100),
-    [anon_sym_GT] = ACTIONS(100),
-    [anon_sym_LT_EQ] = ACTIONS(94),
-    [anon_sym_GT_EQ] = ACTIONS(94),
-    [anon_sym_AMP] = ACTIONS(94),
-    [anon_sym_PIPE] = ACTIONS(94),
-    [anon_sym_BANG] = ACTIONS(100),
-    [anon_sym_TILDE] = ACTIONS(100),
-    [anon_sym_EQ] = ACTIONS(100),
-    [anon_sym_POUND] = ACTIONS(94),
-    [anon_sym_LBRACK] = ACTIONS(94),
-    [anon_sym_RBRACK] = ACTIONS(94),
-    [anon_sym_LPAREN] = ACTIONS(94),
-    [anon_sym_RPAREN] = ACTIONS(94),
-    [sym__line_start] = ACTIONS(133),
+    [sym_identifier] = ACTIONS(123),
+    [sym__newline] = ACTIONS(125),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(123),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(153),
+    [sym_missing_value] = ACTIONS(123),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
   },
   [STATE(8)] = {
-    [sym_comment] = STATE(7),
-    [sym_line_comment] = STATE(19),
-    [sym_block_comment] = STATE(19),
-    [sym_double_string] = STATE(14),
-    [sym_compound_string_depth_1] = STATE(14),
-    [sym_string] = STATE(7),
-    [sym_local_macro_depth_1] = STATE(7),
-    [sym_global_macro] = STATE(7),
-    [sym__argument] = STATE(7),
-    [sym_factor_variable] = STATE(7),
-    [sym_control_keyword] = STATE(7),
-    [sym_type_keyword] = STATE(7),
-    [sym_builtin_variable] = STATE(7),
-    [sym_operator] = STATE(7),
-    [aux_sym_macro_definition_repeat1] = STATE(7),
-    [sym_identifier] = ACTIONS(69),
-    [sym__newline] = ACTIONS(136),
-    [aux_sym_line_comment_token1] = ACTIONS(31),
-    [aux_sym_line_comment_token2] = ACTIONS(33),
-    [anon_sym_STAR] = ACTIONS(35),
-    [anon_sym_SLASH_STAR] = ACTIONS(37),
-    [anon_sym_SLASH] = ACTIONS(39),
-    [anon_sym_DQUOTE] = ACTIONS(41),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(43),
-    [anon_sym_BQUOTE] = ACTIONS(45),
-    [anon_sym_DOLLAR] = ACTIONS(47),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(49),
-    [anon_sym_end] = ACTIONS(51),
-    [aux_sym__argument_token1] = ACTIONS(69),
-    [sym_factor_operator] = ACTIONS(53),
-    [anon_sym_if] = ACTIONS(51),
-    [anon_sym_else] = ACTIONS(51),
-    [anon_sym_foreach] = ACTIONS(51),
-    [anon_sym_forvalues] = ACTIONS(51),
-    [anon_sym_forv] = ACTIONS(51),
-    [anon_sym_while] = ACTIONS(51),
-    [anon_sym_continue] = ACTIONS(51),
-    [anon_sym_break] = ACTIONS(51),
-    [anon_sym_byte] = ACTIONS(55),
-    [anon_sym_int] = ACTIONS(55),
-    [anon_sym_long] = ACTIONS(55),
-    [anon_sym_float] = ACTIONS(55),
-    [anon_sym_double] = ACTIONS(55),
-    [aux_sym_type_keyword_token1] = ACTIONS(55),
-    [aux_sym_type_keyword_token2] = ACTIONS(55),
-    [aux_sym_type_keyword_token3] = ACTIONS(55),
-    [aux_sym_type_keyword_token4] = ACTIONS(55),
-    [aux_sym_type_keyword_token5] = ACTIONS(55),
-    [aux_sym_type_keyword_token6] = ACTIONS(55),
-    [anon_sym_strL] = ACTIONS(55),
-    [sym_number] = ACTIONS(73),
-    [sym_missing_value] = ACTIONS(69),
-    [anon_sym__n] = ACTIONS(59),
-    [anon_sym__N] = ACTIONS(59),
-    [anon_sym__b] = ACTIONS(59),
-    [anon_sym__coef] = ACTIONS(59),
-    [anon_sym__cons] = ACTIONS(59),
-    [anon_sym__rc] = ACTIONS(59),
-    [anon_sym__se] = ACTIONS(59),
-    [anon_sym__pi] = ACTIONS(59),
-    [anon_sym__skip] = ACTIONS(59),
-    [anon_sym__dup] = ACTIONS(59),
-    [anon_sym__newline] = ACTIONS(59),
-    [anon_sym__column] = ACTIONS(59),
-    [anon_sym__continue] = ACTIONS(59),
-    [anon_sym__request] = ACTIONS(59),
-    [anon_sym__char] = ACTIONS(59),
-    [anon_sym_PLUS] = ACTIONS(35),
-    [anon_sym_DASH] = ACTIONS(35),
-    [anon_sym_CARET] = ACTIONS(35),
-    [anon_sym_EQ_EQ] = ACTIONS(35),
-    [anon_sym_BANG_EQ] = ACTIONS(35),
-    [anon_sym_TILDE_EQ] = ACTIONS(35),
-    [anon_sym_LT] = ACTIONS(39),
-    [anon_sym_GT] = ACTIONS(39),
-    [anon_sym_LT_EQ] = ACTIONS(35),
-    [anon_sym_GT_EQ] = ACTIONS(35),
-    [anon_sym_AMP] = ACTIONS(35),
-    [anon_sym_PIPE] = ACTIONS(35),
-    [anon_sym_BANG] = ACTIONS(39),
-    [anon_sym_TILDE] = ACTIONS(39),
-    [anon_sym_EQ] = ACTIONS(39),
-    [anon_sym_POUND] = ACTIONS(35),
-    [anon_sym_LBRACK] = ACTIONS(35),
-    [anon_sym_RBRACK] = ACTIONS(35),
-    [anon_sym_LPAREN] = ACTIONS(35),
-    [anon_sym_RPAREN] = ACTIONS(35),
-    [sym__line_start] = ACTIONS(61),
+    [sym_comment] = STATE(11),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(11),
+    [sym_local_macro_depth_1] = STATE(11),
+    [sym_global_macro] = STATE(11),
+    [sym__argument] = STATE(11),
+    [sym_using_clause] = STATE(11),
+    [sym_factor_variable] = STATE(11),
+    [sym_control_keyword] = STATE(11),
+    [sym_type_keyword] = STATE(11),
+    [sym_builtin_variable] = STATE(11),
+    [sym_operator] = STATE(11),
+    [aux_sym_macro_definition_repeat1] = STATE(11),
+    [sym_identifier] = ACTIONS(159),
+    [sym__newline] = ACTIONS(161),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(159),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(163),
+    [sym_missing_value] = ACTIONS(159),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
   },
   [STATE(9)] = {
-    [sym_identifier] = ACTIONS(138),
-    [sym__newline] = ACTIONS(140),
-    [aux_sym_line_comment_token1] = ACTIONS(140),
-    [aux_sym_line_comment_token2] = ACTIONS(138),
-    [anon_sym_STAR] = ACTIONS(140),
-    [anon_sym_SLASH_STAR] = ACTIONS(140),
-    [anon_sym_SLASH] = ACTIONS(138),
-    [anon_sym_DQUOTE] = ACTIONS(140),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(140),
-    [anon_sym_BQUOTE] = ACTIONS(138),
-    [anon_sym_DOLLAR] = ACTIONS(138),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(140),
-    [anon_sym_end] = ACTIONS(138),
-    [aux_sym__argument_token1] = ACTIONS(138),
-    [sym_factor_operator] = ACTIONS(140),
-    [anon_sym_if] = ACTIONS(138),
-    [anon_sym_else] = ACTIONS(138),
-    [anon_sym_foreach] = ACTIONS(138),
-    [anon_sym_forvalues] = ACTIONS(138),
-    [anon_sym_forv] = ACTIONS(138),
-    [anon_sym_while] = ACTIONS(138),
-    [anon_sym_continue] = ACTIONS(138),
-    [anon_sym_break] = ACTIONS(138),
-    [anon_sym_byte] = ACTIONS(138),
-    [anon_sym_int] = ACTIONS(138),
-    [anon_sym_long] = ACTIONS(138),
-    [anon_sym_float] = ACTIONS(138),
-    [anon_sym_double] = ACTIONS(138),
-    [aux_sym_type_keyword_token1] = ACTIONS(138),
-    [aux_sym_type_keyword_token2] = ACTIONS(138),
-    [aux_sym_type_keyword_token3] = ACTIONS(138),
-    [aux_sym_type_keyword_token4] = ACTIONS(138),
-    [aux_sym_type_keyword_token5] = ACTIONS(138),
-    [aux_sym_type_keyword_token6] = ACTIONS(138),
-    [anon_sym_strL] = ACTIONS(138),
-    [sym_number] = ACTIONS(140),
-    [sym_missing_value] = ACTIONS(138),
-    [anon_sym__n] = ACTIONS(138),
-    [anon_sym__N] = ACTIONS(138),
-    [anon_sym__b] = ACTIONS(138),
-    [anon_sym__coef] = ACTIONS(138),
-    [anon_sym__cons] = ACTIONS(138),
-    [anon_sym__rc] = ACTIONS(138),
-    [anon_sym__se] = ACTIONS(138),
-    [anon_sym__pi] = ACTIONS(138),
-    [anon_sym__skip] = ACTIONS(138),
-    [anon_sym__dup] = ACTIONS(138),
-    [anon_sym__newline] = ACTIONS(138),
-    [anon_sym__column] = ACTIONS(138),
-    [anon_sym__continue] = ACTIONS(138),
-    [anon_sym__request] = ACTIONS(138),
-    [anon_sym__char] = ACTIONS(138),
-    [anon_sym_PLUS] = ACTIONS(140),
-    [anon_sym_DASH] = ACTIONS(140),
-    [anon_sym_CARET] = ACTIONS(140),
-    [anon_sym_EQ_EQ] = ACTIONS(140),
-    [anon_sym_BANG_EQ] = ACTIONS(140),
-    [anon_sym_TILDE_EQ] = ACTIONS(140),
-    [anon_sym_LT] = ACTIONS(138),
-    [anon_sym_GT] = ACTIONS(138),
-    [anon_sym_LT_EQ] = ACTIONS(140),
-    [anon_sym_GT_EQ] = ACTIONS(140),
-    [anon_sym_AMP] = ACTIONS(140),
-    [anon_sym_PIPE] = ACTIONS(140),
-    [anon_sym_BANG] = ACTIONS(138),
-    [anon_sym_TILDE] = ACTIONS(138),
-    [anon_sym_EQ] = ACTIONS(138),
-    [anon_sym_POUND] = ACTIONS(140),
-    [anon_sym_LBRACK] = ACTIONS(140),
-    [anon_sym_RBRACK] = ACTIONS(140),
-    [anon_sym_LPAREN] = ACTIONS(140),
-    [anon_sym_RPAREN] = ACTIONS(140),
-    [sym__line_start] = ACTIONS(140),
+    [sym_comment] = STATE(10),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(10),
+    [sym_local_macro_depth_1] = STATE(10),
+    [sym_global_macro] = STATE(10),
+    [sym__argument] = STATE(10),
+    [sym_using_clause] = STATE(10),
+    [sym_factor_variable] = STATE(10),
+    [sym_control_keyword] = STATE(10),
+    [sym_type_keyword] = STATE(10),
+    [sym_builtin_variable] = STATE(10),
+    [sym_operator] = STATE(10),
+    [aux_sym_macro_definition_repeat1] = STATE(10),
+    [sym_identifier] = ACTIONS(165),
+    [sym__newline] = ACTIONS(167),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(165),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(169),
+    [sym_missing_value] = ACTIONS(165),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
   },
   [STATE(10)] = {
-    [sym_identifier] = ACTIONS(142),
-    [sym__newline] = ACTIONS(144),
-    [aux_sym_line_comment_token1] = ACTIONS(144),
-    [aux_sym_line_comment_token2] = ACTIONS(142),
-    [anon_sym_STAR] = ACTIONS(144),
-    [anon_sym_SLASH_STAR] = ACTIONS(144),
-    [anon_sym_SLASH] = ACTIONS(142),
-    [anon_sym_DQUOTE] = ACTIONS(144),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(144),
-    [anon_sym_BQUOTE] = ACTIONS(142),
-    [anon_sym_DOLLAR] = ACTIONS(142),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(144),
-    [anon_sym_end] = ACTIONS(142),
-    [aux_sym__argument_token1] = ACTIONS(142),
-    [sym_factor_operator] = ACTIONS(144),
-    [anon_sym_if] = ACTIONS(142),
-    [anon_sym_else] = ACTIONS(142),
-    [anon_sym_foreach] = ACTIONS(142),
-    [anon_sym_forvalues] = ACTIONS(142),
-    [anon_sym_forv] = ACTIONS(142),
-    [anon_sym_while] = ACTIONS(142),
-    [anon_sym_continue] = ACTIONS(142),
-    [anon_sym_break] = ACTIONS(142),
-    [anon_sym_byte] = ACTIONS(142),
-    [anon_sym_int] = ACTIONS(142),
-    [anon_sym_long] = ACTIONS(142),
-    [anon_sym_float] = ACTIONS(142),
-    [anon_sym_double] = ACTIONS(142),
-    [aux_sym_type_keyword_token1] = ACTIONS(142),
-    [aux_sym_type_keyword_token2] = ACTIONS(142),
-    [aux_sym_type_keyword_token3] = ACTIONS(142),
-    [aux_sym_type_keyword_token4] = ACTIONS(142),
-    [aux_sym_type_keyword_token5] = ACTIONS(142),
-    [aux_sym_type_keyword_token6] = ACTIONS(142),
-    [anon_sym_strL] = ACTIONS(142),
-    [sym_number] = ACTIONS(144),
-    [sym_missing_value] = ACTIONS(142),
-    [anon_sym__n] = ACTIONS(142),
-    [anon_sym__N] = ACTIONS(142),
-    [anon_sym__b] = ACTIONS(142),
-    [anon_sym__coef] = ACTIONS(142),
-    [anon_sym__cons] = ACTIONS(142),
-    [anon_sym__rc] = ACTIONS(142),
-    [anon_sym__se] = ACTIONS(142),
-    [anon_sym__pi] = ACTIONS(142),
-    [anon_sym__skip] = ACTIONS(142),
-    [anon_sym__dup] = ACTIONS(142),
-    [anon_sym__newline] = ACTIONS(142),
-    [anon_sym__column] = ACTIONS(142),
-    [anon_sym__continue] = ACTIONS(142),
-    [anon_sym__request] = ACTIONS(142),
-    [anon_sym__char] = ACTIONS(142),
-    [anon_sym_PLUS] = ACTIONS(144),
-    [anon_sym_DASH] = ACTIONS(144),
-    [anon_sym_CARET] = ACTIONS(144),
-    [anon_sym_EQ_EQ] = ACTIONS(144),
-    [anon_sym_BANG_EQ] = ACTIONS(144),
-    [anon_sym_TILDE_EQ] = ACTIONS(144),
-    [anon_sym_LT] = ACTIONS(142),
-    [anon_sym_GT] = ACTIONS(142),
-    [anon_sym_LT_EQ] = ACTIONS(144),
-    [anon_sym_GT_EQ] = ACTIONS(144),
-    [anon_sym_AMP] = ACTIONS(144),
-    [anon_sym_PIPE] = ACTIONS(144),
-    [anon_sym_BANG] = ACTIONS(142),
-    [anon_sym_TILDE] = ACTIONS(142),
-    [anon_sym_EQ] = ACTIONS(142),
-    [anon_sym_POUND] = ACTIONS(144),
-    [anon_sym_LBRACK] = ACTIONS(144),
-    [anon_sym_RBRACK] = ACTIONS(144),
-    [anon_sym_LPAREN] = ACTIONS(144),
-    [anon_sym_RPAREN] = ACTIONS(144),
-    [sym__line_start] = ACTIONS(144),
+    [sym_comment] = STATE(11),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(11),
+    [sym_local_macro_depth_1] = STATE(11),
+    [sym_global_macro] = STATE(11),
+    [sym__argument] = STATE(11),
+    [sym_using_clause] = STATE(11),
+    [sym_factor_variable] = STATE(11),
+    [sym_control_keyword] = STATE(11),
+    [sym_type_keyword] = STATE(11),
+    [sym_builtin_variable] = STATE(11),
+    [sym_operator] = STATE(11),
+    [aux_sym_macro_definition_repeat1] = STATE(11),
+    [sym_identifier] = ACTIONS(159),
+    [sym__newline] = ACTIONS(171),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(159),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(163),
+    [sym_missing_value] = ACTIONS(159),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
   },
   [STATE(11)] = {
-    [sym_identifier] = ACTIONS(146),
-    [sym__newline] = ACTIONS(148),
-    [aux_sym_line_comment_token1] = ACTIONS(148),
-    [aux_sym_line_comment_token2] = ACTIONS(146),
-    [anon_sym_STAR] = ACTIONS(148),
-    [anon_sym_SLASH_STAR] = ACTIONS(148),
-    [anon_sym_SLASH] = ACTIONS(146),
-    [anon_sym_DQUOTE] = ACTIONS(148),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(148),
-    [anon_sym_BQUOTE] = ACTIONS(146),
-    [anon_sym_DOLLAR] = ACTIONS(146),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(148),
-    [anon_sym_end] = ACTIONS(146),
-    [aux_sym__argument_token1] = ACTIONS(146),
-    [sym_factor_operator] = ACTIONS(148),
-    [anon_sym_if] = ACTIONS(146),
-    [anon_sym_else] = ACTIONS(146),
-    [anon_sym_foreach] = ACTIONS(146),
-    [anon_sym_forvalues] = ACTIONS(146),
-    [anon_sym_forv] = ACTIONS(146),
-    [anon_sym_while] = ACTIONS(146),
-    [anon_sym_continue] = ACTIONS(146),
-    [anon_sym_break] = ACTIONS(146),
-    [anon_sym_byte] = ACTIONS(146),
-    [anon_sym_int] = ACTIONS(146),
-    [anon_sym_long] = ACTIONS(146),
-    [anon_sym_float] = ACTIONS(146),
-    [anon_sym_double] = ACTIONS(146),
-    [aux_sym_type_keyword_token1] = ACTIONS(146),
-    [aux_sym_type_keyword_token2] = ACTIONS(146),
-    [aux_sym_type_keyword_token3] = ACTIONS(146),
-    [aux_sym_type_keyword_token4] = ACTIONS(146),
-    [aux_sym_type_keyword_token5] = ACTIONS(146),
-    [aux_sym_type_keyword_token6] = ACTIONS(146),
-    [anon_sym_strL] = ACTIONS(146),
-    [sym_number] = ACTIONS(148),
-    [sym_missing_value] = ACTIONS(146),
-    [anon_sym__n] = ACTIONS(146),
-    [anon_sym__N] = ACTIONS(146),
-    [anon_sym__b] = ACTIONS(146),
-    [anon_sym__coef] = ACTIONS(146),
-    [anon_sym__cons] = ACTIONS(146),
-    [anon_sym__rc] = ACTIONS(146),
-    [anon_sym__se] = ACTIONS(146),
-    [anon_sym__pi] = ACTIONS(146),
-    [anon_sym__skip] = ACTIONS(146),
-    [anon_sym__dup] = ACTIONS(146),
-    [anon_sym__newline] = ACTIONS(146),
-    [anon_sym__column] = ACTIONS(146),
-    [anon_sym__continue] = ACTIONS(146),
-    [anon_sym__request] = ACTIONS(146),
-    [anon_sym__char] = ACTIONS(146),
-    [anon_sym_PLUS] = ACTIONS(148),
-    [anon_sym_DASH] = ACTIONS(148),
-    [anon_sym_CARET] = ACTIONS(148),
-    [anon_sym_EQ_EQ] = ACTIONS(148),
-    [anon_sym_BANG_EQ] = ACTIONS(148),
-    [anon_sym_TILDE_EQ] = ACTIONS(148),
-    [anon_sym_LT] = ACTIONS(146),
-    [anon_sym_GT] = ACTIONS(146),
-    [anon_sym_LT_EQ] = ACTIONS(148),
-    [anon_sym_GT_EQ] = ACTIONS(148),
-    [anon_sym_AMP] = ACTIONS(148),
-    [anon_sym_PIPE] = ACTIONS(148),
-    [anon_sym_BANG] = ACTIONS(146),
-    [anon_sym_TILDE] = ACTIONS(146),
-    [anon_sym_EQ] = ACTIONS(146),
-    [anon_sym_POUND] = ACTIONS(148),
-    [anon_sym_LBRACK] = ACTIONS(148),
-    [anon_sym_RBRACK] = ACTIONS(148),
-    [anon_sym_LPAREN] = ACTIONS(148),
-    [anon_sym_RPAREN] = ACTIONS(148),
-    [sym__line_start] = ACTIONS(148),
-  },
-  [STATE(12)] = {
-    [sym_identifier] = ACTIONS(150),
-    [sym__newline] = ACTIONS(152),
-    [aux_sym_line_comment_token1] = ACTIONS(152),
-    [aux_sym_line_comment_token2] = ACTIONS(150),
-    [anon_sym_STAR] = ACTIONS(152),
-    [anon_sym_SLASH_STAR] = ACTIONS(152),
-    [anon_sym_SLASH] = ACTIONS(150),
-    [anon_sym_DQUOTE] = ACTIONS(152),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(152),
-    [anon_sym_BQUOTE] = ACTIONS(150),
-    [anon_sym_DOLLAR] = ACTIONS(150),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(152),
-    [anon_sym_end] = ACTIONS(150),
-    [aux_sym__argument_token1] = ACTIONS(150),
-    [sym_factor_operator] = ACTIONS(152),
-    [anon_sym_if] = ACTIONS(150),
-    [anon_sym_else] = ACTIONS(150),
-    [anon_sym_foreach] = ACTIONS(150),
-    [anon_sym_forvalues] = ACTIONS(150),
-    [anon_sym_forv] = ACTIONS(150),
-    [anon_sym_while] = ACTIONS(150),
-    [anon_sym_continue] = ACTIONS(150),
-    [anon_sym_break] = ACTIONS(150),
-    [anon_sym_byte] = ACTIONS(150),
-    [anon_sym_int] = ACTIONS(150),
-    [anon_sym_long] = ACTIONS(150),
-    [anon_sym_float] = ACTIONS(150),
-    [anon_sym_double] = ACTIONS(150),
-    [aux_sym_type_keyword_token1] = ACTIONS(150),
-    [aux_sym_type_keyword_token2] = ACTIONS(150),
-    [aux_sym_type_keyword_token3] = ACTIONS(150),
-    [aux_sym_type_keyword_token4] = ACTIONS(150),
-    [aux_sym_type_keyword_token5] = ACTIONS(150),
-    [aux_sym_type_keyword_token6] = ACTIONS(150),
-    [anon_sym_strL] = ACTIONS(150),
-    [sym_number] = ACTIONS(152),
-    [sym_missing_value] = ACTIONS(150),
-    [anon_sym__n] = ACTIONS(150),
-    [anon_sym__N] = ACTIONS(150),
-    [anon_sym__b] = ACTIONS(150),
-    [anon_sym__coef] = ACTIONS(150),
-    [anon_sym__cons] = ACTIONS(150),
-    [anon_sym__rc] = ACTIONS(150),
-    [anon_sym__se] = ACTIONS(150),
-    [anon_sym__pi] = ACTIONS(150),
-    [anon_sym__skip] = ACTIONS(150),
-    [anon_sym__dup] = ACTIONS(150),
-    [anon_sym__newline] = ACTIONS(150),
-    [anon_sym__column] = ACTIONS(150),
-    [anon_sym__continue] = ACTIONS(150),
-    [anon_sym__request] = ACTIONS(150),
-    [anon_sym__char] = ACTIONS(150),
-    [anon_sym_PLUS] = ACTIONS(152),
-    [anon_sym_DASH] = ACTIONS(152),
-    [anon_sym_CARET] = ACTIONS(152),
-    [anon_sym_EQ_EQ] = ACTIONS(152),
-    [anon_sym_BANG_EQ] = ACTIONS(152),
-    [anon_sym_TILDE_EQ] = ACTIONS(152),
-    [anon_sym_LT] = ACTIONS(150),
-    [anon_sym_GT] = ACTIONS(150),
-    [anon_sym_LT_EQ] = ACTIONS(152),
-    [anon_sym_GT_EQ] = ACTIONS(152),
-    [anon_sym_AMP] = ACTIONS(152),
-    [anon_sym_PIPE] = ACTIONS(152),
-    [anon_sym_BANG] = ACTIONS(150),
-    [anon_sym_TILDE] = ACTIONS(150),
-    [anon_sym_EQ] = ACTIONS(150),
-    [anon_sym_POUND] = ACTIONS(152),
-    [anon_sym_LBRACK] = ACTIONS(152),
-    [anon_sym_RBRACK] = ACTIONS(152),
-    [anon_sym_LPAREN] = ACTIONS(152),
-    [anon_sym_RPAREN] = ACTIONS(152),
-    [sym__line_start] = ACTIONS(152),
-  },
-  [STATE(13)] = {
-    [sym_identifier] = ACTIONS(154),
-    [sym__newline] = ACTIONS(156),
-    [aux_sym_line_comment_token1] = ACTIONS(156),
-    [aux_sym_line_comment_token2] = ACTIONS(154),
-    [anon_sym_STAR] = ACTIONS(156),
-    [anon_sym_SLASH_STAR] = ACTIONS(156),
-    [anon_sym_SLASH] = ACTIONS(154),
-    [anon_sym_DQUOTE] = ACTIONS(156),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(156),
-    [anon_sym_BQUOTE] = ACTIONS(154),
-    [anon_sym_DOLLAR] = ACTIONS(154),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(156),
-    [anon_sym_end] = ACTIONS(154),
-    [aux_sym__argument_token1] = ACTIONS(154),
-    [sym_factor_operator] = ACTIONS(156),
-    [anon_sym_if] = ACTIONS(154),
-    [anon_sym_else] = ACTIONS(154),
-    [anon_sym_foreach] = ACTIONS(154),
-    [anon_sym_forvalues] = ACTIONS(154),
-    [anon_sym_forv] = ACTIONS(154),
-    [anon_sym_while] = ACTIONS(154),
-    [anon_sym_continue] = ACTIONS(154),
-    [anon_sym_break] = ACTIONS(154),
-    [anon_sym_byte] = ACTIONS(154),
-    [anon_sym_int] = ACTIONS(154),
-    [anon_sym_long] = ACTIONS(154),
-    [anon_sym_float] = ACTIONS(154),
-    [anon_sym_double] = ACTIONS(154),
-    [aux_sym_type_keyword_token1] = ACTIONS(154),
-    [aux_sym_type_keyword_token2] = ACTIONS(154),
-    [aux_sym_type_keyword_token3] = ACTIONS(154),
-    [aux_sym_type_keyword_token4] = ACTIONS(154),
-    [aux_sym_type_keyword_token5] = ACTIONS(154),
-    [aux_sym_type_keyword_token6] = ACTIONS(154),
-    [anon_sym_strL] = ACTIONS(154),
-    [sym_number] = ACTIONS(156),
-    [sym_missing_value] = ACTIONS(154),
-    [anon_sym__n] = ACTIONS(154),
-    [anon_sym__N] = ACTIONS(154),
-    [anon_sym__b] = ACTIONS(154),
-    [anon_sym__coef] = ACTIONS(154),
-    [anon_sym__cons] = ACTIONS(154),
-    [anon_sym__rc] = ACTIONS(154),
-    [anon_sym__se] = ACTIONS(154),
-    [anon_sym__pi] = ACTIONS(154),
-    [anon_sym__skip] = ACTIONS(154),
-    [anon_sym__dup] = ACTIONS(154),
-    [anon_sym__newline] = ACTIONS(154),
-    [anon_sym__column] = ACTIONS(154),
-    [anon_sym__continue] = ACTIONS(154),
-    [anon_sym__request] = ACTIONS(154),
-    [anon_sym__char] = ACTIONS(154),
-    [anon_sym_PLUS] = ACTIONS(156),
-    [anon_sym_DASH] = ACTIONS(156),
-    [anon_sym_CARET] = ACTIONS(156),
-    [anon_sym_EQ_EQ] = ACTIONS(156),
-    [anon_sym_BANG_EQ] = ACTIONS(156),
-    [anon_sym_TILDE_EQ] = ACTIONS(156),
-    [anon_sym_LT] = ACTIONS(154),
-    [anon_sym_GT] = ACTIONS(154),
-    [anon_sym_LT_EQ] = ACTIONS(156),
-    [anon_sym_GT_EQ] = ACTIONS(156),
-    [anon_sym_AMP] = ACTIONS(156),
-    [anon_sym_PIPE] = ACTIONS(156),
-    [anon_sym_BANG] = ACTIONS(154),
-    [anon_sym_TILDE] = ACTIONS(154),
-    [anon_sym_EQ] = ACTIONS(154),
-    [anon_sym_POUND] = ACTIONS(156),
-    [anon_sym_LBRACK] = ACTIONS(156),
-    [anon_sym_RBRACK] = ACTIONS(156),
-    [anon_sym_LPAREN] = ACTIONS(156),
-    [anon_sym_RPAREN] = ACTIONS(156),
-    [sym__line_start] = ACTIONS(156),
-  },
-  [STATE(14)] = {
-    [sym_identifier] = ACTIONS(158),
-    [sym__newline] = ACTIONS(160),
-    [aux_sym_line_comment_token1] = ACTIONS(160),
-    [aux_sym_line_comment_token2] = ACTIONS(158),
-    [anon_sym_STAR] = ACTIONS(160),
-    [anon_sym_SLASH_STAR] = ACTIONS(160),
-    [anon_sym_SLASH] = ACTIONS(158),
-    [anon_sym_DQUOTE] = ACTIONS(160),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(160),
-    [anon_sym_BQUOTE] = ACTIONS(158),
-    [anon_sym_DOLLAR] = ACTIONS(158),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(160),
-    [anon_sym_end] = ACTIONS(158),
-    [aux_sym__argument_token1] = ACTIONS(158),
-    [sym_factor_operator] = ACTIONS(160),
-    [anon_sym_if] = ACTIONS(158),
-    [anon_sym_else] = ACTIONS(158),
-    [anon_sym_foreach] = ACTIONS(158),
-    [anon_sym_forvalues] = ACTIONS(158),
-    [anon_sym_forv] = ACTIONS(158),
-    [anon_sym_while] = ACTIONS(158),
-    [anon_sym_continue] = ACTIONS(158),
-    [anon_sym_break] = ACTIONS(158),
-    [anon_sym_byte] = ACTIONS(158),
-    [anon_sym_int] = ACTIONS(158),
-    [anon_sym_long] = ACTIONS(158),
-    [anon_sym_float] = ACTIONS(158),
-    [anon_sym_double] = ACTIONS(158),
-    [aux_sym_type_keyword_token1] = ACTIONS(158),
-    [aux_sym_type_keyword_token2] = ACTIONS(158),
-    [aux_sym_type_keyword_token3] = ACTIONS(158),
-    [aux_sym_type_keyword_token4] = ACTIONS(158),
-    [aux_sym_type_keyword_token5] = ACTIONS(158),
-    [aux_sym_type_keyword_token6] = ACTIONS(158),
-    [anon_sym_strL] = ACTIONS(158),
-    [sym_number] = ACTIONS(160),
-    [sym_missing_value] = ACTIONS(158),
-    [anon_sym__n] = ACTIONS(158),
-    [anon_sym__N] = ACTIONS(158),
-    [anon_sym__b] = ACTIONS(158),
-    [anon_sym__coef] = ACTIONS(158),
-    [anon_sym__cons] = ACTIONS(158),
-    [anon_sym__rc] = ACTIONS(158),
-    [anon_sym__se] = ACTIONS(158),
-    [anon_sym__pi] = ACTIONS(158),
-    [anon_sym__skip] = ACTIONS(158),
-    [anon_sym__dup] = ACTIONS(158),
-    [anon_sym__newline] = ACTIONS(158),
-    [anon_sym__column] = ACTIONS(158),
-    [anon_sym__continue] = ACTIONS(158),
-    [anon_sym__request] = ACTIONS(158),
-    [anon_sym__char] = ACTIONS(158),
-    [anon_sym_PLUS] = ACTIONS(160),
-    [anon_sym_DASH] = ACTIONS(160),
-    [anon_sym_CARET] = ACTIONS(160),
-    [anon_sym_EQ_EQ] = ACTIONS(160),
-    [anon_sym_BANG_EQ] = ACTIONS(160),
-    [anon_sym_TILDE_EQ] = ACTIONS(160),
-    [anon_sym_LT] = ACTIONS(158),
-    [anon_sym_GT] = ACTIONS(158),
-    [anon_sym_LT_EQ] = ACTIONS(160),
-    [anon_sym_GT_EQ] = ACTIONS(160),
-    [anon_sym_AMP] = ACTIONS(160),
-    [anon_sym_PIPE] = ACTIONS(160),
-    [anon_sym_BANG] = ACTIONS(158),
-    [anon_sym_TILDE] = ACTIONS(158),
-    [anon_sym_EQ] = ACTIONS(158),
-    [anon_sym_POUND] = ACTIONS(160),
-    [anon_sym_LBRACK] = ACTIONS(160),
-    [anon_sym_RBRACK] = ACTIONS(160),
-    [anon_sym_LPAREN] = ACTIONS(160),
-    [anon_sym_RPAREN] = ACTIONS(160),
-    [sym__line_start] = ACTIONS(160),
-  },
-  [STATE(15)] = {
-    [sym_identifier] = ACTIONS(162),
-    [sym__newline] = ACTIONS(164),
-    [aux_sym_line_comment_token1] = ACTIONS(164),
-    [aux_sym_line_comment_token2] = ACTIONS(162),
-    [anon_sym_STAR] = ACTIONS(164),
-    [anon_sym_SLASH_STAR] = ACTIONS(164),
-    [anon_sym_SLASH] = ACTIONS(162),
-    [anon_sym_DQUOTE] = ACTIONS(164),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(164),
-    [anon_sym_BQUOTE] = ACTIONS(162),
-    [anon_sym_DOLLAR] = ACTIONS(162),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(164),
-    [anon_sym_end] = ACTIONS(162),
-    [aux_sym__argument_token1] = ACTIONS(162),
-    [sym_factor_operator] = ACTIONS(164),
-    [anon_sym_if] = ACTIONS(162),
-    [anon_sym_else] = ACTIONS(162),
-    [anon_sym_foreach] = ACTIONS(162),
-    [anon_sym_forvalues] = ACTIONS(162),
-    [anon_sym_forv] = ACTIONS(162),
-    [anon_sym_while] = ACTIONS(162),
-    [anon_sym_continue] = ACTIONS(162),
-    [anon_sym_break] = ACTIONS(162),
-    [anon_sym_byte] = ACTIONS(162),
-    [anon_sym_int] = ACTIONS(162),
-    [anon_sym_long] = ACTIONS(162),
-    [anon_sym_float] = ACTIONS(162),
-    [anon_sym_double] = ACTIONS(162),
-    [aux_sym_type_keyword_token1] = ACTIONS(162),
-    [aux_sym_type_keyword_token2] = ACTIONS(162),
-    [aux_sym_type_keyword_token3] = ACTIONS(162),
-    [aux_sym_type_keyword_token4] = ACTIONS(162),
-    [aux_sym_type_keyword_token5] = ACTIONS(162),
-    [aux_sym_type_keyword_token6] = ACTIONS(162),
-    [anon_sym_strL] = ACTIONS(162),
-    [sym_number] = ACTIONS(164),
-    [sym_missing_value] = ACTIONS(162),
-    [anon_sym__n] = ACTIONS(162),
-    [anon_sym__N] = ACTIONS(162),
-    [anon_sym__b] = ACTIONS(162),
-    [anon_sym__coef] = ACTIONS(162),
-    [anon_sym__cons] = ACTIONS(162),
-    [anon_sym__rc] = ACTIONS(162),
-    [anon_sym__se] = ACTIONS(162),
-    [anon_sym__pi] = ACTIONS(162),
-    [anon_sym__skip] = ACTIONS(162),
-    [anon_sym__dup] = ACTIONS(162),
-    [anon_sym__newline] = ACTIONS(162),
-    [anon_sym__column] = ACTIONS(162),
-    [anon_sym__continue] = ACTIONS(162),
-    [anon_sym__request] = ACTIONS(162),
-    [anon_sym__char] = ACTIONS(162),
-    [anon_sym_PLUS] = ACTIONS(164),
-    [anon_sym_DASH] = ACTIONS(164),
-    [anon_sym_CARET] = ACTIONS(164),
-    [anon_sym_EQ_EQ] = ACTIONS(164),
-    [anon_sym_BANG_EQ] = ACTIONS(164),
-    [anon_sym_TILDE_EQ] = ACTIONS(164),
-    [anon_sym_LT] = ACTIONS(162),
-    [anon_sym_GT] = ACTIONS(162),
-    [anon_sym_LT_EQ] = ACTIONS(164),
-    [anon_sym_GT_EQ] = ACTIONS(164),
-    [anon_sym_AMP] = ACTIONS(164),
-    [anon_sym_PIPE] = ACTIONS(164),
-    [anon_sym_BANG] = ACTIONS(162),
-    [anon_sym_TILDE] = ACTIONS(162),
-    [anon_sym_EQ] = ACTIONS(162),
-    [anon_sym_POUND] = ACTIONS(164),
-    [anon_sym_LBRACK] = ACTIONS(164),
-    [anon_sym_RBRACK] = ACTIONS(164),
-    [anon_sym_LPAREN] = ACTIONS(164),
-    [anon_sym_RPAREN] = ACTIONS(164),
-    [sym__line_start] = ACTIONS(164),
-  },
-  [STATE(16)] = {
-    [sym_identifier] = ACTIONS(166),
-    [sym__newline] = ACTIONS(168),
-    [aux_sym_line_comment_token1] = ACTIONS(168),
-    [aux_sym_line_comment_token2] = ACTIONS(166),
-    [anon_sym_STAR] = ACTIONS(168),
-    [anon_sym_SLASH_STAR] = ACTIONS(168),
-    [anon_sym_SLASH] = ACTIONS(166),
-    [anon_sym_DQUOTE] = ACTIONS(168),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(168),
-    [anon_sym_BQUOTE] = ACTIONS(166),
-    [anon_sym_DOLLAR] = ACTIONS(166),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(168),
-    [anon_sym_end] = ACTIONS(166),
-    [aux_sym__argument_token1] = ACTIONS(166),
-    [sym_factor_operator] = ACTIONS(168),
-    [anon_sym_if] = ACTIONS(166),
-    [anon_sym_else] = ACTIONS(166),
-    [anon_sym_foreach] = ACTIONS(166),
-    [anon_sym_forvalues] = ACTIONS(166),
-    [anon_sym_forv] = ACTIONS(166),
-    [anon_sym_while] = ACTIONS(166),
-    [anon_sym_continue] = ACTIONS(166),
-    [anon_sym_break] = ACTIONS(166),
-    [anon_sym_byte] = ACTIONS(166),
-    [anon_sym_int] = ACTIONS(166),
-    [anon_sym_long] = ACTIONS(166),
-    [anon_sym_float] = ACTIONS(166),
-    [anon_sym_double] = ACTIONS(166),
-    [aux_sym_type_keyword_token1] = ACTIONS(166),
-    [aux_sym_type_keyword_token2] = ACTIONS(166),
-    [aux_sym_type_keyword_token3] = ACTIONS(166),
-    [aux_sym_type_keyword_token4] = ACTIONS(166),
-    [aux_sym_type_keyword_token5] = ACTIONS(166),
-    [aux_sym_type_keyword_token6] = ACTIONS(166),
-    [anon_sym_strL] = ACTIONS(166),
-    [sym_number] = ACTIONS(168),
-    [sym_missing_value] = ACTIONS(166),
-    [anon_sym__n] = ACTIONS(166),
-    [anon_sym__N] = ACTIONS(166),
-    [anon_sym__b] = ACTIONS(166),
-    [anon_sym__coef] = ACTIONS(166),
-    [anon_sym__cons] = ACTIONS(166),
-    [anon_sym__rc] = ACTIONS(166),
-    [anon_sym__se] = ACTIONS(166),
-    [anon_sym__pi] = ACTIONS(166),
-    [anon_sym__skip] = ACTIONS(166),
-    [anon_sym__dup] = ACTIONS(166),
-    [anon_sym__newline] = ACTIONS(166),
-    [anon_sym__column] = ACTIONS(166),
-    [anon_sym__continue] = ACTIONS(166),
-    [anon_sym__request] = ACTIONS(166),
-    [anon_sym__char] = ACTIONS(166),
-    [anon_sym_PLUS] = ACTIONS(168),
-    [anon_sym_DASH] = ACTIONS(168),
-    [anon_sym_CARET] = ACTIONS(168),
-    [anon_sym_EQ_EQ] = ACTIONS(168),
-    [anon_sym_BANG_EQ] = ACTIONS(168),
-    [anon_sym_TILDE_EQ] = ACTIONS(168),
-    [anon_sym_LT] = ACTIONS(166),
-    [anon_sym_GT] = ACTIONS(166),
-    [anon_sym_LT_EQ] = ACTIONS(168),
-    [anon_sym_GT_EQ] = ACTIONS(168),
-    [anon_sym_AMP] = ACTIONS(168),
-    [anon_sym_PIPE] = ACTIONS(168),
-    [anon_sym_BANG] = ACTIONS(166),
-    [anon_sym_TILDE] = ACTIONS(166),
-    [anon_sym_EQ] = ACTIONS(166),
-    [anon_sym_POUND] = ACTIONS(168),
-    [anon_sym_LBRACK] = ACTIONS(168),
-    [anon_sym_RBRACK] = ACTIONS(168),
-    [anon_sym_LPAREN] = ACTIONS(168),
-    [anon_sym_RPAREN] = ACTIONS(168),
-    [sym__line_start] = ACTIONS(168),
-  },
-  [STATE(17)] = {
-    [sym_identifier] = ACTIONS(170),
-    [sym__newline] = ACTIONS(172),
-    [aux_sym_line_comment_token1] = ACTIONS(172),
-    [aux_sym_line_comment_token2] = ACTIONS(170),
-    [anon_sym_STAR] = ACTIONS(172),
-    [anon_sym_SLASH_STAR] = ACTIONS(172),
-    [anon_sym_SLASH] = ACTIONS(170),
-    [anon_sym_DQUOTE] = ACTIONS(172),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(172),
-    [anon_sym_BQUOTE] = ACTIONS(170),
-    [anon_sym_DOLLAR] = ACTIONS(170),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(172),
-    [anon_sym_end] = ACTIONS(170),
-    [aux_sym__argument_token1] = ACTIONS(170),
-    [sym_factor_operator] = ACTIONS(172),
-    [anon_sym_if] = ACTIONS(170),
-    [anon_sym_else] = ACTIONS(170),
-    [anon_sym_foreach] = ACTIONS(170),
-    [anon_sym_forvalues] = ACTIONS(170),
-    [anon_sym_forv] = ACTIONS(170),
-    [anon_sym_while] = ACTIONS(170),
-    [anon_sym_continue] = ACTIONS(170),
-    [anon_sym_break] = ACTIONS(170),
-    [anon_sym_byte] = ACTIONS(170),
-    [anon_sym_int] = ACTIONS(170),
-    [anon_sym_long] = ACTIONS(170),
-    [anon_sym_float] = ACTIONS(170),
-    [anon_sym_double] = ACTIONS(170),
-    [aux_sym_type_keyword_token1] = ACTIONS(170),
-    [aux_sym_type_keyword_token2] = ACTIONS(170),
-    [aux_sym_type_keyword_token3] = ACTIONS(170),
-    [aux_sym_type_keyword_token4] = ACTIONS(170),
-    [aux_sym_type_keyword_token5] = ACTIONS(170),
-    [aux_sym_type_keyword_token6] = ACTIONS(170),
-    [anon_sym_strL] = ACTIONS(170),
-    [sym_number] = ACTIONS(172),
-    [sym_missing_value] = ACTIONS(170),
-    [anon_sym__n] = ACTIONS(170),
-    [anon_sym__N] = ACTIONS(170),
-    [anon_sym__b] = ACTIONS(170),
-    [anon_sym__coef] = ACTIONS(170),
-    [anon_sym__cons] = ACTIONS(170),
-    [anon_sym__rc] = ACTIONS(170),
-    [anon_sym__se] = ACTIONS(170),
-    [anon_sym__pi] = ACTIONS(170),
-    [anon_sym__skip] = ACTIONS(170),
-    [anon_sym__dup] = ACTIONS(170),
-    [anon_sym__newline] = ACTIONS(170),
-    [anon_sym__column] = ACTIONS(170),
-    [anon_sym__continue] = ACTIONS(170),
-    [anon_sym__request] = ACTIONS(170),
-    [anon_sym__char] = ACTIONS(170),
-    [anon_sym_PLUS] = ACTIONS(172),
-    [anon_sym_DASH] = ACTIONS(172),
-    [anon_sym_CARET] = ACTIONS(172),
-    [anon_sym_EQ_EQ] = ACTIONS(172),
-    [anon_sym_BANG_EQ] = ACTIONS(172),
-    [anon_sym_TILDE_EQ] = ACTIONS(172),
-    [anon_sym_LT] = ACTIONS(170),
-    [anon_sym_GT] = ACTIONS(170),
-    [anon_sym_LT_EQ] = ACTIONS(172),
-    [anon_sym_GT_EQ] = ACTIONS(172),
-    [anon_sym_AMP] = ACTIONS(172),
-    [anon_sym_PIPE] = ACTIONS(172),
-    [anon_sym_BANG] = ACTIONS(170),
-    [anon_sym_TILDE] = ACTIONS(170),
-    [anon_sym_EQ] = ACTIONS(170),
-    [anon_sym_POUND] = ACTIONS(172),
-    [anon_sym_LBRACK] = ACTIONS(172),
-    [anon_sym_RBRACK] = ACTIONS(172),
-    [anon_sym_LPAREN] = ACTIONS(172),
-    [anon_sym_RPAREN] = ACTIONS(172),
-    [sym__line_start] = ACTIONS(172),
-  },
-  [STATE(18)] = {
-    [sym_identifier] = ACTIONS(174),
+    [sym_comment] = STATE(11),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(11),
+    [sym_local_macro_depth_1] = STATE(11),
+    [sym_global_macro] = STATE(11),
+    [sym__argument] = STATE(11),
+    [sym_using_clause] = STATE(11),
+    [sym_factor_variable] = STATE(11),
+    [sym_control_keyword] = STATE(11),
+    [sym_type_keyword] = STATE(11),
+    [sym_builtin_variable] = STATE(11),
+    [sym_operator] = STATE(11),
+    [aux_sym_macro_definition_repeat1] = STATE(11),
+    [sym_identifier] = ACTIONS(173),
     [sym__newline] = ACTIONS(176),
-    [aux_sym_line_comment_token1] = ACTIONS(176),
-    [aux_sym_line_comment_token2] = ACTIONS(174),
-    [anon_sym_STAR] = ACTIONS(176),
-    [anon_sym_SLASH_STAR] = ACTIONS(176),
-    [anon_sym_SLASH] = ACTIONS(174),
-    [anon_sym_DQUOTE] = ACTIONS(176),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(176),
-    [anon_sym_BQUOTE] = ACTIONS(174),
-    [anon_sym_DOLLAR] = ACTIONS(174),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(176),
-    [anon_sym_end] = ACTIONS(174),
-    [aux_sym__argument_token1] = ACTIONS(174),
-    [sym_factor_operator] = ACTIONS(176),
-    [anon_sym_if] = ACTIONS(174),
-    [anon_sym_else] = ACTIONS(174),
-    [anon_sym_foreach] = ACTIONS(174),
-    [anon_sym_forvalues] = ACTIONS(174),
-    [anon_sym_forv] = ACTIONS(174),
-    [anon_sym_while] = ACTIONS(174),
-    [anon_sym_continue] = ACTIONS(174),
-    [anon_sym_break] = ACTIONS(174),
-    [anon_sym_byte] = ACTIONS(174),
-    [anon_sym_int] = ACTIONS(174),
-    [anon_sym_long] = ACTIONS(174),
-    [anon_sym_float] = ACTIONS(174),
-    [anon_sym_double] = ACTIONS(174),
-    [aux_sym_type_keyword_token1] = ACTIONS(174),
-    [aux_sym_type_keyword_token2] = ACTIONS(174),
-    [aux_sym_type_keyword_token3] = ACTIONS(174),
-    [aux_sym_type_keyword_token4] = ACTIONS(174),
-    [aux_sym_type_keyword_token5] = ACTIONS(174),
-    [aux_sym_type_keyword_token6] = ACTIONS(174),
-    [anon_sym_strL] = ACTIONS(174),
-    [sym_number] = ACTIONS(176),
-    [sym_missing_value] = ACTIONS(174),
-    [anon_sym__n] = ACTIONS(174),
-    [anon_sym__N] = ACTIONS(174),
-    [anon_sym__b] = ACTIONS(174),
-    [anon_sym__coef] = ACTIONS(174),
-    [anon_sym__cons] = ACTIONS(174),
-    [anon_sym__rc] = ACTIONS(174),
-    [anon_sym__se] = ACTIONS(174),
-    [anon_sym__pi] = ACTIONS(174),
-    [anon_sym__skip] = ACTIONS(174),
-    [anon_sym__dup] = ACTIONS(174),
-    [anon_sym__newline] = ACTIONS(174),
-    [anon_sym__column] = ACTIONS(174),
-    [anon_sym__continue] = ACTIONS(174),
-    [anon_sym__request] = ACTIONS(174),
-    [anon_sym__char] = ACTIONS(174),
-    [anon_sym_PLUS] = ACTIONS(176),
-    [anon_sym_DASH] = ACTIONS(176),
-    [anon_sym_CARET] = ACTIONS(176),
-    [anon_sym_EQ_EQ] = ACTIONS(176),
-    [anon_sym_BANG_EQ] = ACTIONS(176),
-    [anon_sym_TILDE_EQ] = ACTIONS(176),
-    [anon_sym_LT] = ACTIONS(174),
-    [anon_sym_GT] = ACTIONS(174),
-    [anon_sym_LT_EQ] = ACTIONS(176),
-    [anon_sym_GT_EQ] = ACTIONS(176),
-    [anon_sym_AMP] = ACTIONS(176),
-    [anon_sym_PIPE] = ACTIONS(176),
-    [anon_sym_BANG] = ACTIONS(174),
-    [anon_sym_TILDE] = ACTIONS(174),
-    [anon_sym_EQ] = ACTIONS(174),
-    [anon_sym_POUND] = ACTIONS(176),
-    [anon_sym_LBRACK] = ACTIONS(176),
-    [anon_sym_RBRACK] = ACTIONS(176),
-    [anon_sym_LPAREN] = ACTIONS(176),
-    [anon_sym_RPAREN] = ACTIONS(176),
-    [sym__line_start] = ACTIONS(176),
-  },
-  [STATE(19)] = {
-    [sym_identifier] = ACTIONS(178),
-    [sym__newline] = ACTIONS(180),
-    [aux_sym_line_comment_token1] = ACTIONS(180),
-    [aux_sym_line_comment_token2] = ACTIONS(178),
-    [anon_sym_STAR] = ACTIONS(180),
-    [anon_sym_SLASH_STAR] = ACTIONS(180),
-    [anon_sym_SLASH] = ACTIONS(178),
-    [anon_sym_DQUOTE] = ACTIONS(180),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(180),
-    [anon_sym_BQUOTE] = ACTIONS(178),
-    [anon_sym_DOLLAR] = ACTIONS(178),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(180),
-    [anon_sym_end] = ACTIONS(178),
-    [aux_sym__argument_token1] = ACTIONS(178),
-    [sym_factor_operator] = ACTIONS(180),
-    [anon_sym_if] = ACTIONS(178),
-    [anon_sym_else] = ACTIONS(178),
-    [anon_sym_foreach] = ACTIONS(178),
-    [anon_sym_forvalues] = ACTIONS(178),
-    [anon_sym_forv] = ACTIONS(178),
-    [anon_sym_while] = ACTIONS(178),
-    [anon_sym_continue] = ACTIONS(178),
-    [anon_sym_break] = ACTIONS(178),
-    [anon_sym_byte] = ACTIONS(178),
-    [anon_sym_int] = ACTIONS(178),
-    [anon_sym_long] = ACTIONS(178),
-    [anon_sym_float] = ACTIONS(178),
-    [anon_sym_double] = ACTIONS(178),
-    [aux_sym_type_keyword_token1] = ACTIONS(178),
-    [aux_sym_type_keyword_token2] = ACTIONS(178),
-    [aux_sym_type_keyword_token3] = ACTIONS(178),
-    [aux_sym_type_keyword_token4] = ACTIONS(178),
-    [aux_sym_type_keyword_token5] = ACTIONS(178),
-    [aux_sym_type_keyword_token6] = ACTIONS(178),
-    [anon_sym_strL] = ACTIONS(178),
-    [sym_number] = ACTIONS(180),
-    [sym_missing_value] = ACTIONS(178),
-    [anon_sym__n] = ACTIONS(178),
-    [anon_sym__N] = ACTIONS(178),
-    [anon_sym__b] = ACTIONS(178),
-    [anon_sym__coef] = ACTIONS(178),
-    [anon_sym__cons] = ACTIONS(178),
-    [anon_sym__rc] = ACTIONS(178),
-    [anon_sym__se] = ACTIONS(178),
-    [anon_sym__pi] = ACTIONS(178),
-    [anon_sym__skip] = ACTIONS(178),
-    [anon_sym__dup] = ACTIONS(178),
-    [anon_sym__newline] = ACTIONS(178),
-    [anon_sym__column] = ACTIONS(178),
-    [anon_sym__continue] = ACTIONS(178),
-    [anon_sym__request] = ACTIONS(178),
-    [anon_sym__char] = ACTIONS(178),
-    [anon_sym_PLUS] = ACTIONS(180),
-    [anon_sym_DASH] = ACTIONS(180),
-    [anon_sym_CARET] = ACTIONS(180),
-    [anon_sym_EQ_EQ] = ACTIONS(180),
-    [anon_sym_BANG_EQ] = ACTIONS(180),
-    [anon_sym_TILDE_EQ] = ACTIONS(180),
-    [anon_sym_LT] = ACTIONS(178),
-    [anon_sym_GT] = ACTIONS(178),
-    [anon_sym_LT_EQ] = ACTIONS(180),
-    [anon_sym_GT_EQ] = ACTIONS(180),
-    [anon_sym_AMP] = ACTIONS(180),
-    [anon_sym_PIPE] = ACTIONS(180),
-    [anon_sym_BANG] = ACTIONS(178),
-    [anon_sym_TILDE] = ACTIONS(178),
-    [anon_sym_EQ] = ACTIONS(178),
-    [anon_sym_POUND] = ACTIONS(180),
-    [anon_sym_LBRACK] = ACTIONS(180),
-    [anon_sym_RBRACK] = ACTIONS(180),
-    [anon_sym_LPAREN] = ACTIONS(180),
-    [anon_sym_RPAREN] = ACTIONS(180),
-    [sym__line_start] = ACTIONS(180),
-  },
-  [STATE(20)] = {
-    [sym_identifier] = ACTIONS(182),
-    [sym__newline] = ACTIONS(184),
-    [aux_sym_line_comment_token1] = ACTIONS(184),
-    [aux_sym_line_comment_token2] = ACTIONS(182),
+    [aux_sym_line_comment_token1] = ACTIONS(178),
+    [aux_sym_line_comment_token2] = ACTIONS(181),
     [anon_sym_STAR] = ACTIONS(184),
-    [anon_sym_SLASH_STAR] = ACTIONS(184),
-    [anon_sym_SLASH] = ACTIONS(182),
-    [anon_sym_DQUOTE] = ACTIONS(184),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(184),
-    [anon_sym_BQUOTE] = ACTIONS(182),
-    [anon_sym_DOLLAR] = ACTIONS(182),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(184),
-    [anon_sym_end] = ACTIONS(182),
-    [aux_sym__argument_token1] = ACTIONS(182),
-    [sym_factor_operator] = ACTIONS(184),
-    [anon_sym_if] = ACTIONS(182),
-    [anon_sym_else] = ACTIONS(182),
-    [anon_sym_foreach] = ACTIONS(182),
-    [anon_sym_forvalues] = ACTIONS(182),
-    [anon_sym_forv] = ACTIONS(182),
-    [anon_sym_while] = ACTIONS(182),
-    [anon_sym_continue] = ACTIONS(182),
-    [anon_sym_break] = ACTIONS(182),
-    [anon_sym_byte] = ACTIONS(182),
-    [anon_sym_int] = ACTIONS(182),
-    [anon_sym_long] = ACTIONS(182),
-    [anon_sym_float] = ACTIONS(182),
-    [anon_sym_double] = ACTIONS(182),
-    [aux_sym_type_keyword_token1] = ACTIONS(182),
-    [aux_sym_type_keyword_token2] = ACTIONS(182),
-    [aux_sym_type_keyword_token3] = ACTIONS(182),
-    [aux_sym_type_keyword_token4] = ACTIONS(182),
-    [aux_sym_type_keyword_token5] = ACTIONS(182),
-    [aux_sym_type_keyword_token6] = ACTIONS(182),
-    [anon_sym_strL] = ACTIONS(182),
-    [sym_number] = ACTIONS(184),
-    [sym_missing_value] = ACTIONS(182),
-    [anon_sym__n] = ACTIONS(182),
-    [anon_sym__N] = ACTIONS(182),
-    [anon_sym__b] = ACTIONS(182),
-    [anon_sym__coef] = ACTIONS(182),
-    [anon_sym__cons] = ACTIONS(182),
-    [anon_sym__rc] = ACTIONS(182),
-    [anon_sym__se] = ACTIONS(182),
-    [anon_sym__pi] = ACTIONS(182),
-    [anon_sym__skip] = ACTIONS(182),
-    [anon_sym__dup] = ACTIONS(182),
-    [anon_sym__newline] = ACTIONS(182),
-    [anon_sym__column] = ACTIONS(182),
-    [anon_sym__continue] = ACTIONS(182),
-    [anon_sym__request] = ACTIONS(182),
-    [anon_sym__char] = ACTIONS(182),
+    [anon_sym_SLASH_STAR] = ACTIONS(187),
+    [anon_sym_SLASH] = ACTIONS(190),
+    [anon_sym_DQUOTE] = ACTIONS(193),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(196),
+    [anon_sym_BQUOTE] = ACTIONS(199),
+    [anon_sym_DOLLAR] = ACTIONS(202),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(205),
+    [anon_sym_end] = ACTIONS(208),
+    [aux_sym__argument_token1] = ACTIONS(173),
+    [anon_sym_using] = ACTIONS(211),
+    [sym_factor_operator] = ACTIONS(214),
+    [anon_sym_if] = ACTIONS(208),
+    [anon_sym_else] = ACTIONS(208),
+    [anon_sym_foreach] = ACTIONS(208),
+    [anon_sym_forvalues] = ACTIONS(208),
+    [anon_sym_forv] = ACTIONS(208),
+    [anon_sym_while] = ACTIONS(208),
+    [anon_sym_continue] = ACTIONS(208),
+    [anon_sym_break] = ACTIONS(208),
+    [anon_sym_byte] = ACTIONS(217),
+    [anon_sym_int] = ACTIONS(217),
+    [anon_sym_long] = ACTIONS(217),
+    [anon_sym_float] = ACTIONS(217),
+    [anon_sym_double] = ACTIONS(217),
+    [aux_sym_type_keyword_token1] = ACTIONS(217),
+    [aux_sym_type_keyword_token2] = ACTIONS(217),
+    [aux_sym_type_keyword_token3] = ACTIONS(217),
+    [aux_sym_type_keyword_token4] = ACTIONS(217),
+    [aux_sym_type_keyword_token5] = ACTIONS(217),
+    [aux_sym_type_keyword_token6] = ACTIONS(217),
+    [anon_sym_strL] = ACTIONS(217),
+    [sym_number] = ACTIONS(220),
+    [sym_missing_value] = ACTIONS(173),
+    [anon_sym__n] = ACTIONS(223),
+    [anon_sym__N] = ACTIONS(223),
+    [anon_sym__b] = ACTIONS(223),
+    [anon_sym__coef] = ACTIONS(223),
+    [anon_sym__cons] = ACTIONS(223),
+    [anon_sym__rc] = ACTIONS(223),
+    [anon_sym__se] = ACTIONS(223),
+    [anon_sym__pi] = ACTIONS(223),
+    [anon_sym__skip] = ACTIONS(223),
+    [anon_sym__dup] = ACTIONS(223),
+    [anon_sym__newline] = ACTIONS(223),
+    [anon_sym__column] = ACTIONS(223),
+    [anon_sym__continue] = ACTIONS(223),
+    [anon_sym__request] = ACTIONS(223),
+    [anon_sym__char] = ACTIONS(223),
     [anon_sym_PLUS] = ACTIONS(184),
     [anon_sym_DASH] = ACTIONS(184),
     [anon_sym_CARET] = ACTIONS(184),
     [anon_sym_EQ_EQ] = ACTIONS(184),
     [anon_sym_BANG_EQ] = ACTIONS(184),
     [anon_sym_TILDE_EQ] = ACTIONS(184),
-    [anon_sym_LT] = ACTIONS(182),
-    [anon_sym_GT] = ACTIONS(182),
+    [anon_sym_LT] = ACTIONS(190),
+    [anon_sym_GT] = ACTIONS(190),
     [anon_sym_LT_EQ] = ACTIONS(184),
     [anon_sym_GT_EQ] = ACTIONS(184),
     [anon_sym_AMP] = ACTIONS(184),
     [anon_sym_PIPE] = ACTIONS(184),
-    [anon_sym_BANG] = ACTIONS(182),
-    [anon_sym_TILDE] = ACTIONS(182),
-    [anon_sym_EQ] = ACTIONS(182),
+    [anon_sym_BANG] = ACTIONS(190),
+    [anon_sym_TILDE] = ACTIONS(190),
+    [anon_sym_EQ] = ACTIONS(190),
     [anon_sym_POUND] = ACTIONS(184),
     [anon_sym_LBRACK] = ACTIONS(184),
     [anon_sym_RBRACK] = ACTIONS(184),
     [anon_sym_LPAREN] = ACTIONS(184),
     [anon_sym_RPAREN] = ACTIONS(184),
-    [sym__line_start] = ACTIONS(184),
+    [sym__line_start] = ACTIONS(226),
+  },
+  [STATE(12)] = {
+    [sym_comment] = STATE(13),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(13),
+    [sym_local_macro_depth_1] = STATE(13),
+    [sym_global_macro] = STATE(13),
+    [sym__argument] = STATE(13),
+    [sym_using_clause] = STATE(13),
+    [sym_factor_variable] = STATE(13),
+    [sym_control_keyword] = STATE(13),
+    [sym_type_keyword] = STATE(13),
+    [sym_builtin_variable] = STATE(13),
+    [sym_operator] = STATE(13),
+    [aux_sym_macro_definition_repeat1] = STATE(13),
+    [sym_identifier] = ACTIONS(229),
+    [sym__newline] = ACTIONS(231),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(229),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(233),
+    [sym_missing_value] = ACTIONS(229),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
+  },
+  [STATE(13)] = {
+    [sym_comment] = STATE(11),
+    [sym_line_comment] = STATE(39),
+    [sym_block_comment] = STATE(39),
+    [sym_double_string] = STATE(47),
+    [sym_compound_string_depth_1] = STATE(47),
+    [sym_string] = STATE(11),
+    [sym_local_macro_depth_1] = STATE(11),
+    [sym_global_macro] = STATE(11),
+    [sym__argument] = STATE(11),
+    [sym_using_clause] = STATE(11),
+    [sym_factor_variable] = STATE(11),
+    [sym_control_keyword] = STATE(11),
+    [sym_type_keyword] = STATE(11),
+    [sym_builtin_variable] = STATE(11),
+    [sym_operator] = STATE(11),
+    [aux_sym_macro_definition_repeat1] = STATE(11),
+    [sym_identifier] = ACTIONS(159),
+    [sym__newline] = ACTIONS(235),
+    [aux_sym_line_comment_token1] = ACTIONS(127),
+    [aux_sym_line_comment_token2] = ACTIONS(129),
+    [anon_sym_STAR] = ACTIONS(131),
+    [anon_sym_SLASH_STAR] = ACTIONS(133),
+    [anon_sym_SLASH] = ACTIONS(135),
+    [anon_sym_DQUOTE] = ACTIONS(137),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(139),
+    [anon_sym_BQUOTE] = ACTIONS(141),
+    [anon_sym_DOLLAR] = ACTIONS(143),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(145),
+    [anon_sym_end] = ACTIONS(147),
+    [aux_sym__argument_token1] = ACTIONS(159),
+    [anon_sym_using] = ACTIONS(53),
+    [sym_factor_operator] = ACTIONS(149),
+    [anon_sym_if] = ACTIONS(147),
+    [anon_sym_else] = ACTIONS(147),
+    [anon_sym_foreach] = ACTIONS(147),
+    [anon_sym_forvalues] = ACTIONS(147),
+    [anon_sym_forv] = ACTIONS(147),
+    [anon_sym_while] = ACTIONS(147),
+    [anon_sym_continue] = ACTIONS(147),
+    [anon_sym_break] = ACTIONS(147),
+    [anon_sym_byte] = ACTIONS(151),
+    [anon_sym_int] = ACTIONS(151),
+    [anon_sym_long] = ACTIONS(151),
+    [anon_sym_float] = ACTIONS(151),
+    [anon_sym_double] = ACTIONS(151),
+    [aux_sym_type_keyword_token1] = ACTIONS(151),
+    [aux_sym_type_keyword_token2] = ACTIONS(151),
+    [aux_sym_type_keyword_token3] = ACTIONS(151),
+    [aux_sym_type_keyword_token4] = ACTIONS(151),
+    [aux_sym_type_keyword_token5] = ACTIONS(151),
+    [aux_sym_type_keyword_token6] = ACTIONS(151),
+    [anon_sym_strL] = ACTIONS(151),
+    [sym_number] = ACTIONS(163),
+    [sym_missing_value] = ACTIONS(159),
+    [anon_sym__n] = ACTIONS(155),
+    [anon_sym__N] = ACTIONS(155),
+    [anon_sym__b] = ACTIONS(155),
+    [anon_sym__coef] = ACTIONS(155),
+    [anon_sym__cons] = ACTIONS(155),
+    [anon_sym__rc] = ACTIONS(155),
+    [anon_sym__se] = ACTIONS(155),
+    [anon_sym__pi] = ACTIONS(155),
+    [anon_sym__skip] = ACTIONS(155),
+    [anon_sym__dup] = ACTIONS(155),
+    [anon_sym__newline] = ACTIONS(155),
+    [anon_sym__column] = ACTIONS(155),
+    [anon_sym__continue] = ACTIONS(155),
+    [anon_sym__request] = ACTIONS(155),
+    [anon_sym__char] = ACTIONS(155),
+    [anon_sym_PLUS] = ACTIONS(131),
+    [anon_sym_DASH] = ACTIONS(131),
+    [anon_sym_CARET] = ACTIONS(131),
+    [anon_sym_EQ_EQ] = ACTIONS(131),
+    [anon_sym_BANG_EQ] = ACTIONS(131),
+    [anon_sym_TILDE_EQ] = ACTIONS(131),
+    [anon_sym_LT] = ACTIONS(135),
+    [anon_sym_GT] = ACTIONS(135),
+    [anon_sym_LT_EQ] = ACTIONS(131),
+    [anon_sym_GT_EQ] = ACTIONS(131),
+    [anon_sym_AMP] = ACTIONS(131),
+    [anon_sym_PIPE] = ACTIONS(131),
+    [anon_sym_BANG] = ACTIONS(135),
+    [anon_sym_TILDE] = ACTIONS(135),
+    [anon_sym_EQ] = ACTIONS(135),
+    [anon_sym_POUND] = ACTIONS(131),
+    [anon_sym_LBRACK] = ACTIONS(131),
+    [anon_sym_RBRACK] = ACTIONS(131),
+    [anon_sym_LPAREN] = ACTIONS(131),
+    [anon_sym_RPAREN] = ACTIONS(131),
+    [sym__line_start] = ACTIONS(157),
+  },
+  [STATE(14)] = {
+    [aux_sym_using_clause_repeat1] = STATE(15),
+    [sym_identifier] = ACTIONS(237),
+    [sym__newline] = ACTIONS(239),
+    [aux_sym_line_comment_token1] = ACTIONS(239),
+    [aux_sym_line_comment_token2] = ACTIONS(237),
+    [anon_sym_STAR] = ACTIONS(237),
+    [anon_sym_SLASH_STAR] = ACTIONS(239),
+    [anon_sym_SLASH] = ACTIONS(237),
+    [anon_sym_DQUOTE] = ACTIONS(239),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(239),
+    [anon_sym_BQUOTE] = ACTIONS(237),
+    [anon_sym_DOLLAR] = ACTIONS(237),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(239),
+    [anon_sym_end] = ACTIONS(237),
+    [aux_sym__argument_token1] = ACTIONS(237),
+    [anon_sym_using] = ACTIONS(237),
+    [sym_file_path] = ACTIONS(241),
+    [sym_factor_operator] = ACTIONS(237),
+    [anon_sym_if] = ACTIONS(237),
+    [anon_sym_else] = ACTIONS(237),
+    [anon_sym_foreach] = ACTIONS(237),
+    [anon_sym_forvalues] = ACTIONS(237),
+    [anon_sym_forv] = ACTIONS(237),
+    [anon_sym_while] = ACTIONS(237),
+    [anon_sym_continue] = ACTIONS(237),
+    [anon_sym_break] = ACTIONS(237),
+    [anon_sym_byte] = ACTIONS(237),
+    [anon_sym_int] = ACTIONS(237),
+    [anon_sym_long] = ACTIONS(237),
+    [anon_sym_float] = ACTIONS(237),
+    [anon_sym_double] = ACTIONS(237),
+    [aux_sym_type_keyword_token1] = ACTIONS(237),
+    [aux_sym_type_keyword_token2] = ACTIONS(237),
+    [aux_sym_type_keyword_token3] = ACTIONS(237),
+    [aux_sym_type_keyword_token4] = ACTIONS(237),
+    [aux_sym_type_keyword_token5] = ACTIONS(237),
+    [aux_sym_type_keyword_token6] = ACTIONS(237),
+    [anon_sym_strL] = ACTIONS(237),
+    [sym_number] = ACTIONS(237),
+    [sym_missing_value] = ACTIONS(237),
+    [anon_sym__n] = ACTIONS(237),
+    [anon_sym__N] = ACTIONS(237),
+    [anon_sym__b] = ACTIONS(237),
+    [anon_sym__coef] = ACTIONS(237),
+    [anon_sym__cons] = ACTIONS(237),
+    [anon_sym__rc] = ACTIONS(237),
+    [anon_sym__se] = ACTIONS(237),
+    [anon_sym__pi] = ACTIONS(237),
+    [anon_sym__skip] = ACTIONS(237),
+    [anon_sym__dup] = ACTIONS(237),
+    [anon_sym__newline] = ACTIONS(237),
+    [anon_sym__column] = ACTIONS(237),
+    [anon_sym__continue] = ACTIONS(237),
+    [anon_sym__request] = ACTIONS(237),
+    [anon_sym__char] = ACTIONS(237),
+    [anon_sym_PLUS] = ACTIONS(237),
+    [anon_sym_DASH] = ACTIONS(237),
+    [anon_sym_CARET] = ACTIONS(237),
+    [anon_sym_EQ_EQ] = ACTIONS(237),
+    [anon_sym_BANG_EQ] = ACTIONS(237),
+    [anon_sym_TILDE_EQ] = ACTIONS(237),
+    [anon_sym_LT] = ACTIONS(237),
+    [anon_sym_GT] = ACTIONS(237),
+    [anon_sym_LT_EQ] = ACTIONS(237),
+    [anon_sym_GT_EQ] = ACTIONS(237),
+    [anon_sym_AMP] = ACTIONS(237),
+    [anon_sym_PIPE] = ACTIONS(237),
+    [anon_sym_BANG] = ACTIONS(237),
+    [anon_sym_TILDE] = ACTIONS(237),
+    [anon_sym_EQ] = ACTIONS(237),
+    [anon_sym_POUND] = ACTIONS(237),
+    [anon_sym_LBRACK] = ACTIONS(237),
+    [anon_sym_RBRACK] = ACTIONS(237),
+    [anon_sym_LPAREN] = ACTIONS(237),
+    [anon_sym_RPAREN] = ACTIONS(237),
+    [sym__line_start] = ACTIONS(239),
+  },
+  [STATE(15)] = {
+    [aux_sym_using_clause_repeat1] = STATE(16),
+    [sym_identifier] = ACTIONS(243),
+    [sym__newline] = ACTIONS(245),
+    [aux_sym_line_comment_token1] = ACTIONS(245),
+    [aux_sym_line_comment_token2] = ACTIONS(243),
+    [anon_sym_STAR] = ACTIONS(243),
+    [anon_sym_SLASH_STAR] = ACTIONS(245),
+    [anon_sym_SLASH] = ACTIONS(243),
+    [anon_sym_DQUOTE] = ACTIONS(245),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(245),
+    [anon_sym_BQUOTE] = ACTIONS(243),
+    [anon_sym_DOLLAR] = ACTIONS(243),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(245),
+    [anon_sym_end] = ACTIONS(243),
+    [aux_sym__argument_token1] = ACTIONS(243),
+    [anon_sym_using] = ACTIONS(243),
+    [sym_file_path] = ACTIONS(247),
+    [sym_factor_operator] = ACTIONS(243),
+    [anon_sym_if] = ACTIONS(243),
+    [anon_sym_else] = ACTIONS(243),
+    [anon_sym_foreach] = ACTIONS(243),
+    [anon_sym_forvalues] = ACTIONS(243),
+    [anon_sym_forv] = ACTIONS(243),
+    [anon_sym_while] = ACTIONS(243),
+    [anon_sym_continue] = ACTIONS(243),
+    [anon_sym_break] = ACTIONS(243),
+    [anon_sym_byte] = ACTIONS(243),
+    [anon_sym_int] = ACTIONS(243),
+    [anon_sym_long] = ACTIONS(243),
+    [anon_sym_float] = ACTIONS(243),
+    [anon_sym_double] = ACTIONS(243),
+    [aux_sym_type_keyword_token1] = ACTIONS(243),
+    [aux_sym_type_keyword_token2] = ACTIONS(243),
+    [aux_sym_type_keyword_token3] = ACTIONS(243),
+    [aux_sym_type_keyword_token4] = ACTIONS(243),
+    [aux_sym_type_keyword_token5] = ACTIONS(243),
+    [aux_sym_type_keyword_token6] = ACTIONS(243),
+    [anon_sym_strL] = ACTIONS(243),
+    [sym_number] = ACTIONS(243),
+    [sym_missing_value] = ACTIONS(243),
+    [anon_sym__n] = ACTIONS(243),
+    [anon_sym__N] = ACTIONS(243),
+    [anon_sym__b] = ACTIONS(243),
+    [anon_sym__coef] = ACTIONS(243),
+    [anon_sym__cons] = ACTIONS(243),
+    [anon_sym__rc] = ACTIONS(243),
+    [anon_sym__se] = ACTIONS(243),
+    [anon_sym__pi] = ACTIONS(243),
+    [anon_sym__skip] = ACTIONS(243),
+    [anon_sym__dup] = ACTIONS(243),
+    [anon_sym__newline] = ACTIONS(243),
+    [anon_sym__column] = ACTIONS(243),
+    [anon_sym__continue] = ACTIONS(243),
+    [anon_sym__request] = ACTIONS(243),
+    [anon_sym__char] = ACTIONS(243),
+    [anon_sym_PLUS] = ACTIONS(243),
+    [anon_sym_DASH] = ACTIONS(243),
+    [anon_sym_CARET] = ACTIONS(243),
+    [anon_sym_EQ_EQ] = ACTIONS(243),
+    [anon_sym_BANG_EQ] = ACTIONS(243),
+    [anon_sym_TILDE_EQ] = ACTIONS(243),
+    [anon_sym_LT] = ACTIONS(243),
+    [anon_sym_GT] = ACTIONS(243),
+    [anon_sym_LT_EQ] = ACTIONS(243),
+    [anon_sym_GT_EQ] = ACTIONS(243),
+    [anon_sym_AMP] = ACTIONS(243),
+    [anon_sym_PIPE] = ACTIONS(243),
+    [anon_sym_BANG] = ACTIONS(243),
+    [anon_sym_TILDE] = ACTIONS(243),
+    [anon_sym_EQ] = ACTIONS(243),
+    [anon_sym_POUND] = ACTIONS(243),
+    [anon_sym_LBRACK] = ACTIONS(243),
+    [anon_sym_RBRACK] = ACTIONS(243),
+    [anon_sym_LPAREN] = ACTIONS(243),
+    [anon_sym_RPAREN] = ACTIONS(243),
+    [sym__line_start] = ACTIONS(245),
+  },
+  [STATE(16)] = {
+    [aux_sym_using_clause_repeat1] = STATE(16),
+    [sym_identifier] = ACTIONS(249),
+    [sym__newline] = ACTIONS(251),
+    [aux_sym_line_comment_token1] = ACTIONS(251),
+    [aux_sym_line_comment_token2] = ACTIONS(249),
+    [anon_sym_STAR] = ACTIONS(249),
+    [anon_sym_SLASH_STAR] = ACTIONS(251),
+    [anon_sym_SLASH] = ACTIONS(249),
+    [anon_sym_DQUOTE] = ACTIONS(251),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(251),
+    [anon_sym_BQUOTE] = ACTIONS(249),
+    [anon_sym_DOLLAR] = ACTIONS(249),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(251),
+    [anon_sym_end] = ACTIONS(249),
+    [aux_sym__argument_token1] = ACTIONS(249),
+    [anon_sym_using] = ACTIONS(249),
+    [sym_file_path] = ACTIONS(253),
+    [sym_factor_operator] = ACTIONS(249),
+    [anon_sym_if] = ACTIONS(249),
+    [anon_sym_else] = ACTIONS(249),
+    [anon_sym_foreach] = ACTIONS(249),
+    [anon_sym_forvalues] = ACTIONS(249),
+    [anon_sym_forv] = ACTIONS(249),
+    [anon_sym_while] = ACTIONS(249),
+    [anon_sym_continue] = ACTIONS(249),
+    [anon_sym_break] = ACTIONS(249),
+    [anon_sym_byte] = ACTIONS(249),
+    [anon_sym_int] = ACTIONS(249),
+    [anon_sym_long] = ACTIONS(249),
+    [anon_sym_float] = ACTIONS(249),
+    [anon_sym_double] = ACTIONS(249),
+    [aux_sym_type_keyword_token1] = ACTIONS(249),
+    [aux_sym_type_keyword_token2] = ACTIONS(249),
+    [aux_sym_type_keyword_token3] = ACTIONS(249),
+    [aux_sym_type_keyword_token4] = ACTIONS(249),
+    [aux_sym_type_keyword_token5] = ACTIONS(249),
+    [aux_sym_type_keyword_token6] = ACTIONS(249),
+    [anon_sym_strL] = ACTIONS(249),
+    [sym_number] = ACTIONS(249),
+    [sym_missing_value] = ACTIONS(249),
+    [anon_sym__n] = ACTIONS(249),
+    [anon_sym__N] = ACTIONS(249),
+    [anon_sym__b] = ACTIONS(249),
+    [anon_sym__coef] = ACTIONS(249),
+    [anon_sym__cons] = ACTIONS(249),
+    [anon_sym__rc] = ACTIONS(249),
+    [anon_sym__se] = ACTIONS(249),
+    [anon_sym__pi] = ACTIONS(249),
+    [anon_sym__skip] = ACTIONS(249),
+    [anon_sym__dup] = ACTIONS(249),
+    [anon_sym__newline] = ACTIONS(249),
+    [anon_sym__column] = ACTIONS(249),
+    [anon_sym__continue] = ACTIONS(249),
+    [anon_sym__request] = ACTIONS(249),
+    [anon_sym__char] = ACTIONS(249),
+    [anon_sym_PLUS] = ACTIONS(249),
+    [anon_sym_DASH] = ACTIONS(249),
+    [anon_sym_CARET] = ACTIONS(249),
+    [anon_sym_EQ_EQ] = ACTIONS(249),
+    [anon_sym_BANG_EQ] = ACTIONS(249),
+    [anon_sym_TILDE_EQ] = ACTIONS(249),
+    [anon_sym_LT] = ACTIONS(249),
+    [anon_sym_GT] = ACTIONS(249),
+    [anon_sym_LT_EQ] = ACTIONS(249),
+    [anon_sym_GT_EQ] = ACTIONS(249),
+    [anon_sym_AMP] = ACTIONS(249),
+    [anon_sym_PIPE] = ACTIONS(249),
+    [anon_sym_BANG] = ACTIONS(249),
+    [anon_sym_TILDE] = ACTIONS(249),
+    [anon_sym_EQ] = ACTIONS(249),
+    [anon_sym_POUND] = ACTIONS(249),
+    [anon_sym_LBRACK] = ACTIONS(249),
+    [anon_sym_RBRACK] = ACTIONS(249),
+    [anon_sym_LPAREN] = ACTIONS(249),
+    [anon_sym_RPAREN] = ACTIONS(249),
+    [sym__line_start] = ACTIONS(251),
+  },
+  [STATE(17)] = {
+    [sym_identifier] = ACTIONS(256),
+    [sym__newline] = ACTIONS(258),
+    [aux_sym_line_comment_token1] = ACTIONS(258),
+    [aux_sym_line_comment_token2] = ACTIONS(256),
+    [anon_sym_STAR] = ACTIONS(256),
+    [anon_sym_SLASH_STAR] = ACTIONS(258),
+    [anon_sym_SLASH] = ACTIONS(256),
+    [anon_sym_DQUOTE] = ACTIONS(258),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(258),
+    [anon_sym_BQUOTE] = ACTIONS(256),
+    [anon_sym_DOLLAR] = ACTIONS(256),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(258),
+    [anon_sym_end] = ACTIONS(256),
+    [aux_sym__argument_token1] = ACTIONS(256),
+    [anon_sym_using] = ACTIONS(256),
+    [sym_file_path] = ACTIONS(256),
+    [sym_factor_operator] = ACTIONS(256),
+    [anon_sym_if] = ACTIONS(256),
+    [anon_sym_else] = ACTIONS(256),
+    [anon_sym_foreach] = ACTIONS(256),
+    [anon_sym_forvalues] = ACTIONS(256),
+    [anon_sym_forv] = ACTIONS(256),
+    [anon_sym_while] = ACTIONS(256),
+    [anon_sym_continue] = ACTIONS(256),
+    [anon_sym_break] = ACTIONS(256),
+    [anon_sym_byte] = ACTIONS(256),
+    [anon_sym_int] = ACTIONS(256),
+    [anon_sym_long] = ACTIONS(256),
+    [anon_sym_float] = ACTIONS(256),
+    [anon_sym_double] = ACTIONS(256),
+    [aux_sym_type_keyword_token1] = ACTIONS(256),
+    [aux_sym_type_keyword_token2] = ACTIONS(256),
+    [aux_sym_type_keyword_token3] = ACTIONS(256),
+    [aux_sym_type_keyword_token4] = ACTIONS(256),
+    [aux_sym_type_keyword_token5] = ACTIONS(256),
+    [aux_sym_type_keyword_token6] = ACTIONS(256),
+    [anon_sym_strL] = ACTIONS(256),
+    [sym_number] = ACTIONS(256),
+    [sym_missing_value] = ACTIONS(256),
+    [anon_sym__n] = ACTIONS(256),
+    [anon_sym__N] = ACTIONS(256),
+    [anon_sym__b] = ACTIONS(256),
+    [anon_sym__coef] = ACTIONS(256),
+    [anon_sym__cons] = ACTIONS(256),
+    [anon_sym__rc] = ACTIONS(256),
+    [anon_sym__se] = ACTIONS(256),
+    [anon_sym__pi] = ACTIONS(256),
+    [anon_sym__skip] = ACTIONS(256),
+    [anon_sym__dup] = ACTIONS(256),
+    [anon_sym__newline] = ACTIONS(256),
+    [anon_sym__column] = ACTIONS(256),
+    [anon_sym__continue] = ACTIONS(256),
+    [anon_sym__request] = ACTIONS(256),
+    [anon_sym__char] = ACTIONS(256),
+    [anon_sym_PLUS] = ACTIONS(256),
+    [anon_sym_DASH] = ACTIONS(256),
+    [anon_sym_CARET] = ACTIONS(256),
+    [anon_sym_EQ_EQ] = ACTIONS(256),
+    [anon_sym_BANG_EQ] = ACTIONS(256),
+    [anon_sym_TILDE_EQ] = ACTIONS(256),
+    [anon_sym_LT] = ACTIONS(256),
+    [anon_sym_GT] = ACTIONS(256),
+    [anon_sym_LT_EQ] = ACTIONS(256),
+    [anon_sym_GT_EQ] = ACTIONS(256),
+    [anon_sym_AMP] = ACTIONS(256),
+    [anon_sym_PIPE] = ACTIONS(256),
+    [anon_sym_BANG] = ACTIONS(256),
+    [anon_sym_TILDE] = ACTIONS(256),
+    [anon_sym_EQ] = ACTIONS(256),
+    [anon_sym_POUND] = ACTIONS(256),
+    [anon_sym_LBRACK] = ACTIONS(256),
+    [anon_sym_RBRACK] = ACTIONS(256),
+    [anon_sym_LPAREN] = ACTIONS(256),
+    [anon_sym_RPAREN] = ACTIONS(256),
+    [sym__line_start] = ACTIONS(258),
+  },
+  [STATE(18)] = {
+    [sym_identifier] = ACTIONS(260),
+    [sym__newline] = ACTIONS(262),
+    [aux_sym_line_comment_token1] = ACTIONS(262),
+    [aux_sym_line_comment_token2] = ACTIONS(260),
+    [anon_sym_STAR] = ACTIONS(260),
+    [anon_sym_SLASH_STAR] = ACTIONS(262),
+    [anon_sym_SLASH] = ACTIONS(260),
+    [anon_sym_DQUOTE] = ACTIONS(262),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(262),
+    [anon_sym_BQUOTE] = ACTIONS(260),
+    [anon_sym_DOLLAR] = ACTIONS(260),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(262),
+    [anon_sym_end] = ACTIONS(260),
+    [aux_sym__argument_token1] = ACTIONS(260),
+    [anon_sym_using] = ACTIONS(260),
+    [sym_file_path] = ACTIONS(260),
+    [sym_factor_operator] = ACTIONS(260),
+    [anon_sym_if] = ACTIONS(260),
+    [anon_sym_else] = ACTIONS(260),
+    [anon_sym_foreach] = ACTIONS(260),
+    [anon_sym_forvalues] = ACTIONS(260),
+    [anon_sym_forv] = ACTIONS(260),
+    [anon_sym_while] = ACTIONS(260),
+    [anon_sym_continue] = ACTIONS(260),
+    [anon_sym_break] = ACTIONS(260),
+    [anon_sym_byte] = ACTIONS(260),
+    [anon_sym_int] = ACTIONS(260),
+    [anon_sym_long] = ACTIONS(260),
+    [anon_sym_float] = ACTIONS(260),
+    [anon_sym_double] = ACTIONS(260),
+    [aux_sym_type_keyword_token1] = ACTIONS(260),
+    [aux_sym_type_keyword_token2] = ACTIONS(260),
+    [aux_sym_type_keyword_token3] = ACTIONS(260),
+    [aux_sym_type_keyword_token4] = ACTIONS(260),
+    [aux_sym_type_keyword_token5] = ACTIONS(260),
+    [aux_sym_type_keyword_token6] = ACTIONS(260),
+    [anon_sym_strL] = ACTIONS(260),
+    [sym_number] = ACTIONS(260),
+    [sym_missing_value] = ACTIONS(260),
+    [anon_sym__n] = ACTIONS(260),
+    [anon_sym__N] = ACTIONS(260),
+    [anon_sym__b] = ACTIONS(260),
+    [anon_sym__coef] = ACTIONS(260),
+    [anon_sym__cons] = ACTIONS(260),
+    [anon_sym__rc] = ACTIONS(260),
+    [anon_sym__se] = ACTIONS(260),
+    [anon_sym__pi] = ACTIONS(260),
+    [anon_sym__skip] = ACTIONS(260),
+    [anon_sym__dup] = ACTIONS(260),
+    [anon_sym__newline] = ACTIONS(260),
+    [anon_sym__column] = ACTIONS(260),
+    [anon_sym__continue] = ACTIONS(260),
+    [anon_sym__request] = ACTIONS(260),
+    [anon_sym__char] = ACTIONS(260),
+    [anon_sym_PLUS] = ACTIONS(260),
+    [anon_sym_DASH] = ACTIONS(260),
+    [anon_sym_CARET] = ACTIONS(260),
+    [anon_sym_EQ_EQ] = ACTIONS(260),
+    [anon_sym_BANG_EQ] = ACTIONS(260),
+    [anon_sym_TILDE_EQ] = ACTIONS(260),
+    [anon_sym_LT] = ACTIONS(260),
+    [anon_sym_GT] = ACTIONS(260),
+    [anon_sym_LT_EQ] = ACTIONS(260),
+    [anon_sym_GT_EQ] = ACTIONS(260),
+    [anon_sym_AMP] = ACTIONS(260),
+    [anon_sym_PIPE] = ACTIONS(260),
+    [anon_sym_BANG] = ACTIONS(260),
+    [anon_sym_TILDE] = ACTIONS(260),
+    [anon_sym_EQ] = ACTIONS(260),
+    [anon_sym_POUND] = ACTIONS(260),
+    [anon_sym_LBRACK] = ACTIONS(260),
+    [anon_sym_RBRACK] = ACTIONS(260),
+    [anon_sym_LPAREN] = ACTIONS(260),
+    [anon_sym_RPAREN] = ACTIONS(260),
+    [sym__line_start] = ACTIONS(262),
+  },
+  [STATE(19)] = {
+    [sym_identifier] = ACTIONS(264),
+    [sym__newline] = ACTIONS(266),
+    [aux_sym_line_comment_token1] = ACTIONS(266),
+    [aux_sym_line_comment_token2] = ACTIONS(264),
+    [anon_sym_STAR] = ACTIONS(264),
+    [anon_sym_SLASH_STAR] = ACTIONS(266),
+    [anon_sym_SLASH] = ACTIONS(264),
+    [anon_sym_DQUOTE] = ACTIONS(266),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(266),
+    [anon_sym_BQUOTE] = ACTIONS(264),
+    [anon_sym_DOLLAR] = ACTIONS(264),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(266),
+    [anon_sym_end] = ACTIONS(264),
+    [aux_sym__argument_token1] = ACTIONS(264),
+    [anon_sym_using] = ACTIONS(264),
+    [sym_file_path] = ACTIONS(264),
+    [sym_factor_operator] = ACTIONS(264),
+    [anon_sym_if] = ACTIONS(264),
+    [anon_sym_else] = ACTIONS(264),
+    [anon_sym_foreach] = ACTIONS(264),
+    [anon_sym_forvalues] = ACTIONS(264),
+    [anon_sym_forv] = ACTIONS(264),
+    [anon_sym_while] = ACTIONS(264),
+    [anon_sym_continue] = ACTIONS(264),
+    [anon_sym_break] = ACTIONS(264),
+    [anon_sym_byte] = ACTIONS(264),
+    [anon_sym_int] = ACTIONS(264),
+    [anon_sym_long] = ACTIONS(264),
+    [anon_sym_float] = ACTIONS(264),
+    [anon_sym_double] = ACTIONS(264),
+    [aux_sym_type_keyword_token1] = ACTIONS(264),
+    [aux_sym_type_keyword_token2] = ACTIONS(264),
+    [aux_sym_type_keyword_token3] = ACTIONS(264),
+    [aux_sym_type_keyword_token4] = ACTIONS(264),
+    [aux_sym_type_keyword_token5] = ACTIONS(264),
+    [aux_sym_type_keyword_token6] = ACTIONS(264),
+    [anon_sym_strL] = ACTIONS(264),
+    [sym_number] = ACTIONS(264),
+    [sym_missing_value] = ACTIONS(264),
+    [anon_sym__n] = ACTIONS(264),
+    [anon_sym__N] = ACTIONS(264),
+    [anon_sym__b] = ACTIONS(264),
+    [anon_sym__coef] = ACTIONS(264),
+    [anon_sym__cons] = ACTIONS(264),
+    [anon_sym__rc] = ACTIONS(264),
+    [anon_sym__se] = ACTIONS(264),
+    [anon_sym__pi] = ACTIONS(264),
+    [anon_sym__skip] = ACTIONS(264),
+    [anon_sym__dup] = ACTIONS(264),
+    [anon_sym__newline] = ACTIONS(264),
+    [anon_sym__column] = ACTIONS(264),
+    [anon_sym__continue] = ACTIONS(264),
+    [anon_sym__request] = ACTIONS(264),
+    [anon_sym__char] = ACTIONS(264),
+    [anon_sym_PLUS] = ACTIONS(264),
+    [anon_sym_DASH] = ACTIONS(264),
+    [anon_sym_CARET] = ACTIONS(264),
+    [anon_sym_EQ_EQ] = ACTIONS(264),
+    [anon_sym_BANG_EQ] = ACTIONS(264),
+    [anon_sym_TILDE_EQ] = ACTIONS(264),
+    [anon_sym_LT] = ACTIONS(264),
+    [anon_sym_GT] = ACTIONS(264),
+    [anon_sym_LT_EQ] = ACTIONS(264),
+    [anon_sym_GT_EQ] = ACTIONS(264),
+    [anon_sym_AMP] = ACTIONS(264),
+    [anon_sym_PIPE] = ACTIONS(264),
+    [anon_sym_BANG] = ACTIONS(264),
+    [anon_sym_TILDE] = ACTIONS(264),
+    [anon_sym_EQ] = ACTIONS(264),
+    [anon_sym_POUND] = ACTIONS(264),
+    [anon_sym_LBRACK] = ACTIONS(264),
+    [anon_sym_RBRACK] = ACTIONS(264),
+    [anon_sym_LPAREN] = ACTIONS(264),
+    [anon_sym_RPAREN] = ACTIONS(264),
+    [sym__line_start] = ACTIONS(266),
+  },
+  [STATE(20)] = {
+    [sym_identifier] = ACTIONS(268),
+    [sym__newline] = ACTIONS(270),
+    [aux_sym_line_comment_token1] = ACTIONS(270),
+    [aux_sym_line_comment_token2] = ACTIONS(268),
+    [anon_sym_STAR] = ACTIONS(268),
+    [anon_sym_SLASH_STAR] = ACTIONS(270),
+    [anon_sym_SLASH] = ACTIONS(268),
+    [anon_sym_DQUOTE] = ACTIONS(270),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(270),
+    [anon_sym_BQUOTE] = ACTIONS(268),
+    [anon_sym_DOLLAR] = ACTIONS(268),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(270),
+    [anon_sym_end] = ACTIONS(268),
+    [aux_sym__argument_token1] = ACTIONS(268),
+    [anon_sym_using] = ACTIONS(268),
+    [sym_file_path] = ACTIONS(268),
+    [sym_factor_operator] = ACTIONS(268),
+    [anon_sym_if] = ACTIONS(268),
+    [anon_sym_else] = ACTIONS(268),
+    [anon_sym_foreach] = ACTIONS(268),
+    [anon_sym_forvalues] = ACTIONS(268),
+    [anon_sym_forv] = ACTIONS(268),
+    [anon_sym_while] = ACTIONS(268),
+    [anon_sym_continue] = ACTIONS(268),
+    [anon_sym_break] = ACTIONS(268),
+    [anon_sym_byte] = ACTIONS(268),
+    [anon_sym_int] = ACTIONS(268),
+    [anon_sym_long] = ACTIONS(268),
+    [anon_sym_float] = ACTIONS(268),
+    [anon_sym_double] = ACTIONS(268),
+    [aux_sym_type_keyword_token1] = ACTIONS(268),
+    [aux_sym_type_keyword_token2] = ACTIONS(268),
+    [aux_sym_type_keyword_token3] = ACTIONS(268),
+    [aux_sym_type_keyword_token4] = ACTIONS(268),
+    [aux_sym_type_keyword_token5] = ACTIONS(268),
+    [aux_sym_type_keyword_token6] = ACTIONS(268),
+    [anon_sym_strL] = ACTIONS(268),
+    [sym_number] = ACTIONS(268),
+    [sym_missing_value] = ACTIONS(268),
+    [anon_sym__n] = ACTIONS(268),
+    [anon_sym__N] = ACTIONS(268),
+    [anon_sym__b] = ACTIONS(268),
+    [anon_sym__coef] = ACTIONS(268),
+    [anon_sym__cons] = ACTIONS(268),
+    [anon_sym__rc] = ACTIONS(268),
+    [anon_sym__se] = ACTIONS(268),
+    [anon_sym__pi] = ACTIONS(268),
+    [anon_sym__skip] = ACTIONS(268),
+    [anon_sym__dup] = ACTIONS(268),
+    [anon_sym__newline] = ACTIONS(268),
+    [anon_sym__column] = ACTIONS(268),
+    [anon_sym__continue] = ACTIONS(268),
+    [anon_sym__request] = ACTIONS(268),
+    [anon_sym__char] = ACTIONS(268),
+    [anon_sym_PLUS] = ACTIONS(268),
+    [anon_sym_DASH] = ACTIONS(268),
+    [anon_sym_CARET] = ACTIONS(268),
+    [anon_sym_EQ_EQ] = ACTIONS(268),
+    [anon_sym_BANG_EQ] = ACTIONS(268),
+    [anon_sym_TILDE_EQ] = ACTIONS(268),
+    [anon_sym_LT] = ACTIONS(268),
+    [anon_sym_GT] = ACTIONS(268),
+    [anon_sym_LT_EQ] = ACTIONS(268),
+    [anon_sym_GT_EQ] = ACTIONS(268),
+    [anon_sym_AMP] = ACTIONS(268),
+    [anon_sym_PIPE] = ACTIONS(268),
+    [anon_sym_BANG] = ACTIONS(268),
+    [anon_sym_TILDE] = ACTIONS(268),
+    [anon_sym_EQ] = ACTIONS(268),
+    [anon_sym_POUND] = ACTIONS(268),
+    [anon_sym_LBRACK] = ACTIONS(268),
+    [anon_sym_RBRACK] = ACTIONS(268),
+    [anon_sym_LPAREN] = ACTIONS(268),
+    [anon_sym_RPAREN] = ACTIONS(268),
+    [sym__line_start] = ACTIONS(270),
   },
   [STATE(21)] = {
-    [sym_identifier] = ACTIONS(186),
-    [sym__newline] = ACTIONS(188),
-    [aux_sym_line_comment_token1] = ACTIONS(188),
-    [aux_sym_line_comment_token2] = ACTIONS(186),
-    [anon_sym_STAR] = ACTIONS(188),
-    [anon_sym_SLASH_STAR] = ACTIONS(188),
-    [anon_sym_SLASH] = ACTIONS(186),
-    [anon_sym_DQUOTE] = ACTIONS(188),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(188),
-    [anon_sym_BQUOTE] = ACTIONS(186),
-    [anon_sym_DOLLAR] = ACTIONS(186),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(188),
-    [anon_sym_end] = ACTIONS(186),
-    [aux_sym__argument_token1] = ACTIONS(186),
-    [sym_factor_operator] = ACTIONS(188),
-    [anon_sym_if] = ACTIONS(186),
-    [anon_sym_else] = ACTIONS(186),
-    [anon_sym_foreach] = ACTIONS(186),
-    [anon_sym_forvalues] = ACTIONS(186),
-    [anon_sym_forv] = ACTIONS(186),
-    [anon_sym_while] = ACTIONS(186),
-    [anon_sym_continue] = ACTIONS(186),
-    [anon_sym_break] = ACTIONS(186),
-    [anon_sym_byte] = ACTIONS(186),
-    [anon_sym_int] = ACTIONS(186),
-    [anon_sym_long] = ACTIONS(186),
-    [anon_sym_float] = ACTIONS(186),
-    [anon_sym_double] = ACTIONS(186),
-    [aux_sym_type_keyword_token1] = ACTIONS(186),
-    [aux_sym_type_keyword_token2] = ACTIONS(186),
-    [aux_sym_type_keyword_token3] = ACTIONS(186),
-    [aux_sym_type_keyword_token4] = ACTIONS(186),
-    [aux_sym_type_keyword_token5] = ACTIONS(186),
-    [aux_sym_type_keyword_token6] = ACTIONS(186),
-    [anon_sym_strL] = ACTIONS(186),
-    [sym_number] = ACTIONS(188),
-    [sym_missing_value] = ACTIONS(186),
-    [anon_sym__n] = ACTIONS(186),
-    [anon_sym__N] = ACTIONS(186),
-    [anon_sym__b] = ACTIONS(186),
-    [anon_sym__coef] = ACTIONS(186),
-    [anon_sym__cons] = ACTIONS(186),
-    [anon_sym__rc] = ACTIONS(186),
-    [anon_sym__se] = ACTIONS(186),
-    [anon_sym__pi] = ACTIONS(186),
-    [anon_sym__skip] = ACTIONS(186),
-    [anon_sym__dup] = ACTIONS(186),
-    [anon_sym__newline] = ACTIONS(186),
-    [anon_sym__column] = ACTIONS(186),
-    [anon_sym__continue] = ACTIONS(186),
-    [anon_sym__request] = ACTIONS(186),
-    [anon_sym__char] = ACTIONS(186),
-    [anon_sym_PLUS] = ACTIONS(188),
-    [anon_sym_DASH] = ACTIONS(188),
-    [anon_sym_CARET] = ACTIONS(188),
-    [anon_sym_EQ_EQ] = ACTIONS(188),
-    [anon_sym_BANG_EQ] = ACTIONS(188),
-    [anon_sym_TILDE_EQ] = ACTIONS(188),
-    [anon_sym_LT] = ACTIONS(186),
-    [anon_sym_GT] = ACTIONS(186),
-    [anon_sym_LT_EQ] = ACTIONS(188),
-    [anon_sym_GT_EQ] = ACTIONS(188),
-    [anon_sym_AMP] = ACTIONS(188),
-    [anon_sym_PIPE] = ACTIONS(188),
-    [anon_sym_BANG] = ACTIONS(186),
-    [anon_sym_TILDE] = ACTIONS(186),
-    [anon_sym_EQ] = ACTIONS(186),
-    [anon_sym_POUND] = ACTIONS(188),
-    [anon_sym_LBRACK] = ACTIONS(188),
-    [anon_sym_RBRACK] = ACTIONS(188),
-    [anon_sym_LPAREN] = ACTIONS(188),
-    [anon_sym_RPAREN] = ACTIONS(188),
-    [sym__line_start] = ACTIONS(188),
+    [sym_identifier] = ACTIONS(272),
+    [sym__newline] = ACTIONS(274),
+    [aux_sym_line_comment_token1] = ACTIONS(274),
+    [aux_sym_line_comment_token2] = ACTIONS(272),
+    [anon_sym_STAR] = ACTIONS(272),
+    [anon_sym_SLASH_STAR] = ACTIONS(274),
+    [anon_sym_SLASH] = ACTIONS(272),
+    [anon_sym_DQUOTE] = ACTIONS(274),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(274),
+    [anon_sym_BQUOTE] = ACTIONS(272),
+    [anon_sym_DOLLAR] = ACTIONS(272),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(274),
+    [anon_sym_end] = ACTIONS(272),
+    [aux_sym__argument_token1] = ACTIONS(272),
+    [anon_sym_using] = ACTIONS(272),
+    [sym_file_path] = ACTIONS(272),
+    [sym_factor_operator] = ACTIONS(272),
+    [anon_sym_if] = ACTIONS(272),
+    [anon_sym_else] = ACTIONS(272),
+    [anon_sym_foreach] = ACTIONS(272),
+    [anon_sym_forvalues] = ACTIONS(272),
+    [anon_sym_forv] = ACTIONS(272),
+    [anon_sym_while] = ACTIONS(272),
+    [anon_sym_continue] = ACTIONS(272),
+    [anon_sym_break] = ACTIONS(272),
+    [anon_sym_byte] = ACTIONS(272),
+    [anon_sym_int] = ACTIONS(272),
+    [anon_sym_long] = ACTIONS(272),
+    [anon_sym_float] = ACTIONS(272),
+    [anon_sym_double] = ACTIONS(272),
+    [aux_sym_type_keyword_token1] = ACTIONS(272),
+    [aux_sym_type_keyword_token2] = ACTIONS(272),
+    [aux_sym_type_keyword_token3] = ACTIONS(272),
+    [aux_sym_type_keyword_token4] = ACTIONS(272),
+    [aux_sym_type_keyword_token5] = ACTIONS(272),
+    [aux_sym_type_keyword_token6] = ACTIONS(272),
+    [anon_sym_strL] = ACTIONS(272),
+    [sym_number] = ACTIONS(272),
+    [sym_missing_value] = ACTIONS(272),
+    [anon_sym__n] = ACTIONS(272),
+    [anon_sym__N] = ACTIONS(272),
+    [anon_sym__b] = ACTIONS(272),
+    [anon_sym__coef] = ACTIONS(272),
+    [anon_sym__cons] = ACTIONS(272),
+    [anon_sym__rc] = ACTIONS(272),
+    [anon_sym__se] = ACTIONS(272),
+    [anon_sym__pi] = ACTIONS(272),
+    [anon_sym__skip] = ACTIONS(272),
+    [anon_sym__dup] = ACTIONS(272),
+    [anon_sym__newline] = ACTIONS(272),
+    [anon_sym__column] = ACTIONS(272),
+    [anon_sym__continue] = ACTIONS(272),
+    [anon_sym__request] = ACTIONS(272),
+    [anon_sym__char] = ACTIONS(272),
+    [anon_sym_PLUS] = ACTIONS(272),
+    [anon_sym_DASH] = ACTIONS(272),
+    [anon_sym_CARET] = ACTIONS(272),
+    [anon_sym_EQ_EQ] = ACTIONS(272),
+    [anon_sym_BANG_EQ] = ACTIONS(272),
+    [anon_sym_TILDE_EQ] = ACTIONS(272),
+    [anon_sym_LT] = ACTIONS(272),
+    [anon_sym_GT] = ACTIONS(272),
+    [anon_sym_LT_EQ] = ACTIONS(272),
+    [anon_sym_GT_EQ] = ACTIONS(272),
+    [anon_sym_AMP] = ACTIONS(272),
+    [anon_sym_PIPE] = ACTIONS(272),
+    [anon_sym_BANG] = ACTIONS(272),
+    [anon_sym_TILDE] = ACTIONS(272),
+    [anon_sym_EQ] = ACTIONS(272),
+    [anon_sym_POUND] = ACTIONS(272),
+    [anon_sym_LBRACK] = ACTIONS(272),
+    [anon_sym_RBRACK] = ACTIONS(272),
+    [anon_sym_LPAREN] = ACTIONS(272),
+    [anon_sym_RPAREN] = ACTIONS(272),
+    [sym__line_start] = ACTIONS(274),
   },
   [STATE(22)] = {
-    [sym_identifier] = ACTIONS(190),
-    [sym__newline] = ACTIONS(192),
-    [aux_sym_line_comment_token1] = ACTIONS(192),
-    [aux_sym_line_comment_token2] = ACTIONS(190),
-    [anon_sym_STAR] = ACTIONS(192),
-    [anon_sym_SLASH_STAR] = ACTIONS(192),
-    [anon_sym_SLASH] = ACTIONS(190),
-    [anon_sym_DQUOTE] = ACTIONS(192),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(192),
-    [anon_sym_BQUOTE] = ACTIONS(190),
-    [anon_sym_DOLLAR] = ACTIONS(190),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(192),
-    [anon_sym_end] = ACTIONS(190),
-    [aux_sym__argument_token1] = ACTIONS(190),
-    [sym_factor_operator] = ACTIONS(192),
-    [anon_sym_if] = ACTIONS(190),
-    [anon_sym_else] = ACTIONS(190),
-    [anon_sym_foreach] = ACTIONS(190),
-    [anon_sym_forvalues] = ACTIONS(190),
-    [anon_sym_forv] = ACTIONS(190),
-    [anon_sym_while] = ACTIONS(190),
-    [anon_sym_continue] = ACTIONS(190),
-    [anon_sym_break] = ACTIONS(190),
-    [anon_sym_byte] = ACTIONS(190),
-    [anon_sym_int] = ACTIONS(190),
-    [anon_sym_long] = ACTIONS(190),
-    [anon_sym_float] = ACTIONS(190),
-    [anon_sym_double] = ACTIONS(190),
-    [aux_sym_type_keyword_token1] = ACTIONS(190),
-    [aux_sym_type_keyword_token2] = ACTIONS(190),
-    [aux_sym_type_keyword_token3] = ACTIONS(190),
-    [aux_sym_type_keyword_token4] = ACTIONS(190),
-    [aux_sym_type_keyword_token5] = ACTIONS(190),
-    [aux_sym_type_keyword_token6] = ACTIONS(190),
-    [anon_sym_strL] = ACTIONS(190),
-    [sym_number] = ACTIONS(192),
-    [sym_missing_value] = ACTIONS(190),
-    [anon_sym__n] = ACTIONS(190),
-    [anon_sym__N] = ACTIONS(190),
-    [anon_sym__b] = ACTIONS(190),
-    [anon_sym__coef] = ACTIONS(190),
-    [anon_sym__cons] = ACTIONS(190),
-    [anon_sym__rc] = ACTIONS(190),
-    [anon_sym__se] = ACTIONS(190),
-    [anon_sym__pi] = ACTIONS(190),
-    [anon_sym__skip] = ACTIONS(190),
-    [anon_sym__dup] = ACTIONS(190),
-    [anon_sym__newline] = ACTIONS(190),
-    [anon_sym__column] = ACTIONS(190),
-    [anon_sym__continue] = ACTIONS(190),
-    [anon_sym__request] = ACTIONS(190),
-    [anon_sym__char] = ACTIONS(190),
-    [anon_sym_PLUS] = ACTIONS(192),
-    [anon_sym_DASH] = ACTIONS(192),
-    [anon_sym_CARET] = ACTIONS(192),
-    [anon_sym_EQ_EQ] = ACTIONS(192),
-    [anon_sym_BANG_EQ] = ACTIONS(192),
-    [anon_sym_TILDE_EQ] = ACTIONS(192),
-    [anon_sym_LT] = ACTIONS(190),
-    [anon_sym_GT] = ACTIONS(190),
-    [anon_sym_LT_EQ] = ACTIONS(192),
-    [anon_sym_GT_EQ] = ACTIONS(192),
-    [anon_sym_AMP] = ACTIONS(192),
-    [anon_sym_PIPE] = ACTIONS(192),
-    [anon_sym_BANG] = ACTIONS(190),
-    [anon_sym_TILDE] = ACTIONS(190),
-    [anon_sym_EQ] = ACTIONS(190),
-    [anon_sym_POUND] = ACTIONS(192),
-    [anon_sym_LBRACK] = ACTIONS(192),
-    [anon_sym_RBRACK] = ACTIONS(192),
-    [anon_sym_LPAREN] = ACTIONS(192),
-    [anon_sym_RPAREN] = ACTIONS(192),
-    [sym__line_start] = ACTIONS(192),
+    [sym_identifier] = ACTIONS(276),
+    [sym__newline] = ACTIONS(278),
+    [aux_sym_line_comment_token1] = ACTIONS(278),
+    [aux_sym_line_comment_token2] = ACTIONS(276),
+    [anon_sym_STAR] = ACTIONS(276),
+    [anon_sym_SLASH_STAR] = ACTIONS(278),
+    [anon_sym_SLASH] = ACTIONS(276),
+    [anon_sym_DQUOTE] = ACTIONS(278),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(278),
+    [anon_sym_BQUOTE] = ACTIONS(276),
+    [anon_sym_DOLLAR] = ACTIONS(276),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(278),
+    [anon_sym_end] = ACTIONS(276),
+    [aux_sym__argument_token1] = ACTIONS(276),
+    [anon_sym_using] = ACTIONS(276),
+    [sym_file_path] = ACTIONS(276),
+    [sym_factor_operator] = ACTIONS(276),
+    [anon_sym_if] = ACTIONS(276),
+    [anon_sym_else] = ACTIONS(276),
+    [anon_sym_foreach] = ACTIONS(276),
+    [anon_sym_forvalues] = ACTIONS(276),
+    [anon_sym_forv] = ACTIONS(276),
+    [anon_sym_while] = ACTIONS(276),
+    [anon_sym_continue] = ACTIONS(276),
+    [anon_sym_break] = ACTIONS(276),
+    [anon_sym_byte] = ACTIONS(276),
+    [anon_sym_int] = ACTIONS(276),
+    [anon_sym_long] = ACTIONS(276),
+    [anon_sym_float] = ACTIONS(276),
+    [anon_sym_double] = ACTIONS(276),
+    [aux_sym_type_keyword_token1] = ACTIONS(276),
+    [aux_sym_type_keyword_token2] = ACTIONS(276),
+    [aux_sym_type_keyword_token3] = ACTIONS(276),
+    [aux_sym_type_keyword_token4] = ACTIONS(276),
+    [aux_sym_type_keyword_token5] = ACTIONS(276),
+    [aux_sym_type_keyword_token6] = ACTIONS(276),
+    [anon_sym_strL] = ACTIONS(276),
+    [sym_number] = ACTIONS(276),
+    [sym_missing_value] = ACTIONS(276),
+    [anon_sym__n] = ACTIONS(276),
+    [anon_sym__N] = ACTIONS(276),
+    [anon_sym__b] = ACTIONS(276),
+    [anon_sym__coef] = ACTIONS(276),
+    [anon_sym__cons] = ACTIONS(276),
+    [anon_sym__rc] = ACTIONS(276),
+    [anon_sym__se] = ACTIONS(276),
+    [anon_sym__pi] = ACTIONS(276),
+    [anon_sym__skip] = ACTIONS(276),
+    [anon_sym__dup] = ACTIONS(276),
+    [anon_sym__newline] = ACTIONS(276),
+    [anon_sym__column] = ACTIONS(276),
+    [anon_sym__continue] = ACTIONS(276),
+    [anon_sym__request] = ACTIONS(276),
+    [anon_sym__char] = ACTIONS(276),
+    [anon_sym_PLUS] = ACTIONS(276),
+    [anon_sym_DASH] = ACTIONS(276),
+    [anon_sym_CARET] = ACTIONS(276),
+    [anon_sym_EQ_EQ] = ACTIONS(276),
+    [anon_sym_BANG_EQ] = ACTIONS(276),
+    [anon_sym_TILDE_EQ] = ACTIONS(276),
+    [anon_sym_LT] = ACTIONS(276),
+    [anon_sym_GT] = ACTIONS(276),
+    [anon_sym_LT_EQ] = ACTIONS(276),
+    [anon_sym_GT_EQ] = ACTIONS(276),
+    [anon_sym_AMP] = ACTIONS(276),
+    [anon_sym_PIPE] = ACTIONS(276),
+    [anon_sym_BANG] = ACTIONS(276),
+    [anon_sym_TILDE] = ACTIONS(276),
+    [anon_sym_EQ] = ACTIONS(276),
+    [anon_sym_POUND] = ACTIONS(276),
+    [anon_sym_LBRACK] = ACTIONS(276),
+    [anon_sym_RBRACK] = ACTIONS(276),
+    [anon_sym_LPAREN] = ACTIONS(276),
+    [anon_sym_RPAREN] = ACTIONS(276),
+    [sym__line_start] = ACTIONS(278),
   },
   [STATE(23)] = {
-    [sym_identifier] = ACTIONS(194),
-    [sym__newline] = ACTIONS(196),
-    [aux_sym_line_comment_token1] = ACTIONS(196),
-    [aux_sym_line_comment_token2] = ACTIONS(194),
-    [anon_sym_STAR] = ACTIONS(196),
-    [anon_sym_SLASH_STAR] = ACTIONS(196),
-    [anon_sym_SLASH] = ACTIONS(194),
-    [anon_sym_DQUOTE] = ACTIONS(196),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(196),
-    [anon_sym_BQUOTE] = ACTIONS(194),
-    [anon_sym_DOLLAR] = ACTIONS(194),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(196),
-    [anon_sym_end] = ACTIONS(194),
-    [aux_sym__argument_token1] = ACTIONS(194),
-    [sym_factor_operator] = ACTIONS(196),
-    [anon_sym_if] = ACTIONS(194),
-    [anon_sym_else] = ACTIONS(194),
-    [anon_sym_foreach] = ACTIONS(194),
-    [anon_sym_forvalues] = ACTIONS(194),
-    [anon_sym_forv] = ACTIONS(194),
-    [anon_sym_while] = ACTIONS(194),
-    [anon_sym_continue] = ACTIONS(194),
-    [anon_sym_break] = ACTIONS(194),
-    [anon_sym_byte] = ACTIONS(194),
-    [anon_sym_int] = ACTIONS(194),
-    [anon_sym_long] = ACTIONS(194),
-    [anon_sym_float] = ACTIONS(194),
-    [anon_sym_double] = ACTIONS(194),
-    [aux_sym_type_keyword_token1] = ACTIONS(194),
-    [aux_sym_type_keyword_token2] = ACTIONS(194),
-    [aux_sym_type_keyword_token3] = ACTIONS(194),
-    [aux_sym_type_keyword_token4] = ACTIONS(194),
-    [aux_sym_type_keyword_token5] = ACTIONS(194),
-    [aux_sym_type_keyword_token6] = ACTIONS(194),
-    [anon_sym_strL] = ACTIONS(194),
-    [sym_number] = ACTIONS(196),
-    [sym_missing_value] = ACTIONS(194),
-    [anon_sym__n] = ACTIONS(194),
-    [anon_sym__N] = ACTIONS(194),
-    [anon_sym__b] = ACTIONS(194),
-    [anon_sym__coef] = ACTIONS(194),
-    [anon_sym__cons] = ACTIONS(194),
-    [anon_sym__rc] = ACTIONS(194),
-    [anon_sym__se] = ACTIONS(194),
-    [anon_sym__pi] = ACTIONS(194),
-    [anon_sym__skip] = ACTIONS(194),
-    [anon_sym__dup] = ACTIONS(194),
-    [anon_sym__newline] = ACTIONS(194),
-    [anon_sym__column] = ACTIONS(194),
-    [anon_sym__continue] = ACTIONS(194),
-    [anon_sym__request] = ACTIONS(194),
-    [anon_sym__char] = ACTIONS(194),
-    [anon_sym_PLUS] = ACTIONS(196),
-    [anon_sym_DASH] = ACTIONS(196),
-    [anon_sym_CARET] = ACTIONS(196),
-    [anon_sym_EQ_EQ] = ACTIONS(196),
-    [anon_sym_BANG_EQ] = ACTIONS(196),
-    [anon_sym_TILDE_EQ] = ACTIONS(196),
-    [anon_sym_LT] = ACTIONS(194),
-    [anon_sym_GT] = ACTIONS(194),
-    [anon_sym_LT_EQ] = ACTIONS(196),
-    [anon_sym_GT_EQ] = ACTIONS(196),
-    [anon_sym_AMP] = ACTIONS(196),
-    [anon_sym_PIPE] = ACTIONS(196),
-    [anon_sym_BANG] = ACTIONS(194),
-    [anon_sym_TILDE] = ACTIONS(194),
-    [anon_sym_EQ] = ACTIONS(194),
-    [anon_sym_POUND] = ACTIONS(196),
-    [anon_sym_LBRACK] = ACTIONS(196),
-    [anon_sym_RBRACK] = ACTIONS(196),
-    [anon_sym_LPAREN] = ACTIONS(196),
-    [anon_sym_RPAREN] = ACTIONS(196),
-    [sym__line_start] = ACTIONS(196),
+    [sym_identifier] = ACTIONS(280),
+    [sym__newline] = ACTIONS(282),
+    [aux_sym_line_comment_token1] = ACTIONS(282),
+    [aux_sym_line_comment_token2] = ACTIONS(280),
+    [anon_sym_STAR] = ACTIONS(280),
+    [anon_sym_SLASH_STAR] = ACTIONS(282),
+    [anon_sym_SLASH] = ACTIONS(280),
+    [anon_sym_DQUOTE] = ACTIONS(282),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(282),
+    [anon_sym_BQUOTE] = ACTIONS(280),
+    [anon_sym_DOLLAR] = ACTIONS(280),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(282),
+    [anon_sym_end] = ACTIONS(280),
+    [aux_sym__argument_token1] = ACTIONS(280),
+    [anon_sym_using] = ACTIONS(280),
+    [sym_file_path] = ACTIONS(280),
+    [sym_factor_operator] = ACTIONS(280),
+    [anon_sym_if] = ACTIONS(280),
+    [anon_sym_else] = ACTIONS(280),
+    [anon_sym_foreach] = ACTIONS(280),
+    [anon_sym_forvalues] = ACTIONS(280),
+    [anon_sym_forv] = ACTIONS(280),
+    [anon_sym_while] = ACTIONS(280),
+    [anon_sym_continue] = ACTIONS(280),
+    [anon_sym_break] = ACTIONS(280),
+    [anon_sym_byte] = ACTIONS(280),
+    [anon_sym_int] = ACTIONS(280),
+    [anon_sym_long] = ACTIONS(280),
+    [anon_sym_float] = ACTIONS(280),
+    [anon_sym_double] = ACTIONS(280),
+    [aux_sym_type_keyword_token1] = ACTIONS(280),
+    [aux_sym_type_keyword_token2] = ACTIONS(280),
+    [aux_sym_type_keyword_token3] = ACTIONS(280),
+    [aux_sym_type_keyword_token4] = ACTIONS(280),
+    [aux_sym_type_keyword_token5] = ACTIONS(280),
+    [aux_sym_type_keyword_token6] = ACTIONS(280),
+    [anon_sym_strL] = ACTIONS(280),
+    [sym_number] = ACTIONS(280),
+    [sym_missing_value] = ACTIONS(280),
+    [anon_sym__n] = ACTIONS(280),
+    [anon_sym__N] = ACTIONS(280),
+    [anon_sym__b] = ACTIONS(280),
+    [anon_sym__coef] = ACTIONS(280),
+    [anon_sym__cons] = ACTIONS(280),
+    [anon_sym__rc] = ACTIONS(280),
+    [anon_sym__se] = ACTIONS(280),
+    [anon_sym__pi] = ACTIONS(280),
+    [anon_sym__skip] = ACTIONS(280),
+    [anon_sym__dup] = ACTIONS(280),
+    [anon_sym__newline] = ACTIONS(280),
+    [anon_sym__column] = ACTIONS(280),
+    [anon_sym__continue] = ACTIONS(280),
+    [anon_sym__request] = ACTIONS(280),
+    [anon_sym__char] = ACTIONS(280),
+    [anon_sym_PLUS] = ACTIONS(280),
+    [anon_sym_DASH] = ACTIONS(280),
+    [anon_sym_CARET] = ACTIONS(280),
+    [anon_sym_EQ_EQ] = ACTIONS(280),
+    [anon_sym_BANG_EQ] = ACTIONS(280),
+    [anon_sym_TILDE_EQ] = ACTIONS(280),
+    [anon_sym_LT] = ACTIONS(280),
+    [anon_sym_GT] = ACTIONS(280),
+    [anon_sym_LT_EQ] = ACTIONS(280),
+    [anon_sym_GT_EQ] = ACTIONS(280),
+    [anon_sym_AMP] = ACTIONS(280),
+    [anon_sym_PIPE] = ACTIONS(280),
+    [anon_sym_BANG] = ACTIONS(280),
+    [anon_sym_TILDE] = ACTIONS(280),
+    [anon_sym_EQ] = ACTIONS(280),
+    [anon_sym_POUND] = ACTIONS(280),
+    [anon_sym_LBRACK] = ACTIONS(280),
+    [anon_sym_RBRACK] = ACTIONS(280),
+    [anon_sym_LPAREN] = ACTIONS(280),
+    [anon_sym_RPAREN] = ACTIONS(280),
+    [sym__line_start] = ACTIONS(282),
   },
   [STATE(24)] = {
-    [sym_identifier] = ACTIONS(198),
-    [sym__newline] = ACTIONS(200),
-    [aux_sym_line_comment_token1] = ACTIONS(200),
-    [aux_sym_line_comment_token2] = ACTIONS(198),
-    [anon_sym_STAR] = ACTIONS(200),
-    [anon_sym_SLASH_STAR] = ACTIONS(200),
-    [anon_sym_SLASH] = ACTIONS(198),
-    [anon_sym_DQUOTE] = ACTIONS(200),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(200),
-    [anon_sym_BQUOTE] = ACTIONS(198),
-    [anon_sym_DOLLAR] = ACTIONS(198),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(200),
-    [anon_sym_end] = ACTIONS(198),
-    [aux_sym__argument_token1] = ACTIONS(198),
-    [sym_factor_operator] = ACTIONS(200),
-    [anon_sym_if] = ACTIONS(198),
-    [anon_sym_else] = ACTIONS(198),
-    [anon_sym_foreach] = ACTIONS(198),
-    [anon_sym_forvalues] = ACTIONS(198),
-    [anon_sym_forv] = ACTIONS(198),
-    [anon_sym_while] = ACTIONS(198),
-    [anon_sym_continue] = ACTIONS(198),
-    [anon_sym_break] = ACTIONS(198),
-    [anon_sym_byte] = ACTIONS(198),
-    [anon_sym_int] = ACTIONS(198),
-    [anon_sym_long] = ACTIONS(198),
-    [anon_sym_float] = ACTIONS(198),
-    [anon_sym_double] = ACTIONS(198),
-    [aux_sym_type_keyword_token1] = ACTIONS(198),
-    [aux_sym_type_keyword_token2] = ACTIONS(198),
-    [aux_sym_type_keyword_token3] = ACTIONS(198),
-    [aux_sym_type_keyword_token4] = ACTIONS(198),
-    [aux_sym_type_keyword_token5] = ACTIONS(198),
-    [aux_sym_type_keyword_token6] = ACTIONS(198),
-    [anon_sym_strL] = ACTIONS(198),
-    [sym_number] = ACTIONS(200),
-    [sym_missing_value] = ACTIONS(198),
-    [anon_sym__n] = ACTIONS(198),
-    [anon_sym__N] = ACTIONS(198),
-    [anon_sym__b] = ACTIONS(198),
-    [anon_sym__coef] = ACTIONS(198),
-    [anon_sym__cons] = ACTIONS(198),
-    [anon_sym__rc] = ACTIONS(198),
-    [anon_sym__se] = ACTIONS(198),
-    [anon_sym__pi] = ACTIONS(198),
-    [anon_sym__skip] = ACTIONS(198),
-    [anon_sym__dup] = ACTIONS(198),
-    [anon_sym__newline] = ACTIONS(198),
-    [anon_sym__column] = ACTIONS(198),
-    [anon_sym__continue] = ACTIONS(198),
-    [anon_sym__request] = ACTIONS(198),
-    [anon_sym__char] = ACTIONS(198),
-    [anon_sym_PLUS] = ACTIONS(200),
-    [anon_sym_DASH] = ACTIONS(200),
-    [anon_sym_CARET] = ACTIONS(200),
-    [anon_sym_EQ_EQ] = ACTIONS(200),
-    [anon_sym_BANG_EQ] = ACTIONS(200),
-    [anon_sym_TILDE_EQ] = ACTIONS(200),
-    [anon_sym_LT] = ACTIONS(198),
-    [anon_sym_GT] = ACTIONS(198),
-    [anon_sym_LT_EQ] = ACTIONS(200),
-    [anon_sym_GT_EQ] = ACTIONS(200),
-    [anon_sym_AMP] = ACTIONS(200),
-    [anon_sym_PIPE] = ACTIONS(200),
-    [anon_sym_BANG] = ACTIONS(198),
-    [anon_sym_TILDE] = ACTIONS(198),
-    [anon_sym_EQ] = ACTIONS(198),
-    [anon_sym_POUND] = ACTIONS(200),
-    [anon_sym_LBRACK] = ACTIONS(200),
-    [anon_sym_RBRACK] = ACTIONS(200),
-    [anon_sym_LPAREN] = ACTIONS(200),
-    [anon_sym_RPAREN] = ACTIONS(200),
-    [sym__line_start] = ACTIONS(200),
+    [sym_identifier] = ACTIONS(284),
+    [sym__newline] = ACTIONS(286),
+    [aux_sym_line_comment_token1] = ACTIONS(286),
+    [aux_sym_line_comment_token2] = ACTIONS(284),
+    [anon_sym_STAR] = ACTIONS(284),
+    [anon_sym_SLASH_STAR] = ACTIONS(286),
+    [anon_sym_SLASH] = ACTIONS(284),
+    [anon_sym_DQUOTE] = ACTIONS(286),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(286),
+    [anon_sym_BQUOTE] = ACTIONS(284),
+    [anon_sym_DOLLAR] = ACTIONS(284),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(286),
+    [anon_sym_end] = ACTIONS(284),
+    [aux_sym__argument_token1] = ACTIONS(284),
+    [anon_sym_using] = ACTIONS(284),
+    [sym_file_path] = ACTIONS(284),
+    [sym_factor_operator] = ACTIONS(284),
+    [anon_sym_if] = ACTIONS(284),
+    [anon_sym_else] = ACTIONS(284),
+    [anon_sym_foreach] = ACTIONS(284),
+    [anon_sym_forvalues] = ACTIONS(284),
+    [anon_sym_forv] = ACTIONS(284),
+    [anon_sym_while] = ACTIONS(284),
+    [anon_sym_continue] = ACTIONS(284),
+    [anon_sym_break] = ACTIONS(284),
+    [anon_sym_byte] = ACTIONS(284),
+    [anon_sym_int] = ACTIONS(284),
+    [anon_sym_long] = ACTIONS(284),
+    [anon_sym_float] = ACTIONS(284),
+    [anon_sym_double] = ACTIONS(284),
+    [aux_sym_type_keyword_token1] = ACTIONS(284),
+    [aux_sym_type_keyword_token2] = ACTIONS(284),
+    [aux_sym_type_keyword_token3] = ACTIONS(284),
+    [aux_sym_type_keyword_token4] = ACTIONS(284),
+    [aux_sym_type_keyword_token5] = ACTIONS(284),
+    [aux_sym_type_keyword_token6] = ACTIONS(284),
+    [anon_sym_strL] = ACTIONS(284),
+    [sym_number] = ACTIONS(284),
+    [sym_missing_value] = ACTIONS(284),
+    [anon_sym__n] = ACTIONS(284),
+    [anon_sym__N] = ACTIONS(284),
+    [anon_sym__b] = ACTIONS(284),
+    [anon_sym__coef] = ACTIONS(284),
+    [anon_sym__cons] = ACTIONS(284),
+    [anon_sym__rc] = ACTIONS(284),
+    [anon_sym__se] = ACTIONS(284),
+    [anon_sym__pi] = ACTIONS(284),
+    [anon_sym__skip] = ACTIONS(284),
+    [anon_sym__dup] = ACTIONS(284),
+    [anon_sym__newline] = ACTIONS(284),
+    [anon_sym__column] = ACTIONS(284),
+    [anon_sym__continue] = ACTIONS(284),
+    [anon_sym__request] = ACTIONS(284),
+    [anon_sym__char] = ACTIONS(284),
+    [anon_sym_PLUS] = ACTIONS(284),
+    [anon_sym_DASH] = ACTIONS(284),
+    [anon_sym_CARET] = ACTIONS(284),
+    [anon_sym_EQ_EQ] = ACTIONS(284),
+    [anon_sym_BANG_EQ] = ACTIONS(284),
+    [anon_sym_TILDE_EQ] = ACTIONS(284),
+    [anon_sym_LT] = ACTIONS(284),
+    [anon_sym_GT] = ACTIONS(284),
+    [anon_sym_LT_EQ] = ACTIONS(284),
+    [anon_sym_GT_EQ] = ACTIONS(284),
+    [anon_sym_AMP] = ACTIONS(284),
+    [anon_sym_PIPE] = ACTIONS(284),
+    [anon_sym_BANG] = ACTIONS(284),
+    [anon_sym_TILDE] = ACTIONS(284),
+    [anon_sym_EQ] = ACTIONS(284),
+    [anon_sym_POUND] = ACTIONS(284),
+    [anon_sym_LBRACK] = ACTIONS(284),
+    [anon_sym_RBRACK] = ACTIONS(284),
+    [anon_sym_LPAREN] = ACTIONS(284),
+    [anon_sym_RPAREN] = ACTIONS(284),
+    [sym__line_start] = ACTIONS(286),
   },
   [STATE(25)] = {
-    [sym_identifier] = ACTIONS(202),
-    [sym__newline] = ACTIONS(204),
-    [aux_sym_line_comment_token1] = ACTIONS(204),
-    [aux_sym_line_comment_token2] = ACTIONS(202),
-    [anon_sym_STAR] = ACTIONS(204),
-    [anon_sym_SLASH_STAR] = ACTIONS(204),
-    [anon_sym_SLASH] = ACTIONS(202),
-    [anon_sym_DQUOTE] = ACTIONS(204),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(204),
-    [anon_sym_BQUOTE] = ACTIONS(202),
-    [anon_sym_DOLLAR] = ACTIONS(202),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(204),
-    [anon_sym_end] = ACTIONS(202),
-    [aux_sym__argument_token1] = ACTIONS(202),
-    [sym_factor_operator] = ACTIONS(204),
-    [anon_sym_if] = ACTIONS(202),
-    [anon_sym_else] = ACTIONS(202),
-    [anon_sym_foreach] = ACTIONS(202),
-    [anon_sym_forvalues] = ACTIONS(202),
-    [anon_sym_forv] = ACTIONS(202),
-    [anon_sym_while] = ACTIONS(202),
-    [anon_sym_continue] = ACTIONS(202),
-    [anon_sym_break] = ACTIONS(202),
-    [anon_sym_byte] = ACTIONS(202),
-    [anon_sym_int] = ACTIONS(202),
-    [anon_sym_long] = ACTIONS(202),
-    [anon_sym_float] = ACTIONS(202),
-    [anon_sym_double] = ACTIONS(202),
-    [aux_sym_type_keyword_token1] = ACTIONS(202),
-    [aux_sym_type_keyword_token2] = ACTIONS(202),
-    [aux_sym_type_keyword_token3] = ACTIONS(202),
-    [aux_sym_type_keyword_token4] = ACTIONS(202),
-    [aux_sym_type_keyword_token5] = ACTIONS(202),
-    [aux_sym_type_keyword_token6] = ACTIONS(202),
-    [anon_sym_strL] = ACTIONS(202),
-    [sym_number] = ACTIONS(204),
-    [sym_missing_value] = ACTIONS(202),
-    [anon_sym__n] = ACTIONS(202),
-    [anon_sym__N] = ACTIONS(202),
-    [anon_sym__b] = ACTIONS(202),
-    [anon_sym__coef] = ACTIONS(202),
-    [anon_sym__cons] = ACTIONS(202),
-    [anon_sym__rc] = ACTIONS(202),
-    [anon_sym__se] = ACTIONS(202),
-    [anon_sym__pi] = ACTIONS(202),
-    [anon_sym__skip] = ACTIONS(202),
-    [anon_sym__dup] = ACTIONS(202),
-    [anon_sym__newline] = ACTIONS(202),
-    [anon_sym__column] = ACTIONS(202),
-    [anon_sym__continue] = ACTIONS(202),
-    [anon_sym__request] = ACTIONS(202),
-    [anon_sym__char] = ACTIONS(202),
-    [anon_sym_PLUS] = ACTIONS(204),
-    [anon_sym_DASH] = ACTIONS(204),
-    [anon_sym_CARET] = ACTIONS(204),
-    [anon_sym_EQ_EQ] = ACTIONS(204),
-    [anon_sym_BANG_EQ] = ACTIONS(204),
-    [anon_sym_TILDE_EQ] = ACTIONS(204),
-    [anon_sym_LT] = ACTIONS(202),
-    [anon_sym_GT] = ACTIONS(202),
-    [anon_sym_LT_EQ] = ACTIONS(204),
-    [anon_sym_GT_EQ] = ACTIONS(204),
-    [anon_sym_AMP] = ACTIONS(204),
-    [anon_sym_PIPE] = ACTIONS(204),
-    [anon_sym_BANG] = ACTIONS(202),
-    [anon_sym_TILDE] = ACTIONS(202),
-    [anon_sym_EQ] = ACTIONS(202),
-    [anon_sym_POUND] = ACTIONS(204),
-    [anon_sym_LBRACK] = ACTIONS(204),
-    [anon_sym_RBRACK] = ACTIONS(204),
-    [anon_sym_LPAREN] = ACTIONS(204),
-    [anon_sym_RPAREN] = ACTIONS(204),
-    [sym__line_start] = ACTIONS(204),
+    [sym_identifier] = ACTIONS(288),
+    [sym__newline] = ACTIONS(290),
+    [aux_sym_line_comment_token1] = ACTIONS(290),
+    [aux_sym_line_comment_token2] = ACTIONS(288),
+    [anon_sym_STAR] = ACTIONS(288),
+    [anon_sym_SLASH_STAR] = ACTIONS(290),
+    [anon_sym_SLASH] = ACTIONS(288),
+    [anon_sym_DQUOTE] = ACTIONS(290),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(290),
+    [anon_sym_BQUOTE] = ACTIONS(288),
+    [anon_sym_DOLLAR] = ACTIONS(288),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(290),
+    [anon_sym_end] = ACTIONS(288),
+    [aux_sym__argument_token1] = ACTIONS(288),
+    [anon_sym_using] = ACTIONS(288),
+    [sym_file_path] = ACTIONS(288),
+    [sym_factor_operator] = ACTIONS(288),
+    [anon_sym_if] = ACTIONS(288),
+    [anon_sym_else] = ACTIONS(288),
+    [anon_sym_foreach] = ACTIONS(288),
+    [anon_sym_forvalues] = ACTIONS(288),
+    [anon_sym_forv] = ACTIONS(288),
+    [anon_sym_while] = ACTIONS(288),
+    [anon_sym_continue] = ACTIONS(288),
+    [anon_sym_break] = ACTIONS(288),
+    [anon_sym_byte] = ACTIONS(288),
+    [anon_sym_int] = ACTIONS(288),
+    [anon_sym_long] = ACTIONS(288),
+    [anon_sym_float] = ACTIONS(288),
+    [anon_sym_double] = ACTIONS(288),
+    [aux_sym_type_keyword_token1] = ACTIONS(288),
+    [aux_sym_type_keyword_token2] = ACTIONS(288),
+    [aux_sym_type_keyword_token3] = ACTIONS(288),
+    [aux_sym_type_keyword_token4] = ACTIONS(288),
+    [aux_sym_type_keyword_token5] = ACTIONS(288),
+    [aux_sym_type_keyword_token6] = ACTIONS(288),
+    [anon_sym_strL] = ACTIONS(288),
+    [sym_number] = ACTIONS(288),
+    [sym_missing_value] = ACTIONS(288),
+    [anon_sym__n] = ACTIONS(288),
+    [anon_sym__N] = ACTIONS(288),
+    [anon_sym__b] = ACTIONS(288),
+    [anon_sym__coef] = ACTIONS(288),
+    [anon_sym__cons] = ACTIONS(288),
+    [anon_sym__rc] = ACTIONS(288),
+    [anon_sym__se] = ACTIONS(288),
+    [anon_sym__pi] = ACTIONS(288),
+    [anon_sym__skip] = ACTIONS(288),
+    [anon_sym__dup] = ACTIONS(288),
+    [anon_sym__newline] = ACTIONS(288),
+    [anon_sym__column] = ACTIONS(288),
+    [anon_sym__continue] = ACTIONS(288),
+    [anon_sym__request] = ACTIONS(288),
+    [anon_sym__char] = ACTIONS(288),
+    [anon_sym_PLUS] = ACTIONS(288),
+    [anon_sym_DASH] = ACTIONS(288),
+    [anon_sym_CARET] = ACTIONS(288),
+    [anon_sym_EQ_EQ] = ACTIONS(288),
+    [anon_sym_BANG_EQ] = ACTIONS(288),
+    [anon_sym_TILDE_EQ] = ACTIONS(288),
+    [anon_sym_LT] = ACTIONS(288),
+    [anon_sym_GT] = ACTIONS(288),
+    [anon_sym_LT_EQ] = ACTIONS(288),
+    [anon_sym_GT_EQ] = ACTIONS(288),
+    [anon_sym_AMP] = ACTIONS(288),
+    [anon_sym_PIPE] = ACTIONS(288),
+    [anon_sym_BANG] = ACTIONS(288),
+    [anon_sym_TILDE] = ACTIONS(288),
+    [anon_sym_EQ] = ACTIONS(288),
+    [anon_sym_POUND] = ACTIONS(288),
+    [anon_sym_LBRACK] = ACTIONS(288),
+    [anon_sym_RBRACK] = ACTIONS(288),
+    [anon_sym_LPAREN] = ACTIONS(288),
+    [anon_sym_RPAREN] = ACTIONS(288),
+    [sym__line_start] = ACTIONS(290),
   },
   [STATE(26)] = {
-    [sym_identifier] = ACTIONS(206),
-    [sym__newline] = ACTIONS(208),
-    [aux_sym_line_comment_token1] = ACTIONS(208),
-    [aux_sym_line_comment_token2] = ACTIONS(206),
-    [anon_sym_STAR] = ACTIONS(208),
-    [anon_sym_SLASH_STAR] = ACTIONS(208),
-    [anon_sym_SLASH] = ACTIONS(206),
-    [anon_sym_DQUOTE] = ACTIONS(208),
-    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(208),
-    [anon_sym_BQUOTE] = ACTIONS(206),
-    [anon_sym_DOLLAR] = ACTIONS(206),
-    [anon_sym_DOLLAR_LBRACE] = ACTIONS(208),
-    [anon_sym_end] = ACTIONS(206),
-    [aux_sym__argument_token1] = ACTIONS(206),
-    [sym_factor_operator] = ACTIONS(208),
-    [anon_sym_if] = ACTIONS(206),
-    [anon_sym_else] = ACTIONS(206),
-    [anon_sym_foreach] = ACTIONS(206),
-    [anon_sym_forvalues] = ACTIONS(206),
-    [anon_sym_forv] = ACTIONS(206),
-    [anon_sym_while] = ACTIONS(206),
-    [anon_sym_continue] = ACTIONS(206),
-    [anon_sym_break] = ACTIONS(206),
-    [anon_sym_byte] = ACTIONS(206),
-    [anon_sym_int] = ACTIONS(206),
-    [anon_sym_long] = ACTIONS(206),
-    [anon_sym_float] = ACTIONS(206),
-    [anon_sym_double] = ACTIONS(206),
-    [aux_sym_type_keyword_token1] = ACTIONS(206),
-    [aux_sym_type_keyword_token2] = ACTIONS(206),
-    [aux_sym_type_keyword_token3] = ACTIONS(206),
-    [aux_sym_type_keyword_token4] = ACTIONS(206),
-    [aux_sym_type_keyword_token5] = ACTIONS(206),
-    [aux_sym_type_keyword_token6] = ACTIONS(206),
-    [anon_sym_strL] = ACTIONS(206),
-    [sym_number] = ACTIONS(208),
-    [sym_missing_value] = ACTIONS(206),
-    [anon_sym__n] = ACTIONS(206),
-    [anon_sym__N] = ACTIONS(206),
-    [anon_sym__b] = ACTIONS(206),
-    [anon_sym__coef] = ACTIONS(206),
-    [anon_sym__cons] = ACTIONS(206),
-    [anon_sym__rc] = ACTIONS(206),
-    [anon_sym__se] = ACTIONS(206),
-    [anon_sym__pi] = ACTIONS(206),
-    [anon_sym__skip] = ACTIONS(206),
-    [anon_sym__dup] = ACTIONS(206),
-    [anon_sym__newline] = ACTIONS(206),
-    [anon_sym__column] = ACTIONS(206),
-    [anon_sym__continue] = ACTIONS(206),
-    [anon_sym__request] = ACTIONS(206),
-    [anon_sym__char] = ACTIONS(206),
-    [anon_sym_PLUS] = ACTIONS(208),
-    [anon_sym_DASH] = ACTIONS(208),
-    [anon_sym_CARET] = ACTIONS(208),
-    [anon_sym_EQ_EQ] = ACTIONS(208),
-    [anon_sym_BANG_EQ] = ACTIONS(208),
-    [anon_sym_TILDE_EQ] = ACTIONS(208),
-    [anon_sym_LT] = ACTIONS(206),
-    [anon_sym_GT] = ACTIONS(206),
-    [anon_sym_LT_EQ] = ACTIONS(208),
-    [anon_sym_GT_EQ] = ACTIONS(208),
-    [anon_sym_AMP] = ACTIONS(208),
-    [anon_sym_PIPE] = ACTIONS(208),
-    [anon_sym_BANG] = ACTIONS(206),
-    [anon_sym_TILDE] = ACTIONS(206),
-    [anon_sym_EQ] = ACTIONS(206),
-    [anon_sym_POUND] = ACTIONS(208),
-    [anon_sym_LBRACK] = ACTIONS(208),
-    [anon_sym_RBRACK] = ACTIONS(208),
-    [anon_sym_LPAREN] = ACTIONS(208),
-    [anon_sym_RPAREN] = ACTIONS(208),
-    [sym__line_start] = ACTIONS(208),
+    [sym_identifier] = ACTIONS(292),
+    [sym__newline] = ACTIONS(294),
+    [aux_sym_line_comment_token1] = ACTIONS(294),
+    [aux_sym_line_comment_token2] = ACTIONS(292),
+    [anon_sym_STAR] = ACTIONS(292),
+    [anon_sym_SLASH_STAR] = ACTIONS(294),
+    [anon_sym_SLASH] = ACTIONS(292),
+    [anon_sym_DQUOTE] = ACTIONS(294),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(294),
+    [anon_sym_BQUOTE] = ACTIONS(292),
+    [anon_sym_DOLLAR] = ACTIONS(292),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(294),
+    [anon_sym_end] = ACTIONS(292),
+    [aux_sym__argument_token1] = ACTIONS(292),
+    [anon_sym_using] = ACTIONS(292),
+    [sym_file_path] = ACTIONS(292),
+    [sym_factor_operator] = ACTIONS(292),
+    [anon_sym_if] = ACTIONS(292),
+    [anon_sym_else] = ACTIONS(292),
+    [anon_sym_foreach] = ACTIONS(292),
+    [anon_sym_forvalues] = ACTIONS(292),
+    [anon_sym_forv] = ACTIONS(292),
+    [anon_sym_while] = ACTIONS(292),
+    [anon_sym_continue] = ACTIONS(292),
+    [anon_sym_break] = ACTIONS(292),
+    [anon_sym_byte] = ACTIONS(292),
+    [anon_sym_int] = ACTIONS(292),
+    [anon_sym_long] = ACTIONS(292),
+    [anon_sym_float] = ACTIONS(292),
+    [anon_sym_double] = ACTIONS(292),
+    [aux_sym_type_keyword_token1] = ACTIONS(292),
+    [aux_sym_type_keyword_token2] = ACTIONS(292),
+    [aux_sym_type_keyword_token3] = ACTIONS(292),
+    [aux_sym_type_keyword_token4] = ACTIONS(292),
+    [aux_sym_type_keyword_token5] = ACTIONS(292),
+    [aux_sym_type_keyword_token6] = ACTIONS(292),
+    [anon_sym_strL] = ACTIONS(292),
+    [sym_number] = ACTIONS(292),
+    [sym_missing_value] = ACTIONS(292),
+    [anon_sym__n] = ACTIONS(292),
+    [anon_sym__N] = ACTIONS(292),
+    [anon_sym__b] = ACTIONS(292),
+    [anon_sym__coef] = ACTIONS(292),
+    [anon_sym__cons] = ACTIONS(292),
+    [anon_sym__rc] = ACTIONS(292),
+    [anon_sym__se] = ACTIONS(292),
+    [anon_sym__pi] = ACTIONS(292),
+    [anon_sym__skip] = ACTIONS(292),
+    [anon_sym__dup] = ACTIONS(292),
+    [anon_sym__newline] = ACTIONS(292),
+    [anon_sym__column] = ACTIONS(292),
+    [anon_sym__continue] = ACTIONS(292),
+    [anon_sym__request] = ACTIONS(292),
+    [anon_sym__char] = ACTIONS(292),
+    [anon_sym_PLUS] = ACTIONS(292),
+    [anon_sym_DASH] = ACTIONS(292),
+    [anon_sym_CARET] = ACTIONS(292),
+    [anon_sym_EQ_EQ] = ACTIONS(292),
+    [anon_sym_BANG_EQ] = ACTIONS(292),
+    [anon_sym_TILDE_EQ] = ACTIONS(292),
+    [anon_sym_LT] = ACTIONS(292),
+    [anon_sym_GT] = ACTIONS(292),
+    [anon_sym_LT_EQ] = ACTIONS(292),
+    [anon_sym_GT_EQ] = ACTIONS(292),
+    [anon_sym_AMP] = ACTIONS(292),
+    [anon_sym_PIPE] = ACTIONS(292),
+    [anon_sym_BANG] = ACTIONS(292),
+    [anon_sym_TILDE] = ACTIONS(292),
+    [anon_sym_EQ] = ACTIONS(292),
+    [anon_sym_POUND] = ACTIONS(292),
+    [anon_sym_LBRACK] = ACTIONS(292),
+    [anon_sym_RBRACK] = ACTIONS(292),
+    [anon_sym_LPAREN] = ACTIONS(292),
+    [anon_sym_RPAREN] = ACTIONS(292),
+    [sym__line_start] = ACTIONS(294),
+  },
+  [STATE(27)] = {
+    [sym_identifier] = ACTIONS(296),
+    [sym__newline] = ACTIONS(298),
+    [aux_sym_line_comment_token1] = ACTIONS(298),
+    [aux_sym_line_comment_token2] = ACTIONS(296),
+    [anon_sym_STAR] = ACTIONS(296),
+    [anon_sym_SLASH_STAR] = ACTIONS(298),
+    [anon_sym_SLASH] = ACTIONS(296),
+    [anon_sym_DQUOTE] = ACTIONS(298),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(298),
+    [anon_sym_BQUOTE] = ACTIONS(296),
+    [anon_sym_DOLLAR] = ACTIONS(296),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(298),
+    [anon_sym_end] = ACTIONS(296),
+    [aux_sym__argument_token1] = ACTIONS(296),
+    [anon_sym_using] = ACTIONS(296),
+    [sym_file_path] = ACTIONS(296),
+    [sym_factor_operator] = ACTIONS(296),
+    [anon_sym_if] = ACTIONS(296),
+    [anon_sym_else] = ACTIONS(296),
+    [anon_sym_foreach] = ACTIONS(296),
+    [anon_sym_forvalues] = ACTIONS(296),
+    [anon_sym_forv] = ACTIONS(296),
+    [anon_sym_while] = ACTIONS(296),
+    [anon_sym_continue] = ACTIONS(296),
+    [anon_sym_break] = ACTIONS(296),
+    [anon_sym_byte] = ACTIONS(296),
+    [anon_sym_int] = ACTIONS(296),
+    [anon_sym_long] = ACTIONS(296),
+    [anon_sym_float] = ACTIONS(296),
+    [anon_sym_double] = ACTIONS(296),
+    [aux_sym_type_keyword_token1] = ACTIONS(296),
+    [aux_sym_type_keyword_token2] = ACTIONS(296),
+    [aux_sym_type_keyword_token3] = ACTIONS(296),
+    [aux_sym_type_keyword_token4] = ACTIONS(296),
+    [aux_sym_type_keyword_token5] = ACTIONS(296),
+    [aux_sym_type_keyword_token6] = ACTIONS(296),
+    [anon_sym_strL] = ACTIONS(296),
+    [sym_number] = ACTIONS(296),
+    [sym_missing_value] = ACTIONS(296),
+    [anon_sym__n] = ACTIONS(296),
+    [anon_sym__N] = ACTIONS(296),
+    [anon_sym__b] = ACTIONS(296),
+    [anon_sym__coef] = ACTIONS(296),
+    [anon_sym__cons] = ACTIONS(296),
+    [anon_sym__rc] = ACTIONS(296),
+    [anon_sym__se] = ACTIONS(296),
+    [anon_sym__pi] = ACTIONS(296),
+    [anon_sym__skip] = ACTIONS(296),
+    [anon_sym__dup] = ACTIONS(296),
+    [anon_sym__newline] = ACTIONS(296),
+    [anon_sym__column] = ACTIONS(296),
+    [anon_sym__continue] = ACTIONS(296),
+    [anon_sym__request] = ACTIONS(296),
+    [anon_sym__char] = ACTIONS(296),
+    [anon_sym_PLUS] = ACTIONS(296),
+    [anon_sym_DASH] = ACTIONS(296),
+    [anon_sym_CARET] = ACTIONS(296),
+    [anon_sym_EQ_EQ] = ACTIONS(296),
+    [anon_sym_BANG_EQ] = ACTIONS(296),
+    [anon_sym_TILDE_EQ] = ACTIONS(296),
+    [anon_sym_LT] = ACTIONS(296),
+    [anon_sym_GT] = ACTIONS(296),
+    [anon_sym_LT_EQ] = ACTIONS(296),
+    [anon_sym_GT_EQ] = ACTIONS(296),
+    [anon_sym_AMP] = ACTIONS(296),
+    [anon_sym_PIPE] = ACTIONS(296),
+    [anon_sym_BANG] = ACTIONS(296),
+    [anon_sym_TILDE] = ACTIONS(296),
+    [anon_sym_EQ] = ACTIONS(296),
+    [anon_sym_POUND] = ACTIONS(296),
+    [anon_sym_LBRACK] = ACTIONS(296),
+    [anon_sym_RBRACK] = ACTIONS(296),
+    [anon_sym_LPAREN] = ACTIONS(296),
+    [anon_sym_RPAREN] = ACTIONS(296),
+    [sym__line_start] = ACTIONS(298),
+  },
+  [STATE(28)] = {
+    [sym_identifier] = ACTIONS(300),
+    [sym__newline] = ACTIONS(302),
+    [aux_sym_line_comment_token1] = ACTIONS(302),
+    [aux_sym_line_comment_token2] = ACTIONS(300),
+    [anon_sym_STAR] = ACTIONS(300),
+    [anon_sym_SLASH_STAR] = ACTIONS(302),
+    [anon_sym_SLASH] = ACTIONS(300),
+    [anon_sym_DQUOTE] = ACTIONS(302),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(302),
+    [anon_sym_BQUOTE] = ACTIONS(300),
+    [anon_sym_DOLLAR] = ACTIONS(300),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(302),
+    [anon_sym_end] = ACTIONS(300),
+    [aux_sym__argument_token1] = ACTIONS(300),
+    [anon_sym_using] = ACTIONS(300),
+    [sym_file_path] = ACTIONS(300),
+    [sym_factor_operator] = ACTIONS(300),
+    [anon_sym_if] = ACTIONS(300),
+    [anon_sym_else] = ACTIONS(300),
+    [anon_sym_foreach] = ACTIONS(300),
+    [anon_sym_forvalues] = ACTIONS(300),
+    [anon_sym_forv] = ACTIONS(300),
+    [anon_sym_while] = ACTIONS(300),
+    [anon_sym_continue] = ACTIONS(300),
+    [anon_sym_break] = ACTIONS(300),
+    [anon_sym_byte] = ACTIONS(300),
+    [anon_sym_int] = ACTIONS(300),
+    [anon_sym_long] = ACTIONS(300),
+    [anon_sym_float] = ACTIONS(300),
+    [anon_sym_double] = ACTIONS(300),
+    [aux_sym_type_keyword_token1] = ACTIONS(300),
+    [aux_sym_type_keyword_token2] = ACTIONS(300),
+    [aux_sym_type_keyword_token3] = ACTIONS(300),
+    [aux_sym_type_keyword_token4] = ACTIONS(300),
+    [aux_sym_type_keyword_token5] = ACTIONS(300),
+    [aux_sym_type_keyword_token6] = ACTIONS(300),
+    [anon_sym_strL] = ACTIONS(300),
+    [sym_number] = ACTIONS(300),
+    [sym_missing_value] = ACTIONS(300),
+    [anon_sym__n] = ACTIONS(300),
+    [anon_sym__N] = ACTIONS(300),
+    [anon_sym__b] = ACTIONS(300),
+    [anon_sym__coef] = ACTIONS(300),
+    [anon_sym__cons] = ACTIONS(300),
+    [anon_sym__rc] = ACTIONS(300),
+    [anon_sym__se] = ACTIONS(300),
+    [anon_sym__pi] = ACTIONS(300),
+    [anon_sym__skip] = ACTIONS(300),
+    [anon_sym__dup] = ACTIONS(300),
+    [anon_sym__newline] = ACTIONS(300),
+    [anon_sym__column] = ACTIONS(300),
+    [anon_sym__continue] = ACTIONS(300),
+    [anon_sym__request] = ACTIONS(300),
+    [anon_sym__char] = ACTIONS(300),
+    [anon_sym_PLUS] = ACTIONS(300),
+    [anon_sym_DASH] = ACTIONS(300),
+    [anon_sym_CARET] = ACTIONS(300),
+    [anon_sym_EQ_EQ] = ACTIONS(300),
+    [anon_sym_BANG_EQ] = ACTIONS(300),
+    [anon_sym_TILDE_EQ] = ACTIONS(300),
+    [anon_sym_LT] = ACTIONS(300),
+    [anon_sym_GT] = ACTIONS(300),
+    [anon_sym_LT_EQ] = ACTIONS(300),
+    [anon_sym_GT_EQ] = ACTIONS(300),
+    [anon_sym_AMP] = ACTIONS(300),
+    [anon_sym_PIPE] = ACTIONS(300),
+    [anon_sym_BANG] = ACTIONS(300),
+    [anon_sym_TILDE] = ACTIONS(300),
+    [anon_sym_EQ] = ACTIONS(300),
+    [anon_sym_POUND] = ACTIONS(300),
+    [anon_sym_LBRACK] = ACTIONS(300),
+    [anon_sym_RBRACK] = ACTIONS(300),
+    [anon_sym_LPAREN] = ACTIONS(300),
+    [anon_sym_RPAREN] = ACTIONS(300),
+    [sym__line_start] = ACTIONS(302),
+  },
+  [STATE(29)] = {
+    [sym_identifier] = ACTIONS(304),
+    [sym__newline] = ACTIONS(306),
+    [aux_sym_line_comment_token1] = ACTIONS(306),
+    [aux_sym_line_comment_token2] = ACTIONS(304),
+    [anon_sym_STAR] = ACTIONS(304),
+    [anon_sym_SLASH_STAR] = ACTIONS(306),
+    [anon_sym_SLASH] = ACTIONS(304),
+    [anon_sym_DQUOTE] = ACTIONS(306),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(306),
+    [anon_sym_BQUOTE] = ACTIONS(304),
+    [anon_sym_DOLLAR] = ACTIONS(304),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(306),
+    [anon_sym_end] = ACTIONS(304),
+    [aux_sym__argument_token1] = ACTIONS(304),
+    [anon_sym_using] = ACTIONS(304),
+    [sym_file_path] = ACTIONS(304),
+    [sym_factor_operator] = ACTIONS(304),
+    [anon_sym_if] = ACTIONS(304),
+    [anon_sym_else] = ACTIONS(304),
+    [anon_sym_foreach] = ACTIONS(304),
+    [anon_sym_forvalues] = ACTIONS(304),
+    [anon_sym_forv] = ACTIONS(304),
+    [anon_sym_while] = ACTIONS(304),
+    [anon_sym_continue] = ACTIONS(304),
+    [anon_sym_break] = ACTIONS(304),
+    [anon_sym_byte] = ACTIONS(304),
+    [anon_sym_int] = ACTIONS(304),
+    [anon_sym_long] = ACTIONS(304),
+    [anon_sym_float] = ACTIONS(304),
+    [anon_sym_double] = ACTIONS(304),
+    [aux_sym_type_keyword_token1] = ACTIONS(304),
+    [aux_sym_type_keyword_token2] = ACTIONS(304),
+    [aux_sym_type_keyword_token3] = ACTIONS(304),
+    [aux_sym_type_keyword_token4] = ACTIONS(304),
+    [aux_sym_type_keyword_token5] = ACTIONS(304),
+    [aux_sym_type_keyword_token6] = ACTIONS(304),
+    [anon_sym_strL] = ACTIONS(304),
+    [sym_number] = ACTIONS(304),
+    [sym_missing_value] = ACTIONS(304),
+    [anon_sym__n] = ACTIONS(304),
+    [anon_sym__N] = ACTIONS(304),
+    [anon_sym__b] = ACTIONS(304),
+    [anon_sym__coef] = ACTIONS(304),
+    [anon_sym__cons] = ACTIONS(304),
+    [anon_sym__rc] = ACTIONS(304),
+    [anon_sym__se] = ACTIONS(304),
+    [anon_sym__pi] = ACTIONS(304),
+    [anon_sym__skip] = ACTIONS(304),
+    [anon_sym__dup] = ACTIONS(304),
+    [anon_sym__newline] = ACTIONS(304),
+    [anon_sym__column] = ACTIONS(304),
+    [anon_sym__continue] = ACTIONS(304),
+    [anon_sym__request] = ACTIONS(304),
+    [anon_sym__char] = ACTIONS(304),
+    [anon_sym_PLUS] = ACTIONS(304),
+    [anon_sym_DASH] = ACTIONS(304),
+    [anon_sym_CARET] = ACTIONS(304),
+    [anon_sym_EQ_EQ] = ACTIONS(304),
+    [anon_sym_BANG_EQ] = ACTIONS(304),
+    [anon_sym_TILDE_EQ] = ACTIONS(304),
+    [anon_sym_LT] = ACTIONS(304),
+    [anon_sym_GT] = ACTIONS(304),
+    [anon_sym_LT_EQ] = ACTIONS(304),
+    [anon_sym_GT_EQ] = ACTIONS(304),
+    [anon_sym_AMP] = ACTIONS(304),
+    [anon_sym_PIPE] = ACTIONS(304),
+    [anon_sym_BANG] = ACTIONS(304),
+    [anon_sym_TILDE] = ACTIONS(304),
+    [anon_sym_EQ] = ACTIONS(304),
+    [anon_sym_POUND] = ACTIONS(304),
+    [anon_sym_LBRACK] = ACTIONS(304),
+    [anon_sym_RBRACK] = ACTIONS(304),
+    [anon_sym_LPAREN] = ACTIONS(304),
+    [anon_sym_RPAREN] = ACTIONS(304),
+    [sym__line_start] = ACTIONS(306),
+  },
+  [STATE(30)] = {
+    [sym_identifier] = ACTIONS(308),
+    [sym__newline] = ACTIONS(310),
+    [aux_sym_line_comment_token1] = ACTIONS(310),
+    [aux_sym_line_comment_token2] = ACTIONS(308),
+    [anon_sym_STAR] = ACTIONS(308),
+    [anon_sym_SLASH_STAR] = ACTIONS(310),
+    [anon_sym_SLASH] = ACTIONS(308),
+    [anon_sym_DQUOTE] = ACTIONS(310),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(310),
+    [anon_sym_BQUOTE] = ACTIONS(308),
+    [anon_sym_DOLLAR] = ACTIONS(308),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(310),
+    [anon_sym_end] = ACTIONS(308),
+    [aux_sym__argument_token1] = ACTIONS(308),
+    [anon_sym_using] = ACTIONS(308),
+    [sym_file_path] = ACTIONS(308),
+    [sym_factor_operator] = ACTIONS(308),
+    [anon_sym_if] = ACTIONS(308),
+    [anon_sym_else] = ACTIONS(308),
+    [anon_sym_foreach] = ACTIONS(308),
+    [anon_sym_forvalues] = ACTIONS(308),
+    [anon_sym_forv] = ACTIONS(308),
+    [anon_sym_while] = ACTIONS(308),
+    [anon_sym_continue] = ACTIONS(308),
+    [anon_sym_break] = ACTIONS(308),
+    [anon_sym_byte] = ACTIONS(308),
+    [anon_sym_int] = ACTIONS(308),
+    [anon_sym_long] = ACTIONS(308),
+    [anon_sym_float] = ACTIONS(308),
+    [anon_sym_double] = ACTIONS(308),
+    [aux_sym_type_keyword_token1] = ACTIONS(308),
+    [aux_sym_type_keyword_token2] = ACTIONS(308),
+    [aux_sym_type_keyword_token3] = ACTIONS(308),
+    [aux_sym_type_keyword_token4] = ACTIONS(308),
+    [aux_sym_type_keyword_token5] = ACTIONS(308),
+    [aux_sym_type_keyword_token6] = ACTIONS(308),
+    [anon_sym_strL] = ACTIONS(308),
+    [sym_number] = ACTIONS(308),
+    [sym_missing_value] = ACTIONS(308),
+    [anon_sym__n] = ACTIONS(308),
+    [anon_sym__N] = ACTIONS(308),
+    [anon_sym__b] = ACTIONS(308),
+    [anon_sym__coef] = ACTIONS(308),
+    [anon_sym__cons] = ACTIONS(308),
+    [anon_sym__rc] = ACTIONS(308),
+    [anon_sym__se] = ACTIONS(308),
+    [anon_sym__pi] = ACTIONS(308),
+    [anon_sym__skip] = ACTIONS(308),
+    [anon_sym__dup] = ACTIONS(308),
+    [anon_sym__newline] = ACTIONS(308),
+    [anon_sym__column] = ACTIONS(308),
+    [anon_sym__continue] = ACTIONS(308),
+    [anon_sym__request] = ACTIONS(308),
+    [anon_sym__char] = ACTIONS(308),
+    [anon_sym_PLUS] = ACTIONS(308),
+    [anon_sym_DASH] = ACTIONS(308),
+    [anon_sym_CARET] = ACTIONS(308),
+    [anon_sym_EQ_EQ] = ACTIONS(308),
+    [anon_sym_BANG_EQ] = ACTIONS(308),
+    [anon_sym_TILDE_EQ] = ACTIONS(308),
+    [anon_sym_LT] = ACTIONS(308),
+    [anon_sym_GT] = ACTIONS(308),
+    [anon_sym_LT_EQ] = ACTIONS(308),
+    [anon_sym_GT_EQ] = ACTIONS(308),
+    [anon_sym_AMP] = ACTIONS(308),
+    [anon_sym_PIPE] = ACTIONS(308),
+    [anon_sym_BANG] = ACTIONS(308),
+    [anon_sym_TILDE] = ACTIONS(308),
+    [anon_sym_EQ] = ACTIONS(308),
+    [anon_sym_POUND] = ACTIONS(308),
+    [anon_sym_LBRACK] = ACTIONS(308),
+    [anon_sym_RBRACK] = ACTIONS(308),
+    [anon_sym_LPAREN] = ACTIONS(308),
+    [anon_sym_RPAREN] = ACTIONS(308),
+    [sym__line_start] = ACTIONS(310),
+  },
+  [STATE(31)] = {
+    [sym_identifier] = ACTIONS(312),
+    [sym__newline] = ACTIONS(314),
+    [aux_sym_line_comment_token1] = ACTIONS(314),
+    [aux_sym_line_comment_token2] = ACTIONS(312),
+    [anon_sym_STAR] = ACTIONS(312),
+    [anon_sym_SLASH_STAR] = ACTIONS(314),
+    [anon_sym_SLASH] = ACTIONS(312),
+    [anon_sym_DQUOTE] = ACTIONS(314),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(314),
+    [anon_sym_BQUOTE] = ACTIONS(312),
+    [anon_sym_DOLLAR] = ACTIONS(312),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(314),
+    [anon_sym_end] = ACTIONS(312),
+    [aux_sym__argument_token1] = ACTIONS(312),
+    [anon_sym_using] = ACTIONS(312),
+    [sym_file_path] = ACTIONS(312),
+    [sym_factor_operator] = ACTIONS(312),
+    [anon_sym_if] = ACTIONS(312),
+    [anon_sym_else] = ACTIONS(312),
+    [anon_sym_foreach] = ACTIONS(312),
+    [anon_sym_forvalues] = ACTIONS(312),
+    [anon_sym_forv] = ACTIONS(312),
+    [anon_sym_while] = ACTIONS(312),
+    [anon_sym_continue] = ACTIONS(312),
+    [anon_sym_break] = ACTIONS(312),
+    [anon_sym_byte] = ACTIONS(312),
+    [anon_sym_int] = ACTIONS(312),
+    [anon_sym_long] = ACTIONS(312),
+    [anon_sym_float] = ACTIONS(312),
+    [anon_sym_double] = ACTIONS(312),
+    [aux_sym_type_keyword_token1] = ACTIONS(312),
+    [aux_sym_type_keyword_token2] = ACTIONS(312),
+    [aux_sym_type_keyword_token3] = ACTIONS(312),
+    [aux_sym_type_keyword_token4] = ACTIONS(312),
+    [aux_sym_type_keyword_token5] = ACTIONS(312),
+    [aux_sym_type_keyword_token6] = ACTIONS(312),
+    [anon_sym_strL] = ACTIONS(312),
+    [sym_number] = ACTIONS(312),
+    [sym_missing_value] = ACTIONS(312),
+    [anon_sym__n] = ACTIONS(312),
+    [anon_sym__N] = ACTIONS(312),
+    [anon_sym__b] = ACTIONS(312),
+    [anon_sym__coef] = ACTIONS(312),
+    [anon_sym__cons] = ACTIONS(312),
+    [anon_sym__rc] = ACTIONS(312),
+    [anon_sym__se] = ACTIONS(312),
+    [anon_sym__pi] = ACTIONS(312),
+    [anon_sym__skip] = ACTIONS(312),
+    [anon_sym__dup] = ACTIONS(312),
+    [anon_sym__newline] = ACTIONS(312),
+    [anon_sym__column] = ACTIONS(312),
+    [anon_sym__continue] = ACTIONS(312),
+    [anon_sym__request] = ACTIONS(312),
+    [anon_sym__char] = ACTIONS(312),
+    [anon_sym_PLUS] = ACTIONS(312),
+    [anon_sym_DASH] = ACTIONS(312),
+    [anon_sym_CARET] = ACTIONS(312),
+    [anon_sym_EQ_EQ] = ACTIONS(312),
+    [anon_sym_BANG_EQ] = ACTIONS(312),
+    [anon_sym_TILDE_EQ] = ACTIONS(312),
+    [anon_sym_LT] = ACTIONS(312),
+    [anon_sym_GT] = ACTIONS(312),
+    [anon_sym_LT_EQ] = ACTIONS(312),
+    [anon_sym_GT_EQ] = ACTIONS(312),
+    [anon_sym_AMP] = ACTIONS(312),
+    [anon_sym_PIPE] = ACTIONS(312),
+    [anon_sym_BANG] = ACTIONS(312),
+    [anon_sym_TILDE] = ACTIONS(312),
+    [anon_sym_EQ] = ACTIONS(312),
+    [anon_sym_POUND] = ACTIONS(312),
+    [anon_sym_LBRACK] = ACTIONS(312),
+    [anon_sym_RBRACK] = ACTIONS(312),
+    [anon_sym_LPAREN] = ACTIONS(312),
+    [anon_sym_RPAREN] = ACTIONS(312),
+    [sym__line_start] = ACTIONS(314),
+  },
+  [STATE(32)] = {
+    [sym_identifier] = ACTIONS(316),
+    [sym__newline] = ACTIONS(318),
+    [aux_sym_line_comment_token1] = ACTIONS(318),
+    [aux_sym_line_comment_token2] = ACTIONS(316),
+    [anon_sym_STAR] = ACTIONS(316),
+    [anon_sym_SLASH_STAR] = ACTIONS(318),
+    [anon_sym_SLASH] = ACTIONS(316),
+    [anon_sym_DQUOTE] = ACTIONS(318),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(318),
+    [anon_sym_BQUOTE] = ACTIONS(316),
+    [anon_sym_DOLLAR] = ACTIONS(316),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(318),
+    [anon_sym_end] = ACTIONS(316),
+    [aux_sym__argument_token1] = ACTIONS(316),
+    [anon_sym_using] = ACTIONS(316),
+    [sym_file_path] = ACTIONS(316),
+    [sym_factor_operator] = ACTIONS(316),
+    [anon_sym_if] = ACTIONS(316),
+    [anon_sym_else] = ACTIONS(316),
+    [anon_sym_foreach] = ACTIONS(316),
+    [anon_sym_forvalues] = ACTIONS(316),
+    [anon_sym_forv] = ACTIONS(316),
+    [anon_sym_while] = ACTIONS(316),
+    [anon_sym_continue] = ACTIONS(316),
+    [anon_sym_break] = ACTIONS(316),
+    [anon_sym_byte] = ACTIONS(316),
+    [anon_sym_int] = ACTIONS(316),
+    [anon_sym_long] = ACTIONS(316),
+    [anon_sym_float] = ACTIONS(316),
+    [anon_sym_double] = ACTIONS(316),
+    [aux_sym_type_keyword_token1] = ACTIONS(316),
+    [aux_sym_type_keyword_token2] = ACTIONS(316),
+    [aux_sym_type_keyword_token3] = ACTIONS(316),
+    [aux_sym_type_keyword_token4] = ACTIONS(316),
+    [aux_sym_type_keyword_token5] = ACTIONS(316),
+    [aux_sym_type_keyword_token6] = ACTIONS(316),
+    [anon_sym_strL] = ACTIONS(316),
+    [sym_number] = ACTIONS(316),
+    [sym_missing_value] = ACTIONS(316),
+    [anon_sym__n] = ACTIONS(316),
+    [anon_sym__N] = ACTIONS(316),
+    [anon_sym__b] = ACTIONS(316),
+    [anon_sym__coef] = ACTIONS(316),
+    [anon_sym__cons] = ACTIONS(316),
+    [anon_sym__rc] = ACTIONS(316),
+    [anon_sym__se] = ACTIONS(316),
+    [anon_sym__pi] = ACTIONS(316),
+    [anon_sym__skip] = ACTIONS(316),
+    [anon_sym__dup] = ACTIONS(316),
+    [anon_sym__newline] = ACTIONS(316),
+    [anon_sym__column] = ACTIONS(316),
+    [anon_sym__continue] = ACTIONS(316),
+    [anon_sym__request] = ACTIONS(316),
+    [anon_sym__char] = ACTIONS(316),
+    [anon_sym_PLUS] = ACTIONS(316),
+    [anon_sym_DASH] = ACTIONS(316),
+    [anon_sym_CARET] = ACTIONS(316),
+    [anon_sym_EQ_EQ] = ACTIONS(316),
+    [anon_sym_BANG_EQ] = ACTIONS(316),
+    [anon_sym_TILDE_EQ] = ACTIONS(316),
+    [anon_sym_LT] = ACTIONS(316),
+    [anon_sym_GT] = ACTIONS(316),
+    [anon_sym_LT_EQ] = ACTIONS(316),
+    [anon_sym_GT_EQ] = ACTIONS(316),
+    [anon_sym_AMP] = ACTIONS(316),
+    [anon_sym_PIPE] = ACTIONS(316),
+    [anon_sym_BANG] = ACTIONS(316),
+    [anon_sym_TILDE] = ACTIONS(316),
+    [anon_sym_EQ] = ACTIONS(316),
+    [anon_sym_POUND] = ACTIONS(316),
+    [anon_sym_LBRACK] = ACTIONS(316),
+    [anon_sym_RBRACK] = ACTIONS(316),
+    [anon_sym_LPAREN] = ACTIONS(316),
+    [anon_sym_RPAREN] = ACTIONS(316),
+    [sym__line_start] = ACTIONS(318),
+  },
+  [STATE(33)] = {
+    [sym_identifier] = ACTIONS(320),
+    [sym__newline] = ACTIONS(322),
+    [aux_sym_line_comment_token1] = ACTIONS(322),
+    [aux_sym_line_comment_token2] = ACTIONS(320),
+    [anon_sym_STAR] = ACTIONS(320),
+    [anon_sym_SLASH_STAR] = ACTIONS(322),
+    [anon_sym_SLASH] = ACTIONS(320),
+    [anon_sym_DQUOTE] = ACTIONS(322),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(322),
+    [anon_sym_BQUOTE] = ACTIONS(320),
+    [anon_sym_DOLLAR] = ACTIONS(320),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(322),
+    [anon_sym_end] = ACTIONS(320),
+    [aux_sym__argument_token1] = ACTIONS(320),
+    [anon_sym_using] = ACTIONS(320),
+    [sym_file_path] = ACTIONS(320),
+    [sym_factor_operator] = ACTIONS(320),
+    [anon_sym_if] = ACTIONS(320),
+    [anon_sym_else] = ACTIONS(320),
+    [anon_sym_foreach] = ACTIONS(320),
+    [anon_sym_forvalues] = ACTIONS(320),
+    [anon_sym_forv] = ACTIONS(320),
+    [anon_sym_while] = ACTIONS(320),
+    [anon_sym_continue] = ACTIONS(320),
+    [anon_sym_break] = ACTIONS(320),
+    [anon_sym_byte] = ACTIONS(320),
+    [anon_sym_int] = ACTIONS(320),
+    [anon_sym_long] = ACTIONS(320),
+    [anon_sym_float] = ACTIONS(320),
+    [anon_sym_double] = ACTIONS(320),
+    [aux_sym_type_keyword_token1] = ACTIONS(320),
+    [aux_sym_type_keyword_token2] = ACTIONS(320),
+    [aux_sym_type_keyword_token3] = ACTIONS(320),
+    [aux_sym_type_keyword_token4] = ACTIONS(320),
+    [aux_sym_type_keyword_token5] = ACTIONS(320),
+    [aux_sym_type_keyword_token6] = ACTIONS(320),
+    [anon_sym_strL] = ACTIONS(320),
+    [sym_number] = ACTIONS(320),
+    [sym_missing_value] = ACTIONS(320),
+    [anon_sym__n] = ACTIONS(320),
+    [anon_sym__N] = ACTIONS(320),
+    [anon_sym__b] = ACTIONS(320),
+    [anon_sym__coef] = ACTIONS(320),
+    [anon_sym__cons] = ACTIONS(320),
+    [anon_sym__rc] = ACTIONS(320),
+    [anon_sym__se] = ACTIONS(320),
+    [anon_sym__pi] = ACTIONS(320),
+    [anon_sym__skip] = ACTIONS(320),
+    [anon_sym__dup] = ACTIONS(320),
+    [anon_sym__newline] = ACTIONS(320),
+    [anon_sym__column] = ACTIONS(320),
+    [anon_sym__continue] = ACTIONS(320),
+    [anon_sym__request] = ACTIONS(320),
+    [anon_sym__char] = ACTIONS(320),
+    [anon_sym_PLUS] = ACTIONS(320),
+    [anon_sym_DASH] = ACTIONS(320),
+    [anon_sym_CARET] = ACTIONS(320),
+    [anon_sym_EQ_EQ] = ACTIONS(320),
+    [anon_sym_BANG_EQ] = ACTIONS(320),
+    [anon_sym_TILDE_EQ] = ACTIONS(320),
+    [anon_sym_LT] = ACTIONS(320),
+    [anon_sym_GT] = ACTIONS(320),
+    [anon_sym_LT_EQ] = ACTIONS(320),
+    [anon_sym_GT_EQ] = ACTIONS(320),
+    [anon_sym_AMP] = ACTIONS(320),
+    [anon_sym_PIPE] = ACTIONS(320),
+    [anon_sym_BANG] = ACTIONS(320),
+    [anon_sym_TILDE] = ACTIONS(320),
+    [anon_sym_EQ] = ACTIONS(320),
+    [anon_sym_POUND] = ACTIONS(320),
+    [anon_sym_LBRACK] = ACTIONS(320),
+    [anon_sym_RBRACK] = ACTIONS(320),
+    [anon_sym_LPAREN] = ACTIONS(320),
+    [anon_sym_RPAREN] = ACTIONS(320),
+    [sym__line_start] = ACTIONS(322),
+  },
+  [STATE(34)] = {
+    [sym_identifier] = ACTIONS(324),
+    [sym__newline] = ACTIONS(326),
+    [aux_sym_line_comment_token1] = ACTIONS(326),
+    [aux_sym_line_comment_token2] = ACTIONS(324),
+    [anon_sym_STAR] = ACTIONS(324),
+    [anon_sym_SLASH_STAR] = ACTIONS(326),
+    [anon_sym_SLASH] = ACTIONS(324),
+    [anon_sym_DQUOTE] = ACTIONS(326),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(326),
+    [anon_sym_BQUOTE] = ACTIONS(324),
+    [anon_sym_DOLLAR] = ACTIONS(324),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(326),
+    [anon_sym_end] = ACTIONS(324),
+    [aux_sym__argument_token1] = ACTIONS(324),
+    [anon_sym_using] = ACTIONS(324),
+    [sym_file_path] = ACTIONS(324),
+    [sym_factor_operator] = ACTIONS(324),
+    [anon_sym_if] = ACTIONS(324),
+    [anon_sym_else] = ACTIONS(324),
+    [anon_sym_foreach] = ACTIONS(324),
+    [anon_sym_forvalues] = ACTIONS(324),
+    [anon_sym_forv] = ACTIONS(324),
+    [anon_sym_while] = ACTIONS(324),
+    [anon_sym_continue] = ACTIONS(324),
+    [anon_sym_break] = ACTIONS(324),
+    [anon_sym_byte] = ACTIONS(324),
+    [anon_sym_int] = ACTIONS(324),
+    [anon_sym_long] = ACTIONS(324),
+    [anon_sym_float] = ACTIONS(324),
+    [anon_sym_double] = ACTIONS(324),
+    [aux_sym_type_keyword_token1] = ACTIONS(324),
+    [aux_sym_type_keyword_token2] = ACTIONS(324),
+    [aux_sym_type_keyword_token3] = ACTIONS(324),
+    [aux_sym_type_keyword_token4] = ACTIONS(324),
+    [aux_sym_type_keyword_token5] = ACTIONS(324),
+    [aux_sym_type_keyword_token6] = ACTIONS(324),
+    [anon_sym_strL] = ACTIONS(324),
+    [sym_number] = ACTIONS(324),
+    [sym_missing_value] = ACTIONS(324),
+    [anon_sym__n] = ACTIONS(324),
+    [anon_sym__N] = ACTIONS(324),
+    [anon_sym__b] = ACTIONS(324),
+    [anon_sym__coef] = ACTIONS(324),
+    [anon_sym__cons] = ACTIONS(324),
+    [anon_sym__rc] = ACTIONS(324),
+    [anon_sym__se] = ACTIONS(324),
+    [anon_sym__pi] = ACTIONS(324),
+    [anon_sym__skip] = ACTIONS(324),
+    [anon_sym__dup] = ACTIONS(324),
+    [anon_sym__newline] = ACTIONS(324),
+    [anon_sym__column] = ACTIONS(324),
+    [anon_sym__continue] = ACTIONS(324),
+    [anon_sym__request] = ACTIONS(324),
+    [anon_sym__char] = ACTIONS(324),
+    [anon_sym_PLUS] = ACTIONS(324),
+    [anon_sym_DASH] = ACTIONS(324),
+    [anon_sym_CARET] = ACTIONS(324),
+    [anon_sym_EQ_EQ] = ACTIONS(324),
+    [anon_sym_BANG_EQ] = ACTIONS(324),
+    [anon_sym_TILDE_EQ] = ACTIONS(324),
+    [anon_sym_LT] = ACTIONS(324),
+    [anon_sym_GT] = ACTIONS(324),
+    [anon_sym_LT_EQ] = ACTIONS(324),
+    [anon_sym_GT_EQ] = ACTIONS(324),
+    [anon_sym_AMP] = ACTIONS(324),
+    [anon_sym_PIPE] = ACTIONS(324),
+    [anon_sym_BANG] = ACTIONS(324),
+    [anon_sym_TILDE] = ACTIONS(324),
+    [anon_sym_EQ] = ACTIONS(324),
+    [anon_sym_POUND] = ACTIONS(324),
+    [anon_sym_LBRACK] = ACTIONS(324),
+    [anon_sym_RBRACK] = ACTIONS(324),
+    [anon_sym_LPAREN] = ACTIONS(324),
+    [anon_sym_RPAREN] = ACTIONS(324),
+    [sym__line_start] = ACTIONS(326),
+  },
+  [STATE(35)] = {
+    [sym_identifier] = ACTIONS(328),
+    [sym__newline] = ACTIONS(330),
+    [aux_sym_line_comment_token1] = ACTIONS(330),
+    [aux_sym_line_comment_token2] = ACTIONS(328),
+    [anon_sym_STAR] = ACTIONS(328),
+    [anon_sym_SLASH_STAR] = ACTIONS(330),
+    [anon_sym_SLASH] = ACTIONS(328),
+    [anon_sym_DQUOTE] = ACTIONS(330),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(330),
+    [anon_sym_BQUOTE] = ACTIONS(328),
+    [anon_sym_DOLLAR] = ACTIONS(328),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(330),
+    [anon_sym_end] = ACTIONS(328),
+    [aux_sym__argument_token1] = ACTIONS(328),
+    [anon_sym_using] = ACTIONS(328),
+    [sym_file_path] = ACTIONS(328),
+    [sym_factor_operator] = ACTIONS(328),
+    [anon_sym_if] = ACTIONS(328),
+    [anon_sym_else] = ACTIONS(328),
+    [anon_sym_foreach] = ACTIONS(328),
+    [anon_sym_forvalues] = ACTIONS(328),
+    [anon_sym_forv] = ACTIONS(328),
+    [anon_sym_while] = ACTIONS(328),
+    [anon_sym_continue] = ACTIONS(328),
+    [anon_sym_break] = ACTIONS(328),
+    [anon_sym_byte] = ACTIONS(328),
+    [anon_sym_int] = ACTIONS(328),
+    [anon_sym_long] = ACTIONS(328),
+    [anon_sym_float] = ACTIONS(328),
+    [anon_sym_double] = ACTIONS(328),
+    [aux_sym_type_keyword_token1] = ACTIONS(328),
+    [aux_sym_type_keyword_token2] = ACTIONS(328),
+    [aux_sym_type_keyword_token3] = ACTIONS(328),
+    [aux_sym_type_keyword_token4] = ACTIONS(328),
+    [aux_sym_type_keyword_token5] = ACTIONS(328),
+    [aux_sym_type_keyword_token6] = ACTIONS(328),
+    [anon_sym_strL] = ACTIONS(328),
+    [sym_number] = ACTIONS(328),
+    [sym_missing_value] = ACTIONS(328),
+    [anon_sym__n] = ACTIONS(328),
+    [anon_sym__N] = ACTIONS(328),
+    [anon_sym__b] = ACTIONS(328),
+    [anon_sym__coef] = ACTIONS(328),
+    [anon_sym__cons] = ACTIONS(328),
+    [anon_sym__rc] = ACTIONS(328),
+    [anon_sym__se] = ACTIONS(328),
+    [anon_sym__pi] = ACTIONS(328),
+    [anon_sym__skip] = ACTIONS(328),
+    [anon_sym__dup] = ACTIONS(328),
+    [anon_sym__newline] = ACTIONS(328),
+    [anon_sym__column] = ACTIONS(328),
+    [anon_sym__continue] = ACTIONS(328),
+    [anon_sym__request] = ACTIONS(328),
+    [anon_sym__char] = ACTIONS(328),
+    [anon_sym_PLUS] = ACTIONS(328),
+    [anon_sym_DASH] = ACTIONS(328),
+    [anon_sym_CARET] = ACTIONS(328),
+    [anon_sym_EQ_EQ] = ACTIONS(328),
+    [anon_sym_BANG_EQ] = ACTIONS(328),
+    [anon_sym_TILDE_EQ] = ACTIONS(328),
+    [anon_sym_LT] = ACTIONS(328),
+    [anon_sym_GT] = ACTIONS(328),
+    [anon_sym_LT_EQ] = ACTIONS(328),
+    [anon_sym_GT_EQ] = ACTIONS(328),
+    [anon_sym_AMP] = ACTIONS(328),
+    [anon_sym_PIPE] = ACTIONS(328),
+    [anon_sym_BANG] = ACTIONS(328),
+    [anon_sym_TILDE] = ACTIONS(328),
+    [anon_sym_EQ] = ACTIONS(328),
+    [anon_sym_POUND] = ACTIONS(328),
+    [anon_sym_LBRACK] = ACTIONS(328),
+    [anon_sym_RBRACK] = ACTIONS(328),
+    [anon_sym_LPAREN] = ACTIONS(328),
+    [anon_sym_RPAREN] = ACTIONS(328),
+    [sym__line_start] = ACTIONS(330),
+  },
+  [STATE(36)] = {
+    [sym_identifier] = ACTIONS(312),
+    [sym__newline] = ACTIONS(314),
+    [aux_sym_line_comment_token1] = ACTIONS(314),
+    [aux_sym_line_comment_token2] = ACTIONS(312),
+    [anon_sym_STAR] = ACTIONS(314),
+    [anon_sym_SLASH_STAR] = ACTIONS(314),
+    [anon_sym_SLASH] = ACTIONS(312),
+    [anon_sym_DQUOTE] = ACTIONS(314),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(314),
+    [anon_sym_BQUOTE] = ACTIONS(312),
+    [anon_sym_DOLLAR] = ACTIONS(312),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(314),
+    [anon_sym_end] = ACTIONS(312),
+    [aux_sym__argument_token1] = ACTIONS(312),
+    [anon_sym_using] = ACTIONS(312),
+    [sym_factor_operator] = ACTIONS(314),
+    [anon_sym_if] = ACTIONS(312),
+    [anon_sym_else] = ACTIONS(312),
+    [anon_sym_foreach] = ACTIONS(312),
+    [anon_sym_forvalues] = ACTIONS(312),
+    [anon_sym_forv] = ACTIONS(312),
+    [anon_sym_while] = ACTIONS(312),
+    [anon_sym_continue] = ACTIONS(312),
+    [anon_sym_break] = ACTIONS(312),
+    [anon_sym_byte] = ACTIONS(312),
+    [anon_sym_int] = ACTIONS(312),
+    [anon_sym_long] = ACTIONS(312),
+    [anon_sym_float] = ACTIONS(312),
+    [anon_sym_double] = ACTIONS(312),
+    [aux_sym_type_keyword_token1] = ACTIONS(312),
+    [aux_sym_type_keyword_token2] = ACTIONS(312),
+    [aux_sym_type_keyword_token3] = ACTIONS(312),
+    [aux_sym_type_keyword_token4] = ACTIONS(312),
+    [aux_sym_type_keyword_token5] = ACTIONS(312),
+    [aux_sym_type_keyword_token6] = ACTIONS(312),
+    [anon_sym_strL] = ACTIONS(312),
+    [sym_number] = ACTIONS(314),
+    [sym_missing_value] = ACTIONS(312),
+    [anon_sym__n] = ACTIONS(312),
+    [anon_sym__N] = ACTIONS(312),
+    [anon_sym__b] = ACTIONS(312),
+    [anon_sym__coef] = ACTIONS(312),
+    [anon_sym__cons] = ACTIONS(312),
+    [anon_sym__rc] = ACTIONS(312),
+    [anon_sym__se] = ACTIONS(312),
+    [anon_sym__pi] = ACTIONS(312),
+    [anon_sym__skip] = ACTIONS(312),
+    [anon_sym__dup] = ACTIONS(312),
+    [anon_sym__newline] = ACTIONS(312),
+    [anon_sym__column] = ACTIONS(312),
+    [anon_sym__continue] = ACTIONS(312),
+    [anon_sym__request] = ACTIONS(312),
+    [anon_sym__char] = ACTIONS(312),
+    [anon_sym_PLUS] = ACTIONS(314),
+    [anon_sym_DASH] = ACTIONS(314),
+    [anon_sym_CARET] = ACTIONS(314),
+    [anon_sym_EQ_EQ] = ACTIONS(314),
+    [anon_sym_BANG_EQ] = ACTIONS(314),
+    [anon_sym_TILDE_EQ] = ACTIONS(314),
+    [anon_sym_LT] = ACTIONS(312),
+    [anon_sym_GT] = ACTIONS(312),
+    [anon_sym_LT_EQ] = ACTIONS(314),
+    [anon_sym_GT_EQ] = ACTIONS(314),
+    [anon_sym_AMP] = ACTIONS(314),
+    [anon_sym_PIPE] = ACTIONS(314),
+    [anon_sym_BANG] = ACTIONS(312),
+    [anon_sym_TILDE] = ACTIONS(312),
+    [anon_sym_EQ] = ACTIONS(312),
+    [anon_sym_POUND] = ACTIONS(314),
+    [anon_sym_LBRACK] = ACTIONS(314),
+    [anon_sym_RBRACK] = ACTIONS(314),
+    [anon_sym_LPAREN] = ACTIONS(314),
+    [anon_sym_RPAREN] = ACTIONS(314),
+    [sym__line_start] = ACTIONS(314),
+  },
+  [STATE(37)] = {
+    [sym_identifier] = ACTIONS(288),
+    [sym__newline] = ACTIONS(290),
+    [aux_sym_line_comment_token1] = ACTIONS(290),
+    [aux_sym_line_comment_token2] = ACTIONS(288),
+    [anon_sym_STAR] = ACTIONS(290),
+    [anon_sym_SLASH_STAR] = ACTIONS(290),
+    [anon_sym_SLASH] = ACTIONS(288),
+    [anon_sym_DQUOTE] = ACTIONS(290),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(290),
+    [anon_sym_BQUOTE] = ACTIONS(288),
+    [anon_sym_DOLLAR] = ACTIONS(288),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(290),
+    [anon_sym_end] = ACTIONS(288),
+    [aux_sym__argument_token1] = ACTIONS(288),
+    [anon_sym_using] = ACTIONS(288),
+    [sym_factor_operator] = ACTIONS(290),
+    [anon_sym_if] = ACTIONS(288),
+    [anon_sym_else] = ACTIONS(288),
+    [anon_sym_foreach] = ACTIONS(288),
+    [anon_sym_forvalues] = ACTIONS(288),
+    [anon_sym_forv] = ACTIONS(288),
+    [anon_sym_while] = ACTIONS(288),
+    [anon_sym_continue] = ACTIONS(288),
+    [anon_sym_break] = ACTIONS(288),
+    [anon_sym_byte] = ACTIONS(288),
+    [anon_sym_int] = ACTIONS(288),
+    [anon_sym_long] = ACTIONS(288),
+    [anon_sym_float] = ACTIONS(288),
+    [anon_sym_double] = ACTIONS(288),
+    [aux_sym_type_keyword_token1] = ACTIONS(288),
+    [aux_sym_type_keyword_token2] = ACTIONS(288),
+    [aux_sym_type_keyword_token3] = ACTIONS(288),
+    [aux_sym_type_keyword_token4] = ACTIONS(288),
+    [aux_sym_type_keyword_token5] = ACTIONS(288),
+    [aux_sym_type_keyword_token6] = ACTIONS(288),
+    [anon_sym_strL] = ACTIONS(288),
+    [sym_number] = ACTIONS(290),
+    [sym_missing_value] = ACTIONS(288),
+    [anon_sym__n] = ACTIONS(288),
+    [anon_sym__N] = ACTIONS(288),
+    [anon_sym__b] = ACTIONS(288),
+    [anon_sym__coef] = ACTIONS(288),
+    [anon_sym__cons] = ACTIONS(288),
+    [anon_sym__rc] = ACTIONS(288),
+    [anon_sym__se] = ACTIONS(288),
+    [anon_sym__pi] = ACTIONS(288),
+    [anon_sym__skip] = ACTIONS(288),
+    [anon_sym__dup] = ACTIONS(288),
+    [anon_sym__newline] = ACTIONS(288),
+    [anon_sym__column] = ACTIONS(288),
+    [anon_sym__continue] = ACTIONS(288),
+    [anon_sym__request] = ACTIONS(288),
+    [anon_sym__char] = ACTIONS(288),
+    [anon_sym_PLUS] = ACTIONS(290),
+    [anon_sym_DASH] = ACTIONS(290),
+    [anon_sym_CARET] = ACTIONS(290),
+    [anon_sym_EQ_EQ] = ACTIONS(290),
+    [anon_sym_BANG_EQ] = ACTIONS(290),
+    [anon_sym_TILDE_EQ] = ACTIONS(290),
+    [anon_sym_LT] = ACTIONS(288),
+    [anon_sym_GT] = ACTIONS(288),
+    [anon_sym_LT_EQ] = ACTIONS(290),
+    [anon_sym_GT_EQ] = ACTIONS(290),
+    [anon_sym_AMP] = ACTIONS(290),
+    [anon_sym_PIPE] = ACTIONS(290),
+    [anon_sym_BANG] = ACTIONS(288),
+    [anon_sym_TILDE] = ACTIONS(288),
+    [anon_sym_EQ] = ACTIONS(288),
+    [anon_sym_POUND] = ACTIONS(290),
+    [anon_sym_LBRACK] = ACTIONS(290),
+    [anon_sym_RBRACK] = ACTIONS(290),
+    [anon_sym_LPAREN] = ACTIONS(290),
+    [anon_sym_RPAREN] = ACTIONS(290),
+    [sym__line_start] = ACTIONS(290),
+  },
+  [STATE(38)] = {
+    [sym_identifier] = ACTIONS(276),
+    [sym__newline] = ACTIONS(278),
+    [aux_sym_line_comment_token1] = ACTIONS(278),
+    [aux_sym_line_comment_token2] = ACTIONS(276),
+    [anon_sym_STAR] = ACTIONS(278),
+    [anon_sym_SLASH_STAR] = ACTIONS(278),
+    [anon_sym_SLASH] = ACTIONS(276),
+    [anon_sym_DQUOTE] = ACTIONS(278),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(278),
+    [anon_sym_BQUOTE] = ACTIONS(276),
+    [anon_sym_DOLLAR] = ACTIONS(276),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(278),
+    [anon_sym_end] = ACTIONS(276),
+    [aux_sym__argument_token1] = ACTIONS(276),
+    [anon_sym_using] = ACTIONS(276),
+    [sym_factor_operator] = ACTIONS(278),
+    [anon_sym_if] = ACTIONS(276),
+    [anon_sym_else] = ACTIONS(276),
+    [anon_sym_foreach] = ACTIONS(276),
+    [anon_sym_forvalues] = ACTIONS(276),
+    [anon_sym_forv] = ACTIONS(276),
+    [anon_sym_while] = ACTIONS(276),
+    [anon_sym_continue] = ACTIONS(276),
+    [anon_sym_break] = ACTIONS(276),
+    [anon_sym_byte] = ACTIONS(276),
+    [anon_sym_int] = ACTIONS(276),
+    [anon_sym_long] = ACTIONS(276),
+    [anon_sym_float] = ACTIONS(276),
+    [anon_sym_double] = ACTIONS(276),
+    [aux_sym_type_keyword_token1] = ACTIONS(276),
+    [aux_sym_type_keyword_token2] = ACTIONS(276),
+    [aux_sym_type_keyword_token3] = ACTIONS(276),
+    [aux_sym_type_keyword_token4] = ACTIONS(276),
+    [aux_sym_type_keyword_token5] = ACTIONS(276),
+    [aux_sym_type_keyword_token6] = ACTIONS(276),
+    [anon_sym_strL] = ACTIONS(276),
+    [sym_number] = ACTIONS(278),
+    [sym_missing_value] = ACTIONS(276),
+    [anon_sym__n] = ACTIONS(276),
+    [anon_sym__N] = ACTIONS(276),
+    [anon_sym__b] = ACTIONS(276),
+    [anon_sym__coef] = ACTIONS(276),
+    [anon_sym__cons] = ACTIONS(276),
+    [anon_sym__rc] = ACTIONS(276),
+    [anon_sym__se] = ACTIONS(276),
+    [anon_sym__pi] = ACTIONS(276),
+    [anon_sym__skip] = ACTIONS(276),
+    [anon_sym__dup] = ACTIONS(276),
+    [anon_sym__newline] = ACTIONS(276),
+    [anon_sym__column] = ACTIONS(276),
+    [anon_sym__continue] = ACTIONS(276),
+    [anon_sym__request] = ACTIONS(276),
+    [anon_sym__char] = ACTIONS(276),
+    [anon_sym_PLUS] = ACTIONS(278),
+    [anon_sym_DASH] = ACTIONS(278),
+    [anon_sym_CARET] = ACTIONS(278),
+    [anon_sym_EQ_EQ] = ACTIONS(278),
+    [anon_sym_BANG_EQ] = ACTIONS(278),
+    [anon_sym_TILDE_EQ] = ACTIONS(278),
+    [anon_sym_LT] = ACTIONS(276),
+    [anon_sym_GT] = ACTIONS(276),
+    [anon_sym_LT_EQ] = ACTIONS(278),
+    [anon_sym_GT_EQ] = ACTIONS(278),
+    [anon_sym_AMP] = ACTIONS(278),
+    [anon_sym_PIPE] = ACTIONS(278),
+    [anon_sym_BANG] = ACTIONS(276),
+    [anon_sym_TILDE] = ACTIONS(276),
+    [anon_sym_EQ] = ACTIONS(276),
+    [anon_sym_POUND] = ACTIONS(278),
+    [anon_sym_LBRACK] = ACTIONS(278),
+    [anon_sym_RBRACK] = ACTIONS(278),
+    [anon_sym_LPAREN] = ACTIONS(278),
+    [anon_sym_RPAREN] = ACTIONS(278),
+    [sym__line_start] = ACTIONS(278),
+  },
+  [STATE(39)] = {
+    [sym_identifier] = ACTIONS(320),
+    [sym__newline] = ACTIONS(322),
+    [aux_sym_line_comment_token1] = ACTIONS(322),
+    [aux_sym_line_comment_token2] = ACTIONS(320),
+    [anon_sym_STAR] = ACTIONS(322),
+    [anon_sym_SLASH_STAR] = ACTIONS(322),
+    [anon_sym_SLASH] = ACTIONS(320),
+    [anon_sym_DQUOTE] = ACTIONS(322),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(322),
+    [anon_sym_BQUOTE] = ACTIONS(320),
+    [anon_sym_DOLLAR] = ACTIONS(320),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(322),
+    [anon_sym_end] = ACTIONS(320),
+    [aux_sym__argument_token1] = ACTIONS(320),
+    [anon_sym_using] = ACTIONS(320),
+    [sym_factor_operator] = ACTIONS(322),
+    [anon_sym_if] = ACTIONS(320),
+    [anon_sym_else] = ACTIONS(320),
+    [anon_sym_foreach] = ACTIONS(320),
+    [anon_sym_forvalues] = ACTIONS(320),
+    [anon_sym_forv] = ACTIONS(320),
+    [anon_sym_while] = ACTIONS(320),
+    [anon_sym_continue] = ACTIONS(320),
+    [anon_sym_break] = ACTIONS(320),
+    [anon_sym_byte] = ACTIONS(320),
+    [anon_sym_int] = ACTIONS(320),
+    [anon_sym_long] = ACTIONS(320),
+    [anon_sym_float] = ACTIONS(320),
+    [anon_sym_double] = ACTIONS(320),
+    [aux_sym_type_keyword_token1] = ACTIONS(320),
+    [aux_sym_type_keyword_token2] = ACTIONS(320),
+    [aux_sym_type_keyword_token3] = ACTIONS(320),
+    [aux_sym_type_keyword_token4] = ACTIONS(320),
+    [aux_sym_type_keyword_token5] = ACTIONS(320),
+    [aux_sym_type_keyword_token6] = ACTIONS(320),
+    [anon_sym_strL] = ACTIONS(320),
+    [sym_number] = ACTIONS(322),
+    [sym_missing_value] = ACTIONS(320),
+    [anon_sym__n] = ACTIONS(320),
+    [anon_sym__N] = ACTIONS(320),
+    [anon_sym__b] = ACTIONS(320),
+    [anon_sym__coef] = ACTIONS(320),
+    [anon_sym__cons] = ACTIONS(320),
+    [anon_sym__rc] = ACTIONS(320),
+    [anon_sym__se] = ACTIONS(320),
+    [anon_sym__pi] = ACTIONS(320),
+    [anon_sym__skip] = ACTIONS(320),
+    [anon_sym__dup] = ACTIONS(320),
+    [anon_sym__newline] = ACTIONS(320),
+    [anon_sym__column] = ACTIONS(320),
+    [anon_sym__continue] = ACTIONS(320),
+    [anon_sym__request] = ACTIONS(320),
+    [anon_sym__char] = ACTIONS(320),
+    [anon_sym_PLUS] = ACTIONS(322),
+    [anon_sym_DASH] = ACTIONS(322),
+    [anon_sym_CARET] = ACTIONS(322),
+    [anon_sym_EQ_EQ] = ACTIONS(322),
+    [anon_sym_BANG_EQ] = ACTIONS(322),
+    [anon_sym_TILDE_EQ] = ACTIONS(322),
+    [anon_sym_LT] = ACTIONS(320),
+    [anon_sym_GT] = ACTIONS(320),
+    [anon_sym_LT_EQ] = ACTIONS(322),
+    [anon_sym_GT_EQ] = ACTIONS(322),
+    [anon_sym_AMP] = ACTIONS(322),
+    [anon_sym_PIPE] = ACTIONS(322),
+    [anon_sym_BANG] = ACTIONS(320),
+    [anon_sym_TILDE] = ACTIONS(320),
+    [anon_sym_EQ] = ACTIONS(320),
+    [anon_sym_POUND] = ACTIONS(322),
+    [anon_sym_LBRACK] = ACTIONS(322),
+    [anon_sym_RBRACK] = ACTIONS(322),
+    [anon_sym_LPAREN] = ACTIONS(322),
+    [anon_sym_RPAREN] = ACTIONS(322),
+    [sym__line_start] = ACTIONS(322),
+  },
+  [STATE(40)] = {
+    [sym_identifier] = ACTIONS(280),
+    [sym__newline] = ACTIONS(282),
+    [aux_sym_line_comment_token1] = ACTIONS(282),
+    [aux_sym_line_comment_token2] = ACTIONS(280),
+    [anon_sym_STAR] = ACTIONS(282),
+    [anon_sym_SLASH_STAR] = ACTIONS(282),
+    [anon_sym_SLASH] = ACTIONS(280),
+    [anon_sym_DQUOTE] = ACTIONS(282),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(282),
+    [anon_sym_BQUOTE] = ACTIONS(280),
+    [anon_sym_DOLLAR] = ACTIONS(280),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(282),
+    [anon_sym_end] = ACTIONS(280),
+    [aux_sym__argument_token1] = ACTIONS(280),
+    [anon_sym_using] = ACTIONS(280),
+    [sym_factor_operator] = ACTIONS(282),
+    [anon_sym_if] = ACTIONS(280),
+    [anon_sym_else] = ACTIONS(280),
+    [anon_sym_foreach] = ACTIONS(280),
+    [anon_sym_forvalues] = ACTIONS(280),
+    [anon_sym_forv] = ACTIONS(280),
+    [anon_sym_while] = ACTIONS(280),
+    [anon_sym_continue] = ACTIONS(280),
+    [anon_sym_break] = ACTIONS(280),
+    [anon_sym_byte] = ACTIONS(280),
+    [anon_sym_int] = ACTIONS(280),
+    [anon_sym_long] = ACTIONS(280),
+    [anon_sym_float] = ACTIONS(280),
+    [anon_sym_double] = ACTIONS(280),
+    [aux_sym_type_keyword_token1] = ACTIONS(280),
+    [aux_sym_type_keyword_token2] = ACTIONS(280),
+    [aux_sym_type_keyword_token3] = ACTIONS(280),
+    [aux_sym_type_keyword_token4] = ACTIONS(280),
+    [aux_sym_type_keyword_token5] = ACTIONS(280),
+    [aux_sym_type_keyword_token6] = ACTIONS(280),
+    [anon_sym_strL] = ACTIONS(280),
+    [sym_number] = ACTIONS(282),
+    [sym_missing_value] = ACTIONS(280),
+    [anon_sym__n] = ACTIONS(280),
+    [anon_sym__N] = ACTIONS(280),
+    [anon_sym__b] = ACTIONS(280),
+    [anon_sym__coef] = ACTIONS(280),
+    [anon_sym__cons] = ACTIONS(280),
+    [anon_sym__rc] = ACTIONS(280),
+    [anon_sym__se] = ACTIONS(280),
+    [anon_sym__pi] = ACTIONS(280),
+    [anon_sym__skip] = ACTIONS(280),
+    [anon_sym__dup] = ACTIONS(280),
+    [anon_sym__newline] = ACTIONS(280),
+    [anon_sym__column] = ACTIONS(280),
+    [anon_sym__continue] = ACTIONS(280),
+    [anon_sym__request] = ACTIONS(280),
+    [anon_sym__char] = ACTIONS(280),
+    [anon_sym_PLUS] = ACTIONS(282),
+    [anon_sym_DASH] = ACTIONS(282),
+    [anon_sym_CARET] = ACTIONS(282),
+    [anon_sym_EQ_EQ] = ACTIONS(282),
+    [anon_sym_BANG_EQ] = ACTIONS(282),
+    [anon_sym_TILDE_EQ] = ACTIONS(282),
+    [anon_sym_LT] = ACTIONS(280),
+    [anon_sym_GT] = ACTIONS(280),
+    [anon_sym_LT_EQ] = ACTIONS(282),
+    [anon_sym_GT_EQ] = ACTIONS(282),
+    [anon_sym_AMP] = ACTIONS(282),
+    [anon_sym_PIPE] = ACTIONS(282),
+    [anon_sym_BANG] = ACTIONS(280),
+    [anon_sym_TILDE] = ACTIONS(280),
+    [anon_sym_EQ] = ACTIONS(280),
+    [anon_sym_POUND] = ACTIONS(282),
+    [anon_sym_LBRACK] = ACTIONS(282),
+    [anon_sym_RBRACK] = ACTIONS(282),
+    [anon_sym_LPAREN] = ACTIONS(282),
+    [anon_sym_RPAREN] = ACTIONS(282),
+    [sym__line_start] = ACTIONS(282),
+  },
+  [STATE(41)] = {
+    [sym_identifier] = ACTIONS(316),
+    [sym__newline] = ACTIONS(318),
+    [aux_sym_line_comment_token1] = ACTIONS(318),
+    [aux_sym_line_comment_token2] = ACTIONS(316),
+    [anon_sym_STAR] = ACTIONS(318),
+    [anon_sym_SLASH_STAR] = ACTIONS(318),
+    [anon_sym_SLASH] = ACTIONS(316),
+    [anon_sym_DQUOTE] = ACTIONS(318),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(318),
+    [anon_sym_BQUOTE] = ACTIONS(316),
+    [anon_sym_DOLLAR] = ACTIONS(316),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(318),
+    [anon_sym_end] = ACTIONS(316),
+    [aux_sym__argument_token1] = ACTIONS(316),
+    [anon_sym_using] = ACTIONS(316),
+    [sym_factor_operator] = ACTIONS(318),
+    [anon_sym_if] = ACTIONS(316),
+    [anon_sym_else] = ACTIONS(316),
+    [anon_sym_foreach] = ACTIONS(316),
+    [anon_sym_forvalues] = ACTIONS(316),
+    [anon_sym_forv] = ACTIONS(316),
+    [anon_sym_while] = ACTIONS(316),
+    [anon_sym_continue] = ACTIONS(316),
+    [anon_sym_break] = ACTIONS(316),
+    [anon_sym_byte] = ACTIONS(316),
+    [anon_sym_int] = ACTIONS(316),
+    [anon_sym_long] = ACTIONS(316),
+    [anon_sym_float] = ACTIONS(316),
+    [anon_sym_double] = ACTIONS(316),
+    [aux_sym_type_keyword_token1] = ACTIONS(316),
+    [aux_sym_type_keyword_token2] = ACTIONS(316),
+    [aux_sym_type_keyword_token3] = ACTIONS(316),
+    [aux_sym_type_keyword_token4] = ACTIONS(316),
+    [aux_sym_type_keyword_token5] = ACTIONS(316),
+    [aux_sym_type_keyword_token6] = ACTIONS(316),
+    [anon_sym_strL] = ACTIONS(316),
+    [sym_number] = ACTIONS(318),
+    [sym_missing_value] = ACTIONS(316),
+    [anon_sym__n] = ACTIONS(316),
+    [anon_sym__N] = ACTIONS(316),
+    [anon_sym__b] = ACTIONS(316),
+    [anon_sym__coef] = ACTIONS(316),
+    [anon_sym__cons] = ACTIONS(316),
+    [anon_sym__rc] = ACTIONS(316),
+    [anon_sym__se] = ACTIONS(316),
+    [anon_sym__pi] = ACTIONS(316),
+    [anon_sym__skip] = ACTIONS(316),
+    [anon_sym__dup] = ACTIONS(316),
+    [anon_sym__newline] = ACTIONS(316),
+    [anon_sym__column] = ACTIONS(316),
+    [anon_sym__continue] = ACTIONS(316),
+    [anon_sym__request] = ACTIONS(316),
+    [anon_sym__char] = ACTIONS(316),
+    [anon_sym_PLUS] = ACTIONS(318),
+    [anon_sym_DASH] = ACTIONS(318),
+    [anon_sym_CARET] = ACTIONS(318),
+    [anon_sym_EQ_EQ] = ACTIONS(318),
+    [anon_sym_BANG_EQ] = ACTIONS(318),
+    [anon_sym_TILDE_EQ] = ACTIONS(318),
+    [anon_sym_LT] = ACTIONS(316),
+    [anon_sym_GT] = ACTIONS(316),
+    [anon_sym_LT_EQ] = ACTIONS(318),
+    [anon_sym_GT_EQ] = ACTIONS(318),
+    [anon_sym_AMP] = ACTIONS(318),
+    [anon_sym_PIPE] = ACTIONS(318),
+    [anon_sym_BANG] = ACTIONS(316),
+    [anon_sym_TILDE] = ACTIONS(316),
+    [anon_sym_EQ] = ACTIONS(316),
+    [anon_sym_POUND] = ACTIONS(318),
+    [anon_sym_LBRACK] = ACTIONS(318),
+    [anon_sym_RBRACK] = ACTIONS(318),
+    [anon_sym_LPAREN] = ACTIONS(318),
+    [anon_sym_RPAREN] = ACTIONS(318),
+    [sym__line_start] = ACTIONS(318),
+  },
+  [STATE(42)] = {
+    [sym_identifier] = ACTIONS(324),
+    [sym__newline] = ACTIONS(326),
+    [aux_sym_line_comment_token1] = ACTIONS(326),
+    [aux_sym_line_comment_token2] = ACTIONS(324),
+    [anon_sym_STAR] = ACTIONS(326),
+    [anon_sym_SLASH_STAR] = ACTIONS(326),
+    [anon_sym_SLASH] = ACTIONS(324),
+    [anon_sym_DQUOTE] = ACTIONS(326),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(326),
+    [anon_sym_BQUOTE] = ACTIONS(324),
+    [anon_sym_DOLLAR] = ACTIONS(324),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(326),
+    [anon_sym_end] = ACTIONS(324),
+    [aux_sym__argument_token1] = ACTIONS(324),
+    [anon_sym_using] = ACTIONS(324),
+    [sym_factor_operator] = ACTIONS(326),
+    [anon_sym_if] = ACTIONS(324),
+    [anon_sym_else] = ACTIONS(324),
+    [anon_sym_foreach] = ACTIONS(324),
+    [anon_sym_forvalues] = ACTIONS(324),
+    [anon_sym_forv] = ACTIONS(324),
+    [anon_sym_while] = ACTIONS(324),
+    [anon_sym_continue] = ACTIONS(324),
+    [anon_sym_break] = ACTIONS(324),
+    [anon_sym_byte] = ACTIONS(324),
+    [anon_sym_int] = ACTIONS(324),
+    [anon_sym_long] = ACTIONS(324),
+    [anon_sym_float] = ACTIONS(324),
+    [anon_sym_double] = ACTIONS(324),
+    [aux_sym_type_keyword_token1] = ACTIONS(324),
+    [aux_sym_type_keyword_token2] = ACTIONS(324),
+    [aux_sym_type_keyword_token3] = ACTIONS(324),
+    [aux_sym_type_keyword_token4] = ACTIONS(324),
+    [aux_sym_type_keyword_token5] = ACTIONS(324),
+    [aux_sym_type_keyword_token6] = ACTIONS(324),
+    [anon_sym_strL] = ACTIONS(324),
+    [sym_number] = ACTIONS(326),
+    [sym_missing_value] = ACTIONS(324),
+    [anon_sym__n] = ACTIONS(324),
+    [anon_sym__N] = ACTIONS(324),
+    [anon_sym__b] = ACTIONS(324),
+    [anon_sym__coef] = ACTIONS(324),
+    [anon_sym__cons] = ACTIONS(324),
+    [anon_sym__rc] = ACTIONS(324),
+    [anon_sym__se] = ACTIONS(324),
+    [anon_sym__pi] = ACTIONS(324),
+    [anon_sym__skip] = ACTIONS(324),
+    [anon_sym__dup] = ACTIONS(324),
+    [anon_sym__newline] = ACTIONS(324),
+    [anon_sym__column] = ACTIONS(324),
+    [anon_sym__continue] = ACTIONS(324),
+    [anon_sym__request] = ACTIONS(324),
+    [anon_sym__char] = ACTIONS(324),
+    [anon_sym_PLUS] = ACTIONS(326),
+    [anon_sym_DASH] = ACTIONS(326),
+    [anon_sym_CARET] = ACTIONS(326),
+    [anon_sym_EQ_EQ] = ACTIONS(326),
+    [anon_sym_BANG_EQ] = ACTIONS(326),
+    [anon_sym_TILDE_EQ] = ACTIONS(326),
+    [anon_sym_LT] = ACTIONS(324),
+    [anon_sym_GT] = ACTIONS(324),
+    [anon_sym_LT_EQ] = ACTIONS(326),
+    [anon_sym_GT_EQ] = ACTIONS(326),
+    [anon_sym_AMP] = ACTIONS(326),
+    [anon_sym_PIPE] = ACTIONS(326),
+    [anon_sym_BANG] = ACTIONS(324),
+    [anon_sym_TILDE] = ACTIONS(324),
+    [anon_sym_EQ] = ACTIONS(324),
+    [anon_sym_POUND] = ACTIONS(326),
+    [anon_sym_LBRACK] = ACTIONS(326),
+    [anon_sym_RBRACK] = ACTIONS(326),
+    [anon_sym_LPAREN] = ACTIONS(326),
+    [anon_sym_RPAREN] = ACTIONS(326),
+    [sym__line_start] = ACTIONS(326),
+  },
+  [STATE(43)] = {
+    [sym_identifier] = ACTIONS(292),
+    [sym__newline] = ACTIONS(294),
+    [aux_sym_line_comment_token1] = ACTIONS(294),
+    [aux_sym_line_comment_token2] = ACTIONS(292),
+    [anon_sym_STAR] = ACTIONS(294),
+    [anon_sym_SLASH_STAR] = ACTIONS(294),
+    [anon_sym_SLASH] = ACTIONS(292),
+    [anon_sym_DQUOTE] = ACTIONS(294),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(294),
+    [anon_sym_BQUOTE] = ACTIONS(292),
+    [anon_sym_DOLLAR] = ACTIONS(292),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(294),
+    [anon_sym_end] = ACTIONS(292),
+    [aux_sym__argument_token1] = ACTIONS(292),
+    [anon_sym_using] = ACTIONS(292),
+    [sym_factor_operator] = ACTIONS(294),
+    [anon_sym_if] = ACTIONS(292),
+    [anon_sym_else] = ACTIONS(292),
+    [anon_sym_foreach] = ACTIONS(292),
+    [anon_sym_forvalues] = ACTIONS(292),
+    [anon_sym_forv] = ACTIONS(292),
+    [anon_sym_while] = ACTIONS(292),
+    [anon_sym_continue] = ACTIONS(292),
+    [anon_sym_break] = ACTIONS(292),
+    [anon_sym_byte] = ACTIONS(292),
+    [anon_sym_int] = ACTIONS(292),
+    [anon_sym_long] = ACTIONS(292),
+    [anon_sym_float] = ACTIONS(292),
+    [anon_sym_double] = ACTIONS(292),
+    [aux_sym_type_keyword_token1] = ACTIONS(292),
+    [aux_sym_type_keyword_token2] = ACTIONS(292),
+    [aux_sym_type_keyword_token3] = ACTIONS(292),
+    [aux_sym_type_keyword_token4] = ACTIONS(292),
+    [aux_sym_type_keyword_token5] = ACTIONS(292),
+    [aux_sym_type_keyword_token6] = ACTIONS(292),
+    [anon_sym_strL] = ACTIONS(292),
+    [sym_number] = ACTIONS(294),
+    [sym_missing_value] = ACTIONS(292),
+    [anon_sym__n] = ACTIONS(292),
+    [anon_sym__N] = ACTIONS(292),
+    [anon_sym__b] = ACTIONS(292),
+    [anon_sym__coef] = ACTIONS(292),
+    [anon_sym__cons] = ACTIONS(292),
+    [anon_sym__rc] = ACTIONS(292),
+    [anon_sym__se] = ACTIONS(292),
+    [anon_sym__pi] = ACTIONS(292),
+    [anon_sym__skip] = ACTIONS(292),
+    [anon_sym__dup] = ACTIONS(292),
+    [anon_sym__newline] = ACTIONS(292),
+    [anon_sym__column] = ACTIONS(292),
+    [anon_sym__continue] = ACTIONS(292),
+    [anon_sym__request] = ACTIONS(292),
+    [anon_sym__char] = ACTIONS(292),
+    [anon_sym_PLUS] = ACTIONS(294),
+    [anon_sym_DASH] = ACTIONS(294),
+    [anon_sym_CARET] = ACTIONS(294),
+    [anon_sym_EQ_EQ] = ACTIONS(294),
+    [anon_sym_BANG_EQ] = ACTIONS(294),
+    [anon_sym_TILDE_EQ] = ACTIONS(294),
+    [anon_sym_LT] = ACTIONS(292),
+    [anon_sym_GT] = ACTIONS(292),
+    [anon_sym_LT_EQ] = ACTIONS(294),
+    [anon_sym_GT_EQ] = ACTIONS(294),
+    [anon_sym_AMP] = ACTIONS(294),
+    [anon_sym_PIPE] = ACTIONS(294),
+    [anon_sym_BANG] = ACTIONS(292),
+    [anon_sym_TILDE] = ACTIONS(292),
+    [anon_sym_EQ] = ACTIONS(292),
+    [anon_sym_POUND] = ACTIONS(294),
+    [anon_sym_LBRACK] = ACTIONS(294),
+    [anon_sym_RBRACK] = ACTIONS(294),
+    [anon_sym_LPAREN] = ACTIONS(294),
+    [anon_sym_RPAREN] = ACTIONS(294),
+    [sym__line_start] = ACTIONS(294),
+  },
+  [STATE(44)] = {
+    [sym_identifier] = ACTIONS(296),
+    [sym__newline] = ACTIONS(298),
+    [aux_sym_line_comment_token1] = ACTIONS(298),
+    [aux_sym_line_comment_token2] = ACTIONS(296),
+    [anon_sym_STAR] = ACTIONS(298),
+    [anon_sym_SLASH_STAR] = ACTIONS(298),
+    [anon_sym_SLASH] = ACTIONS(296),
+    [anon_sym_DQUOTE] = ACTIONS(298),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(298),
+    [anon_sym_BQUOTE] = ACTIONS(296),
+    [anon_sym_DOLLAR] = ACTIONS(296),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(298),
+    [anon_sym_end] = ACTIONS(296),
+    [aux_sym__argument_token1] = ACTIONS(296),
+    [anon_sym_using] = ACTIONS(296),
+    [sym_factor_operator] = ACTIONS(298),
+    [anon_sym_if] = ACTIONS(296),
+    [anon_sym_else] = ACTIONS(296),
+    [anon_sym_foreach] = ACTIONS(296),
+    [anon_sym_forvalues] = ACTIONS(296),
+    [anon_sym_forv] = ACTIONS(296),
+    [anon_sym_while] = ACTIONS(296),
+    [anon_sym_continue] = ACTIONS(296),
+    [anon_sym_break] = ACTIONS(296),
+    [anon_sym_byte] = ACTIONS(296),
+    [anon_sym_int] = ACTIONS(296),
+    [anon_sym_long] = ACTIONS(296),
+    [anon_sym_float] = ACTIONS(296),
+    [anon_sym_double] = ACTIONS(296),
+    [aux_sym_type_keyword_token1] = ACTIONS(296),
+    [aux_sym_type_keyword_token2] = ACTIONS(296),
+    [aux_sym_type_keyword_token3] = ACTIONS(296),
+    [aux_sym_type_keyword_token4] = ACTIONS(296),
+    [aux_sym_type_keyword_token5] = ACTIONS(296),
+    [aux_sym_type_keyword_token6] = ACTIONS(296),
+    [anon_sym_strL] = ACTIONS(296),
+    [sym_number] = ACTIONS(298),
+    [sym_missing_value] = ACTIONS(296),
+    [anon_sym__n] = ACTIONS(296),
+    [anon_sym__N] = ACTIONS(296),
+    [anon_sym__b] = ACTIONS(296),
+    [anon_sym__coef] = ACTIONS(296),
+    [anon_sym__cons] = ACTIONS(296),
+    [anon_sym__rc] = ACTIONS(296),
+    [anon_sym__se] = ACTIONS(296),
+    [anon_sym__pi] = ACTIONS(296),
+    [anon_sym__skip] = ACTIONS(296),
+    [anon_sym__dup] = ACTIONS(296),
+    [anon_sym__newline] = ACTIONS(296),
+    [anon_sym__column] = ACTIONS(296),
+    [anon_sym__continue] = ACTIONS(296),
+    [anon_sym__request] = ACTIONS(296),
+    [anon_sym__char] = ACTIONS(296),
+    [anon_sym_PLUS] = ACTIONS(298),
+    [anon_sym_DASH] = ACTIONS(298),
+    [anon_sym_CARET] = ACTIONS(298),
+    [anon_sym_EQ_EQ] = ACTIONS(298),
+    [anon_sym_BANG_EQ] = ACTIONS(298),
+    [anon_sym_TILDE_EQ] = ACTIONS(298),
+    [anon_sym_LT] = ACTIONS(296),
+    [anon_sym_GT] = ACTIONS(296),
+    [anon_sym_LT_EQ] = ACTIONS(298),
+    [anon_sym_GT_EQ] = ACTIONS(298),
+    [anon_sym_AMP] = ACTIONS(298),
+    [anon_sym_PIPE] = ACTIONS(298),
+    [anon_sym_BANG] = ACTIONS(296),
+    [anon_sym_TILDE] = ACTIONS(296),
+    [anon_sym_EQ] = ACTIONS(296),
+    [anon_sym_POUND] = ACTIONS(298),
+    [anon_sym_LBRACK] = ACTIONS(298),
+    [anon_sym_RBRACK] = ACTIONS(298),
+    [anon_sym_LPAREN] = ACTIONS(298),
+    [anon_sym_RPAREN] = ACTIONS(298),
+    [sym__line_start] = ACTIONS(298),
+  },
+  [STATE(45)] = {
+    [sym_identifier] = ACTIONS(268),
+    [sym__newline] = ACTIONS(270),
+    [aux_sym_line_comment_token1] = ACTIONS(270),
+    [aux_sym_line_comment_token2] = ACTIONS(268),
+    [anon_sym_STAR] = ACTIONS(270),
+    [anon_sym_SLASH_STAR] = ACTIONS(270),
+    [anon_sym_SLASH] = ACTIONS(268),
+    [anon_sym_DQUOTE] = ACTIONS(270),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(270),
+    [anon_sym_BQUOTE] = ACTIONS(268),
+    [anon_sym_DOLLAR] = ACTIONS(268),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(270),
+    [anon_sym_end] = ACTIONS(268),
+    [aux_sym__argument_token1] = ACTIONS(268),
+    [anon_sym_using] = ACTIONS(268),
+    [sym_factor_operator] = ACTIONS(270),
+    [anon_sym_if] = ACTIONS(268),
+    [anon_sym_else] = ACTIONS(268),
+    [anon_sym_foreach] = ACTIONS(268),
+    [anon_sym_forvalues] = ACTIONS(268),
+    [anon_sym_forv] = ACTIONS(268),
+    [anon_sym_while] = ACTIONS(268),
+    [anon_sym_continue] = ACTIONS(268),
+    [anon_sym_break] = ACTIONS(268),
+    [anon_sym_byte] = ACTIONS(268),
+    [anon_sym_int] = ACTIONS(268),
+    [anon_sym_long] = ACTIONS(268),
+    [anon_sym_float] = ACTIONS(268),
+    [anon_sym_double] = ACTIONS(268),
+    [aux_sym_type_keyword_token1] = ACTIONS(268),
+    [aux_sym_type_keyword_token2] = ACTIONS(268),
+    [aux_sym_type_keyword_token3] = ACTIONS(268),
+    [aux_sym_type_keyword_token4] = ACTIONS(268),
+    [aux_sym_type_keyword_token5] = ACTIONS(268),
+    [aux_sym_type_keyword_token6] = ACTIONS(268),
+    [anon_sym_strL] = ACTIONS(268),
+    [sym_number] = ACTIONS(270),
+    [sym_missing_value] = ACTIONS(268),
+    [anon_sym__n] = ACTIONS(268),
+    [anon_sym__N] = ACTIONS(268),
+    [anon_sym__b] = ACTIONS(268),
+    [anon_sym__coef] = ACTIONS(268),
+    [anon_sym__cons] = ACTIONS(268),
+    [anon_sym__rc] = ACTIONS(268),
+    [anon_sym__se] = ACTIONS(268),
+    [anon_sym__pi] = ACTIONS(268),
+    [anon_sym__skip] = ACTIONS(268),
+    [anon_sym__dup] = ACTIONS(268),
+    [anon_sym__newline] = ACTIONS(268),
+    [anon_sym__column] = ACTIONS(268),
+    [anon_sym__continue] = ACTIONS(268),
+    [anon_sym__request] = ACTIONS(268),
+    [anon_sym__char] = ACTIONS(268),
+    [anon_sym_PLUS] = ACTIONS(270),
+    [anon_sym_DASH] = ACTIONS(270),
+    [anon_sym_CARET] = ACTIONS(270),
+    [anon_sym_EQ_EQ] = ACTIONS(270),
+    [anon_sym_BANG_EQ] = ACTIONS(270),
+    [anon_sym_TILDE_EQ] = ACTIONS(270),
+    [anon_sym_LT] = ACTIONS(268),
+    [anon_sym_GT] = ACTIONS(268),
+    [anon_sym_LT_EQ] = ACTIONS(270),
+    [anon_sym_GT_EQ] = ACTIONS(270),
+    [anon_sym_AMP] = ACTIONS(270),
+    [anon_sym_PIPE] = ACTIONS(270),
+    [anon_sym_BANG] = ACTIONS(268),
+    [anon_sym_TILDE] = ACTIONS(268),
+    [anon_sym_EQ] = ACTIONS(268),
+    [anon_sym_POUND] = ACTIONS(270),
+    [anon_sym_LBRACK] = ACTIONS(270),
+    [anon_sym_RBRACK] = ACTIONS(270),
+    [anon_sym_LPAREN] = ACTIONS(270),
+    [anon_sym_RPAREN] = ACTIONS(270),
+    [sym__line_start] = ACTIONS(270),
+  },
+  [STATE(46)] = {
+    [sym_identifier] = ACTIONS(300),
+    [sym__newline] = ACTIONS(302),
+    [aux_sym_line_comment_token1] = ACTIONS(302),
+    [aux_sym_line_comment_token2] = ACTIONS(300),
+    [anon_sym_STAR] = ACTIONS(302),
+    [anon_sym_SLASH_STAR] = ACTIONS(302),
+    [anon_sym_SLASH] = ACTIONS(300),
+    [anon_sym_DQUOTE] = ACTIONS(302),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(302),
+    [anon_sym_BQUOTE] = ACTIONS(300),
+    [anon_sym_DOLLAR] = ACTIONS(300),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(302),
+    [anon_sym_end] = ACTIONS(300),
+    [aux_sym__argument_token1] = ACTIONS(300),
+    [anon_sym_using] = ACTIONS(300),
+    [sym_factor_operator] = ACTIONS(302),
+    [anon_sym_if] = ACTIONS(300),
+    [anon_sym_else] = ACTIONS(300),
+    [anon_sym_foreach] = ACTIONS(300),
+    [anon_sym_forvalues] = ACTIONS(300),
+    [anon_sym_forv] = ACTIONS(300),
+    [anon_sym_while] = ACTIONS(300),
+    [anon_sym_continue] = ACTIONS(300),
+    [anon_sym_break] = ACTIONS(300),
+    [anon_sym_byte] = ACTIONS(300),
+    [anon_sym_int] = ACTIONS(300),
+    [anon_sym_long] = ACTIONS(300),
+    [anon_sym_float] = ACTIONS(300),
+    [anon_sym_double] = ACTIONS(300),
+    [aux_sym_type_keyword_token1] = ACTIONS(300),
+    [aux_sym_type_keyword_token2] = ACTIONS(300),
+    [aux_sym_type_keyword_token3] = ACTIONS(300),
+    [aux_sym_type_keyword_token4] = ACTIONS(300),
+    [aux_sym_type_keyword_token5] = ACTIONS(300),
+    [aux_sym_type_keyword_token6] = ACTIONS(300),
+    [anon_sym_strL] = ACTIONS(300),
+    [sym_number] = ACTIONS(302),
+    [sym_missing_value] = ACTIONS(300),
+    [anon_sym__n] = ACTIONS(300),
+    [anon_sym__N] = ACTIONS(300),
+    [anon_sym__b] = ACTIONS(300),
+    [anon_sym__coef] = ACTIONS(300),
+    [anon_sym__cons] = ACTIONS(300),
+    [anon_sym__rc] = ACTIONS(300),
+    [anon_sym__se] = ACTIONS(300),
+    [anon_sym__pi] = ACTIONS(300),
+    [anon_sym__skip] = ACTIONS(300),
+    [anon_sym__dup] = ACTIONS(300),
+    [anon_sym__newline] = ACTIONS(300),
+    [anon_sym__column] = ACTIONS(300),
+    [anon_sym__continue] = ACTIONS(300),
+    [anon_sym__request] = ACTIONS(300),
+    [anon_sym__char] = ACTIONS(300),
+    [anon_sym_PLUS] = ACTIONS(302),
+    [anon_sym_DASH] = ACTIONS(302),
+    [anon_sym_CARET] = ACTIONS(302),
+    [anon_sym_EQ_EQ] = ACTIONS(302),
+    [anon_sym_BANG_EQ] = ACTIONS(302),
+    [anon_sym_TILDE_EQ] = ACTIONS(302),
+    [anon_sym_LT] = ACTIONS(300),
+    [anon_sym_GT] = ACTIONS(300),
+    [anon_sym_LT_EQ] = ACTIONS(302),
+    [anon_sym_GT_EQ] = ACTIONS(302),
+    [anon_sym_AMP] = ACTIONS(302),
+    [anon_sym_PIPE] = ACTIONS(302),
+    [anon_sym_BANG] = ACTIONS(300),
+    [anon_sym_TILDE] = ACTIONS(300),
+    [anon_sym_EQ] = ACTIONS(300),
+    [anon_sym_POUND] = ACTIONS(302),
+    [anon_sym_LBRACK] = ACTIONS(302),
+    [anon_sym_RBRACK] = ACTIONS(302),
+    [anon_sym_LPAREN] = ACTIONS(302),
+    [anon_sym_RPAREN] = ACTIONS(302),
+    [sym__line_start] = ACTIONS(302),
+  },
+  [STATE(47)] = {
+    [sym_identifier] = ACTIONS(284),
+    [sym__newline] = ACTIONS(286),
+    [aux_sym_line_comment_token1] = ACTIONS(286),
+    [aux_sym_line_comment_token2] = ACTIONS(284),
+    [anon_sym_STAR] = ACTIONS(286),
+    [anon_sym_SLASH_STAR] = ACTIONS(286),
+    [anon_sym_SLASH] = ACTIONS(284),
+    [anon_sym_DQUOTE] = ACTIONS(286),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(286),
+    [anon_sym_BQUOTE] = ACTIONS(284),
+    [anon_sym_DOLLAR] = ACTIONS(284),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(286),
+    [anon_sym_end] = ACTIONS(284),
+    [aux_sym__argument_token1] = ACTIONS(284),
+    [anon_sym_using] = ACTIONS(284),
+    [sym_factor_operator] = ACTIONS(286),
+    [anon_sym_if] = ACTIONS(284),
+    [anon_sym_else] = ACTIONS(284),
+    [anon_sym_foreach] = ACTIONS(284),
+    [anon_sym_forvalues] = ACTIONS(284),
+    [anon_sym_forv] = ACTIONS(284),
+    [anon_sym_while] = ACTIONS(284),
+    [anon_sym_continue] = ACTIONS(284),
+    [anon_sym_break] = ACTIONS(284),
+    [anon_sym_byte] = ACTIONS(284),
+    [anon_sym_int] = ACTIONS(284),
+    [anon_sym_long] = ACTIONS(284),
+    [anon_sym_float] = ACTIONS(284),
+    [anon_sym_double] = ACTIONS(284),
+    [aux_sym_type_keyword_token1] = ACTIONS(284),
+    [aux_sym_type_keyword_token2] = ACTIONS(284),
+    [aux_sym_type_keyword_token3] = ACTIONS(284),
+    [aux_sym_type_keyword_token4] = ACTIONS(284),
+    [aux_sym_type_keyword_token5] = ACTIONS(284),
+    [aux_sym_type_keyword_token6] = ACTIONS(284),
+    [anon_sym_strL] = ACTIONS(284),
+    [sym_number] = ACTIONS(286),
+    [sym_missing_value] = ACTIONS(284),
+    [anon_sym__n] = ACTIONS(284),
+    [anon_sym__N] = ACTIONS(284),
+    [anon_sym__b] = ACTIONS(284),
+    [anon_sym__coef] = ACTIONS(284),
+    [anon_sym__cons] = ACTIONS(284),
+    [anon_sym__rc] = ACTIONS(284),
+    [anon_sym__se] = ACTIONS(284),
+    [anon_sym__pi] = ACTIONS(284),
+    [anon_sym__skip] = ACTIONS(284),
+    [anon_sym__dup] = ACTIONS(284),
+    [anon_sym__newline] = ACTIONS(284),
+    [anon_sym__column] = ACTIONS(284),
+    [anon_sym__continue] = ACTIONS(284),
+    [anon_sym__request] = ACTIONS(284),
+    [anon_sym__char] = ACTIONS(284),
+    [anon_sym_PLUS] = ACTIONS(286),
+    [anon_sym_DASH] = ACTIONS(286),
+    [anon_sym_CARET] = ACTIONS(286),
+    [anon_sym_EQ_EQ] = ACTIONS(286),
+    [anon_sym_BANG_EQ] = ACTIONS(286),
+    [anon_sym_TILDE_EQ] = ACTIONS(286),
+    [anon_sym_LT] = ACTIONS(284),
+    [anon_sym_GT] = ACTIONS(284),
+    [anon_sym_LT_EQ] = ACTIONS(286),
+    [anon_sym_GT_EQ] = ACTIONS(286),
+    [anon_sym_AMP] = ACTIONS(286),
+    [anon_sym_PIPE] = ACTIONS(286),
+    [anon_sym_BANG] = ACTIONS(284),
+    [anon_sym_TILDE] = ACTIONS(284),
+    [anon_sym_EQ] = ACTIONS(284),
+    [anon_sym_POUND] = ACTIONS(286),
+    [anon_sym_LBRACK] = ACTIONS(286),
+    [anon_sym_RBRACK] = ACTIONS(286),
+    [anon_sym_LPAREN] = ACTIONS(286),
+    [anon_sym_RPAREN] = ACTIONS(286),
+    [sym__line_start] = ACTIONS(286),
+  },
+  [STATE(48)] = {
+    [sym_identifier] = ACTIONS(272),
+    [sym__newline] = ACTIONS(274),
+    [aux_sym_line_comment_token1] = ACTIONS(274),
+    [aux_sym_line_comment_token2] = ACTIONS(272),
+    [anon_sym_STAR] = ACTIONS(274),
+    [anon_sym_SLASH_STAR] = ACTIONS(274),
+    [anon_sym_SLASH] = ACTIONS(272),
+    [anon_sym_DQUOTE] = ACTIONS(274),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(274),
+    [anon_sym_BQUOTE] = ACTIONS(272),
+    [anon_sym_DOLLAR] = ACTIONS(272),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(274),
+    [anon_sym_end] = ACTIONS(272),
+    [aux_sym__argument_token1] = ACTIONS(272),
+    [anon_sym_using] = ACTIONS(272),
+    [sym_factor_operator] = ACTIONS(274),
+    [anon_sym_if] = ACTIONS(272),
+    [anon_sym_else] = ACTIONS(272),
+    [anon_sym_foreach] = ACTIONS(272),
+    [anon_sym_forvalues] = ACTIONS(272),
+    [anon_sym_forv] = ACTIONS(272),
+    [anon_sym_while] = ACTIONS(272),
+    [anon_sym_continue] = ACTIONS(272),
+    [anon_sym_break] = ACTIONS(272),
+    [anon_sym_byte] = ACTIONS(272),
+    [anon_sym_int] = ACTIONS(272),
+    [anon_sym_long] = ACTIONS(272),
+    [anon_sym_float] = ACTIONS(272),
+    [anon_sym_double] = ACTIONS(272),
+    [aux_sym_type_keyword_token1] = ACTIONS(272),
+    [aux_sym_type_keyword_token2] = ACTIONS(272),
+    [aux_sym_type_keyword_token3] = ACTIONS(272),
+    [aux_sym_type_keyword_token4] = ACTIONS(272),
+    [aux_sym_type_keyword_token5] = ACTIONS(272),
+    [aux_sym_type_keyword_token6] = ACTIONS(272),
+    [anon_sym_strL] = ACTIONS(272),
+    [sym_number] = ACTIONS(274),
+    [sym_missing_value] = ACTIONS(272),
+    [anon_sym__n] = ACTIONS(272),
+    [anon_sym__N] = ACTIONS(272),
+    [anon_sym__b] = ACTIONS(272),
+    [anon_sym__coef] = ACTIONS(272),
+    [anon_sym__cons] = ACTIONS(272),
+    [anon_sym__rc] = ACTIONS(272),
+    [anon_sym__se] = ACTIONS(272),
+    [anon_sym__pi] = ACTIONS(272),
+    [anon_sym__skip] = ACTIONS(272),
+    [anon_sym__dup] = ACTIONS(272),
+    [anon_sym__newline] = ACTIONS(272),
+    [anon_sym__column] = ACTIONS(272),
+    [anon_sym__continue] = ACTIONS(272),
+    [anon_sym__request] = ACTIONS(272),
+    [anon_sym__char] = ACTIONS(272),
+    [anon_sym_PLUS] = ACTIONS(274),
+    [anon_sym_DASH] = ACTIONS(274),
+    [anon_sym_CARET] = ACTIONS(274),
+    [anon_sym_EQ_EQ] = ACTIONS(274),
+    [anon_sym_BANG_EQ] = ACTIONS(274),
+    [anon_sym_TILDE_EQ] = ACTIONS(274),
+    [anon_sym_LT] = ACTIONS(272),
+    [anon_sym_GT] = ACTIONS(272),
+    [anon_sym_LT_EQ] = ACTIONS(274),
+    [anon_sym_GT_EQ] = ACTIONS(274),
+    [anon_sym_AMP] = ACTIONS(274),
+    [anon_sym_PIPE] = ACTIONS(274),
+    [anon_sym_BANG] = ACTIONS(272),
+    [anon_sym_TILDE] = ACTIONS(272),
+    [anon_sym_EQ] = ACTIONS(272),
+    [anon_sym_POUND] = ACTIONS(274),
+    [anon_sym_LBRACK] = ACTIONS(274),
+    [anon_sym_RBRACK] = ACTIONS(274),
+    [anon_sym_LPAREN] = ACTIONS(274),
+    [anon_sym_RPAREN] = ACTIONS(274),
+    [sym__line_start] = ACTIONS(274),
+  },
+  [STATE(49)] = {
+    [sym_identifier] = ACTIONS(260),
+    [sym__newline] = ACTIONS(262),
+    [aux_sym_line_comment_token1] = ACTIONS(262),
+    [aux_sym_line_comment_token2] = ACTIONS(260),
+    [anon_sym_STAR] = ACTIONS(262),
+    [anon_sym_SLASH_STAR] = ACTIONS(262),
+    [anon_sym_SLASH] = ACTIONS(260),
+    [anon_sym_DQUOTE] = ACTIONS(262),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(262),
+    [anon_sym_BQUOTE] = ACTIONS(260),
+    [anon_sym_DOLLAR] = ACTIONS(260),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(262),
+    [anon_sym_end] = ACTIONS(260),
+    [aux_sym__argument_token1] = ACTIONS(260),
+    [anon_sym_using] = ACTIONS(260),
+    [sym_factor_operator] = ACTIONS(262),
+    [anon_sym_if] = ACTIONS(260),
+    [anon_sym_else] = ACTIONS(260),
+    [anon_sym_foreach] = ACTIONS(260),
+    [anon_sym_forvalues] = ACTIONS(260),
+    [anon_sym_forv] = ACTIONS(260),
+    [anon_sym_while] = ACTIONS(260),
+    [anon_sym_continue] = ACTIONS(260),
+    [anon_sym_break] = ACTIONS(260),
+    [anon_sym_byte] = ACTIONS(260),
+    [anon_sym_int] = ACTIONS(260),
+    [anon_sym_long] = ACTIONS(260),
+    [anon_sym_float] = ACTIONS(260),
+    [anon_sym_double] = ACTIONS(260),
+    [aux_sym_type_keyword_token1] = ACTIONS(260),
+    [aux_sym_type_keyword_token2] = ACTIONS(260),
+    [aux_sym_type_keyword_token3] = ACTIONS(260),
+    [aux_sym_type_keyword_token4] = ACTIONS(260),
+    [aux_sym_type_keyword_token5] = ACTIONS(260),
+    [aux_sym_type_keyword_token6] = ACTIONS(260),
+    [anon_sym_strL] = ACTIONS(260),
+    [sym_number] = ACTIONS(262),
+    [sym_missing_value] = ACTIONS(260),
+    [anon_sym__n] = ACTIONS(260),
+    [anon_sym__N] = ACTIONS(260),
+    [anon_sym__b] = ACTIONS(260),
+    [anon_sym__coef] = ACTIONS(260),
+    [anon_sym__cons] = ACTIONS(260),
+    [anon_sym__rc] = ACTIONS(260),
+    [anon_sym__se] = ACTIONS(260),
+    [anon_sym__pi] = ACTIONS(260),
+    [anon_sym__skip] = ACTIONS(260),
+    [anon_sym__dup] = ACTIONS(260),
+    [anon_sym__newline] = ACTIONS(260),
+    [anon_sym__column] = ACTIONS(260),
+    [anon_sym__continue] = ACTIONS(260),
+    [anon_sym__request] = ACTIONS(260),
+    [anon_sym__char] = ACTIONS(260),
+    [anon_sym_PLUS] = ACTIONS(262),
+    [anon_sym_DASH] = ACTIONS(262),
+    [anon_sym_CARET] = ACTIONS(262),
+    [anon_sym_EQ_EQ] = ACTIONS(262),
+    [anon_sym_BANG_EQ] = ACTIONS(262),
+    [anon_sym_TILDE_EQ] = ACTIONS(262),
+    [anon_sym_LT] = ACTIONS(260),
+    [anon_sym_GT] = ACTIONS(260),
+    [anon_sym_LT_EQ] = ACTIONS(262),
+    [anon_sym_GT_EQ] = ACTIONS(262),
+    [anon_sym_AMP] = ACTIONS(262),
+    [anon_sym_PIPE] = ACTIONS(262),
+    [anon_sym_BANG] = ACTIONS(260),
+    [anon_sym_TILDE] = ACTIONS(260),
+    [anon_sym_EQ] = ACTIONS(260),
+    [anon_sym_POUND] = ACTIONS(262),
+    [anon_sym_LBRACK] = ACTIONS(262),
+    [anon_sym_RBRACK] = ACTIONS(262),
+    [anon_sym_LPAREN] = ACTIONS(262),
+    [anon_sym_RPAREN] = ACTIONS(262),
+    [sym__line_start] = ACTIONS(262),
+  },
+  [STATE(50)] = {
+    [sym_identifier] = ACTIONS(328),
+    [sym__newline] = ACTIONS(330),
+    [aux_sym_line_comment_token1] = ACTIONS(330),
+    [aux_sym_line_comment_token2] = ACTIONS(328),
+    [anon_sym_STAR] = ACTIONS(330),
+    [anon_sym_SLASH_STAR] = ACTIONS(330),
+    [anon_sym_SLASH] = ACTIONS(328),
+    [anon_sym_DQUOTE] = ACTIONS(330),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(330),
+    [anon_sym_BQUOTE] = ACTIONS(328),
+    [anon_sym_DOLLAR] = ACTIONS(328),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(330),
+    [anon_sym_end] = ACTIONS(328),
+    [aux_sym__argument_token1] = ACTIONS(328),
+    [anon_sym_using] = ACTIONS(328),
+    [sym_factor_operator] = ACTIONS(330),
+    [anon_sym_if] = ACTIONS(328),
+    [anon_sym_else] = ACTIONS(328),
+    [anon_sym_foreach] = ACTIONS(328),
+    [anon_sym_forvalues] = ACTIONS(328),
+    [anon_sym_forv] = ACTIONS(328),
+    [anon_sym_while] = ACTIONS(328),
+    [anon_sym_continue] = ACTIONS(328),
+    [anon_sym_break] = ACTIONS(328),
+    [anon_sym_byte] = ACTIONS(328),
+    [anon_sym_int] = ACTIONS(328),
+    [anon_sym_long] = ACTIONS(328),
+    [anon_sym_float] = ACTIONS(328),
+    [anon_sym_double] = ACTIONS(328),
+    [aux_sym_type_keyword_token1] = ACTIONS(328),
+    [aux_sym_type_keyword_token2] = ACTIONS(328),
+    [aux_sym_type_keyword_token3] = ACTIONS(328),
+    [aux_sym_type_keyword_token4] = ACTIONS(328),
+    [aux_sym_type_keyword_token5] = ACTIONS(328),
+    [aux_sym_type_keyword_token6] = ACTIONS(328),
+    [anon_sym_strL] = ACTIONS(328),
+    [sym_number] = ACTIONS(330),
+    [sym_missing_value] = ACTIONS(328),
+    [anon_sym__n] = ACTIONS(328),
+    [anon_sym__N] = ACTIONS(328),
+    [anon_sym__b] = ACTIONS(328),
+    [anon_sym__coef] = ACTIONS(328),
+    [anon_sym__cons] = ACTIONS(328),
+    [anon_sym__rc] = ACTIONS(328),
+    [anon_sym__se] = ACTIONS(328),
+    [anon_sym__pi] = ACTIONS(328),
+    [anon_sym__skip] = ACTIONS(328),
+    [anon_sym__dup] = ACTIONS(328),
+    [anon_sym__newline] = ACTIONS(328),
+    [anon_sym__column] = ACTIONS(328),
+    [anon_sym__continue] = ACTIONS(328),
+    [anon_sym__request] = ACTIONS(328),
+    [anon_sym__char] = ACTIONS(328),
+    [anon_sym_PLUS] = ACTIONS(330),
+    [anon_sym_DASH] = ACTIONS(330),
+    [anon_sym_CARET] = ACTIONS(330),
+    [anon_sym_EQ_EQ] = ACTIONS(330),
+    [anon_sym_BANG_EQ] = ACTIONS(330),
+    [anon_sym_TILDE_EQ] = ACTIONS(330),
+    [anon_sym_LT] = ACTIONS(328),
+    [anon_sym_GT] = ACTIONS(328),
+    [anon_sym_LT_EQ] = ACTIONS(330),
+    [anon_sym_GT_EQ] = ACTIONS(330),
+    [anon_sym_AMP] = ACTIONS(330),
+    [anon_sym_PIPE] = ACTIONS(330),
+    [anon_sym_BANG] = ACTIONS(328),
+    [anon_sym_TILDE] = ACTIONS(328),
+    [anon_sym_EQ] = ACTIONS(328),
+    [anon_sym_POUND] = ACTIONS(330),
+    [anon_sym_LBRACK] = ACTIONS(330),
+    [anon_sym_RBRACK] = ACTIONS(330),
+    [anon_sym_LPAREN] = ACTIONS(330),
+    [anon_sym_RPAREN] = ACTIONS(330),
+    [sym__line_start] = ACTIONS(330),
+  },
+  [STATE(51)] = {
+    [sym_identifier] = ACTIONS(304),
+    [sym__newline] = ACTIONS(306),
+    [aux_sym_line_comment_token1] = ACTIONS(306),
+    [aux_sym_line_comment_token2] = ACTIONS(304),
+    [anon_sym_STAR] = ACTIONS(306),
+    [anon_sym_SLASH_STAR] = ACTIONS(306),
+    [anon_sym_SLASH] = ACTIONS(304),
+    [anon_sym_DQUOTE] = ACTIONS(306),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(306),
+    [anon_sym_BQUOTE] = ACTIONS(304),
+    [anon_sym_DOLLAR] = ACTIONS(304),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(306),
+    [anon_sym_end] = ACTIONS(304),
+    [aux_sym__argument_token1] = ACTIONS(304),
+    [anon_sym_using] = ACTIONS(304),
+    [sym_factor_operator] = ACTIONS(306),
+    [anon_sym_if] = ACTIONS(304),
+    [anon_sym_else] = ACTIONS(304),
+    [anon_sym_foreach] = ACTIONS(304),
+    [anon_sym_forvalues] = ACTIONS(304),
+    [anon_sym_forv] = ACTIONS(304),
+    [anon_sym_while] = ACTIONS(304),
+    [anon_sym_continue] = ACTIONS(304),
+    [anon_sym_break] = ACTIONS(304),
+    [anon_sym_byte] = ACTIONS(304),
+    [anon_sym_int] = ACTIONS(304),
+    [anon_sym_long] = ACTIONS(304),
+    [anon_sym_float] = ACTIONS(304),
+    [anon_sym_double] = ACTIONS(304),
+    [aux_sym_type_keyword_token1] = ACTIONS(304),
+    [aux_sym_type_keyword_token2] = ACTIONS(304),
+    [aux_sym_type_keyword_token3] = ACTIONS(304),
+    [aux_sym_type_keyword_token4] = ACTIONS(304),
+    [aux_sym_type_keyword_token5] = ACTIONS(304),
+    [aux_sym_type_keyword_token6] = ACTIONS(304),
+    [anon_sym_strL] = ACTIONS(304),
+    [sym_number] = ACTIONS(306),
+    [sym_missing_value] = ACTIONS(304),
+    [anon_sym__n] = ACTIONS(304),
+    [anon_sym__N] = ACTIONS(304),
+    [anon_sym__b] = ACTIONS(304),
+    [anon_sym__coef] = ACTIONS(304),
+    [anon_sym__cons] = ACTIONS(304),
+    [anon_sym__rc] = ACTIONS(304),
+    [anon_sym__se] = ACTIONS(304),
+    [anon_sym__pi] = ACTIONS(304),
+    [anon_sym__skip] = ACTIONS(304),
+    [anon_sym__dup] = ACTIONS(304),
+    [anon_sym__newline] = ACTIONS(304),
+    [anon_sym__column] = ACTIONS(304),
+    [anon_sym__continue] = ACTIONS(304),
+    [anon_sym__request] = ACTIONS(304),
+    [anon_sym__char] = ACTIONS(304),
+    [anon_sym_PLUS] = ACTIONS(306),
+    [anon_sym_DASH] = ACTIONS(306),
+    [anon_sym_CARET] = ACTIONS(306),
+    [anon_sym_EQ_EQ] = ACTIONS(306),
+    [anon_sym_BANG_EQ] = ACTIONS(306),
+    [anon_sym_TILDE_EQ] = ACTIONS(306),
+    [anon_sym_LT] = ACTIONS(304),
+    [anon_sym_GT] = ACTIONS(304),
+    [anon_sym_LT_EQ] = ACTIONS(306),
+    [anon_sym_GT_EQ] = ACTIONS(306),
+    [anon_sym_AMP] = ACTIONS(306),
+    [anon_sym_PIPE] = ACTIONS(306),
+    [anon_sym_BANG] = ACTIONS(304),
+    [anon_sym_TILDE] = ACTIONS(304),
+    [anon_sym_EQ] = ACTIONS(304),
+    [anon_sym_POUND] = ACTIONS(306),
+    [anon_sym_LBRACK] = ACTIONS(306),
+    [anon_sym_RBRACK] = ACTIONS(306),
+    [anon_sym_LPAREN] = ACTIONS(306),
+    [anon_sym_RPAREN] = ACTIONS(306),
+    [sym__line_start] = ACTIONS(306),
+  },
+  [STATE(52)] = {
+    [sym_identifier] = ACTIONS(256),
+    [sym__newline] = ACTIONS(258),
+    [aux_sym_line_comment_token1] = ACTIONS(258),
+    [aux_sym_line_comment_token2] = ACTIONS(256),
+    [anon_sym_STAR] = ACTIONS(258),
+    [anon_sym_SLASH_STAR] = ACTIONS(258),
+    [anon_sym_SLASH] = ACTIONS(256),
+    [anon_sym_DQUOTE] = ACTIONS(258),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(258),
+    [anon_sym_BQUOTE] = ACTIONS(256),
+    [anon_sym_DOLLAR] = ACTIONS(256),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(258),
+    [anon_sym_end] = ACTIONS(256),
+    [aux_sym__argument_token1] = ACTIONS(256),
+    [anon_sym_using] = ACTIONS(256),
+    [sym_factor_operator] = ACTIONS(258),
+    [anon_sym_if] = ACTIONS(256),
+    [anon_sym_else] = ACTIONS(256),
+    [anon_sym_foreach] = ACTIONS(256),
+    [anon_sym_forvalues] = ACTIONS(256),
+    [anon_sym_forv] = ACTIONS(256),
+    [anon_sym_while] = ACTIONS(256),
+    [anon_sym_continue] = ACTIONS(256),
+    [anon_sym_break] = ACTIONS(256),
+    [anon_sym_byte] = ACTIONS(256),
+    [anon_sym_int] = ACTIONS(256),
+    [anon_sym_long] = ACTIONS(256),
+    [anon_sym_float] = ACTIONS(256),
+    [anon_sym_double] = ACTIONS(256),
+    [aux_sym_type_keyword_token1] = ACTIONS(256),
+    [aux_sym_type_keyword_token2] = ACTIONS(256),
+    [aux_sym_type_keyword_token3] = ACTIONS(256),
+    [aux_sym_type_keyword_token4] = ACTIONS(256),
+    [aux_sym_type_keyword_token5] = ACTIONS(256),
+    [aux_sym_type_keyword_token6] = ACTIONS(256),
+    [anon_sym_strL] = ACTIONS(256),
+    [sym_number] = ACTIONS(258),
+    [sym_missing_value] = ACTIONS(256),
+    [anon_sym__n] = ACTIONS(256),
+    [anon_sym__N] = ACTIONS(256),
+    [anon_sym__b] = ACTIONS(256),
+    [anon_sym__coef] = ACTIONS(256),
+    [anon_sym__cons] = ACTIONS(256),
+    [anon_sym__rc] = ACTIONS(256),
+    [anon_sym__se] = ACTIONS(256),
+    [anon_sym__pi] = ACTIONS(256),
+    [anon_sym__skip] = ACTIONS(256),
+    [anon_sym__dup] = ACTIONS(256),
+    [anon_sym__newline] = ACTIONS(256),
+    [anon_sym__column] = ACTIONS(256),
+    [anon_sym__continue] = ACTIONS(256),
+    [anon_sym__request] = ACTIONS(256),
+    [anon_sym__char] = ACTIONS(256),
+    [anon_sym_PLUS] = ACTIONS(258),
+    [anon_sym_DASH] = ACTIONS(258),
+    [anon_sym_CARET] = ACTIONS(258),
+    [anon_sym_EQ_EQ] = ACTIONS(258),
+    [anon_sym_BANG_EQ] = ACTIONS(258),
+    [anon_sym_TILDE_EQ] = ACTIONS(258),
+    [anon_sym_LT] = ACTIONS(256),
+    [anon_sym_GT] = ACTIONS(256),
+    [anon_sym_LT_EQ] = ACTIONS(258),
+    [anon_sym_GT_EQ] = ACTIONS(258),
+    [anon_sym_AMP] = ACTIONS(258),
+    [anon_sym_PIPE] = ACTIONS(258),
+    [anon_sym_BANG] = ACTIONS(256),
+    [anon_sym_TILDE] = ACTIONS(256),
+    [anon_sym_EQ] = ACTIONS(256),
+    [anon_sym_POUND] = ACTIONS(258),
+    [anon_sym_LBRACK] = ACTIONS(258),
+    [anon_sym_RBRACK] = ACTIONS(258),
+    [anon_sym_LPAREN] = ACTIONS(258),
+    [anon_sym_RPAREN] = ACTIONS(258),
+    [sym__line_start] = ACTIONS(258),
+  },
+  [STATE(53)] = {
+    [sym_identifier] = ACTIONS(308),
+    [sym__newline] = ACTIONS(310),
+    [aux_sym_line_comment_token1] = ACTIONS(310),
+    [aux_sym_line_comment_token2] = ACTIONS(308),
+    [anon_sym_STAR] = ACTIONS(310),
+    [anon_sym_SLASH_STAR] = ACTIONS(310),
+    [anon_sym_SLASH] = ACTIONS(308),
+    [anon_sym_DQUOTE] = ACTIONS(310),
+    [anon_sym_BQUOTE_DQUOTE] = ACTIONS(310),
+    [anon_sym_BQUOTE] = ACTIONS(308),
+    [anon_sym_DOLLAR] = ACTIONS(308),
+    [anon_sym_DOLLAR_LBRACE] = ACTIONS(310),
+    [anon_sym_end] = ACTIONS(308),
+    [aux_sym__argument_token1] = ACTIONS(308),
+    [anon_sym_using] = ACTIONS(308),
+    [sym_factor_operator] = ACTIONS(310),
+    [anon_sym_if] = ACTIONS(308),
+    [anon_sym_else] = ACTIONS(308),
+    [anon_sym_foreach] = ACTIONS(308),
+    [anon_sym_forvalues] = ACTIONS(308),
+    [anon_sym_forv] = ACTIONS(308),
+    [anon_sym_while] = ACTIONS(308),
+    [anon_sym_continue] = ACTIONS(308),
+    [anon_sym_break] = ACTIONS(308),
+    [anon_sym_byte] = ACTIONS(308),
+    [anon_sym_int] = ACTIONS(308),
+    [anon_sym_long] = ACTIONS(308),
+    [anon_sym_float] = ACTIONS(308),
+    [anon_sym_double] = ACTIONS(308),
+    [aux_sym_type_keyword_token1] = ACTIONS(308),
+    [aux_sym_type_keyword_token2] = ACTIONS(308),
+    [aux_sym_type_keyword_token3] = ACTIONS(308),
+    [aux_sym_type_keyword_token4] = ACTIONS(308),
+    [aux_sym_type_keyword_token5] = ACTIONS(308),
+    [aux_sym_type_keyword_token6] = ACTIONS(308),
+    [anon_sym_strL] = ACTIONS(308),
+    [sym_number] = ACTIONS(310),
+    [sym_missing_value] = ACTIONS(308),
+    [anon_sym__n] = ACTIONS(308),
+    [anon_sym__N] = ACTIONS(308),
+    [anon_sym__b] = ACTIONS(308),
+    [anon_sym__coef] = ACTIONS(308),
+    [anon_sym__cons] = ACTIONS(308),
+    [anon_sym__rc] = ACTIONS(308),
+    [anon_sym__se] = ACTIONS(308),
+    [anon_sym__pi] = ACTIONS(308),
+    [anon_sym__skip] = ACTIONS(308),
+    [anon_sym__dup] = ACTIONS(308),
+    [anon_sym__newline] = ACTIONS(308),
+    [anon_sym__column] = ACTIONS(308),
+    [anon_sym__continue] = ACTIONS(308),
+    [anon_sym__request] = ACTIONS(308),
+    [anon_sym__char] = ACTIONS(308),
+    [anon_sym_PLUS] = ACTIONS(310),
+    [anon_sym_DASH] = ACTIONS(310),
+    [anon_sym_CARET] = ACTIONS(310),
+    [anon_sym_EQ_EQ] = ACTIONS(310),
+    [anon_sym_BANG_EQ] = ACTIONS(310),
+    [anon_sym_TILDE_EQ] = ACTIONS(310),
+    [anon_sym_LT] = ACTIONS(308),
+    [anon_sym_GT] = ACTIONS(308),
+    [anon_sym_LT_EQ] = ACTIONS(310),
+    [anon_sym_GT_EQ] = ACTIONS(310),
+    [anon_sym_AMP] = ACTIONS(310),
+    [anon_sym_PIPE] = ACTIONS(310),
+    [anon_sym_BANG] = ACTIONS(308),
+    [anon_sym_TILDE] = ACTIONS(308),
+    [anon_sym_EQ] = ACTIONS(308),
+    [anon_sym_POUND] = ACTIONS(310),
+    [anon_sym_LBRACK] = ACTIONS(310),
+    [anon_sym_RBRACK] = ACTIONS(310),
+    [anon_sym_LPAREN] = ACTIONS(310),
+    [anon_sym_RPAREN] = ACTIONS(310),
+    [sym__line_start] = ACTIONS(310),
   },
 };
 
 static const uint16_t ts_small_parse_table[] = {
-  [0] = 16,
-    ACTIONS(5), 1,
-      sym_identifier,
-    ACTIONS(9), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(11), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(13), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(15), 1,
-      anon_sym_program,
-    ACTIONS(17), 1,
-      anon_sym_mata,
-    ACTIONS(25), 1,
-      sym__line_start,
-    ACTIONS(210), 1,
-      sym__newline,
-    ACTIONS(212), 1,
-      anon_sym_end,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(33), 2,
-      sym__program_line,
-      aux_sym_program_definition_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(21), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(19), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(112), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(23), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [70] = 16,
-    ACTIONS(214), 1,
-      ts_builtin_sym_end,
-    ACTIONS(216), 1,
-      sym_identifier,
-    ACTIONS(219), 1,
-      sym__newline,
-    ACTIONS(222), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(225), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(228), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(231), 1,
-      anon_sym_program,
-    ACTIONS(234), 1,
-      anon_sym_mata,
-    ACTIONS(246), 1,
-      sym__line_start,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(28), 2,
-      sym__line,
-      aux_sym_source_file_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(240), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(237), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(140), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(243), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [140] = 16,
-    ACTIONS(5), 1,
-      sym_identifier,
-    ACTIONS(9), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(11), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(13), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(15), 1,
-      anon_sym_program,
-    ACTIONS(17), 1,
-      anon_sym_mata,
-    ACTIONS(25), 1,
-      sym__line_start,
-    ACTIONS(249), 1,
-      sym__newline,
-    ACTIONS(251), 1,
-      anon_sym_end,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(32), 2,
-      sym__program_line,
-      aux_sym_program_definition_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(21), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(19), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(112), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(23), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [210] = 16,
-    ACTIONS(5), 1,
-      sym_identifier,
-    ACTIONS(9), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(11), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(13), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(15), 1,
-      anon_sym_program,
-    ACTIONS(17), 1,
-      anon_sym_mata,
-    ACTIONS(25), 1,
-      sym__line_start,
-    ACTIONS(253), 1,
-      ts_builtin_sym_end,
-    ACTIONS(255), 1,
-      sym__newline,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(28), 2,
-      sym__line,
-      aux_sym_source_file_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(21), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(19), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(140), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(23), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [280] = 16,
-    ACTIONS(5), 1,
-      sym_identifier,
-    ACTIONS(9), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(11), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(13), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(15), 1,
-      anon_sym_program,
-    ACTIONS(17), 1,
-      anon_sym_mata,
-    ACTIONS(25), 1,
-      sym__line_start,
-    ACTIONS(257), 1,
-      sym__newline,
-    ACTIONS(259), 1,
-      anon_sym_end,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(29), 2,
-      sym__program_line,
-      aux_sym_program_definition_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(21), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(19), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(112), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(23), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [350] = 16,
-    ACTIONS(261), 1,
-      sym_identifier,
-    ACTIONS(264), 1,
-      sym__newline,
-    ACTIONS(267), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(270), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(273), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(276), 1,
-      anon_sym_program,
-    ACTIONS(279), 1,
-      anon_sym_end,
-    ACTIONS(281), 1,
-      anon_sym_mata,
-    ACTIONS(293), 1,
-      sym__line_start,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(32), 2,
-      sym__program_line,
-      aux_sym_program_definition_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(287), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(284), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(112), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(290), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [420] = 16,
-    ACTIONS(5), 1,
-      sym_identifier,
-    ACTIONS(9), 1,
-      aux_sym_line_comment_token1,
-    ACTIONS(11), 1,
-      aux_sym_line_comment_token2,
-    ACTIONS(13), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(15), 1,
-      anon_sym_program,
-    ACTIONS(17), 1,
-      anon_sym_mata,
-    ACTIONS(25), 1,
-      sym__line_start,
-    ACTIONS(249), 1,
-      sym__newline,
-    ACTIONS(296), 1,
-      anon_sym_end,
-    STATE(113), 1,
-      sym_prefix,
-    STATE(32), 2,
-      sym__program_line,
-      aux_sym_program_definition_repeat1,
-    STATE(159), 2,
-      sym_line_comment,
-      sym_block_comment,
-    ACTIONS(21), 3,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-    ACTIONS(19), 4,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-    STATE(112), 6,
-      sym__statement,
-      sym_comment,
-      sym_program_definition,
-      sym_mata_block,
-      sym_macro_definition,
-      sym_command,
-    ACTIONS(23), 10,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-  [490] = 2,
-    ACTIONS(298), 5,
-      sym__line_start,
-      ts_builtin_sym_end,
-      sym__newline,
-      aux_sym_line_comment_token1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(300), 21,
-      aux_sym_line_comment_token2,
-      anon_sym_program,
-      anon_sym_mata,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-      sym_identifier,
-  [521] = 2,
-    ACTIONS(304), 4,
-      sym__line_start,
-      sym__newline,
-      aux_sym_line_comment_token1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(302), 22,
-      aux_sym_line_comment_token2,
-      anon_sym_program,
-      anon_sym_end,
-      anon_sym_mata,
-      anon_sym_local,
-      anon_sym_loc,
-      anon_sym_global,
-      anon_sym_gl,
-      anon_sym_tempvar,
-      anon_sym_tempname,
-      anon_sym_tempfile,
-      anon_sym_by,
-      anon_sym_bysort,
-      anon_sym_bys,
-      anon_sym_quietly,
-      anon_sym_qui,
-      anon_sym_noisily,
-      anon_sym_noi,
-      anon_sym_capture,
-      anon_sym_cap,
-      anon_sym_sortpreserve,
-      sym_identifier,
-  [552] = 7,
-    ACTIONS(306), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(308), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(310), 1,
-      sym__compound_text,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(48), 5,
-      sym__compound_content_5,
-      sym_compound_string_depth_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_5_repeat1,
-  [578] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(318), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(320), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(322), 1,
-      sym__compound_text,
-    STATE(50), 5,
-      sym__compound_content_1,
-      sym_compound_string_depth_2,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_1_repeat1,
-  [604] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(324), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(326), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(328), 1,
-      sym__compound_text,
-    STATE(42), 5,
-      sym__compound_content_4,
-      sym_compound_string_depth_5,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_4_repeat1,
-  [630] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(330), 1,
-      anon_sym_BQUOTE_DQUOTE,
+  [0] = 19,
     ACTIONS(332), 1,
-      anon_sym_DQUOTE_SQUOTE,
+      ts_builtin_sym_end,
     ACTIONS(334), 1,
-      sym__compound_text,
-    STATE(43), 5,
-      sym__compound_content_3,
-      sym_compound_string_depth_4,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_3_repeat1,
-  [656] = 7,
-    ACTIONS(336), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(339), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(341), 1,
-      sym__compound_text,
-    ACTIONS(344), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(347), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(350), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(40), 5,
-      sym__compound_content_2,
-      sym_compound_string_depth_3,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_2_repeat1,
-  [682] = 7,
-    ACTIONS(306), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(353), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(355), 1,
-      sym__compound_text,
-    STATE(36), 5,
-      sym__compound_content_5,
-      sym_compound_string_depth_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_5_repeat1,
-  [708] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(324), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(357), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(359), 1,
-      sym__compound_text,
-    STATE(46), 5,
-      sym__compound_content_4,
-      sym_compound_string_depth_5,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_4_repeat1,
-  [734] = 7,
-    ACTIONS(361), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(364), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(366), 1,
-      sym__compound_text,
-    ACTIONS(369), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(372), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(375), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(43), 5,
-      sym__compound_content_3,
-      sym_compound_string_depth_4,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_3_repeat1,
-  [760] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(378), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(380), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(382), 1,
-      sym__compound_text,
-    STATE(47), 5,
-      sym_compound_string_depth_1,
-      sym__compound_content_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_6_repeat1,
-  [786] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(318), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(384), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(386), 1,
-      sym__compound_text,
-    STATE(53), 5,
-      sym__compound_content_1,
-      sym_compound_string_depth_2,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_1_repeat1,
-  [812] = 7,
-    ACTIONS(388), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(391), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(393), 1,
-      sym__compound_text,
-    ACTIONS(396), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(399), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(402), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(46), 5,
-      sym__compound_content_4,
-      sym_compound_string_depth_5,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_4_repeat1,
-  [838] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(378), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(405), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(407), 1,
-      sym__compound_text,
-    STATE(49), 5,
-      sym_compound_string_depth_1,
-      sym__compound_content_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_6_repeat1,
-  [864] = 7,
-    ACTIONS(409), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(412), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(414), 1,
-      sym__compound_text,
-    ACTIONS(417), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(420), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(423), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(48), 5,
-      sym__compound_content_5,
-      sym_compound_string_depth_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_5_repeat1,
-  [890] = 7,
-    ACTIONS(426), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(429), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(431), 1,
-      sym__compound_text,
-    ACTIONS(434), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(437), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(440), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(49), 5,
-      sym_compound_string_depth_1,
-      sym__compound_content_6,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_6_repeat1,
-  [916] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(318), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(386), 1,
-      sym__compound_text,
-    ACTIONS(443), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    STATE(53), 5,
-      sym__compound_content_1,
-      sym_compound_string_depth_2,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_1_repeat1,
-  [942] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(330), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(445), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(447), 1,
-      sym__compound_text,
-    STATE(39), 5,
-      sym__compound_content_3,
-      sym_compound_string_depth_4,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_3_repeat1,
-  [968] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(449), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(451), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(453), 1,
-      sym__compound_text,
-    STATE(40), 5,
-      sym__compound_content_2,
-      sym_compound_string_depth_3,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_2_repeat1,
-  [994] = 7,
-    ACTIONS(455), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(458), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(460), 1,
-      sym__compound_text,
-    ACTIONS(463), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(466), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(469), 1,
-      anon_sym_DOLLAR_LBRACE,
-    STATE(53), 5,
-      sym__compound_content_1,
-      sym_compound_string_depth_2,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_1_repeat1,
-  [1020] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(449), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(472), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(474), 1,
-      sym__compound_text,
-    STATE(52), 5,
-      sym__compound_content_2,
-      sym_compound_string_depth_3,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_2_repeat1,
-  [1046] = 7,
-    ACTIONS(312), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(314), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(316), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(318), 1,
-      anon_sym_BQUOTE_DQUOTE,
-    ACTIONS(476), 1,
-      anon_sym_DQUOTE_SQUOTE,
-    ACTIONS(478), 1,
-      sym__compound_text,
-    STATE(45), 5,
-      sym__compound_content_1,
-      sym_compound_string_depth_2,
-      sym_local_macro_depth_1,
-      sym_global_macro,
-      aux_sym_compound_string_depth_1_repeat1,
-  [1072] = 6,
-    ACTIONS(480), 1,
-      anon_sym_DQUOTE,
-    ACTIONS(482), 1,
-      aux_sym_double_string_token1,
-    ACTIONS(486), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(488), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(484), 2,
-      aux_sym_double_string_token2,
-      anon_sym_DQUOTE_DQUOTE,
-    STATE(62), 2,
-      sym_global_macro,
-      aux_sym_double_string_repeat1,
-  [1093] = 5,
-    ACTIONS(492), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(494), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(496), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(490), 2,
-      aux_sym__macro_name_token1,
       sym_identifier,
-    STATE(143), 3,
-      sym_local_macro_depth_4,
-      sym__macro_name,
+    ACTIONS(337), 1,
+      sym__newline,
+    ACTIONS(340), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(343), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(346), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(349), 1,
+      anon_sym_program,
+    ACTIONS(352), 1,
+      anon_sym_mata,
+    ACTIONS(367), 1,
+      sym__line_start,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(54), 2,
+      sym__line,
+      aux_sym_source_file_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(358), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(355), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(181), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(364), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(361), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [99] = 19,
+    ACTIONS(5), 1,
+      sym_identifier,
+    ACTIONS(9), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(11), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(13), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(15), 1,
+      anon_sym_program,
+    ACTIONS(17), 1,
+      anon_sym_mata,
+    ACTIONS(27), 1,
+      sym__line_start,
+    ACTIONS(370), 1,
+      ts_builtin_sym_end,
+    ACTIONS(372), 1,
+      sym__newline,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(54), 2,
+      sym__line,
+      aux_sym_source_file_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(21), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(19), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(181), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(25), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(23), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [198] = 19,
+    ACTIONS(5), 1,
+      sym_identifier,
+    ACTIONS(9), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(11), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(13), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(15), 1,
+      anon_sym_program,
+    ACTIONS(17), 1,
+      anon_sym_mata,
+    ACTIONS(27), 1,
+      sym__line_start,
+    ACTIONS(374), 1,
+      sym__newline,
+    ACTIONS(376), 1,
+      anon_sym_end,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(58), 2,
+      sym__program_line,
+      aux_sym_program_definition_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(21), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(19), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(203), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(25), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(23), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [297] = 19,
+    ACTIONS(5), 1,
+      sym_identifier,
+    ACTIONS(9), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(11), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(13), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(15), 1,
+      anon_sym_program,
+    ACTIONS(17), 1,
+      anon_sym_mata,
+    ACTIONS(27), 1,
+      sym__line_start,
+    ACTIONS(378), 1,
+      sym__newline,
+    ACTIONS(380), 1,
+      anon_sym_end,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(60), 2,
+      sym__program_line,
+      aux_sym_program_definition_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(21), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(19), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(203), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(25), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(23), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [396] = 19,
+    ACTIONS(5), 1,
+      sym_identifier,
+    ACTIONS(9), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(11), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(13), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(15), 1,
+      anon_sym_program,
+    ACTIONS(17), 1,
+      anon_sym_mata,
+    ACTIONS(27), 1,
+      sym__line_start,
+    ACTIONS(382), 1,
+      sym__newline,
+    ACTIONS(384), 1,
+      anon_sym_end,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(59), 2,
+      sym__program_line,
+      aux_sym_program_definition_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(21), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(19), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(203), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(25), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(23), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [495] = 19,
+    ACTIONS(386), 1,
+      sym_identifier,
+    ACTIONS(389), 1,
+      sym__newline,
+    ACTIONS(392), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(395), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(398), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(401), 1,
+      anon_sym_program,
+    ACTIONS(404), 1,
+      anon_sym_end,
+    ACTIONS(406), 1,
+      anon_sym_mata,
+    ACTIONS(421), 1,
+      sym__line_start,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(59), 2,
+      sym__program_line,
+      aux_sym_program_definition_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(412), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(409), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(203), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(418), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(415), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [594] = 19,
+    ACTIONS(5), 1,
+      sym_identifier,
+    ACTIONS(9), 1,
+      aux_sym_line_comment_token1,
+    ACTIONS(11), 1,
+      aux_sym_line_comment_token2,
+    ACTIONS(13), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(15), 1,
+      anon_sym_program,
+    ACTIONS(17), 1,
+      anon_sym_mata,
+    ACTIONS(27), 1,
+      sym__line_start,
+    ACTIONS(382), 1,
+      sym__newline,
+    ACTIONS(424), 1,
+      anon_sym_end,
+    STATE(3), 1,
+      sym__file_command_name,
+    STATE(63), 1,
+      aux_sym_file_command_repeat1,
+    STATE(65), 1,
+      sym_prefix,
+    STATE(59), 2,
+      sym__program_line,
+      aux_sym_program_definition_repeat1,
+    STATE(186), 2,
+      sym_line_comment,
+      sym_block_comment,
+    ACTIONS(21), 3,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+    ACTIONS(19), 4,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+    STATE(203), 7,
+      sym__statement,
+      sym_comment,
+      sym_program_definition,
+      sym_mata_block,
+      sym_macro_definition,
+      sym_command,
+      sym_file_command,
+    ACTIONS(25), 10,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+    ACTIONS(23), 20,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [693] = 2,
+    ACTIONS(426), 5,
+      sym__line_start,
+      ts_builtin_sym_end,
+      sym__newline,
+      aux_sym_line_comment_token1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(428), 41,
+      aux_sym_line_comment_token2,
+      anon_sym_program,
+      anon_sym_mata,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+      sym_identifier,
+  [744] = 2,
+    ACTIONS(432), 4,
+      sym__line_start,
+      sym__newline,
+      aux_sym_line_comment_token1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(430), 42,
+      aux_sym_line_comment_token2,
+      anon_sym_program,
+      anon_sym_end,
+      anon_sym_mata,
+      anon_sym_local,
+      anon_sym_loc,
+      anon_sym_global,
+      anon_sym_gl,
+      anon_sym_tempvar,
+      anon_sym_tempname,
+      anon_sym_tempfile,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+      sym_identifier,
+  [795] = 6,
+    STATE(4), 1,
+      sym__file_command_name,
+    ACTIONS(23), 2,
+      anon_sym_save,
+      anon_sym_rm,
+    STATE(64), 2,
+      sym_prefix,
+      aux_sym_file_command_repeat1,
+    ACTIONS(25), 5,
+      anon_sym_by,
+      anon_sym_bys,
+      anon_sym_qui,
+      anon_sym_noi,
+      anon_sym_cap,
+    ACTIONS(436), 5,
+      anon_sym_bysort,
+      anon_sym_quietly,
+      anon_sym_noisily,
+      anon_sym_capture,
+      anon_sym_sortpreserve,
+    ACTIONS(434), 18,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [841] = 5,
+    ACTIONS(440), 2,
+      anon_sym_save,
+      anon_sym_rm,
+    STATE(64), 2,
+      sym_prefix,
+      aux_sym_file_command_repeat1,
+    ACTIONS(442), 5,
+      anon_sym_by,
+      anon_sym_bys,
+      anon_sym_qui,
+      anon_sym_noi,
+      anon_sym_cap,
+    ACTIONS(445), 5,
+      anon_sym_bysort,
+      anon_sym_quietly,
+      anon_sym_noisily,
+      anon_sym_capture,
+      anon_sym_sortpreserve,
+    ACTIONS(438), 18,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+  [884] = 2,
+    ACTIONS(448), 1,
+      sym_identifier,
+    ACTIONS(450), 30,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+  [920] = 1,
+    ACTIONS(452), 31,
+      anon_sym_use,
+      anon_sym_sysuse,
+      anon_sym_webuse,
+      anon_sym_save,
+      anon_sym_saveold,
+      anon_sym_do,
+      anon_sym_run,
+      anon_sym_include,
+      anon_sym_import,
+      anon_sym_export,
+      anon_sym_cd,
+      anon_sym_erase,
+      anon_sym_rm,
+      anon_sym_copy,
+      anon_sym_mkdir,
+      anon_sym_rmdir,
+      anon_sym_type,
+      anon_sym_dir,
+      anon_sym_ls,
+      anon_sym_shell,
+      anon_sym_by,
+      anon_sym_bysort,
+      anon_sym_bys,
+      anon_sym_quietly,
+      anon_sym_qui,
+      anon_sym_noisily,
+      anon_sym_noi,
+      anon_sym_capture,
+      anon_sym_cap,
+      anon_sym_sortpreserve,
+      sym_identifier,
+  [954] = 7,
+    ACTIONS(454), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(456), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(458), 1,
+      sym__compound_text,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(68), 5,
+      sym__compound_content_5,
+      sym_compound_string_depth_6,
+      sym_local_macro_depth_1,
       sym_global_macro,
-  [1112] = 5,
+      aux_sym_compound_string_depth_5_repeat1,
+  [980] = 7,
+    ACTIONS(466), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(469), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(471), 1,
+      sym__compound_text,
+    ACTIONS(474), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(477), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(480), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(68), 5,
+      sym__compound_content_5,
+      sym_compound_string_depth_6,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_5_repeat1,
+  [1006] = 7,
+    ACTIONS(483), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(486), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(488), 1,
+      sym__compound_text,
+    ACTIONS(491), 1,
+      anon_sym_BQUOTE,
     ACTIONS(494), 1,
       anon_sym_DOLLAR,
-    ACTIONS(496), 1,
+    ACTIONS(497), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(69), 5,
+      sym_compound_string_depth_1,
+      sym__compound_content_6,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_6_repeat1,
+  [1032] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
       anon_sym_DOLLAR_LBRACE,
     ACTIONS(500), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(498), 2,
-      aux_sym__macro_name_token1,
-      sym_identifier,
-    STATE(136), 3,
-      sym_local_macro_depth_2,
-      sym__macro_name,
-      sym_global_macro,
-  [1131] = 5,
-    ACTIONS(494), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(496), 1,
-      anon_sym_DOLLAR_LBRACE,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(502), 1,
+      anon_sym_DQUOTE_SQUOTE,
     ACTIONS(504), 1,
+      sym__compound_text,
+    STATE(74), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1058] = 7,
+    ACTIONS(460), 1,
       anon_sym_BQUOTE,
-    ACTIONS(502), 2,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(506), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(508), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(510), 1,
+      sym__compound_text,
+    STATE(77), 5,
+      sym__compound_content_3,
+      sym_compound_string_depth_4,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_3_repeat1,
+  [1084] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(512), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(514), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(516), 1,
+      sym__compound_text,
+    STATE(78), 5,
+      sym__compound_content_2,
+      sym_compound_string_depth_3,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_2_repeat1,
+  [1110] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(512), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(518), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(520), 1,
+      sym__compound_text,
+    STATE(72), 5,
+      sym__compound_content_2,
+      sym_compound_string_depth_3,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_2_repeat1,
+  [1136] = 7,
+    ACTIONS(522), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(525), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(527), 1,
+      sym__compound_text,
+    ACTIONS(530), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(533), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(536), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(74), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1162] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(500), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(539), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(541), 1,
+      sym__compound_text,
+    STATE(70), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1188] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(543), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(545), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(547), 1,
+      sym__compound_text,
+    STATE(81), 5,
+      sym__compound_content_4,
+      sym_compound_string_depth_5,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_4_repeat1,
+  [1214] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(506), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(549), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(551), 1,
+      sym__compound_text,
+    STATE(82), 5,
+      sym__compound_content_3,
+      sym_compound_string_depth_4,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_3_repeat1,
+  [1240] = 7,
+    ACTIONS(553), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(556), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(558), 1,
+      sym__compound_text,
+    ACTIONS(561), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(564), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(567), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(78), 5,
+      sym__compound_content_2,
+      sym_compound_string_depth_3,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_2_repeat1,
+  [1266] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(570), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(572), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(574), 1,
+      sym__compound_text,
+    STATE(69), 5,
+      sym_compound_string_depth_1,
+      sym__compound_content_6,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_6_repeat1,
+  [1292] = 7,
+    ACTIONS(454), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(576), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(578), 1,
+      sym__compound_text,
+    STATE(67), 5,
+      sym__compound_content_5,
+      sym_compound_string_depth_6,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_5_repeat1,
+  [1318] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(543), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(580), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(582), 1,
+      sym__compound_text,
+    STATE(88), 5,
+      sym__compound_content_4,
+      sym_compound_string_depth_5,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_4_repeat1,
+  [1344] = 7,
+    ACTIONS(584), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(587), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(589), 1,
+      sym__compound_text,
+    ACTIONS(592), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(595), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(598), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(82), 5,
+      sym__compound_content_3,
+      sym_compound_string_depth_4,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_3_repeat1,
+  [1370] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(570), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(601), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(603), 1,
+      sym__compound_text,
+    STATE(79), 5,
+      sym_compound_string_depth_1,
+      sym__compound_content_6,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_6_repeat1,
+  [1396] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(500), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(605), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(607), 1,
+      sym__compound_text,
+    STATE(85), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1422] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(500), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(504), 1,
+      sym__compound_text,
+    ACTIONS(609), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    STATE(74), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1448] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(500), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(611), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(613), 1,
+      sym__compound_text,
+    STATE(87), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1474] = 7,
+    ACTIONS(460), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(462), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(464), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(500), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(504), 1,
+      sym__compound_text,
+    ACTIONS(615), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    STATE(74), 5,
+      sym__compound_content_1,
+      sym_compound_string_depth_2,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_1_repeat1,
+  [1500] = 7,
+    ACTIONS(617), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(620), 1,
+      anon_sym_DQUOTE_SQUOTE,
+    ACTIONS(622), 1,
+      sym__compound_text,
+    ACTIONS(625), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(628), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(631), 1,
+      anon_sym_DOLLAR_LBRACE,
+    STATE(88), 5,
+      sym__compound_content_4,
+      sym_compound_string_depth_5,
+      sym_local_macro_depth_1,
+      sym_global_macro,
+      aux_sym_compound_string_depth_4_repeat1,
+  [1526] = 6,
+    ACTIONS(634), 1,
+      anon_sym_DQUOTE,
+    ACTIONS(636), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(640), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(642), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(638), 2,
+      aux_sym_double_string_token2,
+      anon_sym_DQUOTE_DQUOTE,
+    STATE(95), 2,
+      sym_global_macro,
+      aux_sym_double_string_repeat1,
+  [1547] = 5,
+    ACTIONS(646), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(644), 2,
       aux_sym__macro_name_token1,
       sym_identifier,
-    STATE(129), 3,
+    STATE(187), 3,
       sym_local_macro_depth_3,
       sym__macro_name,
       sym_global_macro,
-  [1150] = 5,
-    ACTIONS(494), 1,
+  [1566] = 5,
+    ACTIONS(648), 1,
       anon_sym_DOLLAR,
-    ACTIONS(496), 1,
+    ACTIONS(650), 1,
       anon_sym_DOLLAR_LBRACE,
-    ACTIONS(508), 1,
+    ACTIONS(654), 1,
       anon_sym_BQUOTE,
-    ACTIONS(506), 2,
+    ACTIONS(652), 2,
       aux_sym__macro_name_token1,
       sym_identifier,
     STATE(164), 3,
-      sym_local_macro_depth_5,
+      sym_local_macro_depth_2,
       sym__macro_name,
       sym_global_macro,
-  [1169] = 5,
-    ACTIONS(494), 1,
+  [1585] = 5,
+    ACTIONS(648), 1,
       anon_sym_DOLLAR,
-    ACTIONS(496), 1,
+    ACTIONS(650), 1,
       anon_sym_DOLLAR_LBRACE,
-    ACTIONS(512), 1,
+    ACTIONS(658), 1,
       anon_sym_BQUOTE,
-    ACTIONS(510), 2,
+    ACTIONS(656), 2,
       aux_sym__macro_name_token1,
       sym_identifier,
-    STATE(115), 3,
+    STATE(153), 3,
       sym_local_macro_depth_6,
       sym__macro_name,
       sym_global_macro,
-  [1188] = 6,
-    ACTIONS(486), 1,
+  [1604] = 5,
+    ACTIONS(648), 1,
       anon_sym_DOLLAR,
-    ACTIONS(488), 1,
+    ACTIONS(650), 1,
       anon_sym_DOLLAR_LBRACE,
-    ACTIONS(514), 1,
-      anon_sym_DQUOTE,
-    ACTIONS(516), 1,
-      aux_sym_double_string_token1,
-    ACTIONS(518), 2,
-      aux_sym_double_string_token2,
-      anon_sym_DQUOTE_DQUOTE,
-    STATE(64), 2,
-      sym_global_macro,
-      aux_sym_double_string_repeat1,
-  [1209] = 5,
-    ACTIONS(494), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(496), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(522), 1,
+    ACTIONS(662), 1,
       anon_sym_BQUOTE,
-    ACTIONS(520), 2,
+    ACTIONS(660), 2,
       aux_sym__macro_name_token1,
       sym_identifier,
-    STATE(121), 3,
+    STATE(161), 3,
       sym_local_macro_depth_1,
       sym__macro_name,
       sym_global_macro,
-  [1228] = 6,
-    ACTIONS(524), 1,
-      anon_sym_DQUOTE,
-    ACTIONS(526), 1,
-      aux_sym_double_string_token1,
-    ACTIONS(532), 1,
+  [1623] = 6,
+    ACTIONS(640), 1,
       anon_sym_DOLLAR,
-    ACTIONS(535), 1,
+    ACTIONS(642), 1,
       anon_sym_DOLLAR_LBRACE,
-    ACTIONS(529), 2,
+    ACTIONS(664), 1,
+      anon_sym_DQUOTE,
+    ACTIONS(666), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(668), 2,
       aux_sym_double_string_token2,
       anon_sym_DQUOTE_DQUOTE,
-    STATE(64), 2,
+    STATE(96), 2,
       sym_global_macro,
       aux_sym_double_string_repeat1,
-  [1249] = 5,
-    ACTIONS(494), 1,
+  [1644] = 6,
+    ACTIONS(640), 1,
       anon_sym_DOLLAR,
-    ACTIONS(496), 1,
+    ACTIONS(642), 1,
       anon_sym_DOLLAR_LBRACE,
-    ACTIONS(500), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(538), 2,
-      aux_sym__macro_name_token1,
-      sym_identifier,
-    STATE(149), 3,
-      sym_local_macro_depth_2,
-      sym__macro_name,
-      sym_global_macro,
-  [1268] = 5,
-    ACTIONS(494), 1,
-      anon_sym_DOLLAR,
-    ACTIONS(496), 1,
-      anon_sym_DOLLAR_LBRACE,
-    ACTIONS(500), 1,
-      anon_sym_BQUOTE,
-    ACTIONS(540), 2,
-      aux_sym__macro_name_token1,
-      sym_identifier,
-    STATE(154), 3,
-      sym_local_macro_depth_2,
-      sym__macro_name,
-      sym_global_macro,
-  [1287] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(546), 1,
-      anon_sym_STAR_SLASH,
-    STATE(68), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(542), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1303] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(550), 1,
-      anon_sym_STAR_SLASH,
-    STATE(71), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(548), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1319] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(554), 1,
-      anon_sym_STAR_SLASH,
-    STATE(70), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(552), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1335] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(556), 1,
-      anon_sym_STAR_SLASH,
-    STATE(71), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(548), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1351] = 4,
-    ACTIONS(561), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(564), 1,
-      anon_sym_STAR_SLASH,
-    STATE(71), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(558), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1367] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(568), 1,
-      anon_sym_STAR_SLASH,
-    STATE(73), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(566), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1383] = 4,
-    ACTIONS(544), 1,
-      anon_sym_SLASH_STAR,
-    ACTIONS(570), 1,
-      anon_sym_STAR_SLASH,
-    STATE(71), 2,
-      sym_block_comment,
-      aux_sym_block_comment_repeat1,
-    ACTIONS(548), 3,
-      anon_sym_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-  [1399] = 1,
-    ACTIONS(572), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1408] = 1,
-    ACTIONS(574), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1417] = 1,
-    ACTIONS(576), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1426] = 1,
-    ACTIONS(578), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1435] = 1,
-    ACTIONS(580), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1444] = 1,
-    ACTIONS(166), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1453] = 2,
-    ACTIONS(172), 1,
-      aux_sym_double_string_token1,
-    ACTIONS(170), 5,
+    ACTIONS(670), 1,
       anon_sym_DQUOTE,
+    ACTIONS(672), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(674), 2,
       aux_sym_double_string_token2,
       anon_sym_DQUOTE_DQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1464] = 1,
-    ACTIONS(138), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1473] = 1,
-    ACTIONS(194), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1482] = 2,
-    ACTIONS(184), 1,
-      aux_sym_double_string_token1,
-    ACTIONS(182), 5,
-      anon_sym_DQUOTE,
-      aux_sym_double_string_token2,
-      anon_sym_DQUOTE_DQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1493] = 1,
-    ACTIONS(582), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1502] = 1,
-    ACTIONS(584), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1511] = 1,
-    ACTIONS(170), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1520] = 1,
-    ACTIONS(182), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1529] = 1,
-    ACTIONS(586), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1538] = 1,
-    ACTIONS(588), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1547] = 1,
-    ACTIONS(590), 6,
-      anon_sym_BQUOTE_DQUOTE,
-      anon_sym_DQUOTE_SQUOTE,
-      sym__compound_text,
-      anon_sym_BQUOTE,
-      anon_sym_DOLLAR,
-      anon_sym_DOLLAR_LBRACE,
-  [1556] = 1,
-    ACTIONS(186), 5,
-      anon_sym_STAR,
-      anon_sym_SLASH_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-      anon_sym_STAR_SLASH,
-  [1564] = 1,
-    ACTIONS(202), 5,
-      anon_sym_STAR,
-      anon_sym_SLASH_STAR,
-      aux_sym_block_comment_token1,
-      anon_sym_SLASH,
-      anon_sym_STAR_SLASH,
-  [1572] = 3,
-    ACTIONS(592), 1,
-      anon_sym_end,
-    ACTIONS(594), 1,
-      aux_sym__mata_line_token1,
-    STATE(94), 2,
-      sym__mata_line,
-      aux_sym_mata_block_repeat2,
-  [1583] = 3,
-    ACTIONS(596), 1,
-      anon_sym_end,
-    ACTIONS(598), 1,
-      aux_sym__mata_line_token1,
-    STATE(94), 2,
-      sym__mata_line,
-      aux_sym_mata_block_repeat2,
-  [1594] = 4,
-    ACTIONS(601), 1,
-      sym__newline,
-    ACTIONS(603), 1,
-      anon_sym_COLON,
-    ACTIONS(605), 1,
-      anon_sym_LBRACE,
-    ACTIONS(607), 1,
-      sym__mata_inline_content,
-  [1607] = 3,
-    ACTIONS(594), 1,
-      aux_sym__mata_line_token1,
-    ACTIONS(609), 1,
-      anon_sym_end,
-    STATE(93), 2,
-      sym__mata_line,
-      aux_sym_mata_block_repeat2,
-  [1618] = 3,
-    ACTIONS(594), 1,
-      aux_sym__mata_line_token1,
-    ACTIONS(609), 1,
-      anon_sym_end,
-    STATE(94), 2,
-      sym__mata_line,
-      aux_sym_mata_block_repeat2,
-  [1629] = 3,
-    ACTIONS(594), 1,
-      aux_sym__mata_line_token1,
-    ACTIONS(611), 1,
-      anon_sym_end,
     STATE(97), 2,
+      sym_global_macro,
+      aux_sym_double_string_repeat1,
+  [1665] = 6,
+    ACTIONS(640), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(642), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(672), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(676), 1,
+      anon_sym_DQUOTE,
+    ACTIONS(674), 2,
+      aux_sym_double_string_token2,
+      anon_sym_DQUOTE_DQUOTE,
+    STATE(97), 2,
+      sym_global_macro,
+      aux_sym_double_string_repeat1,
+  [1686] = 6,
+    ACTIONS(678), 1,
+      anon_sym_DQUOTE,
+    ACTIONS(680), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(686), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(689), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(683), 2,
+      aux_sym_double_string_token2,
+      anon_sym_DQUOTE_DQUOTE,
+    STATE(97), 2,
+      sym_global_macro,
+      aux_sym_double_string_repeat1,
+  [1707] = 5,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(694), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(692), 2,
+      aux_sym__macro_name_token1,
+      sym_identifier,
+    STATE(157), 3,
+      sym_local_macro_depth_5,
+      sym__macro_name,
+      sym_global_macro,
+  [1726] = 5,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(698), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(696), 2,
+      aux_sym__macro_name_token1,
+      sym_identifier,
+    STATE(156), 3,
+      sym_local_macro_depth_4,
+      sym__macro_name,
+      sym_global_macro,
+  [1745] = 5,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(654), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(700), 2,
+      aux_sym__macro_name_token1,
+      sym_identifier,
+    STATE(182), 3,
+      sym_local_macro_depth_2,
+      sym__macro_name,
+      sym_global_macro,
+  [1764] = 5,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(654), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(702), 2,
+      aux_sym__macro_name_token1,
+      sym_identifier,
+    STATE(190), 3,
+      sym_local_macro_depth_2,
+      sym__macro_name,
+      sym_global_macro,
+  [1783] = 5,
+    ACTIONS(648), 1,
+      anon_sym_DOLLAR,
+    ACTIONS(650), 1,
+      anon_sym_DOLLAR_LBRACE,
+    ACTIONS(654), 1,
+      anon_sym_BQUOTE,
+    ACTIONS(704), 2,
+      aux_sym__macro_name_token1,
+      sym_identifier,
+    STATE(195), 3,
+      sym_local_macro_depth_2,
+      sym__macro_name,
+      sym_global_macro,
+  [1802] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(710), 1,
+      anon_sym_STAR_SLASH,
+    STATE(108), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(706), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1818] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(712), 1,
+      anon_sym_STAR_SLASH,
+    STATE(108), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(706), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1834] = 6,
+    ACTIONS(41), 1,
+      anon_sym_DQUOTE,
+    ACTIONS(43), 1,
+      anon_sym_BQUOTE_DQUOTE,
+    ACTIONS(714), 1,
+      sym_identifier,
+    ACTIONS(716), 1,
+      sym_file_path,
+    STATE(14), 1,
+      sym_string,
+    STATE(24), 2,
+      sym_double_string,
+      sym_compound_string_depth_1,
+  [1854] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(720), 1,
+      anon_sym_STAR_SLASH,
+    STATE(107), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(718), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1870] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(722), 1,
+      anon_sym_STAR_SLASH,
+    STATE(108), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(706), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1886] = 4,
+    ACTIONS(727), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(730), 1,
+      anon_sym_STAR_SLASH,
+    STATE(108), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(724), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1902] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(734), 1,
+      anon_sym_STAR_SLASH,
+    STATE(110), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(732), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1918] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(736), 1,
+      anon_sym_STAR_SLASH,
+    STATE(108), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(706), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1934] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(740), 1,
+      anon_sym_STAR_SLASH,
+    STATE(104), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(738), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1950] = 4,
+    ACTIONS(708), 1,
+      anon_sym_SLASH_STAR,
+    ACTIONS(744), 1,
+      anon_sym_STAR_SLASH,
+    STATE(103), 2,
+      sym_block_comment,
+      aux_sym_block_comment_repeat1,
+    ACTIONS(742), 3,
+      anon_sym_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+  [1966] = 1,
+    ACTIONS(746), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [1975] = 1,
+    ACTIONS(748), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [1984] = 1,
+    ACTIONS(750), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [1993] = 1,
+    ACTIONS(752), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2002] = 1,
+    ACTIONS(754), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2011] = 1,
+    ACTIONS(756), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2020] = 1,
+    ACTIONS(758), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2029] = 1,
+    ACTIONS(760), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2038] = 1,
+    ACTIONS(256), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2047] = 1,
+    ACTIONS(292), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2056] = 2,
+    ACTIONS(298), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(296), 5,
+      anon_sym_DQUOTE,
+      aux_sym_double_string_token2,
+      anon_sym_DQUOTE_DQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2067] = 1,
+    ACTIONS(312), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2076] = 1,
+    ACTIONS(308), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2085] = 2,
+    ACTIONS(314), 1,
+      aux_sym_double_string_token1,
+    ACTIONS(312), 5,
+      anon_sym_DQUOTE,
+      aux_sym_double_string_token2,
+      anon_sym_DQUOTE_DQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2096] = 1,
+    ACTIONS(762), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2105] = 1,
+    ACTIONS(296), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2114] = 1,
+    ACTIONS(764), 6,
+      anon_sym_BQUOTE_DQUOTE,
+      anon_sym_DQUOTE_SQUOTE,
+      sym__compound_text,
+      anon_sym_BQUOTE,
+      anon_sym_DOLLAR,
+      anon_sym_DOLLAR_LBRACE,
+  [2123] = 1,
+    ACTIONS(328), 5,
+      anon_sym_STAR,
+      anon_sym_SLASH_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+      anon_sym_STAR_SLASH,
+  [2131] = 1,
+    ACTIONS(260), 5,
+      anon_sym_STAR,
+      anon_sym_SLASH_STAR,
+      aux_sym_block_comment_token1,
+      anon_sym_SLASH,
+      anon_sym_STAR_SLASH,
+  [2139] = 4,
+    ACTIONS(766), 1,
+      sym__newline,
+    ACTIONS(768), 1,
+      anon_sym_COLON,
+    ACTIONS(770), 1,
+      anon_sym_LBRACE,
+    ACTIONS(772), 1,
+      sym__mata_inline_content,
+  [2152] = 3,
+    ACTIONS(774), 1,
+      anon_sym_end,
+    ACTIONS(776), 1,
+      aux_sym__mata_line_token1,
+    STATE(133), 2,
       sym__mata_line,
       aux_sym_mata_block_repeat2,
-  [1640] = 3,
-    ACTIONS(613), 1,
+  [2163] = 3,
+    ACTIONS(779), 1,
+      anon_sym_end,
+    ACTIONS(781), 1,
+      aux_sym__mata_line_token1,
+    STATE(133), 2,
+      sym__mata_line,
+      aux_sym_mata_block_repeat2,
+  [2174] = 3,
+    ACTIONS(781), 1,
+      aux_sym__mata_line_token1,
+    ACTIONS(783), 1,
+      anon_sym_end,
+    STATE(136), 2,
+      sym__mata_line,
+      aux_sym_mata_block_repeat2,
+  [2185] = 3,
+    ACTIONS(781), 1,
+      aux_sym__mata_line_token1,
+    ACTIONS(785), 1,
+      anon_sym_end,
+    STATE(133), 2,
+      sym__mata_line,
+      aux_sym_mata_block_repeat2,
+  [2196] = 3,
+    ACTIONS(781), 1,
+      aux_sym__mata_line_token1,
+    ACTIONS(785), 1,
+      anon_sym_end,
+    STATE(134), 2,
+      sym__mata_line,
+      aux_sym_mata_block_repeat2,
+  [2207] = 3,
+    ACTIONS(779), 1,
       anon_sym_RBRACE,
-    ACTIONS(615), 1,
+    ACTIONS(787), 1,
       sym__mata_brace_content,
-    STATE(99), 1,
+    STATE(142), 1,
       aux_sym_mata_block_repeat1,
-  [1650] = 3,
-    ACTIONS(592), 1,
-      anon_sym_RBRACE,
-    ACTIONS(618), 1,
-      sym__mata_brace_content,
-    STATE(99), 1,
-      aux_sym_mata_block_repeat1,
-  [1660] = 3,
-    ACTIONS(620), 1,
+  [2217] = 3,
+    ACTIONS(789), 1,
       sym_identifier,
-    ACTIONS(623), 1,
+    ACTIONS(791), 1,
       sym__newline,
-    STATE(101), 1,
+    STATE(141), 1,
       aux_sym_macro_definition_repeat2,
-  [1670] = 3,
-    ACTIONS(625), 1,
-      sym_identifier,
-    ACTIONS(627), 1,
-      sym__newline,
-    STATE(101), 1,
-      aux_sym_macro_definition_repeat2,
-  [1680] = 3,
-    ACTIONS(611), 1,
+  [2227] = 3,
+    ACTIONS(783), 1,
       sym__mata_inline_content,
-    ACTIONS(629), 1,
+    ACTIONS(793), 1,
       sym__newline,
-    ACTIONS(631), 1,
+    ACTIONS(795), 1,
       anon_sym_LBRACE,
-  [1690] = 3,
-    ACTIONS(611), 1,
-      anon_sym_RBRACE,
-    ACTIONS(633), 1,
-      sym__mata_brace_content,
-    STATE(106), 1,
-      aux_sym_mata_block_repeat1,
-  [1700] = 3,
-    ACTIONS(609), 1,
-      anon_sym_RBRACE,
-    ACTIONS(635), 1,
-      sym__mata_brace_content,
-    STATE(100), 1,
-      aux_sym_mata_block_repeat1,
-  [1710] = 3,
-    ACTIONS(609), 1,
-      anon_sym_RBRACE,
-    ACTIONS(618), 1,
-      sym__mata_brace_content,
-    STATE(99), 1,
-      aux_sym_mata_block_repeat1,
-  [1720] = 2,
-    ACTIONS(625), 1,
+  [2237] = 3,
+    ACTIONS(797), 1,
       sym_identifier,
-    STATE(102), 1,
-      aux_sym_macro_definition_repeat2,
-  [1727] = 1,
-    ACTIONS(637), 2,
+    ACTIONS(800), 1,
       sym__newline,
+    STATE(141), 1,
+      aux_sym_macro_definition_repeat2,
+  [2247] = 3,
+    ACTIONS(802), 1,
+      anon_sym_RBRACE,
+    ACTIONS(804), 1,
+      sym__mata_brace_content,
+    STATE(142), 1,
+      aux_sym_mata_block_repeat1,
+  [2257] = 3,
+    ACTIONS(785), 1,
+      anon_sym_RBRACE,
+    ACTIONS(787), 1,
+      sym__mata_brace_content,
+    STATE(142), 1,
+      aux_sym_mata_block_repeat1,
+  [2267] = 3,
+    ACTIONS(783), 1,
+      anon_sym_RBRACE,
+    ACTIONS(807), 1,
+      sym__mata_brace_content,
+    STATE(143), 1,
+      aux_sym_mata_block_repeat1,
+  [2277] = 3,
+    ACTIONS(785), 1,
+      anon_sym_RBRACE,
+    ACTIONS(809), 1,
+      sym__mata_brace_content,
+    STATE(138), 1,
+      aux_sym_mata_block_repeat1,
+  [2287] = 2,
+    ACTIONS(811), 1,
       sym_identifier,
-  [1732] = 1,
-    ACTIONS(639), 2,
+    ACTIONS(813), 1,
+      anon_sym_define,
+  [2294] = 1,
+    ACTIONS(815), 2,
       anon_sym_end,
       aux_sym__mata_line_token1,
-  [1737] = 2,
-    ACTIONS(641), 1,
+  [2299] = 2,
+    ACTIONS(789), 1,
       sym_identifier,
-    ACTIONS(643), 1,
-      anon_sym_define,
-  [1744] = 1,
-    ACTIONS(645), 1,
+    STATE(139), 1,
+      aux_sym_macro_definition_repeat2,
+  [2306] = 1,
+    ACTIONS(817), 2,
+      sym__newline,
+      sym_identifier,
+  [2311] = 1,
+    ACTIONS(819), 1,
+      anon_sym_RBRACE,
+  [2315] = 1,
+    ACTIONS(821), 1,
+      sym__newline,
+  [2319] = 1,
+    ACTIONS(823), 1,
+      sym_identifier,
+  [2323] = 1,
+    ACTIONS(825), 1,
+      anon_sym_SQUOTE,
+  [2327] = 1,
+    ACTIONS(827), 1,
+      sym__newline,
+  [2331] = 1,
+    ACTIONS(829), 1,
+      anon_sym_SQUOTE,
+  [2335] = 1,
+    ACTIONS(831), 1,
+      anon_sym_SQUOTE,
+  [2339] = 1,
+    ACTIONS(833), 1,
+      anon_sym_SQUOTE,
+  [2343] = 1,
+    ACTIONS(835), 1,
+      anon_sym_SQUOTE,
+  [2347] = 1,
+    ACTIONS(318), 1,
+      sym__newline,
+  [2351] = 1,
+    ACTIONS(837), 1,
+      sym_identifier,
+  [2355] = 1,
+    ACTIONS(839), 1,
+      anon_sym_SQUOTE,
+  [2359] = 1,
+    ACTIONS(841), 1,
+      anon_sym_SQUOTE,
+  [2363] = 1,
+    ACTIONS(843), 1,
+      anon_sym_SQUOTE,
+  [2367] = 1,
+    ACTIONS(845), 1,
+      anon_sym_SQUOTE,
+  [2371] = 1,
+    ACTIONS(847), 1,
+      anon_sym_SQUOTE,
+  [2375] = 1,
+    ACTIONS(849), 1,
+      sym_identifier,
+  [2379] = 1,
+    ACTIONS(851), 1,
+      anon_sym_RBRACE,
+  [2383] = 1,
+    ACTIONS(853), 1,
+      sym__newline,
+  [2387] = 1,
+    ACTIONS(310), 1,
+      anon_sym_SQUOTE,
+  [2391] = 1,
+    ACTIONS(855), 1,
       ts_builtin_sym_end,
-  [1748] = 1,
-    ACTIONS(647), 1,
-      sym__newline,
-  [1752] = 1,
-    ACTIONS(649), 1,
-      sym_identifier,
-  [1756] = 1,
-    ACTIONS(651), 1,
-      sym__newline,
-  [1760] = 1,
-    ACTIONS(653), 1,
+  [2395] = 1,
+    ACTIONS(298), 1,
       anon_sym_SQUOTE,
-  [1764] = 1,
-    ACTIONS(655), 1,
+  [2399] = 1,
+    ACTIONS(314), 1,
       anon_sym_SQUOTE,
-  [1768] = 1,
-    ACTIONS(657), 1,
+  [2403] = 1,
+    ACTIONS(857), 1,
       sym__newline,
-  [1772] = 1,
-    ACTIONS(200), 1,
-      sym__newline,
-  [1776] = 1,
-    ACTIONS(659), 1,
+  [2407] = 1,
+    ACTIONS(859), 1,
       aux_sym_line_comment_token3,
-  [1780] = 1,
-    ACTIONS(188), 1,
+  [2411] = 1,
+    ACTIONS(861), 1,
+      sym_identifier,
+  [2415] = 1,
+    ACTIONS(863), 1,
+      sym_identifier,
+  [2419] = 1,
+    ACTIONS(326), 1,
       sym__newline,
-  [1784] = 1,
-    ACTIONS(661), 1,
-      anon_sym_SQUOTE,
-  [1788] = 1,
-    ACTIONS(663), 1,
-      anon_sym_SQUOTE,
-  [1792] = 1,
-    ACTIONS(665), 1,
-      sym_identifier,
-  [1796] = 1,
-    ACTIONS(667), 1,
-      sym_identifier,
-  [1800] = 1,
-    ACTIONS(669), 1,
-      anon_sym_SQUOTE,
-  [1804] = 1,
-    ACTIONS(671), 1,
-      sym_identifier,
-  [1808] = 1,
-    ACTIONS(673), 1,
-      sym_identifier,
-  [1812] = 1,
-    ACTIONS(675), 1,
-      sym_identifier,
-  [1816] = 1,
-    ACTIONS(677), 1,
-      anon_sym_SQUOTE,
-  [1820] = 1,
-    ACTIONS(679), 1,
+  [2423] = 1,
+    ACTIONS(865), 1,
       anon_sym_STAR,
-  [1824] = 1,
-    ACTIONS(681), 1,
+  [2427] = 1,
+    ACTIONS(867), 1,
       sym_identifier,
-  [1828] = 1,
-    ACTIONS(683), 1,
+  [2431] = 1,
+    ACTIONS(262), 1,
       sym__newline,
-  [1832] = 1,
-    ACTIONS(685), 1,
+  [2435] = 1,
+    ACTIONS(869), 1,
       sym__newline,
-  [1836] = 1,
-    ACTIONS(687), 1,
-      sym__newline,
-  [1840] = 1,
-    ACTIONS(689), 1,
+  [2439] = 1,
+    ACTIONS(871), 1,
       anon_sym_SQUOTE,
-  [1844] = 1,
-    ACTIONS(691), 1,
-      anon_sym_SQUOTE,
-  [1848] = 1,
-    ACTIONS(693), 1,
-      sym__newline,
-  [1852] = 1,
-    ACTIONS(695), 1,
+  [2443] = 1,
+    ACTIONS(873), 1,
       anon_sym_RBRACE,
-  [1856] = 1,
-    ACTIONS(196), 1,
-      anon_sym_SQUOTE,
-  [1860] = 1,
-    ACTIONS(697), 1,
-      sym__newline,
-  [1864] = 1,
-    ACTIONS(172), 1,
-      anon_sym_SQUOTE,
-  [1868] = 1,
-    ACTIONS(184), 1,
-      anon_sym_SQUOTE,
-  [1872] = 1,
-    ACTIONS(699), 1,
-      anon_sym_SQUOTE,
-  [1876] = 1,
-    ACTIONS(701), 1,
+  [2447] = 1,
+    ACTIONS(875), 1,
       aux_sym_line_comment_token3,
-  [1880] = 1,
-    ACTIONS(703), 1,
+  [2451] = 1,
+    ACTIONS(877), 1,
+      aux_sym_line_comment_token3,
+  [2455] = 1,
+    ACTIONS(322), 1,
+      sym__newline,
+  [2459] = 1,
+    ACTIONS(879), 1,
       anon_sym_SQUOTE,
-  [1884] = 1,
-    ACTIONS(208), 1,
-      sym__newline,
-  [1888] = 1,
-    ACTIONS(705), 1,
+  [2463] = 1,
+    ACTIONS(881), 1,
       sym_identifier,
-  [1892] = 1,
-    ACTIONS(204), 1,
+  [2467] = 1,
+    ACTIONS(883), 1,
       sym__newline,
-  [1896] = 1,
-    ACTIONS(707), 1,
+  [2471] = 1,
+    ACTIONS(885), 1,
       anon_sym_SQUOTE,
-  [1900] = 1,
-    ACTIONS(709), 1,
+  [2475] = 1,
+    ACTIONS(887), 1,
       anon_sym_RBRACE,
-  [1904] = 1,
-    ACTIONS(711), 1,
+  [2479] = 1,
+    ACTIONS(889), 1,
       sym__newline,
-  [1908] = 1,
-    ACTIONS(713), 1,
+  [2483] = 1,
+    ACTIONS(330), 1,
       sym__newline,
-  [1912] = 1,
-    ACTIONS(715), 1,
+  [2487] = 1,
+    ACTIONS(891), 1,
       sym_identifier,
-  [1916] = 1,
-    ACTIONS(717), 1,
+  [2491] = 1,
+    ACTIONS(893), 1,
       anon_sym_SQUOTE,
-  [1920] = 1,
-    ACTIONS(719), 1,
+  [2495] = 1,
+    ACTIONS(895), 1,
       anon_sym_RBRACE,
-  [1924] = 1,
-    ACTIONS(721), 1,
+  [2499] = 1,
+    ACTIONS(897), 1,
       sym_identifier,
-  [1928] = 1,
-    ACTIONS(723), 1,
-      anon_sym_RBRACE,
-  [1932] = 1,
-    ACTIONS(725), 1,
+  [2503] = 1,
+    ACTIONS(899), 1,
+      sym__newline,
+  [2507] = 1,
+    ACTIONS(901), 1,
       anon_sym_STAR,
-  [1936] = 1,
-    ACTIONS(180), 1,
+  [2511] = 1,
+    ACTIONS(903), 1,
       sym__newline,
-  [1940] = 1,
-    ACTIONS(727), 1,
+  [2515] = 1,
+    ACTIONS(905), 1,
       sym_identifier,
-  [1944] = 1,
-    ACTIONS(729), 1,
+  [2519] = 1,
+    ACTIONS(907), 1,
+      anon_sym_STAR,
+  [2523] = 1,
+    ACTIONS(909), 1,
       sym__newline,
-  [1948] = 1,
-    ACTIONS(731), 1,
+  [2527] = 1,
+    ACTIONS(911), 1,
       sym_identifier,
-  [1952] = 1,
-    ACTIONS(733), 1,
+  [2531] = 1,
+    ACTIONS(913), 1,
+      sym__newline,
+  [2535] = 1,
+    ACTIONS(915), 1,
       sym_identifier,
-  [1956] = 1,
-    ACTIONS(735), 1,
-      anon_sym_SQUOTE,
+  [2539] = 1,
+    ACTIONS(917), 1,
+      sym_identifier,
+  [2543] = 1,
+    ACTIONS(919), 1,
+      sym_identifier,
 };
 
 static const uint32_t ts_small_parse_table_map[] = {
-  [SMALL_STATE(27)] = 0,
-  [SMALL_STATE(28)] = 70,
-  [SMALL_STATE(29)] = 140,
-  [SMALL_STATE(30)] = 210,
-  [SMALL_STATE(31)] = 280,
-  [SMALL_STATE(32)] = 350,
-  [SMALL_STATE(33)] = 420,
-  [SMALL_STATE(34)] = 490,
-  [SMALL_STATE(35)] = 521,
-  [SMALL_STATE(36)] = 552,
-  [SMALL_STATE(37)] = 578,
-  [SMALL_STATE(38)] = 604,
-  [SMALL_STATE(39)] = 630,
-  [SMALL_STATE(40)] = 656,
-  [SMALL_STATE(41)] = 682,
-  [SMALL_STATE(42)] = 708,
-  [SMALL_STATE(43)] = 734,
-  [SMALL_STATE(44)] = 760,
-  [SMALL_STATE(45)] = 786,
-  [SMALL_STATE(46)] = 812,
-  [SMALL_STATE(47)] = 838,
-  [SMALL_STATE(48)] = 864,
-  [SMALL_STATE(49)] = 890,
-  [SMALL_STATE(50)] = 916,
-  [SMALL_STATE(51)] = 942,
-  [SMALL_STATE(52)] = 968,
-  [SMALL_STATE(53)] = 994,
-  [SMALL_STATE(54)] = 1020,
-  [SMALL_STATE(55)] = 1046,
-  [SMALL_STATE(56)] = 1072,
-  [SMALL_STATE(57)] = 1093,
-  [SMALL_STATE(58)] = 1112,
-  [SMALL_STATE(59)] = 1131,
-  [SMALL_STATE(60)] = 1150,
-  [SMALL_STATE(61)] = 1169,
-  [SMALL_STATE(62)] = 1188,
-  [SMALL_STATE(63)] = 1209,
-  [SMALL_STATE(64)] = 1228,
-  [SMALL_STATE(65)] = 1249,
-  [SMALL_STATE(66)] = 1268,
-  [SMALL_STATE(67)] = 1287,
-  [SMALL_STATE(68)] = 1303,
-  [SMALL_STATE(69)] = 1319,
-  [SMALL_STATE(70)] = 1335,
-  [SMALL_STATE(71)] = 1351,
-  [SMALL_STATE(72)] = 1367,
-  [SMALL_STATE(73)] = 1383,
-  [SMALL_STATE(74)] = 1399,
-  [SMALL_STATE(75)] = 1408,
-  [SMALL_STATE(76)] = 1417,
-  [SMALL_STATE(77)] = 1426,
-  [SMALL_STATE(78)] = 1435,
-  [SMALL_STATE(79)] = 1444,
-  [SMALL_STATE(80)] = 1453,
-  [SMALL_STATE(81)] = 1464,
-  [SMALL_STATE(82)] = 1473,
-  [SMALL_STATE(83)] = 1482,
-  [SMALL_STATE(84)] = 1493,
-  [SMALL_STATE(85)] = 1502,
-  [SMALL_STATE(86)] = 1511,
-  [SMALL_STATE(87)] = 1520,
-  [SMALL_STATE(88)] = 1529,
-  [SMALL_STATE(89)] = 1538,
+  [SMALL_STATE(54)] = 0,
+  [SMALL_STATE(55)] = 99,
+  [SMALL_STATE(56)] = 198,
+  [SMALL_STATE(57)] = 297,
+  [SMALL_STATE(58)] = 396,
+  [SMALL_STATE(59)] = 495,
+  [SMALL_STATE(60)] = 594,
+  [SMALL_STATE(61)] = 693,
+  [SMALL_STATE(62)] = 744,
+  [SMALL_STATE(63)] = 795,
+  [SMALL_STATE(64)] = 841,
+  [SMALL_STATE(65)] = 884,
+  [SMALL_STATE(66)] = 920,
+  [SMALL_STATE(67)] = 954,
+  [SMALL_STATE(68)] = 980,
+  [SMALL_STATE(69)] = 1006,
+  [SMALL_STATE(70)] = 1032,
+  [SMALL_STATE(71)] = 1058,
+  [SMALL_STATE(72)] = 1084,
+  [SMALL_STATE(73)] = 1110,
+  [SMALL_STATE(74)] = 1136,
+  [SMALL_STATE(75)] = 1162,
+  [SMALL_STATE(76)] = 1188,
+  [SMALL_STATE(77)] = 1214,
+  [SMALL_STATE(78)] = 1240,
+  [SMALL_STATE(79)] = 1266,
+  [SMALL_STATE(80)] = 1292,
+  [SMALL_STATE(81)] = 1318,
+  [SMALL_STATE(82)] = 1344,
+  [SMALL_STATE(83)] = 1370,
+  [SMALL_STATE(84)] = 1396,
+  [SMALL_STATE(85)] = 1422,
+  [SMALL_STATE(86)] = 1448,
+  [SMALL_STATE(87)] = 1474,
+  [SMALL_STATE(88)] = 1500,
+  [SMALL_STATE(89)] = 1526,
   [SMALL_STATE(90)] = 1547,
-  [SMALL_STATE(91)] = 1556,
-  [SMALL_STATE(92)] = 1564,
-  [SMALL_STATE(93)] = 1572,
-  [SMALL_STATE(94)] = 1583,
-  [SMALL_STATE(95)] = 1594,
-  [SMALL_STATE(96)] = 1607,
-  [SMALL_STATE(97)] = 1618,
-  [SMALL_STATE(98)] = 1629,
-  [SMALL_STATE(99)] = 1640,
-  [SMALL_STATE(100)] = 1650,
-  [SMALL_STATE(101)] = 1660,
-  [SMALL_STATE(102)] = 1670,
-  [SMALL_STATE(103)] = 1680,
-  [SMALL_STATE(104)] = 1690,
-  [SMALL_STATE(105)] = 1700,
-  [SMALL_STATE(106)] = 1710,
-  [SMALL_STATE(107)] = 1720,
-  [SMALL_STATE(108)] = 1727,
-  [SMALL_STATE(109)] = 1732,
-  [SMALL_STATE(110)] = 1737,
-  [SMALL_STATE(111)] = 1744,
-  [SMALL_STATE(112)] = 1748,
-  [SMALL_STATE(113)] = 1752,
-  [SMALL_STATE(114)] = 1756,
-  [SMALL_STATE(115)] = 1760,
-  [SMALL_STATE(116)] = 1764,
-  [SMALL_STATE(117)] = 1768,
-  [SMALL_STATE(118)] = 1772,
-  [SMALL_STATE(119)] = 1776,
-  [SMALL_STATE(120)] = 1780,
-  [SMALL_STATE(121)] = 1784,
-  [SMALL_STATE(122)] = 1788,
-  [SMALL_STATE(123)] = 1792,
-  [SMALL_STATE(124)] = 1796,
-  [SMALL_STATE(125)] = 1800,
-  [SMALL_STATE(126)] = 1804,
-  [SMALL_STATE(127)] = 1808,
-  [SMALL_STATE(128)] = 1812,
-  [SMALL_STATE(129)] = 1816,
-  [SMALL_STATE(130)] = 1820,
-  [SMALL_STATE(131)] = 1824,
-  [SMALL_STATE(132)] = 1828,
-  [SMALL_STATE(133)] = 1832,
-  [SMALL_STATE(134)] = 1836,
-  [SMALL_STATE(135)] = 1840,
-  [SMALL_STATE(136)] = 1844,
-  [SMALL_STATE(137)] = 1848,
-  [SMALL_STATE(138)] = 1852,
-  [SMALL_STATE(139)] = 1856,
-  [SMALL_STATE(140)] = 1860,
-  [SMALL_STATE(141)] = 1864,
-  [SMALL_STATE(142)] = 1868,
-  [SMALL_STATE(143)] = 1872,
-  [SMALL_STATE(144)] = 1876,
-  [SMALL_STATE(145)] = 1880,
-  [SMALL_STATE(146)] = 1884,
-  [SMALL_STATE(147)] = 1888,
-  [SMALL_STATE(148)] = 1892,
-  [SMALL_STATE(149)] = 1896,
-  [SMALL_STATE(150)] = 1900,
-  [SMALL_STATE(151)] = 1904,
-  [SMALL_STATE(152)] = 1908,
-  [SMALL_STATE(153)] = 1912,
-  [SMALL_STATE(154)] = 1916,
-  [SMALL_STATE(155)] = 1920,
-  [SMALL_STATE(156)] = 1924,
-  [SMALL_STATE(157)] = 1928,
-  [SMALL_STATE(158)] = 1932,
-  [SMALL_STATE(159)] = 1936,
-  [SMALL_STATE(160)] = 1940,
-  [SMALL_STATE(161)] = 1944,
-  [SMALL_STATE(162)] = 1948,
-  [SMALL_STATE(163)] = 1952,
-  [SMALL_STATE(164)] = 1956,
+  [SMALL_STATE(91)] = 1566,
+  [SMALL_STATE(92)] = 1585,
+  [SMALL_STATE(93)] = 1604,
+  [SMALL_STATE(94)] = 1623,
+  [SMALL_STATE(95)] = 1644,
+  [SMALL_STATE(96)] = 1665,
+  [SMALL_STATE(97)] = 1686,
+  [SMALL_STATE(98)] = 1707,
+  [SMALL_STATE(99)] = 1726,
+  [SMALL_STATE(100)] = 1745,
+  [SMALL_STATE(101)] = 1764,
+  [SMALL_STATE(102)] = 1783,
+  [SMALL_STATE(103)] = 1802,
+  [SMALL_STATE(104)] = 1818,
+  [SMALL_STATE(105)] = 1834,
+  [SMALL_STATE(106)] = 1854,
+  [SMALL_STATE(107)] = 1870,
+  [SMALL_STATE(108)] = 1886,
+  [SMALL_STATE(109)] = 1902,
+  [SMALL_STATE(110)] = 1918,
+  [SMALL_STATE(111)] = 1934,
+  [SMALL_STATE(112)] = 1950,
+  [SMALL_STATE(113)] = 1966,
+  [SMALL_STATE(114)] = 1975,
+  [SMALL_STATE(115)] = 1984,
+  [SMALL_STATE(116)] = 1993,
+  [SMALL_STATE(117)] = 2002,
+  [SMALL_STATE(118)] = 2011,
+  [SMALL_STATE(119)] = 2020,
+  [SMALL_STATE(120)] = 2029,
+  [SMALL_STATE(121)] = 2038,
+  [SMALL_STATE(122)] = 2047,
+  [SMALL_STATE(123)] = 2056,
+  [SMALL_STATE(124)] = 2067,
+  [SMALL_STATE(125)] = 2076,
+  [SMALL_STATE(126)] = 2085,
+  [SMALL_STATE(127)] = 2096,
+  [SMALL_STATE(128)] = 2105,
+  [SMALL_STATE(129)] = 2114,
+  [SMALL_STATE(130)] = 2123,
+  [SMALL_STATE(131)] = 2131,
+  [SMALL_STATE(132)] = 2139,
+  [SMALL_STATE(133)] = 2152,
+  [SMALL_STATE(134)] = 2163,
+  [SMALL_STATE(135)] = 2174,
+  [SMALL_STATE(136)] = 2185,
+  [SMALL_STATE(137)] = 2196,
+  [SMALL_STATE(138)] = 2207,
+  [SMALL_STATE(139)] = 2217,
+  [SMALL_STATE(140)] = 2227,
+  [SMALL_STATE(141)] = 2237,
+  [SMALL_STATE(142)] = 2247,
+  [SMALL_STATE(143)] = 2257,
+  [SMALL_STATE(144)] = 2267,
+  [SMALL_STATE(145)] = 2277,
+  [SMALL_STATE(146)] = 2287,
+  [SMALL_STATE(147)] = 2294,
+  [SMALL_STATE(148)] = 2299,
+  [SMALL_STATE(149)] = 2306,
+  [SMALL_STATE(150)] = 2311,
+  [SMALL_STATE(151)] = 2315,
+  [SMALL_STATE(152)] = 2319,
+  [SMALL_STATE(153)] = 2323,
+  [SMALL_STATE(154)] = 2327,
+  [SMALL_STATE(155)] = 2331,
+  [SMALL_STATE(156)] = 2335,
+  [SMALL_STATE(157)] = 2339,
+  [SMALL_STATE(158)] = 2343,
+  [SMALL_STATE(159)] = 2347,
+  [SMALL_STATE(160)] = 2351,
+  [SMALL_STATE(161)] = 2355,
+  [SMALL_STATE(162)] = 2359,
+  [SMALL_STATE(163)] = 2363,
+  [SMALL_STATE(164)] = 2367,
+  [SMALL_STATE(165)] = 2371,
+  [SMALL_STATE(166)] = 2375,
+  [SMALL_STATE(167)] = 2379,
+  [SMALL_STATE(168)] = 2383,
+  [SMALL_STATE(169)] = 2387,
+  [SMALL_STATE(170)] = 2391,
+  [SMALL_STATE(171)] = 2395,
+  [SMALL_STATE(172)] = 2399,
+  [SMALL_STATE(173)] = 2403,
+  [SMALL_STATE(174)] = 2407,
+  [SMALL_STATE(175)] = 2411,
+  [SMALL_STATE(176)] = 2415,
+  [SMALL_STATE(177)] = 2419,
+  [SMALL_STATE(178)] = 2423,
+  [SMALL_STATE(179)] = 2427,
+  [SMALL_STATE(180)] = 2431,
+  [SMALL_STATE(181)] = 2435,
+  [SMALL_STATE(182)] = 2439,
+  [SMALL_STATE(183)] = 2443,
+  [SMALL_STATE(184)] = 2447,
+  [SMALL_STATE(185)] = 2451,
+  [SMALL_STATE(186)] = 2455,
+  [SMALL_STATE(187)] = 2459,
+  [SMALL_STATE(188)] = 2463,
+  [SMALL_STATE(189)] = 2467,
+  [SMALL_STATE(190)] = 2471,
+  [SMALL_STATE(191)] = 2475,
+  [SMALL_STATE(192)] = 2479,
+  [SMALL_STATE(193)] = 2483,
+  [SMALL_STATE(194)] = 2487,
+  [SMALL_STATE(195)] = 2491,
+  [SMALL_STATE(196)] = 2495,
+  [SMALL_STATE(197)] = 2499,
+  [SMALL_STATE(198)] = 2503,
+  [SMALL_STATE(199)] = 2507,
+  [SMALL_STATE(200)] = 2511,
+  [SMALL_STATE(201)] = 2515,
+  [SMALL_STATE(202)] = 2519,
+  [SMALL_STATE(203)] = 2523,
+  [SMALL_STATE(204)] = 2527,
+  [SMALL_STATE(205)] = 2531,
+  [SMALL_STATE(206)] = 2535,
+  [SMALL_STATE(207)] = 2539,
+  [SMALL_STATE(208)] = 2543,
 };
 
 static const TSParseActionEntry ts_parse_actions[] = {
   [0] = {.entry = {.count = 0, .reusable = false}},
   [1] = {.entry = {.count = 1, .reusable = false}}, RECOVER(),
   [3] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_source_file, 0, 0, 0),
-  [5] = {.entry = {.count = 1, .reusable = false}}, SHIFT(2),
-  [7] = {.entry = {.count = 1, .reusable = true}}, SHIFT(30),
-  [9] = {.entry = {.count = 1, .reusable = true}}, SHIFT(118),
-  [11] = {.entry = {.count = 1, .reusable = false}}, SHIFT(118),
-  [13] = {.entry = {.count = 1, .reusable = true}}, SHIFT(67),
-  [15] = {.entry = {.count = 1, .reusable = false}}, SHIFT(110),
-  [17] = {.entry = {.count = 1, .reusable = false}}, SHIFT(95),
-  [19] = {.entry = {.count = 1, .reusable = false}}, SHIFT(126),
-  [21] = {.entry = {.count = 1, .reusable = false}}, SHIFT(107),
-  [23] = {.entry = {.count = 1, .reusable = false}}, SHIFT(131),
-  [25] = {.entry = {.count = 1, .reusable = true}}, SHIFT(130),
-  [27] = {.entry = {.count = 1, .reusable = false}}, SHIFT(4),
-  [29] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 1, 0, 1),
-  [31] = {.entry = {.count = 1, .reusable = true}}, SHIFT(24),
-  [33] = {.entry = {.count = 1, .reusable = false}}, SHIFT(24),
-  [35] = {.entry = {.count = 1, .reusable = true}}, SHIFT(10),
-  [37] = {.entry = {.count = 1, .reusable = true}}, SHIFT(72),
-  [39] = {.entry = {.count = 1, .reusable = false}}, SHIFT(10),
-  [41] = {.entry = {.count = 1, .reusable = true}}, SHIFT(56),
-  [43] = {.entry = {.count = 1, .reusable = true}}, SHIFT(37),
-  [45] = {.entry = {.count = 1, .reusable = false}}, SHIFT(58),
-  [47] = {.entry = {.count = 1, .reusable = false}}, SHIFT(123),
-  [49] = {.entry = {.count = 1, .reusable = true}}, SHIFT(124),
-  [51] = {.entry = {.count = 1, .reusable = false}}, SHIFT(11),
-  [53] = {.entry = {.count = 1, .reusable = true}}, SHIFT(127),
-  [55] = {.entry = {.count = 1, .reusable = false}}, SHIFT(12),
-  [57] = {.entry = {.count = 1, .reusable = true}}, SHIFT(4),
-  [59] = {.entry = {.count = 1, .reusable = false}}, SHIFT(13),
-  [61] = {.entry = {.count = 1, .reusable = true}}, SHIFT(158),
-  [63] = {.entry = {.count = 1, .reusable = false}}, SHIFT(6),
-  [65] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 2, 0, 2),
-  [67] = {.entry = {.count = 1, .reusable = true}}, SHIFT(6),
-  [69] = {.entry = {.count = 1, .reusable = false}}, SHIFT(7),
-  [71] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 2, 0, 1),
-  [73] = {.entry = {.count = 1, .reusable = true}}, SHIFT(7),
-  [75] = {.entry = {.count = 1, .reusable = false}}, SHIFT(8),
-  [77] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 2, 0, 2),
-  [79] = {.entry = {.count = 1, .reusable = true}}, SHIFT(8),
-  [81] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 3, 0, 2),
-  [83] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(7),
-  [86] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0),
-  [88] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(24),
-  [91] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(24),
-  [94] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(10),
-  [97] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(72),
-  [100] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(10),
-  [103] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(56),
-  [106] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(37),
-  [109] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(58),
-  [112] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(123),
-  [115] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(124),
-  [118] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(11),
-  [121] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(127),
-  [124] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(12),
-  [127] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(7),
-  [130] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(13),
-  [133] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(158),
-  [136] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 3, 0, 2),
-  [138] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_1, 3, 0, 0),
-  [140] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_compound_string_depth_1, 3, 0, 0),
-  [142] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_operator, 1, 0, 0),
-  [144] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_operator, 1, 0, 0),
-  [146] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_control_keyword, 1, 0, 0),
-  [148] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_control_keyword, 1, 0, 0),
-  [150] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_type_keyword, 1, 0, 0),
-  [152] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_type_keyword, 1, 0, 0),
-  [154] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_builtin_variable, 1, 0, 0),
-  [156] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_builtin_variable, 1, 0, 0),
-  [158] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_string, 1, 0, 0),
-  [160] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_string, 1, 0, 0),
-  [162] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_double_string, 2, 0, 0),
-  [164] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_double_string, 2, 0, 0),
-  [166] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_1, 2, 0, 0),
-  [168] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_compound_string_depth_1, 2, 0, 0),
-  [170] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_global_macro, 2, 0, 0),
-  [172] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_global_macro, 2, 0, 0),
-  [174] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_factor_variable, 2, 0, 5),
-  [176] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_factor_variable, 2, 0, 5),
-  [178] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_comment, 1, 0, 0),
-  [180] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_comment, 1, 0, 0),
-  [182] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_global_macro, 3, 0, 0),
-  [184] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_global_macro, 3, 0, 0),
-  [186] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block_comment, 2, 0, 0),
-  [188] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_block_comment, 2, 0, 0),
-  [190] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_double_string, 3, 0, 0),
-  [192] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_double_string, 3, 0, 0),
-  [194] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_local_macro_depth_1, 3, 0, 0),
-  [196] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_1, 3, 0, 0),
-  [198] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_line_comment, 1, 0, 0),
-  [200] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_line_comment, 1, 0, 0),
-  [202] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block_comment, 3, 0, 0),
-  [204] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_block_comment, 3, 0, 0),
-  [206] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_line_comment, 3, 0, 0),
-  [208] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_line_comment, 3, 0, 0),
-  [210] = {.entry = {.count = 1, .reusable = true}}, SHIFT(33),
-  [212] = {.entry = {.count = 1, .reusable = false}}, SHIFT(151),
-  [214] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0),
-  [216] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(2),
-  [219] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(28),
-  [222] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(118),
-  [225] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(118),
-  [228] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(67),
-  [231] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(110),
-  [234] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(95),
-  [237] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(126),
-  [240] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(107),
-  [243] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(131),
-  [246] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(130),
-  [249] = {.entry = {.count = 1, .reusable = true}}, SHIFT(32),
-  [251] = {.entry = {.count = 1, .reusable = false}}, SHIFT(161),
-  [253] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_source_file, 1, 0, 0),
-  [255] = {.entry = {.count = 1, .reusable = true}}, SHIFT(28),
-  [257] = {.entry = {.count = 1, .reusable = true}}, SHIFT(29),
-  [259] = {.entry = {.count = 1, .reusable = false}}, SHIFT(134),
-  [261] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(2),
-  [264] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(32),
-  [267] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(118),
-  [270] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(118),
-  [273] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(67),
-  [276] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(110),
-  [279] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0),
-  [281] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(95),
-  [284] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(126),
-  [287] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(107),
-  [290] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(131),
-  [293] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(130),
-  [296] = {.entry = {.count = 1, .reusable = false}}, SHIFT(132),
-  [298] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym__line, 2, 0, 0),
-  [300] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__line, 2, 0, 0),
-  [302] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__program_line, 2, 0, 0),
-  [304] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym__program_line, 2, 0, 0),
-  [306] = {.entry = {.count = 1, .reusable = false}}, SHIFT(44),
-  [308] = {.entry = {.count = 1, .reusable = false}}, SHIFT(74),
-  [310] = {.entry = {.count = 1, .reusable = false}}, SHIFT(48),
-  [312] = {.entry = {.count = 1, .reusable = false}}, SHIFT(65),
-  [314] = {.entry = {.count = 1, .reusable = false}}, SHIFT(153),
-  [316] = {.entry = {.count = 1, .reusable = false}}, SHIFT(162),
-  [318] = {.entry = {.count = 1, .reusable = false}}, SHIFT(54),
-  [320] = {.entry = {.count = 1, .reusable = false}}, SHIFT(16),
-  [322] = {.entry = {.count = 1, .reusable = false}}, SHIFT(50),
-  [324] = {.entry = {.count = 1, .reusable = false}}, SHIFT(41),
-  [326] = {.entry = {.count = 1, .reusable = false}}, SHIFT(88),
-  [328] = {.entry = {.count = 1, .reusable = false}}, SHIFT(42),
-  [330] = {.entry = {.count = 1, .reusable = false}}, SHIFT(38),
-  [332] = {.entry = {.count = 1, .reusable = false}}, SHIFT(85),
-  [334] = {.entry = {.count = 1, .reusable = false}}, SHIFT(43),
-  [336] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(51),
-  [339] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0),
-  [341] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(40),
-  [344] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [347] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [350] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [353] = {.entry = {.count = 1, .reusable = false}}, SHIFT(90),
-  [355] = {.entry = {.count = 1, .reusable = false}}, SHIFT(36),
-  [357] = {.entry = {.count = 1, .reusable = false}}, SHIFT(76),
-  [359] = {.entry = {.count = 1, .reusable = false}}, SHIFT(46),
-  [361] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(38),
-  [364] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0),
-  [366] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(43),
-  [369] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [372] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [375] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [378] = {.entry = {.count = 1, .reusable = false}}, SHIFT(55),
-  [380] = {.entry = {.count = 1, .reusable = false}}, SHIFT(75),
-  [382] = {.entry = {.count = 1, .reusable = false}}, SHIFT(47),
-  [384] = {.entry = {.count = 1, .reusable = false}}, SHIFT(81),
-  [386] = {.entry = {.count = 1, .reusable = false}}, SHIFT(53),
-  [388] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(41),
-  [391] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0),
-  [393] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(46),
-  [396] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [399] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [402] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [405] = {.entry = {.count = 1, .reusable = false}}, SHIFT(78),
-  [407] = {.entry = {.count = 1, .reusable = false}}, SHIFT(49),
-  [409] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(44),
-  [412] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0),
-  [414] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(48),
-  [417] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [420] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [423] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [426] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(55),
-  [429] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0),
-  [431] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(49),
-  [434] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [437] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [440] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [443] = {.entry = {.count = 1, .reusable = false}}, SHIFT(9),
-  [445] = {.entry = {.count = 1, .reusable = false}}, SHIFT(89),
-  [447] = {.entry = {.count = 1, .reusable = false}}, SHIFT(39),
-  [449] = {.entry = {.count = 1, .reusable = false}}, SHIFT(51),
-  [451] = {.entry = {.count = 1, .reusable = false}}, SHIFT(77),
-  [453] = {.entry = {.count = 1, .reusable = false}}, SHIFT(40),
-  [455] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(54),
-  [458] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0),
-  [460] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(53),
-  [463] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(65),
-  [466] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(153),
-  [469] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(162),
-  [472] = {.entry = {.count = 1, .reusable = false}}, SHIFT(84),
-  [474] = {.entry = {.count = 1, .reusable = false}}, SHIFT(52),
-  [476] = {.entry = {.count = 1, .reusable = false}}, SHIFT(79),
-  [478] = {.entry = {.count = 1, .reusable = false}}, SHIFT(45),
-  [480] = {.entry = {.count = 1, .reusable = false}}, SHIFT(15),
-  [482] = {.entry = {.count = 1, .reusable = true}}, SHIFT(62),
-  [484] = {.entry = {.count = 1, .reusable = false}}, SHIFT(62),
-  [486] = {.entry = {.count = 1, .reusable = false}}, SHIFT(147),
-  [488] = {.entry = {.count = 1, .reusable = false}}, SHIFT(160),
-  [490] = {.entry = {.count = 1, .reusable = true}}, SHIFT(143),
-  [492] = {.entry = {.count = 1, .reusable = true}}, SHIFT(60),
-  [494] = {.entry = {.count = 1, .reusable = false}}, SHIFT(156),
-  [496] = {.entry = {.count = 1, .reusable = true}}, SHIFT(163),
-  [498] = {.entry = {.count = 1, .reusable = true}}, SHIFT(136),
-  [500] = {.entry = {.count = 1, .reusable = true}}, SHIFT(59),
-  [502] = {.entry = {.count = 1, .reusable = true}}, SHIFT(129),
-  [504] = {.entry = {.count = 1, .reusable = true}}, SHIFT(57),
-  [506] = {.entry = {.count = 1, .reusable = true}}, SHIFT(164),
-  [508] = {.entry = {.count = 1, .reusable = true}}, SHIFT(61),
-  [510] = {.entry = {.count = 1, .reusable = true}}, SHIFT(115),
-  [512] = {.entry = {.count = 1, .reusable = true}}, SHIFT(63),
-  [514] = {.entry = {.count = 1, .reusable = false}}, SHIFT(22),
-  [516] = {.entry = {.count = 1, .reusable = true}}, SHIFT(64),
-  [518] = {.entry = {.count = 1, .reusable = false}}, SHIFT(64),
-  [520] = {.entry = {.count = 1, .reusable = true}}, SHIFT(121),
-  [522] = {.entry = {.count = 1, .reusable = true}}, SHIFT(66),
-  [524] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0),
-  [526] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(64),
-  [529] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(64),
-  [532] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(147),
-  [535] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(160),
-  [538] = {.entry = {.count = 1, .reusable = true}}, SHIFT(149),
-  [540] = {.entry = {.count = 1, .reusable = true}}, SHIFT(154),
-  [542] = {.entry = {.count = 1, .reusable = false}}, SHIFT(68),
-  [544] = {.entry = {.count = 1, .reusable = false}}, SHIFT(69),
-  [546] = {.entry = {.count = 1, .reusable = false}}, SHIFT(120),
-  [548] = {.entry = {.count = 1, .reusable = false}}, SHIFT(71),
-  [550] = {.entry = {.count = 1, .reusable = false}}, SHIFT(148),
-  [552] = {.entry = {.count = 1, .reusable = false}}, SHIFT(70),
-  [554] = {.entry = {.count = 1, .reusable = false}}, SHIFT(91),
-  [556] = {.entry = {.count = 1, .reusable = false}}, SHIFT(92),
-  [558] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0), SHIFT_REPEAT(71),
-  [561] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0), SHIFT_REPEAT(69),
-  [564] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0),
-  [566] = {.entry = {.count = 1, .reusable = false}}, SHIFT(73),
-  [568] = {.entry = {.count = 1, .reusable = false}}, SHIFT(21),
-  [570] = {.entry = {.count = 1, .reusable = false}}, SHIFT(25),
-  [572] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_5, 3, 0, 0),
-  [574] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_6, 2, 0, 0),
-  [576] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_4, 3, 0, 0),
-  [578] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_2, 3, 0, 0),
-  [580] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_6, 3, 0, 0),
-  [582] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_2, 2, 0, 0),
-  [584] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_3, 3, 0, 0),
-  [586] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_4, 2, 0, 0),
-  [588] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_3, 2, 0, 0),
-  [590] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_5, 2, 0, 0),
-  [592] = {.entry = {.count = 1, .reusable = false}}, SHIFT(133),
-  [594] = {.entry = {.count = 1, .reusable = false}}, SHIFT(117),
-  [596] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat2, 2, 0, 0),
-  [598] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat2, 2, 0, 0), SHIFT_REPEAT(117),
-  [601] = {.entry = {.count = 1, .reusable = false}}, SHIFT(98),
-  [603] = {.entry = {.count = 1, .reusable = false}}, SHIFT(103),
-  [605] = {.entry = {.count = 1, .reusable = false}}, SHIFT(104),
-  [607] = {.entry = {.count = 1, .reusable = false}}, SHIFT(137),
-  [609] = {.entry = {.count = 1, .reusable = false}}, SHIFT(152),
-  [611] = {.entry = {.count = 1, .reusable = false}}, SHIFT(114),
-  [613] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat1, 2, 0, 0),
-  [615] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_mata_block_repeat1, 2, 0, 0), SHIFT_REPEAT(99),
-  [618] = {.entry = {.count = 1, .reusable = true}}, SHIFT(99),
-  [620] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 2, 0, 4), SHIFT_REPEAT(108),
-  [623] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 2, 0, 4),
-  [625] = {.entry = {.count = 1, .reusable = true}}, SHIFT(108),
-  [627] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 2, 0, 3),
-  [629] = {.entry = {.count = 1, .reusable = false}}, SHIFT(96),
-  [631] = {.entry = {.count = 1, .reusable = false}}, SHIFT(105),
-  [633] = {.entry = {.count = 1, .reusable = true}}, SHIFT(106),
-  [635] = {.entry = {.count = 1, .reusable = true}}, SHIFT(100),
-  [637] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 1, 0, 1),
-  [639] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__mata_line, 2, 0, 0),
-  [641] = {.entry = {.count = 1, .reusable = false}}, SHIFT(31),
-  [643] = {.entry = {.count = 1, .reusable = false}}, SHIFT(128),
-  [645] = {.entry = {.count = 1, .reusable = true}},  ACCEPT_INPUT(),
-  [647] = {.entry = {.count = 1, .reusable = true}}, SHIFT(35),
-  [649] = {.entry = {.count = 1, .reusable = true}}, SHIFT(5),
-  [651] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 3, 0, 0),
-  [653] = {.entry = {.count = 1, .reusable = true}}, SHIFT(122),
-  [655] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_4, 3, 0, 0),
-  [657] = {.entry = {.count = 1, .reusable = true}}, SHIFT(109),
-  [659] = {.entry = {.count = 1, .reusable = true}}, SHIFT(146),
-  [661] = {.entry = {.count = 1, .reusable = true}}, SHIFT(125),
-  [663] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_5, 3, 0, 0),
-  [665] = {.entry = {.count = 1, .reusable = true}}, SHIFT(17),
-  [667] = {.entry = {.count = 1, .reusable = true}}, SHIFT(138),
-  [669] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_6, 3, 0, 0),
-  [671] = {.entry = {.count = 1, .reusable = true}}, SHIFT(3),
-  [673] = {.entry = {.count = 1, .reusable = true}}, SHIFT(18),
-  [675] = {.entry = {.count = 1, .reusable = true}}, SHIFT(27),
-  [677] = {.entry = {.count = 1, .reusable = true}}, SHIFT(145),
-  [679] = {.entry = {.count = 1, .reusable = true}}, SHIFT(119),
-  [681] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_prefix, 1, 0, 0),
-  [683] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 5, 0, 6),
-  [685] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 5, 0, 0),
-  [687] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 3, 0, 2),
-  [689] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_3, 3, 0, 0),
-  [691] = {.entry = {.count = 1, .reusable = true}}, SHIFT(23),
-  [693] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 2, 0, 0),
-  [695] = {.entry = {.count = 1, .reusable = true}}, SHIFT(20),
-  [697] = {.entry = {.count = 1, .reusable = true}}, SHIFT(34),
-  [699] = {.entry = {.count = 1, .reusable = true}}, SHIFT(135),
-  [701] = {.entry = {.count = 1, .reusable = true}}, SHIFT(26),
-  [703] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_2, 3, 0, 0),
-  [705] = {.entry = {.count = 1, .reusable = true}}, SHIFT(80),
-  [707] = {.entry = {.count = 1, .reusable = true}}, SHIFT(82),
-  [709] = {.entry = {.count = 1, .reusable = true}}, SHIFT(83),
-  [711] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 4, 0, 6),
-  [713] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 4, 0, 0),
-  [715] = {.entry = {.count = 1, .reusable = true}}, SHIFT(86),
-  [717] = {.entry = {.count = 1, .reusable = true}}, SHIFT(139),
-  [719] = {.entry = {.count = 1, .reusable = true}}, SHIFT(87),
-  [721] = {.entry = {.count = 1, .reusable = true}}, SHIFT(141),
-  [723] = {.entry = {.count = 1, .reusable = true}}, SHIFT(142),
-  [725] = {.entry = {.count = 1, .reusable = true}}, SHIFT(144),
-  [727] = {.entry = {.count = 1, .reusable = true}}, SHIFT(150),
-  [729] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 4, 0, 2),
-  [731] = {.entry = {.count = 1, .reusable = true}}, SHIFT(155),
-  [733] = {.entry = {.count = 1, .reusable = true}}, SHIFT(157),
-  [735] = {.entry = {.count = 1, .reusable = true}}, SHIFT(116),
+  [5] = {.entry = {.count = 1, .reusable = false}}, SHIFT(7),
+  [7] = {.entry = {.count = 1, .reusable = true}}, SHIFT(55),
+  [9] = {.entry = {.count = 1, .reusable = true}}, SHIFT(159),
+  [11] = {.entry = {.count = 1, .reusable = false}}, SHIFT(159),
+  [13] = {.entry = {.count = 1, .reusable = true}}, SHIFT(112),
+  [15] = {.entry = {.count = 1, .reusable = false}}, SHIFT(146),
+  [17] = {.entry = {.count = 1, .reusable = false}}, SHIFT(132),
+  [19] = {.entry = {.count = 1, .reusable = false}}, SHIFT(176),
+  [21] = {.entry = {.count = 1, .reusable = false}}, SHIFT(148),
+  [23] = {.entry = {.count = 1, .reusable = false}}, SHIFT(19),
+  [25] = {.entry = {.count = 1, .reusable = false}}, SHIFT(66),
+  [27] = {.entry = {.count = 1, .reusable = true}}, SHIFT(178),
+  [29] = {.entry = {.count = 1, .reusable = false}}, SHIFT(5),
+  [31] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_file_command, 2, 0, 1),
+  [33] = {.entry = {.count = 1, .reusable = true}}, SHIFT(32),
+  [35] = {.entry = {.count = 1, .reusable = false}}, SHIFT(32),
+  [37] = {.entry = {.count = 1, .reusable = false}}, SHIFT(20),
+  [39] = {.entry = {.count = 1, .reusable = true}}, SHIFT(111),
+  [41] = {.entry = {.count = 1, .reusable = true}}, SHIFT(94),
+  [43] = {.entry = {.count = 1, .reusable = true}}, SHIFT(84),
+  [45] = {.entry = {.count = 1, .reusable = false}}, SHIFT(100),
+  [47] = {.entry = {.count = 1, .reusable = false}}, SHIFT(208),
+  [49] = {.entry = {.count = 1, .reusable = true}}, SHIFT(201),
+  [51] = {.entry = {.count = 1, .reusable = false}}, SHIFT(21),
+  [53] = {.entry = {.count = 1, .reusable = false}}, SHIFT(105),
+  [55] = {.entry = {.count = 1, .reusable = false}}, SHIFT(179),
+  [57] = {.entry = {.count = 1, .reusable = false}}, SHIFT(22),
+  [59] = {.entry = {.count = 1, .reusable = false}}, SHIFT(23),
+  [61] = {.entry = {.count = 1, .reusable = true}}, SHIFT(202),
+  [63] = {.entry = {.count = 1, .reusable = false}}, SHIFT(2),
+  [65] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_file_command, 1, 0, 1),
+  [67] = {.entry = {.count = 1, .reusable = false}}, SHIFT(6),
+  [69] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_file_command, 2, 0, 2),
+  [71] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(5),
+  [74] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0),
+  [76] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(32),
+  [79] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(32),
+  [82] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(20),
+  [85] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(111),
+  [88] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(94),
+  [91] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(84),
+  [94] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(100),
+  [97] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(208),
+  [100] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(201),
+  [103] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(21),
+  [106] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(105),
+  [109] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(179),
+  [112] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(22),
+  [115] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(23),
+  [118] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat2, 2, 0, 0), SHIFT_REPEAT(202),
+  [121] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_file_command, 3, 0, 2),
+  [123] = {.entry = {.count = 1, .reusable = false}}, SHIFT(8),
+  [125] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 1, 0, 1),
+  [127] = {.entry = {.count = 1, .reusable = true}}, SHIFT(41),
+  [129] = {.entry = {.count = 1, .reusable = false}}, SHIFT(41),
+  [131] = {.entry = {.count = 1, .reusable = true}}, SHIFT(45),
+  [133] = {.entry = {.count = 1, .reusable = true}}, SHIFT(109),
+  [135] = {.entry = {.count = 1, .reusable = false}}, SHIFT(45),
+  [137] = {.entry = {.count = 1, .reusable = true}}, SHIFT(89),
+  [139] = {.entry = {.count = 1, .reusable = true}}, SHIFT(75),
+  [141] = {.entry = {.count = 1, .reusable = false}}, SHIFT(91),
+  [143] = {.entry = {.count = 1, .reusable = false}}, SHIFT(160),
+  [145] = {.entry = {.count = 1, .reusable = true}}, SHIFT(166),
+  [147] = {.entry = {.count = 1, .reusable = false}}, SHIFT(48),
+  [149] = {.entry = {.count = 1, .reusable = true}}, SHIFT(175),
+  [151] = {.entry = {.count = 1, .reusable = false}}, SHIFT(38),
+  [153] = {.entry = {.count = 1, .reusable = true}}, SHIFT(8),
+  [155] = {.entry = {.count = 1, .reusable = false}}, SHIFT(40),
+  [157] = {.entry = {.count = 1, .reusable = true}}, SHIFT(199),
+  [159] = {.entry = {.count = 1, .reusable = false}}, SHIFT(11),
+  [161] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 2, 0, 1),
+  [163] = {.entry = {.count = 1, .reusable = true}}, SHIFT(11),
+  [165] = {.entry = {.count = 1, .reusable = false}}, SHIFT(10),
+  [167] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 2, 0, 2),
+  [169] = {.entry = {.count = 1, .reusable = true}}, SHIFT(10),
+  [171] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 3, 0, 2),
+  [173] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(11),
+  [176] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0),
+  [178] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(41),
+  [181] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(41),
+  [184] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(45),
+  [187] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(109),
+  [190] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(45),
+  [193] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(89),
+  [196] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(75),
+  [199] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(91),
+  [202] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(160),
+  [205] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(166),
+  [208] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(48),
+  [211] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(105),
+  [214] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(175),
+  [217] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(38),
+  [220] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(11),
+  [223] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(40),
+  [226] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(199),
+  [229] = {.entry = {.count = 1, .reusable = false}}, SHIFT(13),
+  [231] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 2, 0, 2),
+  [233] = {.entry = {.count = 1, .reusable = true}}, SHIFT(13),
+  [235] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_command, 3, 0, 2),
+  [237] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_using_clause, 2, 0, 0),
+  [239] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_using_clause, 2, 0, 0),
+  [241] = {.entry = {.count = 1, .reusable = false}}, SHIFT(15),
+  [243] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_using_clause, 3, 0, 0),
+  [245] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_using_clause, 3, 0, 0),
+  [247] = {.entry = {.count = 1, .reusable = false}}, SHIFT(16),
+  [249] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_using_clause_repeat1, 2, 0, 0),
+  [251] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_using_clause_repeat1, 2, 0, 0),
+  [253] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_using_clause_repeat1, 2, 0, 0), SHIFT_REPEAT(16),
+  [256] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_1, 3, 0, 0),
+  [258] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_compound_string_depth_1, 3, 0, 0),
+  [260] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block_comment, 3, 0, 0),
+  [262] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_block_comment, 3, 0, 0),
+  [264] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__file_command_name, 1, 0, 0),
+  [266] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym__file_command_name, 1, 0, 0),
+  [268] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_operator, 1, 0, 0),
+  [270] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_operator, 1, 0, 0),
+  [272] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_control_keyword, 1, 0, 0),
+  [274] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_control_keyword, 1, 0, 0),
+  [276] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_type_keyword, 1, 0, 0),
+  [278] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_type_keyword, 1, 0, 0),
+  [280] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_builtin_variable, 1, 0, 0),
+  [282] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_builtin_variable, 1, 0, 0),
+  [284] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_string, 1, 0, 0),
+  [286] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_string, 1, 0, 0),
+  [288] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_double_string, 2, 0, 0),
+  [290] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_double_string, 2, 0, 0),
+  [292] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_1, 2, 0, 0),
+  [294] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_compound_string_depth_1, 2, 0, 0),
+  [296] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_global_macro, 2, 0, 0),
+  [298] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_global_macro, 2, 0, 0),
+  [300] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_factor_variable, 2, 0, 5),
+  [302] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_factor_variable, 2, 0, 5),
+  [304] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_double_string, 3, 0, 0),
+  [306] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_double_string, 3, 0, 0),
+  [308] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_local_macro_depth_1, 3, 0, 0),
+  [310] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_1, 3, 0, 0),
+  [312] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_global_macro, 3, 0, 0),
+  [314] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_global_macro, 3, 0, 0),
+  [316] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_line_comment, 1, 0, 0),
+  [318] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_line_comment, 1, 0, 0),
+  [320] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_comment, 1, 0, 0),
+  [322] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_comment, 1, 0, 0),
+  [324] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_line_comment, 3, 0, 0),
+  [326] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_line_comment, 3, 0, 0),
+  [328] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block_comment, 2, 0, 0),
+  [330] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_block_comment, 2, 0, 0),
+  [332] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0),
+  [334] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(7),
+  [337] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(54),
+  [340] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(159),
+  [343] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(159),
+  [346] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(112),
+  [349] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(146),
+  [352] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(132),
+  [355] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(176),
+  [358] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(148),
+  [361] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(19),
+  [364] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(66),
+  [367] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_source_file_repeat1, 2, 0, 0), SHIFT_REPEAT(178),
+  [370] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_source_file, 1, 0, 0),
+  [372] = {.entry = {.count = 1, .reusable = true}}, SHIFT(54),
+  [374] = {.entry = {.count = 1, .reusable = true}}, SHIFT(58),
+  [376] = {.entry = {.count = 1, .reusable = false}}, SHIFT(200),
+  [378] = {.entry = {.count = 1, .reusable = true}}, SHIFT(60),
+  [380] = {.entry = {.count = 1, .reusable = false}}, SHIFT(192),
+  [382] = {.entry = {.count = 1, .reusable = true}}, SHIFT(59),
+  [384] = {.entry = {.count = 1, .reusable = false}}, SHIFT(151),
+  [386] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(7),
+  [389] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(59),
+  [392] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(159),
+  [395] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(159),
+  [398] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(112),
+  [401] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(146),
+  [404] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0),
+  [406] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(132),
+  [409] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(176),
+  [412] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(148),
+  [415] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(19),
+  [418] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(66),
+  [421] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_program_definition_repeat1, 2, 0, 0), SHIFT_REPEAT(178),
+  [424] = {.entry = {.count = 1, .reusable = false}}, SHIFT(205),
+  [426] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym__line, 2, 0, 0),
+  [428] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__line, 2, 0, 0),
+  [430] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__program_line, 2, 0, 0),
+  [432] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym__program_line, 2, 0, 0),
+  [434] = {.entry = {.count = 1, .reusable = true}}, SHIFT(19),
+  [436] = {.entry = {.count = 1, .reusable = true}}, SHIFT(66),
+  [438] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_file_command_repeat1, 2, 0, 0),
+  [440] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_file_command_repeat1, 2, 0, 0),
+  [442] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_file_command_repeat1, 2, 0, 0), SHIFT_REPEAT(66),
+  [445] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_file_command_repeat1, 2, 0, 0), SHIFT_REPEAT(66),
+  [448] = {.entry = {.count = 1, .reusable = false}}, SHIFT(12),
+  [450] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_file_command_repeat1, 1, 0, 0),
+  [452] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_prefix, 1, 0, 0),
+  [454] = {.entry = {.count = 1, .reusable = false}}, SHIFT(83),
+  [456] = {.entry = {.count = 1, .reusable = false}}, SHIFT(118),
+  [458] = {.entry = {.count = 1, .reusable = false}}, SHIFT(68),
+  [460] = {.entry = {.count = 1, .reusable = false}}, SHIFT(101),
+  [462] = {.entry = {.count = 1, .reusable = false}}, SHIFT(194),
+  [464] = {.entry = {.count = 1, .reusable = false}}, SHIFT(206),
+  [466] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(83),
+  [469] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0),
+  [471] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(68),
+  [474] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [477] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [480] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_5_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [483] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(86),
+  [486] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0),
+  [488] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(69),
+  [491] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [494] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [497] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_6_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [500] = {.entry = {.count = 1, .reusable = false}}, SHIFT(73),
+  [502] = {.entry = {.count = 1, .reusable = false}}, SHIFT(52),
+  [504] = {.entry = {.count = 1, .reusable = false}}, SHIFT(74),
+  [506] = {.entry = {.count = 1, .reusable = false}}, SHIFT(76),
+  [508] = {.entry = {.count = 1, .reusable = false}}, SHIFT(113),
+  [510] = {.entry = {.count = 1, .reusable = false}}, SHIFT(77),
+  [512] = {.entry = {.count = 1, .reusable = false}}, SHIFT(71),
+  [514] = {.entry = {.count = 1, .reusable = false}}, SHIFT(120),
+  [516] = {.entry = {.count = 1, .reusable = false}}, SHIFT(78),
+  [518] = {.entry = {.count = 1, .reusable = false}}, SHIFT(127),
+  [520] = {.entry = {.count = 1, .reusable = false}}, SHIFT(72),
+  [522] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(73),
+  [525] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0),
+  [527] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(74),
+  [530] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [533] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [536] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_1_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [539] = {.entry = {.count = 1, .reusable = false}}, SHIFT(43),
+  [541] = {.entry = {.count = 1, .reusable = false}}, SHIFT(70),
+  [543] = {.entry = {.count = 1, .reusable = false}}, SHIFT(80),
+  [545] = {.entry = {.count = 1, .reusable = false}}, SHIFT(129),
+  [547] = {.entry = {.count = 1, .reusable = false}}, SHIFT(81),
+  [549] = {.entry = {.count = 1, .reusable = false}}, SHIFT(114),
+  [551] = {.entry = {.count = 1, .reusable = false}}, SHIFT(82),
+  [553] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(71),
+  [556] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0),
+  [558] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(78),
+  [561] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [564] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [567] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_2_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [570] = {.entry = {.count = 1, .reusable = false}}, SHIFT(86),
+  [572] = {.entry = {.count = 1, .reusable = false}}, SHIFT(119),
+  [574] = {.entry = {.count = 1, .reusable = false}}, SHIFT(69),
+  [576] = {.entry = {.count = 1, .reusable = false}}, SHIFT(115),
+  [578] = {.entry = {.count = 1, .reusable = false}}, SHIFT(67),
+  [580] = {.entry = {.count = 1, .reusable = false}}, SHIFT(116),
+  [582] = {.entry = {.count = 1, .reusable = false}}, SHIFT(88),
+  [584] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(76),
+  [587] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0),
+  [589] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(82),
+  [592] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [595] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [598] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_3_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [601] = {.entry = {.count = 1, .reusable = false}}, SHIFT(117),
+  [603] = {.entry = {.count = 1, .reusable = false}}, SHIFT(79),
+  [605] = {.entry = {.count = 1, .reusable = false}}, SHIFT(26),
+  [607] = {.entry = {.count = 1, .reusable = false}}, SHIFT(85),
+  [609] = {.entry = {.count = 1, .reusable = false}}, SHIFT(17),
+  [611] = {.entry = {.count = 1, .reusable = false}}, SHIFT(122),
+  [613] = {.entry = {.count = 1, .reusable = false}}, SHIFT(87),
+  [615] = {.entry = {.count = 1, .reusable = false}}, SHIFT(121),
+  [617] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(80),
+  [620] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0),
+  [622] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(88),
+  [625] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(101),
+  [628] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(194),
+  [631] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_compound_string_depth_4_repeat1, 2, 0, 0), SHIFT_REPEAT(206),
+  [634] = {.entry = {.count = 1, .reusable = false}}, SHIFT(37),
+  [636] = {.entry = {.count = 1, .reusable = true}}, SHIFT(95),
+  [638] = {.entry = {.count = 1, .reusable = false}}, SHIFT(95),
+  [640] = {.entry = {.count = 1, .reusable = false}}, SHIFT(188),
+  [642] = {.entry = {.count = 1, .reusable = false}}, SHIFT(204),
+  [644] = {.entry = {.count = 1, .reusable = true}}, SHIFT(187),
+  [646] = {.entry = {.count = 1, .reusable = true}}, SHIFT(99),
+  [648] = {.entry = {.count = 1, .reusable = false}}, SHIFT(197),
+  [650] = {.entry = {.count = 1, .reusable = true}}, SHIFT(207),
+  [652] = {.entry = {.count = 1, .reusable = true}}, SHIFT(164),
+  [654] = {.entry = {.count = 1, .reusable = true}}, SHIFT(90),
+  [656] = {.entry = {.count = 1, .reusable = true}}, SHIFT(153),
+  [658] = {.entry = {.count = 1, .reusable = true}}, SHIFT(93),
+  [660] = {.entry = {.count = 1, .reusable = true}}, SHIFT(161),
+  [662] = {.entry = {.count = 1, .reusable = true}}, SHIFT(102),
+  [664] = {.entry = {.count = 1, .reusable = false}}, SHIFT(25),
+  [666] = {.entry = {.count = 1, .reusable = true}}, SHIFT(96),
+  [668] = {.entry = {.count = 1, .reusable = false}}, SHIFT(96),
+  [670] = {.entry = {.count = 1, .reusable = false}}, SHIFT(51),
+  [672] = {.entry = {.count = 1, .reusable = true}}, SHIFT(97),
+  [674] = {.entry = {.count = 1, .reusable = false}}, SHIFT(97),
+  [676] = {.entry = {.count = 1, .reusable = false}}, SHIFT(29),
+  [678] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0),
+  [680] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(97),
+  [683] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(97),
+  [686] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(188),
+  [689] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_double_string_repeat1, 2, 0, 0), SHIFT_REPEAT(204),
+  [692] = {.entry = {.count = 1, .reusable = true}}, SHIFT(157),
+  [694] = {.entry = {.count = 1, .reusable = true}}, SHIFT(92),
+  [696] = {.entry = {.count = 1, .reusable = true}}, SHIFT(156),
+  [698] = {.entry = {.count = 1, .reusable = true}}, SHIFT(98),
+  [700] = {.entry = {.count = 1, .reusable = true}}, SHIFT(182),
+  [702] = {.entry = {.count = 1, .reusable = true}}, SHIFT(190),
+  [704] = {.entry = {.count = 1, .reusable = true}}, SHIFT(195),
+  [706] = {.entry = {.count = 1, .reusable = false}}, SHIFT(108),
+  [708] = {.entry = {.count = 1, .reusable = false}}, SHIFT(106),
+  [710] = {.entry = {.count = 1, .reusable = false}}, SHIFT(180),
+  [712] = {.entry = {.count = 1, .reusable = false}}, SHIFT(18),
+  [714] = {.entry = {.count = 1, .reusable = false}}, SHIFT(14),
+  [716] = {.entry = {.count = 1, .reusable = true}}, SHIFT(14),
+  [718] = {.entry = {.count = 1, .reusable = false}}, SHIFT(107),
+  [720] = {.entry = {.count = 1, .reusable = false}}, SHIFT(130),
+  [722] = {.entry = {.count = 1, .reusable = false}}, SHIFT(131),
+  [724] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0), SHIFT_REPEAT(108),
+  [727] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0), SHIFT_REPEAT(106),
+  [730] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_block_comment_repeat1, 2, 0, 0),
+  [732] = {.entry = {.count = 1, .reusable = false}}, SHIFT(110),
+  [734] = {.entry = {.count = 1, .reusable = false}}, SHIFT(50),
+  [736] = {.entry = {.count = 1, .reusable = false}}, SHIFT(49),
+  [738] = {.entry = {.count = 1, .reusable = false}}, SHIFT(104),
+  [740] = {.entry = {.count = 1, .reusable = false}}, SHIFT(35),
+  [742] = {.entry = {.count = 1, .reusable = false}}, SHIFT(103),
+  [744] = {.entry = {.count = 1, .reusable = false}}, SHIFT(193),
+  [746] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_3, 2, 0, 0),
+  [748] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_3, 3, 0, 0),
+  [750] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_5, 2, 0, 0),
+  [752] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_4, 3, 0, 0),
+  [754] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_6, 2, 0, 0),
+  [756] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_5, 3, 0, 0),
+  [758] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_6, 3, 0, 0),
+  [760] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_2, 3, 0, 0),
+  [762] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_2, 2, 0, 0),
+  [764] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_compound_string_depth_4, 2, 0, 0),
+  [766] = {.entry = {.count = 1, .reusable = false}}, SHIFT(135),
+  [768] = {.entry = {.count = 1, .reusable = false}}, SHIFT(140),
+  [770] = {.entry = {.count = 1, .reusable = false}}, SHIFT(144),
+  [772] = {.entry = {.count = 1, .reusable = false}}, SHIFT(189),
+  [774] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat2, 2, 0, 0),
+  [776] = {.entry = {.count = 2, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat2, 2, 0, 0), SHIFT_REPEAT(168),
+  [779] = {.entry = {.count = 1, .reusable = false}}, SHIFT(198),
+  [781] = {.entry = {.count = 1, .reusable = false}}, SHIFT(168),
+  [783] = {.entry = {.count = 1, .reusable = false}}, SHIFT(173),
+  [785] = {.entry = {.count = 1, .reusable = false}}, SHIFT(154),
+  [787] = {.entry = {.count = 1, .reusable = true}}, SHIFT(142),
+  [789] = {.entry = {.count = 1, .reusable = true}}, SHIFT(149),
+  [791] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_macro_definition, 2, 0, 3),
+  [793] = {.entry = {.count = 1, .reusable = false}}, SHIFT(137),
+  [795] = {.entry = {.count = 1, .reusable = false}}, SHIFT(145),
+  [797] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 2, 0, 4), SHIFT_REPEAT(149),
+  [800] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 2, 0, 4),
+  [802] = {.entry = {.count = 1, .reusable = false}}, REDUCE(aux_sym_mata_block_repeat1, 2, 0, 0),
+  [804] = {.entry = {.count = 2, .reusable = true}}, REDUCE(aux_sym_mata_block_repeat1, 2, 0, 0), SHIFT_REPEAT(142),
+  [807] = {.entry = {.count = 1, .reusable = true}}, SHIFT(143),
+  [809] = {.entry = {.count = 1, .reusable = true}}, SHIFT(138),
+  [811] = {.entry = {.count = 1, .reusable = false}}, SHIFT(56),
+  [813] = {.entry = {.count = 1, .reusable = false}}, SHIFT(152),
+  [815] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__mata_line, 2, 0, 0),
+  [817] = {.entry = {.count = 1, .reusable = true}}, REDUCE(aux_sym_macro_definition_repeat2, 1, 0, 1),
+  [819] = {.entry = {.count = 1, .reusable = true}}, SHIFT(172),
+  [821] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 4, 0, 2),
+  [823] = {.entry = {.count = 1, .reusable = true}}, SHIFT(57),
+  [825] = {.entry = {.count = 1, .reusable = true}}, SHIFT(162),
+  [827] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 4, 0, 0),
+  [829] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_4, 3, 0, 0),
+  [831] = {.entry = {.count = 1, .reusable = true}}, SHIFT(158),
+  [833] = {.entry = {.count = 1, .reusable = true}}, SHIFT(155),
+  [835] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_3, 3, 0, 0),
+  [837] = {.entry = {.count = 1, .reusable = true}}, SHIFT(44),
+  [839] = {.entry = {.count = 1, .reusable = true}}, SHIFT(165),
+  [841] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_5, 3, 0, 0),
+  [843] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_2, 3, 0, 0),
+  [845] = {.entry = {.count = 1, .reusable = true}}, SHIFT(53),
+  [847] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_local_macro_depth_6, 3, 0, 0),
+  [849] = {.entry = {.count = 1, .reusable = true}}, SHIFT(167),
+  [851] = {.entry = {.count = 1, .reusable = true}}, SHIFT(36),
+  [853] = {.entry = {.count = 1, .reusable = true}}, SHIFT(147),
+  [855] = {.entry = {.count = 1, .reusable = true}},  ACCEPT_INPUT(),
+  [857] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 3, 0, 0),
+  [859] = {.entry = {.count = 1, .reusable = true}}, SHIFT(42),
+  [861] = {.entry = {.count = 1, .reusable = true}}, SHIFT(46),
+  [863] = {.entry = {.count = 1, .reusable = true}}, SHIFT(9),
+  [865] = {.entry = {.count = 1, .reusable = true}}, SHIFT(184),
+  [867] = {.entry = {.count = 1, .reusable = true}}, SHIFT(28),
+  [869] = {.entry = {.count = 1, .reusable = true}}, SHIFT(61),
+  [871] = {.entry = {.count = 1, .reusable = true}}, SHIFT(30),
+  [873] = {.entry = {.count = 1, .reusable = true}}, SHIFT(31),
+  [875] = {.entry = {.count = 1, .reusable = true}}, SHIFT(177),
+  [877] = {.entry = {.count = 1, .reusable = true}}, SHIFT(34),
+  [879] = {.entry = {.count = 1, .reusable = true}}, SHIFT(163),
+  [881] = {.entry = {.count = 1, .reusable = true}}, SHIFT(123),
+  [883] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 2, 0, 0),
+  [885] = {.entry = {.count = 1, .reusable = true}}, SHIFT(125),
+  [887] = {.entry = {.count = 1, .reusable = true}}, SHIFT(126),
+  [889] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 4, 0, 6),
+  [891] = {.entry = {.count = 1, .reusable = true}}, SHIFT(128),
+  [893] = {.entry = {.count = 1, .reusable = true}}, SHIFT(169),
+  [895] = {.entry = {.count = 1, .reusable = true}}, SHIFT(124),
+  [897] = {.entry = {.count = 1, .reusable = true}}, SHIFT(171),
+  [899] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_mata_block, 5, 0, 0),
+  [901] = {.entry = {.count = 1, .reusable = true}}, SHIFT(174),
+  [903] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 3, 0, 2),
+  [905] = {.entry = {.count = 1, .reusable = true}}, SHIFT(183),
+  [907] = {.entry = {.count = 1, .reusable = true}}, SHIFT(185),
+  [909] = {.entry = {.count = 1, .reusable = true}}, SHIFT(62),
+  [911] = {.entry = {.count = 1, .reusable = true}}, SHIFT(191),
+  [913] = {.entry = {.count = 1, .reusable = true}}, REDUCE(sym_program_definition, 5, 0, 6),
+  [915] = {.entry = {.count = 1, .reusable = true}}, SHIFT(196),
+  [917] = {.entry = {.count = 1, .reusable = true}}, SHIFT(150),
+  [919] = {.entry = {.count = 1, .reusable = true}}, SHIFT(27),
 };
 
 enum ts_external_scanner_symbol_identifiers {

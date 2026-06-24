@@ -57,6 +57,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "file_command"
+        },
+        {
+          "type": "SYMBOL",
           "name": "command"
         }
       ]
@@ -80,33 +84,41 @@
         {
           "type": "TOKEN",
           "content": {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "STRING",
-                "value": "//"
-              },
-              {
-                "type": "PATTERN",
-                "value": "[^\\r\\n]*"
-              }
-            ]
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "//"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "[^\\r\\n]*"
+                }
+              ]
+            }
           }
         },
         {
           "type": "TOKEN",
           "content": {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "STRING",
-                "value": "///"
-              },
-              {
-                "type": "PATTERN",
-                "value": "[^\\r\\n]*"
-              }
-            ]
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "///"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "[^\\r\\n]*"
+                }
+              ]
+            }
           }
         },
         {
@@ -132,8 +144,15 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "/*"
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "/*"
+            }
+          }
         },
         {
           "type": "REPEAT",
@@ -1035,6 +1054,136 @@
         }
       ]
     },
+    "file_command": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "prefix"
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_file_command_name"
+            },
+            "named": true,
+            "value": "identifier"
+          }
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_file_argument"
+          }
+        }
+      ]
+    },
+    "_file_command_name": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "use"
+        },
+        {
+          "type": "STRING",
+          "value": "sysuse"
+        },
+        {
+          "type": "STRING",
+          "value": "webuse"
+        },
+        {
+          "type": "STRING",
+          "value": "save"
+        },
+        {
+          "type": "STRING",
+          "value": "saveold"
+        },
+        {
+          "type": "STRING",
+          "value": "do"
+        },
+        {
+          "type": "STRING",
+          "value": "run"
+        },
+        {
+          "type": "STRING",
+          "value": "include"
+        },
+        {
+          "type": "STRING",
+          "value": "import"
+        },
+        {
+          "type": "STRING",
+          "value": "export"
+        },
+        {
+          "type": "STRING",
+          "value": "cd"
+        },
+        {
+          "type": "STRING",
+          "value": "erase"
+        },
+        {
+          "type": "STRING",
+          "value": "rm"
+        },
+        {
+          "type": "STRING",
+          "value": "copy"
+        },
+        {
+          "type": "STRING",
+          "value": "mkdir"
+        },
+        {
+          "type": "STRING",
+          "value": "rmdir"
+        },
+        {
+          "type": "STRING",
+          "value": "type"
+        },
+        {
+          "type": "STRING",
+          "value": "dir"
+        },
+        {
+          "type": "STRING",
+          "value": "ls"
+        },
+        {
+          "type": "STRING",
+          "value": "shell"
+        }
+      ]
+    },
+    "_file_argument": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "file_path"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_argument"
+        }
+      ]
+    },
     "prefix": {
       "type": "CHOICE",
       "members": [
@@ -1121,6 +1270,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "using_clause"
+        },
+        {
+          "type": "SYMBOL",
           "name": "identifier"
         },
         {
@@ -1143,6 +1296,54 @@
           }
         }
       ]
+    },
+    "using_clause": {
+      "type": "PREC_RIGHT",
+      "value": 0,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "using"
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "file_path"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "string"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "identifier"
+              }
+            ]
+          },
+          {
+            "type": "REPEAT",
+            "content": {
+              "type": "SYMBOL",
+              "name": "file_path"
+            }
+          }
+        ]
+      }
+    },
+    "file_path": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "PATTERN",
+          "value": "[^\\s,\"'`$]*[./\\\\][^\\s,\"'`$]*"
+        }
+      }
     },
     "factor_variable": {
       "type": "SEQ",

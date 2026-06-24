@@ -104,9 +104,15 @@ describe('TextMate Parity - Keywords', () => {
         expect(textmate_has_scope('keyword.other.stata')).toBe(true);
     });
 
-    it('highlights.scm should match in/using/do/run/include as keywords', () => {
+    it('highlights.scm should match in/do/run/include as keywords', () => {
         expect(highlights_content).toContain('((identifier) @keyword');
-        expect(highlights_content).toContain('^(in|using|do|run|include)$');
+        expect(highlights_content).toContain('^(in|do|run|include)$');
+    });
+
+    it('highlights.scm should capture the using keyword', () => {
+        // `using` is now a literal keyword token (it introduces a file path),
+        // so it is captured directly rather than via the identifier regex.
+        expect(highlights_content).toContain('"using" @keyword');
     });
 });
 
