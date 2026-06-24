@@ -207,3 +207,31 @@ sum x
   (comment
     (block_comment
       (block_comment))))
+
+========================================
+Mid-command star is multiplication, not a comment
+========================================
+disp 2*3
+gen z = x*y
+summarize inc*, detail
+
+---
+
+(source_file
+  (command
+    name: (identifier)
+    (number)
+    (operator)
+    (number))
+  (command
+    name: (identifier)
+    (identifier)
+    (operator)
+    (identifier)
+    (operator)
+    (identifier))
+  (command
+    name: (identifier)
+    (identifier)
+    (operator)
+    (identifier)))

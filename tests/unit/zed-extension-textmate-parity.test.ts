@@ -20,13 +20,29 @@ let grammar_content: string;
 let highlights_content: string;
 let textmate_grammar: any | undefined;
 
+function read_valid_cache(): string | undefined {
+    if (!fs.existsSync(TEXTMATE_PATH)) {
+        return undefined;
+    }
+
+    // Only trust the cache if it still parses as JSON; a previous run could
+    // have written a truncated or corrupt file.
+    const cached = fs.readFileSync(TEXTMATE_PATH, 'utf8');
+    try {
+        JSON.parse(cached);
+        return cached;
+    } catch {
+        return undefined;
+    }
+}
+
 async function ensure_textmate_grammar(): Promise<string | undefined> {
     fs.mkdirSync(TEXTMATE_TMP_DIR, { recursive: true });
 
-    if (fs.existsSync(TEXTMATE_PATH)) {
-        return fs.readFileSync(TEXTMATE_PATH, 'utf8');
-    }
-
+    // Always try to fetch the current upstream grammar so parity is checked
+    // against the latest Sight version; the on-disk copy is only an offline
+    // fallback (e.g. no network in CI), never a permanent cache that would
+    // silently validate against a stale grammar.
     try {
         const response = await fetch(TEXTMATE_URL, {
             headers: {
@@ -39,11 +55,16 @@ async function ensure_textmate_grammar(): Promise<string | undefined> {
         }
 
         const textmate_content = await response.text();
+        JSON.parse(textmate_content); // reject a truncated/corrupt download before caching
         fs.writeFileSync(TEXTMATE_PATH, textmate_content);
         return textmate_content;
     } catch (error) {
-        console.warn(`TextMate grammar unavailable: failed to download ${TEXTMATE_URL}: ${error}`);
-        return undefined;
+        console.warn(`TextMate grammar download failed for ${TEXTMATE_URL}: ${error}`);
+        const cached = read_valid_cache();
+        if (cached) {
+            console.warn('Falling back to cached TextMate grammar from a previous run.');
+        }
+        return cached;
     }
 }
 
@@ -52,6 +73,7 @@ beforeAll(async () => {
     highlights_content = fs.readFileSync(HIGHLIGHTS_PATH, 'utf8');
 
     const textmate_content = await ensure_textmate_grammar();
+    // ensure_textmate_grammar only returns content that already parsed as JSON.
     textmate_grammar = textmate_content ? JSON.parse(textmate_content) : undefined;
 });
 
@@ -71,11 +93,6 @@ function textmate_has_scope(scope_name: string): boolean {
 
 function treesitter_has_rule(rule_name: string): boolean {
     return grammar_content.includes(`${rule_name}:`);
-}
-
-function highlights_has_capture(node_type: string, capture: string): boolean {
-    const pattern = new RegExp(`\(${node_type}[^)]*\)\\s*@${capture}`);
-    return pattern.test(highlights_content);
 }
 
 describe('TextMate Parity - Keywords', () => {
